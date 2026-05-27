@@ -138,13 +138,13 @@ const mountMobileContactBar = () => {
   if (document.querySelector("[data-mobile-contact-bar]")) return;
 
   const wechatIcon = `
-    <svg class="mobile-contact-svg mobile-contact-svg-wechat" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
-      <path d="M20.8 13.2c-8.4 0-15.1 5.3-15.1 12 0 3.8 2.1 7.1 5.5 9.3l-1.1 4.1 5-2.3c1.8.5 3.7.8 5.7.8.8 0 1.6 0 2.4-.1-.6-1.3-.9-2.8-.9-4.3 0-6.4 6.2-11.6 13.8-11.6-.2 0-.4 0-.6.1-1.8-4.6-7.6-8-14.7-8Z" fill="currentColor"/>
-      <path d="M42.3 32.7c0-5.5-5.5-10-12.3-10s-12.3 4.5-12.3 10 5.5 10 12.3 10c1.5 0 3-.2 4.3-.7l4.2 2-1-3.5c3-1.8 4.8-4.7 4.8-7.8Z" fill="currentColor"/>
-      <circle cx="15.6" cy="24.1" r="1.9" fill="var(--wechat-dot, #18c339)"/>
-      <circle cx="25.4" cy="24.1" r="1.9" fill="var(--wechat-dot, #18c339)"/>
-      <circle cx="26.7" cy="31.7" r="1.5" fill="var(--wechat-dot, #18c339)"/>
-      <circle cx="34.2" cy="31.7" r="1.5" fill="var(--wechat-dot, #18c339)"/>
+    <svg class="mobile-contact-svg mobile-contact-svg-wechat" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+      <path d="M25.5 16.5C15 16.5 6.5 23 6.5 31c0 4.5 2.7 8.4 7 11.1l-1.2 4.5 5.3-2.4c2.4.8 5 1.2 7.9 1.2.8 0 1.6 0 2.4-.1-1.2-1.8-1.9-3.8-1.9-6 0-8.2 8.4-14.8 18.7-14.8.6 0 1.2 0 1.8.1-2.7-4.8-10.8-8.1-21-8.1Z" fill="currentColor"/>
+      <path d="M45.5 27.8c-8.6 0-15.6 5.2-15.6 11.6S36.9 51 45.5 51c1.8 0 3.6-.2 5.2-.7l4.7 2.1-1.1-3.8c4.2-2.1 6.8-5.5 6.8-9.2 0-6.4-7-11.6-15.6-11.6Z" fill="currentColor"/>
+      <circle cx="19.2" cy="29.5" r="2.1" fill="var(--wechat-dot, #16c43b)"/>
+      <circle cx="31.4" cy="29.5" r="2.1" fill="var(--wechat-dot, #16c43b)"/>
+      <circle cx="40.4" cy="38.6" r="1.8" fill="var(--wechat-dot, #16c43b)"/>
+      <circle cx="50.4" cy="38.6" r="1.8" fill="var(--wechat-dot, #16c43b)"/>
     </svg>
   `;
   const phoneIcon = `
