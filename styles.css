@@ -111,7 +111,7 @@ img {
 .brand small {
   display: block;
   margin-top: 6px;
-  color: var(--orange-deep);
+  color: currentColor;
   font-family:
     "Avenir Next Condensed",
     "DIN Condensed",
@@ -258,6 +258,10 @@ img {
   text-transform: uppercase;
 }
 
+.hero-copy .eyebrow {
+  color: var(--navy);
+}
+
 h1,
 h2,
 h3,
@@ -276,7 +280,7 @@ h1 {
 
 h1 span {
   display: block;
-  color: var(--orange);
+  color: var(--navy);
 }
 
 .lead {
@@ -386,7 +390,7 @@ h1 span {
 }
 
 .answer-topline span {
-  color: var(--orange-deep);
+  color: var(--muted);
   font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
   font-size: 13px;
   font-weight: 900;
