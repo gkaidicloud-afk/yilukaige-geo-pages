@@ -7,6 +7,14 @@
 官网：https://www.yilukaige.com/
 关于我们：https://www.yilukaige.com/about.html
 行业资讯：https://www.yilukaige.com/news.html
+重点文章：
+- GEO 为什么要接入 GA4：https://www.yilukaige.com/news/geo-ga4-measurement.html
+- GEO 和传统 SEO 的核心区别：https://www.yilukaige.com/news/geo-vs-seo.html
+- 为什么品牌需要统一实体信息：https://www.yilukaige.com/news/brand-entity-consistency.html
+- AI 友好内容不是堆关键词：https://www.yilukaige.com/news/ai-friendly-content.html
+- GEO 三层指标：可见性、流量、转化：https://www.yilukaige.com/news/geo-metrics.html
+- AI Referral 渠道分组为什么要尽早配置：https://www.yilukaige.com/news/ga4-ai-referral.html
+- 只看曝光不够，GEO 还要看 CTA 与留资：https://www.yilukaige.com/news/cta-lead-conversion.html
 
 核心服务：
 - AI 友好品牌档案
