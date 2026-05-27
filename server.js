@@ -223,9 +223,19 @@ const serveStatic = async (req, res, url) => {
   try {
     const body = await fs.readFile(filePath);
     const ext = path.extname(filePath);
-    send(res, 200, body, {
+    const headers = {
       "Content-Type": mimeTypes[ext] || "application/octet-stream"
-    });
+    };
+
+    if (pathname === "/admin.html") {
+      headers["X-Robots-Tag"] = "noindex, nofollow, noarchive";
+    }
+
+    if (pathname === "/robots.txt" || pathname === "/sitemap.xml" || pathname === "/feed.xml") {
+      headers["Cache-Control"] = "public, max-age=3600";
+    }
+
+    send(res, 200, body, headers);
   } catch {
     send(res, 404, "Not found", { "Content-Type": "text/plain; charset=utf-8" });
   }

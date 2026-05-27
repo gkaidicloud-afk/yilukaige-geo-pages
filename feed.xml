@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>一路凯歌行业资讯</title>
+    <link>https://www.yilukaige.com/news.html</link>
+    <atom:link href="https://www.yilukaige.com/feed.xml" rel="self" type="application/rss+xml" />
+    <description>一路凯歌围绕 GEO、AI 搜索、品牌知识资产、GA4 数据化衡量和 AI 流量归因的文章更新。</description>
+    <language>zh-CN</language>
+    <lastBuildDate>Wed, 27 May 2026 00:00:00 +0800</lastBuildDate>
+    <item>
+      <title>从“被 AI 提到”到“看得见效果”：GEO 为什么要接入 GA4</title>
+      <link>https://www.yilukaige.com/news/geo-ga4-measurement.html</link>
+      <guid>https://www.yilukaige.com/news/geo-ga4-measurement.html</guid>
+      <pubDate>Wed, 27 May 2026 00:00:00 +0800</pubDate>
+      <description>把 AI 可见性、AI 来源流量和 AI 转化事件串起来，让 GEO 从截图走向可复盘的数据链路。</description>
+    </item>
+    <item>
+      <title>GEO 和传统 SEO 的核心区别</title>
+      <link>https://www.yilukaige.com/news/geo-vs-seo.html</link>
+      <guid>https://www.yilukaige.com/news/geo-vs-seo.html</guid>
+      <pubDate>Wed, 27 May 2026 00:00:00 +0800</pubDate>
+      <description>SEO 关注搜索结果可见，GEO 关注 AI 组织答案时是否理解、引用和推荐品牌。</description>
+    </item>
+    <item>
+      <title>为什么品牌需要统一实体信息</title>
+      <link>https://www.yilukaige.com/news/brand-entity-consistency.html</link>
+      <guid>https://www.yilukaige.com/news/brand-entity-consistency.html</guid>
+      <pubDate>Wed, 27 May 2026 00:00:00 +0800</pubDate>
+      <description>品牌实体信息不统一，会影响 AI 对公司、品牌、创始人、联系方式和服务范围的理解。</description>
+    </item>
+    <item>
+      <title>AI 友好内容不是堆关键词</title>
+      <link>https://www.yilukaige.com/news/ai-friendly-content.html</link>
+      <guid>https://www.yilukaige.com/news/ai-friendly-content.html</guid>
+      <pubDate>Wed, 27 May 2026 00:00:00 +0800</pubDate>
+      <description>AI 友好内容要围绕真实问题、业务场景、解决方案和证据组织。</description>
+    </item>
+    <item>
+      <title>GEO 三层指标：可见性、流量、转化</title>
+      <link>https://www.yilukaige.com/news/geo-metrics.html</link>
+      <guid>https://www.yilukaige.com/news/geo-metrics.html</guid>
+      <pubDate>Wed, 27 May 2026 00:00:00 +0800</pubDate>
+      <description>从 AI 是否提到品牌，到 AI 是否带来访问，再到访问是否产生线索。</description>
+    </item>
+    <item>
+      <title>AI Referral 渠道分组为什么要尽早配置</title>
+      <link>https://www.yilukaige.com/news/ga4-ai-referral.html</link>
+      <guid>https://www.yilukaige.com/news/ga4-ai-referral.html</guid>
+      <pubDate>Wed, 27 May 2026 00:00:00 +0800</pubDate>
+      <description>GA4 渠道分组和事件口径越早配置，越容易连续观察 AI 来源访问和后续线索转化。</description>
+    </item>
+    <item>
+      <title>只看曝光不够，GEO 还要看 CTA 与留资</title>
+      <link>https://www.yilukaige.com/news/cta-lead-conversion.html</link>
+      <guid>https://www.yilukaige.com/news/cta-lead-conversion.html</guid>
+      <pubDate>Wed, 27 May 2026 00:00:00 +0800</pubDate>
+      <description>AI 用户进入官网后是否阅读、是否点击按钮、是否提交表单，决定 GEO 从品牌露出走向线索沟通的能力。</description>
+    </item>
+  </channel>
+</rss>

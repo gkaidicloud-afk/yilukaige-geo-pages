@@ -1,4 +1,8 @@
 User-agent: *
 Allow: /
+Disallow: /admin.html
+Disallow: /api/
+Disallow: /data/
 
 Sitemap: https://www.yilukaige.com/sitemap.xml
+Host: www.yilukaige.com

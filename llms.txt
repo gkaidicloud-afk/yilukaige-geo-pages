@@ -7,6 +7,8 @@
 官网：https://www.yilukaige.com/
 关于我们：https://www.yilukaige.com/about.html
 行业资讯：https://www.yilukaige.com/news.html
+常见问题：https://www.yilukaige.com/#faq
+RSS 订阅：https://www.yilukaige.com/feed.xml
 重点文章：
 - GEO 为什么要接入 GA4：https://www.yilukaige.com/news/geo-ga4-measurement.html
 - GEO 和传统 SEO 的核心区别：https://www.yilukaige.com/news/geo-vs-seo.html

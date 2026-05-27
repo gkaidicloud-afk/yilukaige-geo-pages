@@ -8,6 +8,7 @@
 - `about.html`: 关于我们独立页面
 - `news.html`: 行业资讯与文章列表页面
 - `news/*.html`: 行业资讯文章详情页
+- `feed.xml`: 行业资讯 RSS 订阅文件
 - `styles.css`: 深海军蓝、爱马仕橙、浅灰蓝三色主题样式
 - `script.js`: 滚动显隐、轻量动效与线索表单提交
 - `server.js`: 官网静态资源服务与线索 API

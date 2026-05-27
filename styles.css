@@ -830,7 +830,8 @@ h1 span {
 
 .advantage-grid,
 .case-grid,
-.insight-grid {
+.insight-grid,
+.faq-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 18px;
@@ -839,6 +840,7 @@ h1 span {
 .advantage-card,
 .case-card,
 .insight-card,
+.faq-item,
 .service-row,
 .contact-panel {
   border: 1px solid rgba(11, 31, 59, 0.13);
@@ -863,6 +865,7 @@ h1 span {
 .advantage-card h3,
 .case-card h3,
 .insight-card h3,
+.faq-item h3,
 .service-row h3 {
   margin-bottom: 12px;
   color: var(--navy);
@@ -873,6 +876,7 @@ h1 span {
 .advantage-card p,
 .case-card p,
 .insight-card p,
+.faq-item p,
 .service-row p {
   margin-bottom: 0;
   color: rgba(26, 26, 26, 0.66);
@@ -960,9 +964,43 @@ h1 span {
 }
 
 .case-card,
-.insight-card {
+.insight-card,
+.faq-item {
   min-height: 220px;
   padding: 28px;
+}
+
+.faq-section {
+  background:
+    radial-gradient(circle at 12% 6%, rgba(243, 107, 33, 0.08), transparent 24%),
+    #ffffff;
+}
+
+.faq-section .section-heading {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.faq-item {
+  position: relative;
+  overflow: hidden;
+}
+
+.faq-item::before {
+  content: "Q";
+  position: absolute;
+  right: 22px;
+  top: 18px;
+  color: rgba(243, 107, 33, 0.1);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 64px;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.faq-item > * {
+  position: relative;
 }
 
 .insight-card,
@@ -2036,6 +2074,7 @@ h1 span {
   .case-grid,
   .case-showcase,
   .insight-grid,
+  .faq-grid,
   .model-grid,
   .process {
     grid-template-columns: 1fr;
