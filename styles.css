@@ -96,7 +96,7 @@ img {
 
 .site-header .brand-mark {
   width: 170px;
-  height: 48px;
+  height: 54px;
   border: 0;
   background: transparent;
 }
@@ -109,8 +109,9 @@ img {
 
 .site-header .brand-mark img {
   width: 100%;
-  height: auto;
+  height: 100%;
   max-height: 100%;
+  object-fit: contain;
 }
 
 .brand strong {
