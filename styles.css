@@ -75,6 +75,15 @@ img {
   color: var(--navy);
 }
 
+.site-header .brand {
+  gap: 0;
+  min-width: 170px;
+}
+
+.site-header .brand > span:not(.brand-mark) {
+  display: none;
+}
+
 .brand-mark {
   width: 42px;
   height: 42px;
@@ -85,10 +94,23 @@ img {
   background: #ffffff;
 }
 
+.site-header .brand-mark {
+  width: 170px;
+  height: 48px;
+  border: 0;
+  background: transparent;
+}
+
 .brand-mark img {
   width: 36px;
   height: 36px;
   object-fit: contain;
+}
+
+.site-header .brand-mark img {
+  width: 100%;
+  height: auto;
+  max-height: 100%;
 }
 
 .brand strong {
