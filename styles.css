@@ -72,6 +72,7 @@ img {
   align-items: center;
   gap: 12px;
   min-width: 180px;
+  color: var(--navy);
 }
 
 .brand-mark {
@@ -92,17 +93,35 @@ img {
 
 .brand strong {
   display: block;
-  font-size: 18px;
+  color: currentColor;
+  font-family:
+    "Songti SC",
+    "STSong",
+    "Noto Serif CJK SC",
+    "Source Han Serif SC",
+    serif;
+  font-size: 22px;
+  font-weight: 900;
+  line-height: 0.98;
   letter-spacing: 0;
+  transform: scaleX(1.04);
+  transform-origin: left center;
 }
 
 .brand small {
   display: block;
-  margin-top: 2px;
-  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  margin-top: 6px;
+  color: var(--orange-deep);
+  font-family:
+    "Avenir Next Condensed",
+    "DIN Condensed",
+    "Arial Narrow",
+    sans-serif;
   font-size: 10px;
-  color: var(--muted);
-  letter-spacing: 0.08em;
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: 0;
+  opacity: 0.88;
   text-transform: uppercase;
 }
 
