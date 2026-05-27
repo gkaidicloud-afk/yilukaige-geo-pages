@@ -95,3 +95,72 @@ if (leadForm) {
     }
   });
 }
+
+const wechatId = "guandihui";
+const phoneNumber = "18610730255";
+
+const showMobileContactToast = (message) => {
+  let toast = document.querySelector("[data-mobile-contact-toast]");
+  if (!toast) {
+    toast = document.createElement("p");
+    toast.className = "mobile-contact-toast";
+    toast.dataset.mobileContactToast = "";
+    toast.setAttribute("role", "status");
+    document.body.append(toast);
+  }
+
+  toast.textContent = message;
+  toast.classList.add("is-visible");
+  window.clearTimeout(showMobileContactToast.timer);
+  showMobileContactToast.timer = window.setTimeout(() => {
+    toast.classList.remove("is-visible");
+  }, 2200);
+};
+
+const copyText = async (text) => {
+  if (navigator.clipboard && window.isSecureContext) {
+    await navigator.clipboard.writeText(text);
+    return;
+  }
+
+  const input = document.createElement("textarea");
+  input.value = text;
+  input.setAttribute("readonly", "");
+  input.style.position = "fixed";
+  input.style.left = "-9999px";
+  document.body.append(input);
+  input.select();
+  document.execCommand("copy");
+  input.remove();
+};
+
+const mountMobileContactBar = () => {
+  if (document.querySelector("[data-mobile-contact-bar]")) return;
+
+  const bar = document.createElement("div");
+  bar.className = "mobile-contact-bar";
+  bar.dataset.mobileContactBar = "";
+  bar.innerHTML = `
+    <button class="mobile-contact-action mobile-contact-wechat" type="button" aria-label="复制微信号 guandihui">
+      <span class="mobile-contact-icon" aria-hidden="true">微</span>
+      <span><b>添加微信</b><small>guandihui</small></span>
+    </button>
+    <a class="mobile-contact-action mobile-contact-phone" href="tel:${phoneNumber}" aria-label="拨打语音 ${phoneNumber}">
+      <span class="mobile-contact-icon" aria-hidden="true">电</span>
+      <span><b>拨打语音</b><small>${phoneNumber}</small></span>
+    </a>
+  `;
+
+  bar.querySelector(".mobile-contact-wechat").addEventListener("click", async () => {
+    try {
+      await copyText(wechatId);
+      showMobileContactToast("微信号 guandihui 已复制");
+    } catch (error) {
+      showMobileContactToast("微信号：guandihui");
+    }
+  });
+
+  document.body.append(bar);
+};
+
+mountMobileContactBar();
