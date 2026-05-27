@@ -20,9 +20,9 @@ window.addEventListener(
   () => {
     const currentY = window.scrollY;
     if (currentY > 120 && currentY > previousY) {
-      header.style.transform = "translate(-50%, -110%)";
+      header.style.transform = "translateY(-110%)";
     } else {
-      header.style.transform = "translate(-50%, 0)";
+      header.style.transform = "translateY(0)";
     }
     previousY = currentY;
   },
