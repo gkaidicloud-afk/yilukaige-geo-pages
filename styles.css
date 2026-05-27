@@ -2364,6 +2364,15 @@ h1 span {
     min-width: 0;
   }
 
+  .site-header .brand {
+    min-width: 126px;
+  }
+
+  .site-header .brand-mark {
+    width: 126px;
+    height: 40px;
+  }
+
   .brand strong {
     font-size: 16px;
   }
