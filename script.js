@@ -137,16 +137,31 @@ const copyText = async (text) => {
 const mountMobileContactBar = () => {
   if (document.querySelector("[data-mobile-contact-bar]")) return;
 
+  const wechatIcon = `
+    <svg class="mobile-contact-svg mobile-contact-svg-wechat" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
+      <path d="M20.8 13.2c-8.4 0-15.1 5.3-15.1 12 0 3.8 2.1 7.1 5.5 9.3l-1.1 4.1 5-2.3c1.8.5 3.7.8 5.7.8.8 0 1.6 0 2.4-.1-.6-1.3-.9-2.8-.9-4.3 0-6.4 6.2-11.6 13.8-11.6-.2 0-.4 0-.6.1-1.8-4.6-7.6-8-14.7-8Z" fill="currentColor"/>
+      <path d="M42.3 32.7c0-5.5-5.5-10-12.3-10s-12.3 4.5-12.3 10 5.5 10 12.3 10c1.5 0 3-.2 4.3-.7l4.2 2-1-3.5c3-1.8 4.8-4.7 4.8-7.8Z" fill="currentColor"/>
+      <circle cx="15.6" cy="24.1" r="1.9" fill="var(--wechat-dot, #18c339)"/>
+      <circle cx="25.4" cy="24.1" r="1.9" fill="var(--wechat-dot, #18c339)"/>
+      <circle cx="26.7" cy="31.7" r="1.5" fill="var(--wechat-dot, #18c339)"/>
+      <circle cx="34.2" cy="31.7" r="1.5" fill="var(--wechat-dot, #18c339)"/>
+    </svg>
+  `;
+  const phoneIcon = `
+    <svg class="mobile-contact-svg mobile-contact-svg-phone" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
+      <path d="M33.7 31.1c-1.2-.7-2.7-.5-3.7.4l-1.9 1.6c-.7.6-1.7.7-2.5.2-2.2-1.3-4.1-2.8-5.8-4.5-1.7-1.7-3.2-3.7-4.5-5.8-.5-.8-.4-1.8.2-2.5l1.6-1.9c.9-1.1 1-2.5.4-3.7l-2.6-4.6c-.8-1.5-2.6-2.1-4.2-1.4L8.3 10c-1.8.8-2.9 2.6-2.6 4.6 1.1 7.3 4.4 13.8 9.5 18.9 5.1 5.1 11.6 8.4 18.9 9.5 1.9.3 3.8-.8 4.6-2.6l1.1-2.4c.7-1.5.1-3.4-1.4-4.2l-4.7-2.7Z" fill="currentColor"/>
+    </svg>
+  `;
   const bar = document.createElement("div");
   bar.className = "mobile-contact-bar";
   bar.dataset.mobileContactBar = "";
   bar.innerHTML = `
     <button class="mobile-contact-action mobile-contact-wechat" type="button" aria-label="复制微信号 guandihui">
-      <span class="mobile-contact-icon" aria-hidden="true">微</span>
+      <span class="mobile-contact-icon" aria-hidden="true">${wechatIcon}</span>
       <span><b>添加微信</b><small>guandihui</small></span>
     </button>
     <a class="mobile-contact-action mobile-contact-phone" href="tel:${phoneNumber}" aria-label="拨打语音 ${phoneNumber}">
-      <span class="mobile-contact-icon" aria-hidden="true">电</span>
+      <span class="mobile-contact-icon" aria-hidden="true">${phoneIcon}</span>
       <span><b>拨打语音</b><small>${phoneNumber}</small></span>
     </a>
   `;

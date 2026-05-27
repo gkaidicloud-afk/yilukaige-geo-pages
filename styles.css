@@ -2286,7 +2286,7 @@ h1 span {
     min-width: 0;
     min-height: 56px;
     display: grid;
-    grid-template-columns: 30px minmax(0, 1fr);
+    grid-template-columns: 36px minmax(0, 1fr);
     gap: 8px;
     align-items: center;
     padding: 9px 10px;
@@ -2319,14 +2319,17 @@ h1 span {
   }
 
   .mobile-contact-icon {
-    width: 30px;
-    height: 30px;
+    width: 36px;
+    height: 36px;
     display: grid;
     place-items: center;
-    border-radius: 10px;
-    font-size: 13px;
-    font-weight: 900;
-    line-height: 1;
+    border-radius: 12px;
+  }
+
+  .mobile-contact-svg {
+    width: 24px;
+    height: 24px;
+    display: block;
   }
 
   .mobile-contact-wechat {
@@ -2338,7 +2341,8 @@ h1 span {
 
   .mobile-contact-wechat .mobile-contact-icon {
     color: #ffffff;
-    background: var(--navy);
+    background: linear-gradient(135deg, #38e447, #05b92f);
+    --wechat-dot: #10c736;
   }
 
   .mobile-contact-phone {
