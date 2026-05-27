@@ -1,0 +1,3 @@
+data/leads.json
+data/*.tmp
+.DS_Store

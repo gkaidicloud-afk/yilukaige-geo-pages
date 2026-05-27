@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>一路凯歌 | 线索管理后台</title>
+    <meta name="robots" content="noindex, nofollow" />
+    <link rel="icon" href="assets/logo.png" type="image/png" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="admin.js" defer></script>
+  </head>
+  <body class="admin-page">
+    <header class="admin-header">
+      <a class="brand" href="index.html" aria-label="返回一路凯歌官网">
+        <span class="brand-mark">
+          <img src="assets/logo.png" alt="一路凯歌品牌标志" />
+        </span>
+        <span>
+          <strong>一路凯歌</strong>
+          <small>Lead Admin</small>
+        </span>
+      </a>
+      <a class="header-cta" href="index.html#contact">返回官网</a>
+    </header>
+
+    <main class="admin-shell">
+      <section class="admin-hero">
+        <div>
+          <p class="eyebrow">Lead Console</p>
+          <h1>客户线索管理</h1>
+          <p>查看官网表单收集到的 GEO 诊断需求。</p>
+        </div>
+        <form class="admin-token" data-token-form>
+          <label>
+            <span>管理口令</span>
+            <input name="token" type="password" autocomplete="current-password" placeholder="local-dev" />
+          </label>
+          <button class="btn btn-primary" type="submit">进入后台</button>
+        </form>
+      </section>
+
+      <section class="admin-stats" aria-label="线索统计">
+        <article>
+          <span>全部线索</span>
+          <strong data-stat-total>0</strong>
+        </article>
+        <article>
+          <span>今日新增</span>
+          <strong data-stat-today>0</strong>
+        </article>
+        <article>
+          <span>最近提交</span>
+          <strong data-stat-latest>-</strong>
+        </article>
+      </section>
+
+      <section class="admin-panel">
+        <div class="admin-toolbar">
+          <label>
+            <span>搜索</span>
+            <input data-search type="search" placeholder="姓名 / 电话 / 品牌" />
+          </label>
+          <div>
+            <button class="btn btn-secondary" type="button" data-refresh>刷新</button>
+            <button class="btn btn-primary" type="button" data-export>导出 CSV</button>
+          </div>
+        </div>
+
+        <div class="admin-table-wrap">
+          <table class="admin-table">
+            <thead>
+              <tr>
+                <th>提交时间</th>
+                <th>姓名</th>
+                <th>电话</th>
+                <th>品牌</th>
+                <th>官网</th>
+                <th>需求</th>
+              </tr>
+            </thead>
+            <tbody data-leads-body>
+              <tr>
+                <td colspan="6">暂无数据</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="admin-message" data-admin-message role="status"></p>
+      </section>
+    </main>
+  </body>
+</html>
