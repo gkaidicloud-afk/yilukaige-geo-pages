@@ -1330,8 +1330,9 @@ h1 span {
 
 .footer-main {
   display: grid;
-  grid-template-columns: minmax(280px, 0.9fr) minmax(420px, 1.1fr);
-  gap: 64px;
+  grid-template-columns: minmax(260px, 0.88fr) minmax(172px, 0.38fr) minmax(380px, 1fr);
+  gap: 42px;
+  align-items: start;
   padding-bottom: 42px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.12);
 }
@@ -1369,6 +1370,46 @@ h1 span {
   color: #ffffff;
   background: rgba(255, 255, 255, 0.06);
   font-weight: 800;
+}
+
+.footer-wechat {
+  display: grid;
+  gap: 14px;
+  justify-items: center;
+  width: min(100%, 190px);
+  padding: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.07);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.08);
+}
+
+.footer-wechat img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1;
+  border-radius: 14px;
+  background: #ffffff;
+  object-fit: cover;
+}
+
+.footer-wechat div {
+  display: grid;
+  gap: 5px;
+  text-align: center;
+}
+
+.footer-wechat strong {
+  color: #ffffff;
+  font-size: 15px;
+  line-height: 1.25;
+}
+
+.footer-wechat span {
+  color: rgba(255, 255, 255, 0.62);
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.4;
 }
 
 .footer-links {
