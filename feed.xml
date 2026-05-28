@@ -6,7 +6,77 @@
     <atom:link href="https://www.yilukaige.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>一路凯歌围绕 GEO、AI 搜索、品牌知识资产、GA4 数据化衡量和 AI 流量归因的文章更新。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Wed, 27 May 2026 00:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 28 May 2026 09:30:00 +0800</lastBuildDate>
+    <item>
+      <title>Google AI Search 加强来源展示，企业官网要更像可引用资料页</title>
+      <link>https://www.yilukaige.com/news/google-ai-search-source-visibility.html</link>
+      <guid>https://www.yilukaige.com/news/google-ai-search-source-visibility.html</guid>
+      <pubDate>Thu, 28 May 2026 09:30:00 +0800</pubDate>
+      <description>Google 近期继续强化 AI Search 里的来源展示、偏好来源和原始内容识别。对企业官网来说，GEO 的重点不是堆文章，而是让品牌资料更清楚、更可信、更容易被 AI 作为支持链接引用。</description>
+    </item>
+    <item>
+      <title>AI Mode 的 query fan-out 对 GEO 选题有什么启发</title>
+      <link>https://www.yilukaige.com/news/google-ai-mode-query-fan-out.html</link>
+      <guid>https://www.yilukaige.com/news/google-ai-mode-query-fan-out.html</guid>
+      <pubDate>Thu, 28 May 2026 09:30:00 +0800</pubDate>
+      <description>AI Mode 不再只处理一个短关键词，而是会围绕复杂问题展开多个相关搜索。GEO 选题也要从单个关键词，升级为问题簇和场景簇。</description>
+    </item>
+    <item>
+      <title>想进入 ChatGPT Search，先确认 OAI-SearchBot 没被挡住</title>
+      <link>https://www.yilukaige.com/news/chatgpt-search-oai-searchbot.html</link>
+      <guid>https://www.yilukaige.com/news/chatgpt-search-oai-searchbot.html</guid>
+      <pubDate>Thu, 28 May 2026 09:30:00 +0800</pubDate>
+      <description>ChatGPT Search 已经成为品牌被发现的新入口。站点要想被抓取和引用，第一步不是写更多口号，而是检查 robots.txt、CDN 和页面可访问性。</description>
+    </item>
+    <item>
+      <title>ChatGPT 带来的 AI Referral，怎么在 GA4 里看得更清楚</title>
+      <link>https://www.yilukaige.com/news/ai-referral-utm-ga4.html</link>
+      <guid>https://www.yilukaige.com/news/ai-referral-utm-ga4.html</guid>
+      <pubDate>Thu, 28 May 2026 09:30:00 +0800</pubDate>
+      <description>AI 搜索带来的流量如果没有单独口径，很容易混在 referral 或其他渠道里。GA4 需要提前配置来源识别和关键事件，才能复盘 GEO 是否带来有效访问。</description>
+    </item>
+    <item>
+      <title>结构化数据不能脱离可见内容：Article、FAQ 与内链怎么配</title>
+      <link>https://www.yilukaige.com/news/structured-data-visible-content.html</link>
+      <guid>https://www.yilukaige.com/news/structured-data-visible-content.html</guid>
+      <pubDate>Thu, 28 May 2026 09:30:00 +0800</pubDate>
+      <description>结构化数据不是隐藏关键词的地方。它应该帮助搜索引擎理解页面，而不是替代正文。Article、FAQ 和 Breadcrumb 要与用户能看到的内容保持一致。</description>
+    </item>
+    <item>
+      <title>DeepSeek API 兼容接口背后，企业内容更需要标准化表达</title>
+      <link>https://www.yilukaige.com/news/deepseek-api-compatibility-brand-content.html</link>
+      <guid>https://www.yilukaige.com/news/deepseek-api-compatibility-brand-content.html</guid>
+      <pubDate>Thu, 28 May 2026 09:30:00 +0800</pubDate>
+      <description>大模型应用开发越来越强调兼容接口和多模型切换。对企业品牌来说，模型怎么换都不是核心，核心是你的公开知识资产是否足够标准、清楚、可复用。</description>
+    </item>
+    <item>
+      <title>火山方舟与豆包生态下，品牌知识库内容要怎么准备</title>
+      <link>https://www.yilukaige.com/news/doubao-volcano-ark-knowledge-content.html</link>
+      <guid>https://www.yilukaige.com/news/doubao-volcano-ark-knowledge-content.html</guid>
+      <pubDate>Thu, 28 May 2026 09:30:00 +0800</pubDate>
+      <description>AI 应用正在从单次对话走向联网搜索、知识库搜索和工具调用。企业官网内容要能被外部搜索理解，也要能沉淀为内部智能体可复用的知识库材料。</description>
+    </item>
+    <item>
+      <title>阿里云百炼兼容 OpenAI 接口，对企业知识资产建设意味着什么</title>
+      <link>https://www.yilukaige.com/news/aliyun-model-studio-qwen-openai-compatible.html</link>
+      <guid>https://www.yilukaige.com/news/aliyun-model-studio-qwen-openai-compatible.html</guid>
+      <pubDate>Thu, 28 May 2026 09:30:00 +0800</pubDate>
+      <description>越来越多大模型平台提供兼容接口和应用构建能力。企业真正要做的是把官网内容、FAQ、服务页和行业观点整理成可迁移、可引用、可复用的知识资产。</description>
+    </item>
+    <item>
+      <title>llms.txt、sitemap 和 robots.txt 分别解决什么问题</title>
+      <link>https://www.yilukaige.com/news/llms-sitemap-robots-ai-crawl.html</link>
+      <guid>https://www.yilukaige.com/news/llms-sitemap-robots-ai-crawl.html</guid>
+      <pubDate>Thu, 28 May 2026 09:30:00 +0800</pubDate>
+      <description>很多企业开始在站点根目录放 llms.txt，但它不能替代 sitemap、robots.txt、canonical 和正文内容。GEO 技术基础要分层处理。</description>
+    </item>
+    <item>
+      <title>B2B 企业做 GEO 日更资讯，应该按什么选题结构长期更新</title>
+      <link>https://www.yilukaige.com/news/b2b-geo-editorial-calendar.html</link>
+      <guid>https://www.yilukaige.com/news/b2b-geo-editorial-calendar.html</guid>
+      <pubDate>Thu, 28 May 2026 09:30:00 +0800</pubDate>
+      <description>每天发资讯不是为了把网站塞满，而是持续覆盖 AI 和客户都会问的问题。B2B GEO 日更要有稳定选题结构，才能变成长期品牌资产。</description>
+    </item>
     <item>
       <title>从“被 AI 提到”到“看得见效果”：GEO 为什么要接入 GA4</title>
       <link>https://www.yilukaige.com/news/geo-ga4-measurement.html</link>
