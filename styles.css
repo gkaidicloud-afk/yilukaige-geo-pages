@@ -1246,6 +1246,12 @@ h1 span {
   font-weight: 800;
 }
 
+.insight-actions {
+  display: flex;
+  justify-content: center;
+  margin-top: 34px;
+}
+
 .lead-section {
   position: relative;
   padding: 112px max(24px, calc((100vw - 1180px) / 2));
