@@ -6,7 +6,77 @@
     <atom:link href="https://www.yilukaige.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>一路凯歌围绕 GEO、AI 搜索、品牌知识资产、GA4 数据化衡量和 AI 流量归因的文章更新。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Thu, 28 May 2026 09:30:00 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 29 May 2026 09:30:00 +0800</lastBuildDate>
+    <item>
+      <title>Google AI Mode 引入 Deep Search 后，B2B 官网为什么要像“研究备忘录”</title>
+      <link>https://www.yilukaige.com/news/google-ai-mode-deep-search-b2b-content.html</link>
+      <guid>https://www.yilukaige.com/news/google-ai-mode-deep-search-b2b-content.html</guid>
+      <pubDate>Fri, 29 May 2026 09:30:00 +0800</pubDate>
+      <description>Google 在 AI Mode 中加入 Deep Search，意味着复杂 B2B 问题会被拆成更多检索与推理步骤。企业官网需要把观点、证据、对比和结论整理成更容易被多轮引用的专题页，而不是只停留在一句服务口号。</description>
+    </item>
+    <item>
+      <title>Search Live 开始支持语音问答后，企业内容要准备“可说出口”的答案</title>
+      <link>https://www.yilukaige.com/news/google-search-live-voice-answer-design.html</link>
+      <guid>https://www.yilukaige.com/news/google-search-live-voice-answer-design.html</guid>
+      <pubDate>Fri, 29 May 2026 09:30:00 +0800</pubDate>
+      <description>Google 把 Search Live 带入 AI Mode 后，搜索不再只发生在键盘输入里。企业官网如果希望被语音问答场景引用，正文需要更短句、更清晰，并提前准备适合被直接朗读的答案层。</description>
+    </item>
+    <item>
+      <title>ChatGPT Search 会改写查询并结合位置，企业本地页别再只写一句品牌介绍</title>
+      <link>https://www.yilukaige.com/news/chatgpt-search-query-rewrite-location-pages.html</link>
+      <guid>https://www.yilukaige.com/news/chatgpt-search-query-rewrite-location-pages.html</guid>
+      <pubDate>Fri, 29 May 2026 09:30:00 +0800</pubDate>
+      <description>OpenAI 帮助文档提到，ChatGPT Search 会结合用户位置、历史上下文，并在必要时改写查询。这意味着企业如果想覆盖本地和场景化问答，页面需要把城市、服务边界和真实问题说完整。</description>
+    </item>
+    <item>
+      <title>DeepSeek 文档写明模型切换时间后，企业内容接口要先于模型迁移完成标准化</title>
+      <link>https://www.yilukaige.com/news/deepseek-model-migration-content-contract.html</link>
+      <guid>https://www.yilukaige.com/news/deepseek-model-migration-content-contract.html</guid>
+      <pubDate>Fri, 29 May 2026 09:30:00 +0800</pubDate>
+      <description>DeepSeek 官方文档已经给出 `deepseek-chat` 和 `deepseek-reasoner` 的弃用时间窗口。对企业来说，先统一内容字段、FAQ 结构和页面命名，比急着追逐模型版本更重要。</description>
+    </item>
+    <item>
+      <title>DeepSeek 强调 JSON Output 与 Function Calling，企业 FAQ 也该从“长文”变成“结构化字段”</title>
+      <link>https://www.yilukaige.com/news/deepseek-json-output-faq-structure.html</link>
+      <guid>https://www.yilukaige.com/news/deepseek-json-output-faq-structure.html</guid>
+      <pubDate>Fri, 29 May 2026 09:30:00 +0800</pubDate>
+      <description>DeepSeek 在官方更新中提到 JSON Output 与 Function Calling 已支持到通用模型接口。对企业内容来说，这提醒我们 FAQ、参数页和服务说明不能只有自然语言，还要有稳定字段，方便 AI 抽取与调用。</description>
+    </item>
+    <item>
+      <title>Kimi K2.5 的联网搜索与思考模式有边界，官网内容不能把关键结论只放在外部链接里</title>
+      <link>https://www.yilukaige.com/news/kimi-k2-5-web-search-thinking-content.html</link>
+      <guid>https://www.yilukaige.com/news/kimi-k2-5-web-search-thinking-content.html</guid>
+      <pubDate>Fri, 29 May 2026 09:30:00 +0800</pubDate>
+      <description>Moonshot 官方文档提到，Kimi K2.5 的 `web_search` 目前不能与 thinking 模式同时使用。对企业来说，这意味着品牌官网仍要自己承载关键定义、结论和比较逻辑，不能假设模型一定会靠外部检索补全。</description>
+    </item>
+    <item>
+      <title>通义千问接口层越来越完整，企业内容也要分成“公开页、工具说明、知识字段”三层</title>
+      <link>https://www.yilukaige.com/news/qwen-api-compatible-tool-content-layer.html</link>
+      <guid>https://www.yilukaige.com/news/qwen-api-compatible-tool-content-layer.html</guid>
+      <pubDate>Fri, 29 May 2026 09:30:00 +0800</pubDate>
+      <description>阿里云百炼和通义千问 API 参考显示，平台同时支持 OpenAI 兼容接口、Responses API 与多类内置工具。企业如果想让内容既服务收录又服务智能体调用，官网表达也要分层。</description>
+    </item>
+    <item>
+      <title>腾讯联网搜索支持指定网址与时间范围后，企业更新页要学会保留日期、版本和原始出处</title>
+      <link>https://www.yilukaige.com/news/tencent-yuanbao-web-search-source-pages.html</link>
+      <guid>https://www.yilukaige.com/news/tencent-yuanbao-web-search-source-pages.html</guid>
+      <pubDate>Fri, 29 May 2026 09:30:00 +0800</pubDate>
+      <description>腾讯云 Web Search API 官方页面强调可指定网址、时间范围和语言，还提到分钟级更新。对企业官网来说，这意味着资讯页、公告页和专题页应更明确地保留时间、版本与来源说明，方便被检索系统判断新旧和可信度。</description>
+    </item>
+    <item>
+      <title>火山方舟把联网插件和知识库插件并列后，品牌官网与私域知识库更该分层维护</title>
+      <link>https://www.yilukaige.com/news/volcengine-ark-public-private-knowledge.html</link>
+      <guid>https://www.yilukaige.com/news/volcengine-ark-public-private-knowledge.html</guid>
+      <pubDate>Fri, 29 May 2026 09:30:00 +0800</pubDate>
+      <description>火山方舟官方文档展示了网页搜索插件、知识库插件和 Bot 模式的并列能力。企业如果既想争取豆包生态里的公开可见性，又想服务内部智能体，就要把官网公开知识和私域知识库分开维护、统一命名。</description>
+    </item>
+    <item>
+      <title>GA4 文档提醒 UTM 缺失会丢来源，AI 搜索流量分析别让跳转链路把数据吃掉</title>
+      <link>https://www.yilukaige.com/news/ga4-ai-traffic-utm-direct-loss.html</link>
+      <guid>https://www.yilukaige.com/news/ga4-ai-traffic-utm-direct-loss.html</guid>
+      <pubDate>Fri, 29 May 2026 09:30:00 +0800</pubDate>
+      <description>Google Analytics 官方帮助文档反复提醒，若依赖短链或中间跳转且未保留 UTM，流量可能被错误归入 direct 或错误来源。企业要复盘 AI 搜索带来的访问与线索，必须先修正跳转、标记和渠道口径。</description>
+    </item>
     <item>
       <title>Google AI Search 加强来源展示，企业官网要更像可引用资料页</title>
       <link>https://www.yilukaige.com/news/google-ai-search-source-visibility.html</link>
@@ -76,55 +146,6 @@
       <guid>https://www.yilukaige.com/news/b2b-geo-editorial-calendar.html</guid>
       <pubDate>Thu, 28 May 2026 09:30:00 +0800</pubDate>
       <description>每天发资讯不是为了把网站塞满，而是持续覆盖 AI 和客户都会问的问题。B2B GEO 日更要有稳定选题结构，才能变成长期品牌资产。</description>
-    </item>
-    <item>
-      <title>从“被 AI 提到”到“看得见效果”：GEO 为什么要接入 GA4</title>
-      <link>https://www.yilukaige.com/news/geo-ga4-measurement.html</link>
-      <guid>https://www.yilukaige.com/news/geo-ga4-measurement.html</guid>
-      <pubDate>Wed, 27 May 2026 00:00:00 +0800</pubDate>
-      <description>把 AI 可见性、AI 来源流量和 AI 转化事件串起来，让 GEO 从截图走向可复盘的数据链路。</description>
-    </item>
-    <item>
-      <title>GEO 和传统 SEO 的核心区别</title>
-      <link>https://www.yilukaige.com/news/geo-vs-seo.html</link>
-      <guid>https://www.yilukaige.com/news/geo-vs-seo.html</guid>
-      <pubDate>Wed, 27 May 2026 00:00:00 +0800</pubDate>
-      <description>SEO 关注搜索结果可见，GEO 关注 AI 组织答案时是否理解、引用和推荐品牌。</description>
-    </item>
-    <item>
-      <title>为什么品牌需要统一实体信息</title>
-      <link>https://www.yilukaige.com/news/brand-entity-consistency.html</link>
-      <guid>https://www.yilukaige.com/news/brand-entity-consistency.html</guid>
-      <pubDate>Wed, 27 May 2026 00:00:00 +0800</pubDate>
-      <description>品牌实体信息不统一，会影响 AI 对公司、品牌、创始人、联系方式和服务范围的理解。</description>
-    </item>
-    <item>
-      <title>AI 友好内容不是堆关键词</title>
-      <link>https://www.yilukaige.com/news/ai-friendly-content.html</link>
-      <guid>https://www.yilukaige.com/news/ai-friendly-content.html</guid>
-      <pubDate>Wed, 27 May 2026 00:00:00 +0800</pubDate>
-      <description>AI 友好内容要围绕真实问题、业务场景、解决方案和证据组织。</description>
-    </item>
-    <item>
-      <title>GEO 三层指标：可见性、流量、转化</title>
-      <link>https://www.yilukaige.com/news/geo-metrics.html</link>
-      <guid>https://www.yilukaige.com/news/geo-metrics.html</guid>
-      <pubDate>Wed, 27 May 2026 00:00:00 +0800</pubDate>
-      <description>从 AI 是否提到品牌，到 AI 是否带来访问，再到访问是否产生线索。</description>
-    </item>
-    <item>
-      <title>AI Referral 渠道分组为什么要尽早配置</title>
-      <link>https://www.yilukaige.com/news/ga4-ai-referral.html</link>
-      <guid>https://www.yilukaige.com/news/ga4-ai-referral.html</guid>
-      <pubDate>Wed, 27 May 2026 00:00:00 +0800</pubDate>
-      <description>GA4 渠道分组和事件口径越早配置，越容易连续观察 AI 来源访问和后续线索转化。</description>
-    </item>
-    <item>
-      <title>只看曝光不够，GEO 还要看 CTA 与留资</title>
-      <link>https://www.yilukaige.com/news/cta-lead-conversion.html</link>
-      <guid>https://www.yilukaige.com/news/cta-lead-conversion.html</guid>
-      <pubDate>Wed, 27 May 2026 00:00:00 +0800</pubDate>
-      <description>AI 用户进入官网后是否阅读、是否点击按钮、是否提交表单，决定 GEO 从品牌露出走向线索沟通的能力。</description>
     </item>
   </channel>
 </rss>
