@@ -9,6 +9,9 @@ const feedDate = "Fri, 29 May 2026 09:30:00 +0800";
 
 const orgName = "北京一路凯歌网络科技有限公司";
 const brandName = "一路凯歌";
+const brandSameAs = [
+  "https://baike.baidu.com/item/%E4%B8%80%E8%B7%AF%E5%87%AF%E6%AD%8C/58297174",
+];
 
 const existingOrder = [
   "google-ai-search-source-visibility",
@@ -725,10 +728,12 @@ function buildArticleJsonLd(article) {
         "@type": "Organization",
         name: orgName,
         url: `${siteUrl}/`,
+        sameAs: brandSameAs,
       },
       publisher: {
         "@type": "Organization",
         name: orgName,
+        sameAs: brandSameAs,
         logo: {
           "@type": "ImageObject",
           url: `${siteUrl}/assets/logo.png`,
