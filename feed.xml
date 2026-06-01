@@ -6,7 +6,14 @@
     <atom:link href="https://www.yilukaige.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>一路凯歌围绕 GEO、AI 搜索、品牌知识资产、GA4 数据化衡量和 AI 流量归因的文章更新。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Mon, 01 Jun 2026 09:08:00 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 01 Jun 2026 09:10:00 +0800</lastBuildDate>
+    <item>
+      <title>ChatGPT Enterprise 会展示 Sources 后，品牌页面要把作者、日期和图片出处写完整</title>
+      <link>https://www.yilukaige.com/news/chatgpt-enterprise-sources-bing-governance.html</link>
+      <guid>https://www.yilukaige.com/news/chatgpt-enterprise-sources-bing-governance.html</guid>
+      <pubDate>Mon, 01 Jun 2026 09:10:00 +0800</pubDate>
+      <description>OpenAI 对 Enterprise 与 Edu 搜索的说明显示，系统会展示引用来源，用户还能在 Sources 面板里继续查看相关链接；同时搜索可能向 Bing 和其他数据提供方共享去标识化查询。企业页面如果想被稳定理解，就更应该把作者、日期、图片来源和页面边界写清楚。</description>
+    </item>
     <item>
       <title>OpenAI 要求搜索引用清晰可点击后，企业文章页要把出处块做成前台资产</title>
       <link>https://www.yilukaige.com/news/openai-web-search-clickable-citations-pages.html</link>
@@ -139,13 +146,6 @@
       <guid>https://www.yilukaige.com/news/deepseek-model-migration-content-contract.html</guid>
       <pubDate>Fri, 29 May 2026 09:30:00 +0800</pubDate>
       <description>DeepSeek 官方文档已经给出 `deepseek-chat` 和 `deepseek-reasoner` 的弃用时间窗口。对企业来说，先统一内容字段、FAQ 结构和页面命名，比急着追逐模型版本更重要。</description>
-    </item>
-    <item>
-      <title>DeepSeek 强调 JSON Output 与 Function Calling，企业 FAQ 也该从“长文”变成“结构化字段”</title>
-      <link>https://www.yilukaige.com/news/deepseek-json-output-faq-structure.html</link>
-      <guid>https://www.yilukaige.com/news/deepseek-json-output-faq-structure.html</guid>
-      <pubDate>Fri, 29 May 2026 09:30:00 +0800</pubDate>
-      <description>DeepSeek 在官方更新中提到 JSON Output 与 Function Calling 已支持到通用模型接口。对企业内容来说，这提醒我们 FAQ、参数页和服务说明不能只有自然语言，还要有稳定字段，方便 AI 抽取与调用。</description>
     </item>
   </channel>
 </rss>
