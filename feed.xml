@@ -6,7 +6,14 @@
     <atom:link href="https://www.yilukaige.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>一路凯歌围绕 GEO、AI 搜索、品牌知识资产、GA4 数据化衡量和 AI 流量归因的文章更新。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Mon, 01 Jun 2026 09:04:00 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 01 Jun 2026 09:06:00 +0800</lastBuildDate>
+    <item>
+      <title>官网偶发 DNS 或 5xx 错误后，AI 可见性掉的可能不只是当天流量</title>
+      <link>https://www.yilukaige.com/news/google-dns-errors-ai-index-loss.html</link>
+      <guid>https://www.yilukaige.com/news/google-dns-errors-ai-index-loss.html</guid>
+      <pubDate>Mon, 01 Jun 2026 09:06:00 +0800</pubDate>
+      <description>Google 对网络和 DNS 错误的说明非常明确：这类错误会被按服务器错误处理，爬取会立刻放缓，已收录 URL 甚至可能在几天内从索引中移除。对依赖 AI 搜索曝光的企业来说，稳定托管本身就是内容策略的一部分。</description>
+    </item>
     <item>
       <title>还在用 # 路由做单页站，AI 搜索很难顺着你的服务链接继续爬</title>
       <link>https://www.yilukaige.com/news/google-spa-history-api-crawlable-links.html</link>
@@ -139,13 +146,6 @@
       <guid>https://www.yilukaige.com/news/kimi-k2-5-web-search-thinking-content.html</guid>
       <pubDate>Fri, 29 May 2026 09:30:00 +0800</pubDate>
       <description>Moonshot 官方文档提到，Kimi K2.5 的 `web_search` 目前不能与 thinking 模式同时使用。对企业来说，这意味着品牌官网仍要自己承载关键定义、结论和比较逻辑，不能假设模型一定会靠外部检索补全。</description>
-    </item>
-    <item>
-      <title>通义千问接口层越来越完整，企业内容也要分成“公开页、工具说明、知识字段”三层</title>
-      <link>https://www.yilukaige.com/news/qwen-api-compatible-tool-content-layer.html</link>
-      <guid>https://www.yilukaige.com/news/qwen-api-compatible-tool-content-layer.html</guid>
-      <pubDate>Fri, 29 May 2026 09:30:00 +0800</pubDate>
-      <description>阿里云百炼和通义千问 API 参考显示，平台同时支持 OpenAI 兼容接口、Responses API 与多类内置工具。企业如果想让内容既服务收录又服务智能体调用，官网表达也要分层。</description>
     </item>
   </channel>
 </rss>
