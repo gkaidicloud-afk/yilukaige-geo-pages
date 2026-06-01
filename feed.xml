@@ -6,7 +6,14 @@
     <atom:link href="https://www.yilukaige.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>一路凯歌围绕 GEO、AI 搜索、品牌知识资产、GA4 数据化衡量和 AI 流量归因的文章更新。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Mon, 01 Jun 2026 09:16:00 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 01 Jun 2026 09:18:00 +0800</lastBuildDate>
+    <item>
+      <title>Google 要求想清楚内容的 Who、How、Why 后，AI 辅助稿件别再没有署名和方法说明</title>
+      <link>https://www.yilukaige.com/news/google-who-how-why-ai-assisted-content.html</link>
+      <guid>https://www.yilukaige.com/news/google-who-how-why-ai-assisted-content.html</guid>
+      <pubDate>Mon, 01 Jun 2026 09:18:00 +0800</pubDate>
+      <description>Google 在 people-first 文档里单独提出用 Who、How、Why 审视内容：谁写的、怎么写的、为什么写。对于越来越多采用 AI 辅助写作的企业资讯页和知识页来说，署名、方法说明与使用边界会变得越来越关键。</description>
+    </item>
     <item>
       <title>Google 明说别为字数和“显新”而写后，行业资讯日更更要做增量判断</title>
       <link>https://www.yilukaige.com/news/google-people-first-newsroom-ai-content.html</link>
@@ -139,13 +146,6 @@
       <guid>https://www.yilukaige.com/news/google-ai-features-indexable-snippet-pages.html</guid>
       <pubDate>Sun, 31 May 2026 09:00:00 +0800</pubDate>
       <description>Google 已经把方向说得很清楚：想进入 AI Overviews 和 AI Mode，不是先找新的神秘标签，而是先把官网做成搜索系统愿意抓、能理解、能摘录、能继续探索的页面集合。</description>
-    </item>
-    <item>
-      <title>Google AI Mode 引入 Deep Search 后，B2B 官网为什么要像“研究备忘录”</title>
-      <link>https://www.yilukaige.com/news/google-ai-mode-deep-search-b2b-content.html</link>
-      <guid>https://www.yilukaige.com/news/google-ai-mode-deep-search-b2b-content.html</guid>
-      <pubDate>Fri, 29 May 2026 09:30:00 +0800</pubDate>
-      <description>Google 在 AI Mode 中加入 Deep Search，意味着复杂 B2B 问题会被拆成更多检索与推理步骤。企业官网需要把观点、证据、对比和结论整理成更容易被多轮引用的专题页，而不是只停留在一句服务口号。</description>
     </item>
   </channel>
 </rss>
