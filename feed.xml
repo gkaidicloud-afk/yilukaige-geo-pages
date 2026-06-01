@@ -6,7 +6,14 @@
     <atom:link href="https://www.yilukaige.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>一路凯歌围绕 GEO、AI 搜索、品牌知识资产、GA4 数据化衡量和 AI 流量归因的文章更新。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 31 May 2026 09:18:00 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 01 Jun 2026 09:00:00 +0800</lastBuildDate>
+    <item>
+      <title>Google 说重复页会降低主页面抓取效率后，城市服务页别再整站复制</title>
+      <link>https://www.yilukaige.com/news/google-canonical-city-pages-ai-source.html</link>
+      <guid>https://www.yilukaige.com/news/google-canonical-city-pages-ai-source.html</guid>
+      <pubDate>Mon, 01 Jun 2026 09:00:00 +0800</pubDate>
+      <description>Google 关于 canonical 的说明再次提醒企业：当多组页面主内容几乎相同，系统会自己挑一个代表页，其他重复页抓取得更少。对 GEO 而言，城市页、行业页和服务页不能只靠替换地名批量生成。</description>
+    </item>
     <item>
       <title>火山方舟网页解析能读取 PDF、PPT 和表格后，企业白皮书别只留一张长图封面</title>
       <link>https://www.yilukaige.com/news/volcengine-web-parser-multiformat-source-pages.html</link>
@@ -139,13 +146,6 @@
       <guid>https://www.yilukaige.com/news/volcengine-ark-public-private-knowledge.html</guid>
       <pubDate>Fri, 29 May 2026 09:30:00 +0800</pubDate>
       <description>火山方舟官方文档展示了网页搜索插件、知识库插件和 Bot 模式的并列能力。企业如果既想争取豆包生态里的公开可见性，又想服务内部智能体，就要把官网公开知识和私域知识库分开维护、统一命名。</description>
-    </item>
-    <item>
-      <title>GA4 文档提醒 UTM 缺失会丢来源，AI 搜索流量分析别让跳转链路把数据吃掉</title>
-      <link>https://www.yilukaige.com/news/ga4-ai-traffic-utm-direct-loss.html</link>
-      <guid>https://www.yilukaige.com/news/ga4-ai-traffic-utm-direct-loss.html</guid>
-      <pubDate>Fri, 29 May 2026 09:30:00 +0800</pubDate>
-      <description>Google Analytics 官方帮助文档反复提醒，若依赖短链或中间跳转且未保留 UTM，流量可能被错误归入 direct 或错误来源。企业要复盘 AI 搜索带来的访问与线索，必须先修正跳转、标记和渠道口径。</description>
     </item>
   </channel>
 </rss>
