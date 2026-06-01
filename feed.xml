@@ -6,7 +6,14 @@
     <atom:link href="https://www.yilukaige.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>一路凯歌围绕 GEO、AI 搜索、品牌知识资产、GA4 数据化衡量和 AI 流量归因的文章更新。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Mon, 01 Jun 2026 09:12:00 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 01 Jun 2026 09:14:00 +0800</lastBuildDate>
+    <item>
+      <title>腾讯元宝支持指定时间范围和分钟级更新后，企业公告页别再去掉发布日期</title>
+      <link>https://www.yilukaige.com/news/tencent-yuanbao-time-range-update-pages.html</link>
+      <guid>https://www.yilukaige.com/news/tencent-yuanbao-time-range-update-pages.html</guid>
+      <pubDate>Mon, 01 Jun 2026 09:14:00 +0800</pubDate>
+      <description>腾讯联网搜索 API 已把指定时间范围检索和分钟级更新写进产品能力页。对品牌官网来说，这意味着公告、资讯、版本更新和活动页更需要保留发布日期、更新时间和原始出处，否则就算内容被抓到，也不容易在时效性问题里获得优先采用。</description>
+    </item>
     <item>
       <title>通义千问建议搜索、抽取、计算一起开后，长页面要兼顾“能搜、能抽、能算”</title>
       <link>https://www.yilukaige.com/news/qwen-web-search-extractor-code-pages.html</link>
@@ -139,13 +146,6 @@
       <guid>https://www.yilukaige.com/news/google-search-live-voice-answer-design.html</guid>
       <pubDate>Fri, 29 May 2026 09:30:00 +0800</pubDate>
       <description>Google 把 Search Live 带入 AI Mode 后，搜索不再只发生在键盘输入里。企业官网如果希望被语音问答场景引用，正文需要更短句、更清晰，并提前准备适合被直接朗读的答案层。</description>
-    </item>
-    <item>
-      <title>ChatGPT Search 会改写查询并结合位置，企业本地页别再只写一句品牌介绍</title>
-      <link>https://www.yilukaige.com/news/chatgpt-search-query-rewrite-location-pages.html</link>
-      <guid>https://www.yilukaige.com/news/chatgpt-search-query-rewrite-location-pages.html</guid>
-      <pubDate>Fri, 29 May 2026 09:30:00 +0800</pubDate>
-      <description>OpenAI 帮助文档提到，ChatGPT Search 会结合用户位置、历史上下文，并在必要时改写查询。这意味着企业如果想覆盖本地和场景化问答，页面需要把城市、服务边界和真实问题说完整。</description>
     </item>
   </channel>
 </rss>
