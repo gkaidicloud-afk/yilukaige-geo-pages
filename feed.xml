@@ -6,7 +6,14 @@
     <atom:link href="https://www.yilukaige.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>一路凯歌围绕 GEO、AI 搜索、品牌知识资产、GA4 数据化衡量和 AI 流量归因的文章更新。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Mon, 01 Jun 2026 09:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 01 Jun 2026 09:02:00 +0800</lastBuildDate>
+    <item>
+      <title>Google 支持给 PDF 和 Word 返回 canonical 后，白皮书下载页要有唯一主版本</title>
+      <link>https://www.yilukaige.com/news/google-pdf-canonical-whitepaper-files.html</link>
+      <guid>https://www.yilukaige.com/news/google-pdf-canonical-whitepaper-files.html</guid>
+      <pubDate>Mon, 01 Jun 2026 09:02:00 +0800</pubDate>
+      <description>Google 公开说明，非 HTML 文件也可以通过 `rel=&quot;canonical&quot;` HTTP 头声明主版本。企业白皮书如果同时存在 PDF、Word、网页摘要和销售附件，就应该先定义哪一个 URL 才是最适合搜索与 AI 引用的标准页。</description>
+    </item>
     <item>
       <title>Google 说重复页会降低主页面抓取效率后，城市服务页别再整站复制</title>
       <link>https://www.yilukaige.com/news/google-canonical-city-pages-ai-source.html</link>
@@ -139,13 +146,6 @@
       <guid>https://www.yilukaige.com/news/tencent-yuanbao-web-search-source-pages.html</guid>
       <pubDate>Fri, 29 May 2026 09:30:00 +0800</pubDate>
       <description>腾讯云 Web Search API 官方页面强调可指定网址、时间范围和语言，还提到分钟级更新。对企业官网来说，这意味着资讯页、公告页和专题页应更明确地保留时间、版本与来源说明，方便被检索系统判断新旧和可信度。</description>
-    </item>
-    <item>
-      <title>火山方舟把联网插件和知识库插件并列后，品牌官网与私域知识库更该分层维护</title>
-      <link>https://www.yilukaige.com/news/volcengine-ark-public-private-knowledge.html</link>
-      <guid>https://www.yilukaige.com/news/volcengine-ark-public-private-knowledge.html</guid>
-      <pubDate>Fri, 29 May 2026 09:30:00 +0800</pubDate>
-      <description>火山方舟官方文档展示了网页搜索插件、知识库插件和 Bot 模式的并列能力。企业如果既想争取豆包生态里的公开可见性，又想服务内部智能体，就要把官网公开知识和私域知识库分开维护、统一命名。</description>
     </item>
   </channel>
 </rss>
