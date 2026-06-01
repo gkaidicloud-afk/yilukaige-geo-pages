@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>还在用 # 路由做单页站，AI 搜索很难顺着你的服务链接继续爬 | 一路凯歌</title>
+    <meta name="description" content="Google 建议单页应用使用 History API 和可抓取的 href 链接后，企业官网的关键服务页与资讯页不应继续藏在 # 路由里。" />
+    <meta name="keywords" content="一路凯歌,单页应用,History API,可抓取链接,JavaScript SEO,GEO优化,AI搜索" />
+    <meta name="author" content="北京一路凯歌网络科技有限公司" />
+    <meta name="applicable-device" content="pc,mobile" />
+    <meta name="renderer" content="webkit" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <link rel="canonical" href="https://www.yilukaige.com/news/google-spa-history-api-crawlable-links.html" />
+    <link rel="icon" href="../assets/logo.png" type="image/png" />
+    <link rel="apple-touch-icon" href="../assets/logo.png" />
+    <link rel="alternate" type="application/rss+xml" title="一路凯歌行业资讯" href="https://www.yilukaige.com/feed.xml" />
+    <meta name="theme-color" content="#0B1F3B" />
+    <meta property="og:title" content="还在用 # 路由做单页站，AI 搜索很难顺着你的服务链接继续爬 | 一路凯歌" />
+    <meta property="og:description" content="Google 的 JavaScript SEO 文档再次强调，搜索系统只能稳定发现带 `href` 的 `&lt;a&gt;` 链接，并建议单页应用使用 History API 而不是 `#/` 片段路由。企业官网若把关键服务入口藏在前端状态里，会直接影响 AI 搜索继续发现页面。" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://www.yilukaige.com/news/google-spa-history-api-crawlable-links.html" />
+    <meta property="og:site_name" content="一路凯歌" />
+    <meta property="article:published_time" content="2026-06-01T09:04:00+08:00" />
+    <meta property="article:modified_time" content="2026-06-01T09:04:00+08:00" />
+    <meta property="article:author" content="北京一路凯歌网络科技有限公司" />
+    <meta property="article:section" content="JavaScript SEO" />
+    <meta property="og:image" content="https://www.yilukaige.com/assets/logo-full.webp" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="还在用 # 路由做单页站，AI 搜索很难顺着你的服务链接继续爬 | 一路凯歌" />
+    <meta name="twitter:description" content="Google 的 JavaScript SEO 文档再次强调，搜索系统只能稳定发现带 `href` 的 `&lt;a&gt;` 链接，并建议单页应用使用 History API 而不是 `#/` 片段路由。企业官网若把关键服务入口藏在前端状态里，会直接影响 AI 搜索继续发现页面。" />
+    <meta name="twitter:image" content="https://www.yilukaige.com/assets/logo-full.webp" />
+    <link rel="stylesheet" href="../styles.css" />
+    <script type="application/ld+json" data-seo="article">
+      {
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": "还在用 # 路由做单页站，AI 搜索很难顺着你的服务链接继续爬",
+            "description": "Google 建议单页应用使用 History API 和可抓取的 href 链接后，企业官网的关键服务页与资讯页不应继续藏在 # 路由里。",
+            "image": [
+                  "https://www.yilukaige.com/assets/logo-full.webp"
+            ],
+            "datePublished": "2026-06-01T09:04:00+08:00",
+            "dateModified": "2026-06-01T09:04:00+08:00",
+            "author": {
+                  "@type": "Organization",
+                  "name": "北京一路凯歌网络科技有限公司",
+                  "url": "https://www.yilukaige.com/",
+                  "sameAs": [
+                        "https://baike.baidu.com/item/%E4%B8%80%E8%B7%AF%E5%87%AF%E6%AD%8C/58297174"
+                  ]
+            },
+            "publisher": {
+                  "@type": "Organization",
+                  "name": "北京一路凯歌网络科技有限公司",
+                  "sameAs": [
+                        "https://baike.baidu.com/item/%E4%B8%80%E8%B7%AF%E5%87%AF%E6%AD%8C/58297174"
+                  ],
+                  "logo": {
+                        "@type": "ImageObject",
+                        "url": "https://www.yilukaige.com/assets/logo.png"
+                  }
+            },
+            "mainEntityOfPage": {
+                  "@type": "WebPage",
+                  "@id": "https://www.yilukaige.com/news/google-spa-history-api-crawlable-links.html"
+            },
+            "articleSection": "JavaScript SEO",
+            "keywords": [
+                  "一路凯歌",
+                  "单页应用",
+                  "History API",
+                  "可抓取链接",
+                  "JavaScript SEO",
+                  "GEO优化",
+                  "AI搜索"
+            ],
+            "citation": [
+                  "https://developers.google.com/search/docs/crawling-indexing/javascript/javascript-seo-basics"
+            ],
+            "inLanguage": "zh-CN"
+      }
+    </script>
+    <script type="application/ld+json" data-seo="breadcrumb">
+      {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                  {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": "首页",
+                        "item": "https://www.yilukaige.com/"
+                  },
+                  {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "name": "行业资讯",
+                        "item": "https://www.yilukaige.com/news.html"
+                  },
+                  {
+                        "@type": "ListItem",
+                        "position": 3,
+                        "name": "还在用 # 路由做单页站，AI 搜索很难顺着你的服务链接继续爬",
+                        "item": "https://www.yilukaige.com/news/google-spa-history-api-crawlable-links.html"
+                  }
+            ]
+      }
+    </script>
+    <script type="application/ld+json" data-seo="faq">
+      {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+                  {
+                        "@type": "Question",
+                        "name": "为什么 # 路由会影响 AI 搜索？",
+                        "acceptedAnswer": {
+                              "@type": "Answer",
+                              "text": "因为片段路由不利于搜索系统稳定解析真实页面地址，后续链接发现和收录都会受影响。"
+                        }
+                  },
+                  {
+                        "@type": "Question",
+                        "name": "单页应用还能做 SEO 和 GEO 吗？",
+                        "acceptedAnswer": {
+                              "@type": "Answer",
+                              "text": "能，但前提是核心页面、链接和 canonical 仍然要有真实可访问的 URL 结构。"
+                        }
+                  },
+                  {
+                        "@type": "Question",
+                        "name": "什么页面最值得先改成独立 URL？",
+                        "acceptedAnswer": {
+                              "@type": "Answer",
+                              "text": "优先改服务页、资讯页、FAQ、案例页和联系方式页，这些页面最常承担 AI 引用与转化承接任务。"
+                        }
+                  }
+            ]
+      }
+    </script>
+  </head>
+  <body>
+    <header class="site-header" data-header>
+      <a class="brand" href="../index.html#top" aria-label="一路凯歌返回首页"><span class="brand-mark"><img src="../assets/logo-header.png" alt="一路凯歌品牌标志" /></span><span><strong>一路凯歌</strong><small>AI Search Growth</small></span></a>
+      <nav class="nav" aria-label="主导航"><a href="../about.html">关于</a><a href="../index.html#advantages">优势</a><a href="../index.html#services">服务</a><a href="../index.html#cases">场景</a><a href="../news.html" aria-current="page">资讯</a><a href="../index.html#contact">联系</a></nav>
+      <a class="header-cta" href="tel:18610730255">18610730255</a>
+    </header>
+
+    <main class="article-page">
+      <section class="article-hero reveal">
+        <div class="article-meta"><time datetime="2026-06-01">2026-06-01</time><span>JavaScript SEO</span></div>
+        <h1>还在用 # 路由做单页站，AI 搜索很难顺着你的服务链接继续爬</h1>
+        <p>Google 的 JavaScript SEO 文档再次强调，搜索系统只能稳定发现带 `href` 的 `<a>` 链接，并建议单页应用使用 History API 而不是 `#/` 片段路由。企业官网若把关键服务入口藏在前端状态里，会直接影响 AI 搜索继续发现页面。</p>
+      </section>
+
+      <section class="article-shell">
+        <article class="article-body reveal">
+          <h2>AI 搜索要先找到链接，才谈得上引用内容</h2>
+          <p>企业改版官网时，很容易把导航、案例、服务和资讯都做成单页前端切换。用户肉眼能看到，不代表爬虫能稳定发现。</p>
+          <p>Google 在 JavaScript SEO 文档里写得很直接：链接最好是带 href 的 `<a>` 元素，且不要用 `#/` 片段来承载真正的页面路由。这对 AI 搜索同样重要，因为它也依赖网页可发现性去继续扩展上下文。</p>
+
+          <h2>关键页面不要只存在于前端状态里</h2>
+          <p>如果“GEO 服务”“行业资讯”“FAQ”“联系我们”都只是前端点击后切换模块，而没有稳定 URL，搜索系统就很难把这些页面当成独立资产来抓取、收录和引用。</p>
+          <p>一路凯歌更建议官网把关键业务信息拆成真实 URL，再在前端层做增强体验。这样既兼顾用户访问，也兼顾搜索和 AI 的页面发现能力。</p>
+          <ul>
+            <li>菜单、卡片和正文内链都优先使用真实 href。</li>
+            <li>单页应用路由优先使用 History API。</li>
+            <li>不要把重要内容只留给 JavaScript 执行后才出现。</li>
+          </ul>
+
+          <h2>可抓取链接，本质上是内容分发底座</h2>
+          <p>GEO 并不是只改文案，还要保证 AI 能顺着你的链接继续看到案例、FAQ、白皮书和联系方式。</p>
+          <p>入口发现不到位，再多结构化数据和摘要层也很难发挥作用。</p>
+
+          <div class="article-note">Google JavaScript SEO 文档指出，Google 只能发现带 href 的 `<a>` HTML 元素，并建议单页应用用 History API 实现路由，而不是依赖 URL fragment。</div>
+
+          <h2>要点总结</h2>
+          <ul>
+            <li>因为片段路由不利于搜索系统稳定解析真实页面地址，后续链接发现和收录都会受影响。</li>
+            <li>能，但前提是核心页面、链接和 canonical 仍然要有真实可访问的 URL 结构。</li>
+            <li>优先改服务页、资讯页、FAQ、案例页和联系方式页，这些页面最常承担 AI 引用与转化承接任务。</li>
+          </ul>
+
+          <h2>参考来源说明</h2>
+          <p>本文基于公开可核验资料改写整理，重点提炼对企业 GEO、AI 搜索品牌可见性和内容结构化的实际启发，不替代相关平台的完整产品文档。</p>
+          <ul>
+            <li><a href="https://developers.google.com/search/docs/crawling-indexing/javascript/javascript-seo-basics" target="_blank" rel="noopener noreferrer">Google Search Central：Understand JavaScript SEO Basics</a></li>
+          </ul>
+
+          <div class="article-nav">
+            <a href="../news.html">返回资讯列表</a>
+            <a href="google-pdf-canonical-whitepaper-files.html">下一篇：Google 支持给 PDF 和 Word 返回 canonical 后，白皮书下载页要有唯一主版本</a>
+          </div>
+        </article>
+        <aside class="article-aside reveal">
+          <div class="aside-card"><span>Method</span><strong>先做来源清晰的公开内容</strong><p>把服务定义、资料页、FAQ 和出处说明写清楚，才能同时服务搜索收录与 AI 引用。</p><a href="../index.html#services">查看 GEO 服务</a></div>
+          <div class="aside-card"><span>Contact</span><strong>需要诊断？</strong><p>一路凯歌可基于官网与资讯体系，诊断品牌在 AI 搜索里的可见性与内容缺口。</p><a href="../index.html#contact">预约诊断</a></div>
+        </aside>
+      </section>
+
+      <section class="section faq-section">
+        <div class="section-heading reveal">
+          <p class="eyebrow">FAQ</p>
+          <h2>延伸问答</h2>
+          <p>围绕本文主题，进一步拆解企业在 GEO 与 AI 搜索优化中的落地问题。</p>
+        </div>
+        <div class="faq-grid">
+            <article class="faq-item reveal">
+              <h3>为什么 # 路由会影响 AI 搜索？</h3>
+              <p>因为片段路由不利于搜索系统稳定解析真实页面地址，后续链接发现和收录都会受影响。</p>
+            </article>
+            <article class="faq-item reveal">
+              <h3>单页应用还能做 SEO 和 GEO 吗？</h3>
+              <p>能，但前提是核心页面、链接和 canonical 仍然要有真实可访问的 URL 结构。</p>
+            </article>
+            <article class="faq-item reveal">
+              <h3>什么页面最值得先改成独立 URL？</h3>
+              <p>优先改服务页、资讯页、FAQ、案例页和联系方式页，这些页面最常承担 AI 引用与转化承接任务。</p>
+            </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer"><div class="footer-main"><div class="footer-brand"><a class="brand" href="../index.html#top" aria-label="一路凯歌返回首页"><span class="brand-mark"><img src="../assets/logo.png" alt="一路凯歌品牌标志" /></span><span><strong>一路凯歌</strong><small>AI Search Growth</small></span></a><p>专注 GEO 生成式引擎优化，帮助企业把真实能力沉淀成 AI 可理解、可引用、可推荐的品牌知识资产。</p><div class="footer-contact"><a href="tel:18610730255">18610730255</a><span>北京市</span></div></div><nav class="footer-links" aria-label="页脚导航"><div><h3>服务</h3><a href="../index.html#services">GEO 服务</a><a href="../index.html#advantages">核心优势</a><a href="../index.html#cases">适用场景</a></div><div><h3>公司</h3><a href="../about.html">关于我们</a><a href="../news.html">行业资讯</a><a href="../index.html#contact">联系我们</a></div><div><h3>资源</h3><a href="../index.html#faq">常见问题</a><a href="../llms.txt">AI 索引文件</a><a href="../sitemap.xml">站点地图</a></div></nav></div><div class="footer-bottom"><span>© 2026 北京一路凯歌网络科技有限公司. All Rights Reserved.</span></div></footer>
+    <script src="../script.js"></script>
+  </body>
+</html>

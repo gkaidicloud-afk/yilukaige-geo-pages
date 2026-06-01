@@ -6,7 +6,14 @@
     <atom:link href="https://www.yilukaige.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>一路凯歌围绕 GEO、AI 搜索、品牌知识资产、GA4 数据化衡量和 AI 流量归因的文章更新。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Mon, 01 Jun 2026 09:02:00 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 01 Jun 2026 09:04:00 +0800</lastBuildDate>
+    <item>
+      <title>还在用 # 路由做单页站，AI 搜索很难顺着你的服务链接继续爬</title>
+      <link>https://www.yilukaige.com/news/google-spa-history-api-crawlable-links.html</link>
+      <guid>https://www.yilukaige.com/news/google-spa-history-api-crawlable-links.html</guid>
+      <pubDate>Mon, 01 Jun 2026 09:04:00 +0800</pubDate>
+      <description>Google 的 JavaScript SEO 文档再次强调，搜索系统只能稳定发现带 `href` 的 `&lt;a&gt;` 链接，并建议单页应用使用 History API 而不是 `#/` 片段路由。企业官网若把关键服务入口藏在前端状态里，会直接影响 AI 搜索继续发现页面。</description>
+    </item>
     <item>
       <title>Google 支持给 PDF 和 Word 返回 canonical 后，白皮书下载页要有唯一主版本</title>
       <link>https://www.yilukaige.com/news/google-pdf-canonical-whitepaper-files.html</link>
@@ -139,13 +146,6 @@
       <guid>https://www.yilukaige.com/news/qwen-api-compatible-tool-content-layer.html</guid>
       <pubDate>Fri, 29 May 2026 09:30:00 +0800</pubDate>
       <description>阿里云百炼和通义千问 API 参考显示，平台同时支持 OpenAI 兼容接口、Responses API 与多类内置工具。企业如果想让内容既服务收录又服务智能体调用，官网表达也要分层。</description>
-    </item>
-    <item>
-      <title>腾讯联网搜索支持指定网址与时间范围后，企业更新页要学会保留日期、版本和原始出处</title>
-      <link>https://www.yilukaige.com/news/tencent-yuanbao-web-search-source-pages.html</link>
-      <guid>https://www.yilukaige.com/news/tencent-yuanbao-web-search-source-pages.html</guid>
-      <pubDate>Fri, 29 May 2026 09:30:00 +0800</pubDate>
-      <description>腾讯云 Web Search API 官方页面强调可指定网址、时间范围和语言，还提到分钟级更新。对企业官网来说，这意味着资讯页、公告页和专题页应更明确地保留时间、版本与来源说明，方便被检索系统判断新旧和可信度。</description>
     </item>
   </channel>
 </rss>
