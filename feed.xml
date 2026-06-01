@@ -6,7 +6,14 @@
     <atom:link href="https://www.yilukaige.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>一路凯歌围绕 GEO、AI 搜索、品牌知识资产、GA4 数据化衡量和 AI 流量归因的文章更新。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Mon, 01 Jun 2026 09:10:00 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 01 Jun 2026 09:12:00 +0800</lastBuildDate>
+    <item>
+      <title>通义千问建议搜索、抽取、计算一起开后，长页面要兼顾“能搜、能抽、能算”</title>
+      <link>https://www.yilukaige.com/news/qwen-web-search-extractor-code-pages.html</link>
+      <guid>https://www.yilukaige.com/news/qwen-web-search-extractor-code-pages.html</guid>
+      <pubDate>Mon, 01 Jun 2026 09:12:00 +0800</pubDate>
+      <description>阿里云百炼在联网搜索文档里明确建议，Responses API 下最好同时开启 `web_search`、`web_extractor` 和 `code_interpreter`。这说明未来被模型调用的页面，不仅要能被搜到，还要能被稳定抽取文本、再被拿去做比较或计算。</description>
+    </item>
     <item>
       <title>ChatGPT Enterprise 会展示 Sources 后，品牌页面要把作者、日期和图片出处写完整</title>
       <link>https://www.yilukaige.com/news/chatgpt-enterprise-sources-bing-governance.html</link>
@@ -139,13 +146,6 @@
       <guid>https://www.yilukaige.com/news/chatgpt-search-query-rewrite-location-pages.html</guid>
       <pubDate>Fri, 29 May 2026 09:30:00 +0800</pubDate>
       <description>OpenAI 帮助文档提到，ChatGPT Search 会结合用户位置、历史上下文，并在必要时改写查询。这意味着企业如果想覆盖本地和场景化问答，页面需要把城市、服务边界和真实问题说完整。</description>
-    </item>
-    <item>
-      <title>DeepSeek 文档写明模型切换时间后，企业内容接口要先于模型迁移完成标准化</title>
-      <link>https://www.yilukaige.com/news/deepseek-model-migration-content-contract.html</link>
-      <guid>https://www.yilukaige.com/news/deepseek-model-migration-content-contract.html</guid>
-      <pubDate>Fri, 29 May 2026 09:30:00 +0800</pubDate>
-      <description>DeepSeek 官方文档已经给出 `deepseek-chat` 和 `deepseek-reasoner` 的弃用时间窗口。对企业来说，先统一内容字段、FAQ 结构和页面命名，比急着追逐模型版本更重要。</description>
     </item>
   </channel>
 </rss>
