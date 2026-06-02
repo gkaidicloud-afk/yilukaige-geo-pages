@@ -6,7 +6,14 @@
     <atom:link href="https://www.yilukaige.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>一路凯歌围绕 GEO、AI 搜索、品牌知识资产、GA4 数据化衡量和 AI 流量归因的文章更新。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Mon, 01 Jun 2026 09:18:00 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 02 Jun 2026 09:00:00 +0800</lastBuildDate>
+    <item>
+      <title>Google 说 AI 搜索仍看重独特价值后，B2B 页面别再用“定义大全”互相改写</title>
+      <link>https://www.yilukaige.com/news/google-ai-search-unique-value-b2b-pages.html</link>
+      <guid>https://www.yilukaige.com/news/google-ai-search-unique-value-b2b-pages.html</guid>
+      <pubDate>Tue, 02 Jun 2026 09:00:00 +0800</pubDate>
+      <description>Google 在 AI 搜索实践文档里强调独特、非商品化价值后，B2B 官网就更不该把同类定义、趋势复述和空泛方法页反复改写成多篇文章。真正更容易被 AI 采用的，是带有一手判断、边界条件和实际证据的页面。</description>
+    </item>
     <item>
       <title>Google 要求想清楚内容的 Who、How、Why 后，AI 辅助稿件别再没有署名和方法说明</title>
       <link>https://www.yilukaige.com/news/google-who-how-why-ai-assisted-content.html</link>
@@ -139,13 +146,6 @@
       <guid>https://www.yilukaige.com/news/ga4-ai-traffic-source-scopes.html</guid>
       <pubDate>Sun, 31 May 2026 09:02:00 +0800</pubDate>
       <description>AI 搜索带来的客户路径经常不是“点一下就成交”，而是先被问答种草，再多次回访，再在别的会话里转化。如果你的报表只看一个 source/medium，很容易把这条路看扁。</description>
-    </item>
-    <item>
-      <title>Google 说 AI Mode 不要额外标记后，企业更该先拿到“可索引、可摘要、可内链”的基础资格</title>
-      <link>https://www.yilukaige.com/news/google-ai-features-indexable-snippet-pages.html</link>
-      <guid>https://www.yilukaige.com/news/google-ai-features-indexable-snippet-pages.html</guid>
-      <pubDate>Sun, 31 May 2026 09:00:00 +0800</pubDate>
-      <description>Google 已经把方向说得很清楚：想进入 AI Overviews 和 AI Mode，不是先找新的神秘标签，而是先把官网做成搜索系统愿意抓、能理解、能摘录、能继续探索的页面集合。</description>
     </item>
   </channel>
 </rss>
