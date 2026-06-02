@@ -6,7 +6,14 @@
     <atom:link href="https://www.yilukaige.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>一路凯歌围绕 GEO、AI 搜索、品牌知识资产、GA4 数据化衡量和 AI 流量归因的文章更新。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Tue, 02 Jun 2026 09:16:00 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 02 Jun 2026 09:18:00 +0800</lastBuildDate>
+    <item>
+      <title>腾讯元宝强调权威时效信源后，企业公告和政策解读页要保留原始出处链</title>
+      <link>https://www.yilukaige.com/news/yuanbao-authoritative-timely-sources-pages.html</link>
+      <guid>https://www.yilukaige.com/news/yuanbao-authoritative-timely-sources-pages.html</guid>
+      <pubDate>Tue, 02 Jun 2026 09:18:00 +0800</pubDate>
+      <description>腾讯联网搜索 API 产品页把权威信源、时效更新和内容质量放在同一套能力表述里。对企业官网来说，这意味着公告、政策解读、版本说明和活动通知页不仅要写日期，还要保留原始出处、引用链和更新说明，方便中文 AI 问答入口判断可信度。</description>
+    </item>
     <item>
       <title>火山方舟支持 batch-to-pipeline 和 re-process 后，FAQ 改版可以先小范围验证再全量同步</title>
       <link>https://www.yilukaige.com/news/volcengine-batch-pipeline-faq-rollout.html</link>
@@ -139,13 +146,6 @@
       <guid>https://www.yilukaige.com/news/google-canonical-city-pages-ai-source.html</guid>
       <pubDate>Mon, 01 Jun 2026 09:00:00 +0800</pubDate>
       <description>Google 关于 canonical 的说明再次提醒企业：当多组页面主内容几乎相同，系统会自己挑一个代表页，其他重复页抓取得更少。对 GEO 而言，城市页、行业页和服务页不能只靠替换地名批量生成。</description>
-    </item>
-    <item>
-      <title>火山方舟网页解析能读取 PDF、PPT 和表格后，企业白皮书别只留一张长图封面</title>
-      <link>https://www.yilukaige.com/news/volcengine-web-parser-multiformat-source-pages.html</link>
-      <guid>https://www.yilukaige.com/news/volcengine-web-parser-multiformat-source-pages.html</guid>
-      <pubDate>Sun, 31 May 2026 09:18:00 +0800</pubDate>
-      <description>火山方舟网页解析插件文档说明，它可读取网页、PDF、PPT、表格等多种在线文件。对企业来说，这意味着白皮书、方案书和案例材料不能只做图片化展示，至少要保留可访问、可解析、可引用的正文版本。</description>
     </item>
   </channel>
 </rss>
