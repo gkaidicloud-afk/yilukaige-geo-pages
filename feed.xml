@@ -6,7 +6,14 @@
     <atom:link href="https://www.yilukaige.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>一路凯歌围绕 GEO、AI 搜索、品牌知识资产、GA4 数据化衡量和 AI 流量归因的文章更新。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Tue, 02 Jun 2026 09:08:00 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 02 Jun 2026 09:10:00 +0800</lastBuildDate>
+    <item>
+      <title>Kimi K2.5 思考模式暂不兼容联网搜索后，品牌问答页要把“推理素材”和“实时事实”分层</title>
+      <link>https://www.yilukaige.com/news/kimi-thinking-web-search-layered-content.html</link>
+      <guid>https://www.yilukaige.com/news/kimi-thinking-web-search-layered-content.html</guid>
+      <pubDate>Tue, 02 Jun 2026 09:10:00 +0800</pubDate>
+      <description>Moonshot 官方文档说明，Kimi K2.5 的 `web_search` 目前不兼容 thinking 模式。这个边界对品牌官网的启发很直接：那些需要稳定推理的定义、比较逻辑和边界条件，最好先放在站内公开内容里；实时数据和外部事实则作为补充层管理。</description>
+    </item>
     <item>
       <title>通义千问把联网搜索支持模型列得更细后，企业别把“能联网”当成所有模型通用能力</title>
       <link>https://www.yilukaige.com/news/qwen-web-search-model-compatibility-pages.html</link>
@@ -139,13 +146,6 @@
       <guid>https://www.yilukaige.com/news/chatgpt-shopping-attribute-comparison-pages.html</guid>
       <pubDate>Sun, 31 May 2026 09:12:00 +0800</pubDate>
       <description>OpenAI 宣布 ChatGPT Search 中的购物结果会结合结构化商品数据、价格、评价和用户偏好。即便是 B2B 官网，也应把方案属性、适用对象、交付方式和边界条件写成可比较字段，而不是只留一段口号式介绍。</description>
-    </item>
-    <item>
-      <title>Search Console 解释 AI Mode 统计口径后，企业别再把 AI 可见性理解成单一排名</title>
-      <link>https://www.yilukaige.com/news/google-search-console-ai-mode-position.html</link>
-      <guid>https://www.yilukaige.com/news/google-search-console-ai-mode-position.html</guid>
-      <pubDate>Sun, 31 May 2026 09:10:00 +0800</pubDate>
-      <description>很多团队一听到 GEO，就急着问“我们在 AI 里排第几”。Google 现在给出的公开口径，反而提醒大家少问这种问题，因为 AI Mode 的可见性并不是一条传统蓝链的排位游戏。</description>
     </item>
   </channel>
 </rss>
