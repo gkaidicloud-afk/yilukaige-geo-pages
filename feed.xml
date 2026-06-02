@@ -6,7 +6,14 @@
     <atom:link href="https://www.yilukaige.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>一路凯歌围绕 GEO、AI 搜索、品牌知识资产、GA4 数据化衡量和 AI 流量归因的文章更新。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Tue, 02 Jun 2026 09:04:00 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 02 Jun 2026 09:06:00 +0800</lastBuildDate>
+    <item>
+      <title>DeepSeek 要求 JSON Output 输出有效 JSON 后，服务页和 FAQ 更适合先做字段化</title>
+      <link>https://www.yilukaige.com/news/deepseek-json-output-service-faq-fields.html</link>
+      <guid>https://www.yilukaige.com/news/deepseek-json-output-service-faq-fields.html</guid>
+      <pubDate>Tue, 02 Jun 2026 09:06:00 +0800</pubDate>
+      <description>DeepSeek 的 JSON Output 文档明确要求输出必须是有效 JSON，并建议在示例和提示里清楚给出目标结构。对企业官网来说，这再一次说明 FAQ、服务能力、交付范围和联系方式，不该只写成长段自然语言，而应先有稳定字段层。</description>
+    </item>
     <item>
       <title>DeepSeek 把 cache hit token 写进响应后，企业知识前缀终于能被量化复盘</title>
       <link>https://www.yilukaige.com/news/deepseek-cache-hit-tokens-knowledge-prefix.html</link>
@@ -139,13 +146,6 @@
       <guid>https://www.yilukaige.com/news/deepseek-context-caching-content-prefix.html</guid>
       <pubDate>Sun, 31 May 2026 09:08:00 +0800</pubDate>
       <description>DeepSeek 官方文档写得很直接：Context Caching 默认开启，重复前缀能命中缓存。对做 GEO 的企业来说，这不只是接口优化信息，更是在提醒公开知识应该怎样被组织。</description>
-    </item>
-    <item>
-      <title>OpenAI 把 SearchBot 与 GPTBot 分开后，企业官网要把“可搜索”和“可训练”权限分开管理</title>
-      <link>https://www.yilukaige.com/news/openai-crawlers-search-training-permissions.html</link>
-      <guid>https://www.yilukaige.com/news/openai-crawlers-search-training-permissions.html</guid>
-      <pubDate>Sun, 31 May 2026 09:06:00 +0800</pubDate>
-      <description>OpenAI 官方爬虫文档把用于搜索引用的 OAI-SearchBot、用于实时抓取的 ChatGPT-User 和用于训练的 GPTBot 分开说明。对企业来说，这意味着官网可以分别决定“允许被搜索引用”与“是否允许被训练使用”，不必一刀切。</description>
     </item>
   </channel>
 </rss>
