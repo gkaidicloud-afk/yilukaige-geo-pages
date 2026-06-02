@@ -1134,6 +1134,10 @@ function updateNewsPage(allArticles) {
   const listReplacement = `        <div class="article-grid">\n${cards}\n        </div>\n      </section>`;
   html = replaceSection(html, listStart, listEnd, listReplacement);
   html = html.replace(
+    /\n(?:\s*<\/section>\s*<\/div>\s*)+\s*<\/section>\n\n\s*<section class="lead-section compact-lead">/,
+    "\n      </section>\n\n      <section class=\"lead-section compact-lead\">",
+  );
+  html = html.replace(
     /<meta name="description" content="[^"]*" \/>/,
     `<meta name="description" content="${newsDescription}" />`,
   );
