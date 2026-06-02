@@ -6,7 +6,14 @@
     <atom:link href="https://www.yilukaige.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>一路凯歌围绕 GEO、AI 搜索、品牌知识资产、GA4 数据化衡量和 AI 流量归因的文章更新。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Tue, 02 Jun 2026 09:12:00 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 02 Jun 2026 09:14:00 +0800</lastBuildDate>
+    <item>
+      <title>火山方舟更新文档 meta 会自动触发索引更新后，知识标签别再只写在文件名里</title>
+      <link>https://www.yilukaige.com/news/volcengine-update-meta-knowledge-labels.html</link>
+      <guid>https://www.yilukaige.com/news/volcengine-update-meta-knowledge-labels.html</guid>
+      <pubDate>Tue, 02 Jun 2026 09:14:00 +0800</pubDate>
+      <description>火山方舟知识库 API 文档说明，调用 `update_meta` 更新文档元信息后会自动触发索引更新。这个能力对企业知识治理的启发很明确：行业、产品线、地区、版本和服务阶段等标签，最好先做成独立元数据，而不是只藏在文件名或正文里。</description>
+    </item>
     <item>
       <title>ChatGPT-User 属于用户触发访问后，报价页和试算器要分清公开链接与受控操作</title>
       <link>https://www.yilukaige.com/news/chatgpt-user-public-links-controlled-actions.html</link>
@@ -139,13 +146,6 @@
       <guid>https://www.yilukaige.com/news/volcengine-web-search-multi-query-content.html</guid>
       <pubDate>Sun, 31 May 2026 09:16:00 +0800</pubDate>
       <description>火山方舟 Web Search 插件文档提到，模型可自动发起多次搜索，并支持通过 `max_keyword_num` 调整关键词数量。对企业内容来说，这意味着同一个高意图问题要把同义表达、比较维度和结论层放在一页里，方便被多轮检索命中。</description>
-    </item>
-    <item>
-      <title>GA4 建议 UTM 成套出现后，AI 搜索流量别只写一个 utm_source</title>
-      <link>https://www.yilukaige.com/news/ga4-utm-source-platform-ai-traffic.html</link>
-      <guid>https://www.yilukaige.com/news/ga4-utm-source-platform-ai-traffic.html</guid>
-      <pubDate>Sun, 31 May 2026 09:14:00 +0800</pubDate>
-      <description>Google Analytics 手动标记文档提醒，UTM 最好成套使用，并明确列出了 `utm_source_platform`、`utm_campaign_id` 等扩展参数。企业复盘 AI 搜索流量时，如果只补一个来源名，很容易继续丢失渠道语义和后续对比口径。</description>
     </item>
   </channel>
 </rss>
