@@ -6,7 +6,14 @@
     <atom:link href="https://www.yilukaige.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>一路凯歌围绕 GEO、AI 搜索、品牌知识资产、GA4 数据化衡量和 AI 流量归因的文章更新。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Tue, 02 Jun 2026 09:02:00 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 02 Jun 2026 09:04:00 +0800</lastBuildDate>
+    <item>
+      <title>DeepSeek 把 cache hit token 写进响应后，企业知识前缀终于能被量化复盘</title>
+      <link>https://www.yilukaige.com/news/deepseek-cache-hit-tokens-knowledge-prefix.html</link>
+      <guid>https://www.yilukaige.com/news/deepseek-cache-hit-tokens-knowledge-prefix.html</guid>
+      <pubDate>Tue, 02 Jun 2026 09:04:00 +0800</pubDate>
+      <description>DeepSeek 官方文档说明开启上下文缓存后，命中和未命中的 token 会分别出现在响应体里。对企业做知识资产建设来说，这意味着那些稳定重复出现的品牌前缀、FAQ 字段和服务定义，终于可以被量化复盘，而不只是凭感觉判断是否值得保留。</description>
+    </item>
     <item>
       <title>Google 明确共享图片 URL 要稳定后，品牌图表和案例图别再每篇换地址</title>
       <link>https://www.yilukaige.com/news/google-shared-images-stable-urls-brand-assets.html</link>
@@ -139,13 +146,6 @@
       <guid>https://www.yilukaige.com/news/openai-crawlers-search-training-permissions.html</guid>
       <pubDate>Sun, 31 May 2026 09:06:00 +0800</pubDate>
       <description>OpenAI 官方爬虫文档把用于搜索引用的 OAI-SearchBot、用于实时抓取的 ChatGPT-User 和用于训练的 GPTBot 分开说明。对企业来说，这意味着官网可以分别决定“允许被搜索引用”与“是否允许被训练使用”，不必一刀切。</description>
-    </item>
-    <item>
-      <title>Google 仍用 nosnippet 控制 AI 展示后，敏感页面要先分清“可抓取”和“可引用”</title>
-      <link>https://www.yilukaige.com/news/google-ai-preview-controls-nosnippet-pages.html</link>
-      <guid>https://www.yilukaige.com/news/google-ai-preview-controls-nosnippet-pages.html</guid>
-      <pubDate>Sun, 31 May 2026 09:04:00 +0800</pubDate>
-      <description>很多企业以为页面只要允许抓取，就默认适合被 AI 摘要。Google 的最新说明恰好提醒了另一件事：抓取权限和展示权限，本来就是两套要分开管理的内容策略。</description>
     </item>
   </channel>
 </rss>
