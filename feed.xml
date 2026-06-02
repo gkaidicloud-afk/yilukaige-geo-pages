@@ -6,7 +6,14 @@
     <atom:link href="https://www.yilukaige.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>一路凯歌围绕 GEO、AI 搜索、品牌知识资产、GA4 数据化衡量和 AI 流量归因的文章更新。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Tue, 02 Jun 2026 09:10:00 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 02 Jun 2026 09:12:00 +0800</lastBuildDate>
+    <item>
+      <title>ChatGPT-User 属于用户触发访问后，报价页和试算器要分清公开链接与受控操作</title>
+      <link>https://www.yilukaige.com/news/chatgpt-user-public-links-controlled-actions.html</link>
+      <guid>https://www.yilukaige.com/news/chatgpt-user-public-links-controlled-actions.html</guid>
+      <pubDate>Tue, 02 Jun 2026 09:12:00 +0800</pubDate>
+      <description>OpenAI 的爬虫文档说明，ChatGPT-User 用于用户在产品内触发访问外部网站，它并不用于自动抓取网页做搜索索引。对企业官网来说，这意味着有些页面应该公开给用户跳转查看，但涉及登录、试算和报价动作时，仍要保留明确的受控交互边界。</description>
+    </item>
     <item>
       <title>Kimi K2.5 思考模式暂不兼容联网搜索后，品牌问答页要把“推理素材”和“实时事实”分层</title>
       <link>https://www.yilukaige.com/news/kimi-thinking-web-search-layered-content.html</link>
@@ -139,13 +146,6 @@
       <guid>https://www.yilukaige.com/news/ga4-utm-source-platform-ai-traffic.html</guid>
       <pubDate>Sun, 31 May 2026 09:14:00 +0800</pubDate>
       <description>Google Analytics 手动标记文档提醒，UTM 最好成套使用，并明确列出了 `utm_source_platform`、`utm_campaign_id` 等扩展参数。企业复盘 AI 搜索流量时，如果只补一个来源名，很容易继续丢失渠道语义和后续对比口径。</description>
-    </item>
-    <item>
-      <title>ChatGPT Shopping 开始按价格与属性做推荐后，品牌产品页要提前准备可比较字段</title>
-      <link>https://www.yilukaige.com/news/chatgpt-shopping-attribute-comparison-pages.html</link>
-      <guid>https://www.yilukaige.com/news/chatgpt-shopping-attribute-comparison-pages.html</guid>
-      <pubDate>Sun, 31 May 2026 09:12:00 +0800</pubDate>
-      <description>OpenAI 宣布 ChatGPT Search 中的购物结果会结合结构化商品数据、价格、评价和用户偏好。即便是 B2B 官网，也应把方案属性、适用对象、交付方式和边界条件写成可比较字段，而不是只留一段口号式介绍。</description>
     </item>
   </channel>
 </rss>
