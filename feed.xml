@@ -6,7 +6,14 @@
     <atom:link href="https://www.yilukaige.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>一路凯歌围绕 GEO、AI 搜索、品牌知识资产、GA4 数据化衡量和 AI 流量归因的文章更新。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Tue, 02 Jun 2026 09:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 02 Jun 2026 09:02:00 +0800</lastBuildDate>
+    <item>
+      <title>Google 明确共享图片 URL 要稳定后，品牌图表和案例图别再每篇换地址</title>
+      <link>https://www.yilukaige.com/news/google-shared-images-stable-urls-brand-assets.html</link>
+      <guid>https://www.yilukaige.com/news/google-shared-images-stable-urls-brand-assets.html</guid>
+      <pubDate>Tue, 02 Jun 2026 09:02:00 +0800</pubDate>
+      <description>Google 在图片 SEO 更新里强调，如果同一图片会在站内多处复用，应尽量使用一致的 URL。对品牌官网来说，这意味着案例图、对比图、数据图和证书图不该每发一篇文章就换一个新文件地址。</description>
+    </item>
     <item>
       <title>Google 说 AI 搜索仍看重独特价值后，B2B 页面别再用“定义大全”互相改写</title>
       <link>https://www.yilukaige.com/news/google-ai-search-unique-value-b2b-pages.html</link>
@@ -139,13 +146,6 @@
       <guid>https://www.yilukaige.com/news/google-ai-preview-controls-nosnippet-pages.html</guid>
       <pubDate>Sun, 31 May 2026 09:04:00 +0800</pubDate>
       <description>很多企业以为页面只要允许抓取，就默认适合被 AI 摘要。Google 的最新说明恰好提醒了另一件事：抓取权限和展示权限，本来就是两套要分开管理的内容策略。</description>
-    </item>
-    <item>
-      <title>GA4 流量来源有用户、会话、事件三层，AI 搜索归因别只盯一个 source/medium</title>
-      <link>https://www.yilukaige.com/news/ga4-ai-traffic-source-scopes.html</link>
-      <guid>https://www.yilukaige.com/news/ga4-ai-traffic-source-scopes.html</guid>
-      <pubDate>Sun, 31 May 2026 09:02:00 +0800</pubDate>
-      <description>AI 搜索带来的客户路径经常不是“点一下就成交”，而是先被问答种草，再多次回访，再在别的会话里转化。如果你的报表只看一个 source/medium，很容易把这条路看扁。</description>
     </item>
   </channel>
 </rss>
