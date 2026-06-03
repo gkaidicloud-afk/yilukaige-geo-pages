@@ -6,7 +6,14 @@
     <atom:link href="https://www.yilukaige.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>一路凯歌围绕 GEO、AI 搜索、品牌知识资产、GA4 数据化衡量和 AI 流量归因的文章更新。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Wed, 03 Jun 2026 12:14:00 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 03 Jun 2026 12:16:00 +0800</lastBuildDate>
+    <item>
+      <title>火山方舟 Web Search 走向工具链后，品牌内容要能被搜索、抽取再回答</title>
+      <link>https://www.yilukaige.com/news/volcengine-web-search-toolchain-extractable-pages.html</link>
+      <guid>https://www.yilukaige.com/news/volcengine-web-search-toolchain-extractable-pages.html</guid>
+      <pubDate>Wed, 03 Jun 2026 12:16:00 +0800</pubDate>
+      <description>火山方舟 Web Search 文档展示了通过 OpenAI SDK 调用工具完成“AI 思考 - 联网搜索 - 答案生成”的过程。企业官网要想进入答案，内容要先被搜索命中，再能被解析抽取。只做图片海报或长图白皮书，已经不适合企业 AI 服务时代。</description>
+    </item>
     <item>
       <title>腾讯联网搜索 API 强调权威信源后，企业政策解读页要保留原始链接</title>
       <link>https://www.yilukaige.com/news/tencent-web-search-api-authoritative-source-pages.html</link>
@@ -139,13 +146,6 @@
       <guid>https://www.yilukaige.com/news/google-who-how-why-ai-assisted-content.html</guid>
       <pubDate>Mon, 01 Jun 2026 09:18:00 +0800</pubDate>
       <description>Google 在 people-first 文档里单独提出用 Who、How、Why 审视内容：谁写的、怎么写的、为什么写。对于越来越多采用 AI 辅助写作的企业资讯页和知识页来说，署名、方法说明与使用边界会变得越来越关键。</description>
-    </item>
-    <item>
-      <title>Google 明说别为字数和“显新”而写后，行业资讯日更更要做增量判断</title>
-      <link>https://www.yilukaige.com/news/google-people-first-newsroom-ai-content.html</link>
-      <guid>https://www.yilukaige.com/news/google-people-first-newsroom-ai-content.html</guid>
-      <pubDate>Mon, 01 Jun 2026 09:16:00 +0800</pubDate>
-      <description>Google 的 people-first 内容文档再次强调，不要为了搜索访问去追逐趋势、硬凑字数或只改日期装作变新。对企业资讯日更来说，这不是反对更新，而是要求每篇都真正给目标客户新增判断、方法或边界信息。</description>
     </item>
   </channel>
 </rss>
