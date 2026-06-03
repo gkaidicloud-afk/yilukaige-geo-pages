@@ -6,7 +6,14 @@
     <atom:link href="https://www.yilukaige.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>一路凯歌围绕 GEO、AI 搜索、品牌知识资产、GA4 数据化衡量和 AI 流量归因的文章更新。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Wed, 03 Jun 2026 12:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 03 Jun 2026 12:02:00 +0800</lastBuildDate>
+    <item>
+      <title>OpenAI 提醒放行 AdsBot 和 SearchBot 后，企业落地页别被安全策略误拦</title>
+      <link>https://www.yilukaige.com/news/openai-crawlers-adsbot-searchbot-landing-pages.html</link>
+      <guid>https://www.yilukaige.com/news/openai-crawlers-adsbot-searchbot-landing-pages.html</guid>
+      <pubDate>Wed, 03 Jun 2026 12:02:00 +0800</pubDate>
+      <description>OpenAI 最新帮助文档把广告审核相关的 OAI-AdsBot、搜索引用相关的 OAI-SearchBot 以及用户触发访问场景分开说明。对企业 AI 服务官网来说，落地页如果被 robots、WAF、验证码或 CDN 规则误拦，就算内容写得再好，也可能进不了 AI 搜索与广告验证链路。</description>
+    </item>
     <item>
       <title>通义千问联网搜索支持 freshness 后，企业资讯页要保留时效标签</title>
       <link>https://www.yilukaige.com/news/qwen-freshness-enterprise-news-pages.html</link>
@@ -139,13 +146,6 @@
       <guid>https://www.yilukaige.com/news/google-spa-history-api-crawlable-links.html</guid>
       <pubDate>Mon, 01 Jun 2026 09:04:00 +0800</pubDate>
       <description>Google 的 JavaScript SEO 文档再次强调，搜索系统只能稳定发现带 `href` 的 `` 链接，并建议单页应用使用 History API 而不是 `#/` 片段路由。企业官网若把关键服务入口藏在前端状态里，会直接影响 AI 搜索继续发现页面。</description>
-    </item>
-    <item>
-      <title>Google 支持给 PDF 和 Word 返回 canonical 后，白皮书下载页要有唯一主版本</title>
-      <link>https://www.yilukaige.com/news/google-pdf-canonical-whitepaper-files.html</link>
-      <guid>https://www.yilukaige.com/news/google-pdf-canonical-whitepaper-files.html</guid>
-      <pubDate>Mon, 01 Jun 2026 09:02:00 +0800</pubDate>
-      <description>Google 公开说明，非 HTML 文件也可以通过 `rel=&quot;canonical&quot;` HTTP 头声明主版本。企业白皮书如果同时存在 PDF、Word、网页摘要和销售附件，就应该先定义哪一个 URL 才是最适合搜索与 AI 引用的标准页。</description>
     </item>
   </channel>
 </rss>

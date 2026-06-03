@@ -3,45 +3,45 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>通义千问联网搜索支持 freshness 后，企业资讯页要保留时效标签 | 一路凯歌</title>
-    <meta name="description" content="阿里云百炼联网搜索文档提到 freshness 时间范围后，企业资讯和公告页更需要保留发布日期、更新时间和原始出处。" />
-    <meta name="keywords" content="一路凯歌,通义千问,联网搜索,freshness,GEO优化,企业资讯页,AI搜索优化" />
+    <title>OpenAI 提醒放行 AdsBot 和 SearchBot 后，企业落地页别被安全策略误拦 | 一路凯歌</title>
+    <meta name="description" content="OpenAI 面向广告主和发布者的爬虫说明提示，企业落地页要分别检查 robots、CDN、人机验证和安全策略，避免关键页面被 AI 入口误拦。" />
+    <meta name="keywords" content="一路凯歌,OpenAI,OAI-AdsBot,OAI-SearchBot,落地页,GEO优化,AI搜索收录" />
     <meta name="author" content="北京一路凯歌网络科技有限公司" />
     <meta name="applicable-device" content="pc,mobile" />
     <meta name="renderer" content="webkit" />
     <meta name="format-detection" content="telephone=no" />
     <meta name="robots" content="index, follow, max-image-preview:large" />
-    <link rel="canonical" href="https://www.yilukaige.com/news/qwen-freshness-enterprise-news-pages.html" />
+    <link rel="canonical" href="https://www.yilukaige.com/news/openai-crawlers-adsbot-searchbot-landing-pages.html" />
     <link rel="icon" href="../assets/logo.png" type="image/png" />
     <link rel="apple-touch-icon" href="../assets/logo.png" />
     <link rel="alternate" type="application/rss+xml" title="一路凯歌行业资讯" href="https://www.yilukaige.com/feed.xml" />
     <meta name="theme-color" content="#0B1F3B" />
-    <meta property="og:title" content="通义千问联网搜索支持 freshness 后，企业资讯页要保留时效标签 | 一路凯歌" />
-    <meta property="og:description" content="阿里云百炼在联网搜索文档里把 freshness 时间范围写进参数说明，并建议在特定场景同时启用 web_search、web_extractor 和 code_interpreter。对企业 GEO 来说，这意味着资讯页不只是“发出来”，还要让模型能判断新旧、抽取正文并继续比较。" />
+    <meta property="og:title" content="OpenAI 提醒放行 AdsBot 和 SearchBot 后，企业落地页别被安全策略误拦 | 一路凯歌" />
+    <meta property="og:description" content="OpenAI 最新帮助文档把广告审核相关的 OAI-AdsBot、搜索引用相关的 OAI-SearchBot 以及用户触发访问场景分开说明。对企业 AI 服务官网来说，落地页如果被 robots、WAF、验证码或 CDN 规则误拦，就算内容写得再好，也可能进不了 AI 搜索与广告验证链路。" />
     <meta property="og:type" content="article" />
-    <meta property="og:url" content="https://www.yilukaige.com/news/qwen-freshness-enterprise-news-pages.html" />
+    <meta property="og:url" content="https://www.yilukaige.com/news/openai-crawlers-adsbot-searchbot-landing-pages.html" />
     <meta property="og:site_name" content="一路凯歌" />
-    <meta property="article:published_time" content="2026-06-03T12:00:00+08:00" />
-    <meta property="article:modified_time" content="2026-06-03T12:00:00+08:00" />
+    <meta property="article:published_time" content="2026-06-03T12:02:00+08:00" />
+    <meta property="article:modified_time" content="2026-06-03T12:02:00+08:00" />
     <meta property="article:author" content="北京一路凯歌网络科技有限公司" />
-    <meta property="article:section" content="通义千问" />
+    <meta property="article:section" content="OpenAI Crawlers" />
     <meta property="og:image" content="https://www.yilukaige.com/assets/logo-full.webp" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="通义千问联网搜索支持 freshness 后，企业资讯页要保留时效标签 | 一路凯歌" />
-    <meta name="twitter:description" content="阿里云百炼在联网搜索文档里把 freshness 时间范围写进参数说明，并建议在特定场景同时启用 web_search、web_extractor 和 code_interpreter。对企业 GEO 来说，这意味着资讯页不只是“发出来”，还要让模型能判断新旧、抽取正文并继续比较。" />
+    <meta name="twitter:title" content="OpenAI 提醒放行 AdsBot 和 SearchBot 后，企业落地页别被安全策略误拦 | 一路凯歌" />
+    <meta name="twitter:description" content="OpenAI 最新帮助文档把广告审核相关的 OAI-AdsBot、搜索引用相关的 OAI-SearchBot 以及用户触发访问场景分开说明。对企业 AI 服务官网来说，落地页如果被 robots、WAF、验证码或 CDN 规则误拦，就算内容写得再好，也可能进不了 AI 搜索与广告验证链路。" />
     <meta name="twitter:image" content="https://www.yilukaige.com/assets/logo-full.webp" />
     <link rel="stylesheet" href="../styles.css" />
     <script type="application/ld+json" data-seo="article">
       {
             "@context": "https://schema.org",
             "@type": "Article",
-            "headline": "通义千问联网搜索支持 freshness 后，企业资讯页要保留时效标签",
-            "description": "阿里云百炼联网搜索文档提到 freshness 时间范围后，企业资讯和公告页更需要保留发布日期、更新时间和原始出处。",
+            "headline": "OpenAI 提醒放行 AdsBot 和 SearchBot 后，企业落地页别被安全策略误拦",
+            "description": "OpenAI 面向广告主和发布者的爬虫说明提示，企业落地页要分别检查 robots、CDN、人机验证和安全策略，避免关键页面被 AI 入口误拦。",
             "image": [
                   "https://www.yilukaige.com/assets/logo-full.webp"
             ],
-            "datePublished": "2026-06-03T12:00:00+08:00",
-            "dateModified": "2026-06-03T12:00:00+08:00",
+            "datePublished": "2026-06-03T12:02:00+08:00",
+            "dateModified": "2026-06-03T12:02:00+08:00",
             "author": {
                   "@type": "Organization",
                   "name": "北京一路凯歌网络科技有限公司",
@@ -63,21 +63,21 @@
             },
             "mainEntityOfPage": {
                   "@type": "WebPage",
-                  "@id": "https://www.yilukaige.com/news/qwen-freshness-enterprise-news-pages.html"
+                  "@id": "https://www.yilukaige.com/news/openai-crawlers-adsbot-searchbot-landing-pages.html"
             },
-            "articleSection": "通义千问",
+            "articleSection": "OpenAI Crawlers",
             "keywords": [
                   "一路凯歌",
-                  "通义千问",
-                  "联网搜索",
-                  "freshness",
+                  "OpenAI",
+                  "OAI-AdsBot",
+                  "OAI-SearchBot",
+                  "落地页",
                   "GEO优化",
-                  "企业资讯页",
-                  "AI搜索优化"
+                  "AI搜索收录"
             ],
             "citation": [
-                  "https://help.aliyun.com/zh/model-studio/web-search/",
-                  "https://help.aliyun.com/zh/model-studio/"
+                  "https://help.openai.com/en/articles/20001243-advertiser-guidance-for-allowing-openai-web-crawlers",
+                  "https://help.openai.com/en/articles/12627856-publishers-and-developers-faq"
             ],
             "inLanguage": "zh-CN"
       }
@@ -102,8 +102,8 @@
                   {
                         "@type": "ListItem",
                         "position": 3,
-                        "name": "通义千问联网搜索支持 freshness 后，企业资讯页要保留时效标签",
-                        "item": "https://www.yilukaige.com/news/qwen-freshness-enterprise-news-pages.html"
+                        "name": "OpenAI 提醒放行 AdsBot 和 SearchBot 后，企业落地页别被安全策略误拦",
+                        "item": "https://www.yilukaige.com/news/openai-crawlers-adsbot-searchbot-landing-pages.html"
                   }
             ]
       }
@@ -115,26 +115,26 @@
             "mainEntity": [
                   {
                         "@type": "Question",
-                        "name": "freshness 对企业官网有什么启发？",
+                        "name": "企业应该允许哪些 OpenAI 爬虫？",
                         "acceptedAnswer": {
                               "@type": "Answer",
-                              "text": "它提醒企业把发布日期、更新时间和版本边界做成显式信息，让 AI 能判断内容是否适合回答近期问题。"
+                              "text": "公开落地页通常需要至少评估 OAI-AdsBot 和 OAI-SearchBot 是否可访问，具体范围要结合页面用途配置。"
                         }
                   },
                   {
                         "@type": "Question",
-                        "name": "资讯页只写新闻摘要够吗？",
+                        "name": "只改 robots.txt 就够了吗？",
                         "acceptedAnswer": {
                               "@type": "Answer",
-                              "text": "不够。还应写清影响对象、适用场景、原始来源和下一步动作，避免被模型当成泛泛转载。"
+                              "text": "不够，还要检查 CDN、WAF、人机验证、状态码和页面 meta，确认爬虫真的能读到正文。"
                         }
                   },
                   {
                         "@type": "Question",
-                        "name": "一路凯歌会怎么处理这类页面？",
+                        "name": "这和 GEO 有什么关系？",
                         "acceptedAnswer": {
                               "@type": "Answer",
-                              "text": "会把资讯拆成结论、依据、影响和可执行建议四层，同时补齐结构化数据和内链。"
+                              "text": "GEO 的前提是内容可被发现、读取和引用；如果入口被误拦，后续内容优化很难生效。"
                         }
                   }
             ]
@@ -149,44 +149,44 @@
     </header>
     <main class="article-page">
       <section class="article-hero reveal">
-        <div class="article-meta"><time datetime="2026-06-03">2026-06-03</time><span>通义千问</span></div>
-        <h1>通义千问联网搜索支持 freshness 后，企业资讯页要保留时效标签</h1>
-        <p>阿里云百炼在联网搜索文档里把 freshness 时间范围写进参数说明，并建议在特定场景同时启用 web_search、web_extractor 和 code_interpreter。对企业 GEO 来说，这意味着资讯页不只是“发出来”，还要让模型能判断新旧、抽取正文并继续比较。</p>
+        <div class="article-meta"><time datetime="2026-06-03">2026-06-03</time><span>OpenAI Crawlers</span></div>
+        <h1>OpenAI 提醒放行 AdsBot 和 SearchBot 后，企业落地页别被安全策略误拦</h1>
+        <p>OpenAI 最新帮助文档把广告审核相关的 OAI-AdsBot、搜索引用相关的 OAI-SearchBot 以及用户触发访问场景分开说明。对企业 AI 服务官网来说，落地页如果被 robots、WAF、验证码或 CDN 规则误拦，就算内容写得再好，也可能进不了 AI 搜索与广告验证链路。</p>
       </section>
       <section class="article-shell">
         <article class="article-body reveal">
-          <h2>时效不是写在编辑心里的字段</h2>
-          <p>很多企业资讯页只有标题和正文，发布日期藏在模板角落，更新时间甚至完全缺失。到了 AI 搜索场景，问题不只是用户看不看得到，而是模型能不能把这篇内容识别为“近期可用资料”。</p>
-          <p>百炼文档里的 freshness 参数，本质上提醒内容团队：时效性正在成为检索链路里的显式条件。企业如果希望公告、政策解读、产品更新被 AI 用来回答近期问题，就不能把时间信息写得含糊。</p>
+          <h2>落地页的第一关是能被访问</h2>
+          <p>企业做 GEO 时常常先改标题、FAQ 和结构化数据，但 OpenAI 的爬虫说明把一个更基础的问题放到了前面：页面是否真的允许相关爬虫访问。很多官网在安全策略上只考虑真人访问，却忘了 AI 搜索和广告审核也需要读取公开页面。</p>
+          <p>如果人机验证、CDN 防护或 WAF 把爬虫挡掉，搜索入口可能只看到标题，甚至完全无法确认页面内容。</p>
 
-          <h2>页面要同时能搜、能抽取、能比较</h2>
-          <p>联网搜索只是第一步。企业页面被搜到之后，还要能被抽取关键字段，必要时还能被拿去做横向比较。标题、摘要、发布时间、版本号、适用对象、引用来源，都应该是稳定可识别的信息块。</p>
-          <p>一路凯歌建议把资讯页拆成三个层次：首段给结论，正文给背景和边界，尾部给来源与更新时间。这样既适合搜索索引，也适合大模型在多步问答中复用。</p>
+          <h2>不同爬虫代表不同业务目的</h2>
+          <p>OAI-AdsBot 更偏向广告落地页验证，OAI-SearchBot 更偏向搜索发现和引用。企业不需要把所有爬虫一刀切放开，但至少要知道每一种访问代表什么目的，再决定哪些公开页面应该允许、哪些后台或报价动作应该继续保护。</p>
+          <p>一路凯歌通常会把 robots.txt、服务器日志、CDN 规则和页面 meta 一起检查，避免出现“页面看似公开，实际对 AI 入口不可读”的情况。</p>
           <ul>
-            <li>每篇资讯保留发布日期和更新时间。</li>
-            <li>首段直接回答这条信息对客户有什么影响。</li>
-            <li>来源链接不要只放图片或截图，要保留可点击文本。</li>
+            <li>公开服务页、资讯页和案例页优先允许抓取。</li>
+            <li>表单提交、报价试算和登录后台继续设置权限边界。</li>
+            <li>用日志确认爬虫状态码，不只看浏览器能否打开。</li>
           </ul>
 
-          <h2>日更不是越多越好，而是越可判断越好</h2>
-          <p>如果每天都发行业资讯，最怕的不是频率高，而是每篇都缺少增量判断。企业要让 AI 理解品牌观点，就需要持续说明“这条变化为什么重要、对谁重要、下一步该做什么”。</p>
+          <h2>安全和可见性不是对立关系</h2>
+          <p>真正成熟的做法不是关掉防护，而是分层放行。公开内容服务于品牌发现，受控操作服务于业务安全。两者分清，GEO 才不会和安全策略互相打架。</p>
 
-          <div class="article-note">阿里云百炼联网搜索文档说明，查询近期新闻或最新动态时可通过 freshness 参数限制搜索时间范围，并在 Responses API 场景建议组合使用搜索、抽取和代码解释工具。</div>
+          <div class="article-note">OpenAI 的广告主爬虫指南建议允许 OAI-AdsBot，并建议同时允许 OAI-SearchBot；发布者 FAQ 也提示网站若希望出现在 ChatGPT 搜索摘要和链接中，应确保没有阻止 OAI-SearchBot。</div>
           <h2>要点总结</h2>
           <ul>
-            <li>它提醒企业把发布日期、更新时间和版本边界做成显式信息，让 AI 能判断内容是否适合回答近期问题。</li>
-            <li>不够。还应写清影响对象、适用场景、原始来源和下一步动作，避免被模型当成泛泛转载。</li>
-            <li>会把资讯拆成结论、依据、影响和可执行建议四层，同时补齐结构化数据和内链。</li>
+            <li>公开落地页通常需要至少评估 OAI-AdsBot 和 OAI-SearchBot 是否可访问，具体范围要结合页面用途配置。</li>
+            <li>不够，还要检查 CDN、WAF、人机验证、状态码和页面 meta，确认爬虫真的能读到正文。</li>
+            <li>GEO 的前提是内容可被发现、读取和引用；如果入口被误拦，后续内容优化很难生效。</li>
           </ul>
           <h2>参考来源说明</h2>
           <p>本文基于公开可核验资料原创整理，重点提炼对企业 GEO、AI 搜索品牌可见性和企业 AI 服务落地的启发，不替代相关平台完整产品文档。</p>
           <ul>
-            <li><a href="https://help.aliyun.com/zh/model-studio/web-search/" target="_blank" rel="noopener noreferrer">阿里云百炼：联网搜索</a></li>
-            <li><a href="https://help.aliyun.com/zh/model-studio/" target="_blank" rel="noopener noreferrer">阿里云百炼：大模型服务平台百炼</a></li>
+            <li><a href="https://help.openai.com/en/articles/20001243-advertiser-guidance-for-allowing-openai-web-crawlers" target="_blank" rel="noopener noreferrer">OpenAI Help：Advertiser Guidance for Allowing OpenAI Web Crawlers</a></li>
+            <li><a href="https://help.openai.com/en/articles/12627856-publishers-and-developers-faq" target="_blank" rel="noopener noreferrer">OpenAI Help：Publishers and Developers FAQ</a></li>
           </ul>
           <div class="article-nav">
-            <a href="openai-crawlers-adsbot-searchbot-landing-pages.html">上一篇：OpenAI 提醒放行 AdsBot 和 SearchBot 后，企业落地页别被安全策略误拦</a>
-            <a href="yuanbao-authoritative-timely-sources-pages.html">下一篇：腾讯元宝强调权威时效信源后，企业公告和政策解读页要保留原始出处链</a>
+            <a href="../news.html">返回资讯列表</a>
+            <a href="qwen-freshness-enterprise-news-pages.html">下一篇：通义千问联网搜索支持 freshness 后，企业资讯页要保留时效标签</a>
           </div>
         </article>
         <aside class="article-aside reveal">
@@ -202,16 +202,16 @@
         </div>
         <div class="faq-grid">
             <article class="faq-item reveal">
-              <h3>freshness 对企业官网有什么启发？</h3>
-              <p>它提醒企业把发布日期、更新时间和版本边界做成显式信息，让 AI 能判断内容是否适合回答近期问题。</p>
+              <h3>企业应该允许哪些 OpenAI 爬虫？</h3>
+              <p>公开落地页通常需要至少评估 OAI-AdsBot 和 OAI-SearchBot 是否可访问，具体范围要结合页面用途配置。</p>
             </article>
             <article class="faq-item reveal">
-              <h3>资讯页只写新闻摘要够吗？</h3>
-              <p>不够。还应写清影响对象、适用场景、原始来源和下一步动作，避免被模型当成泛泛转载。</p>
+              <h3>只改 robots.txt 就够了吗？</h3>
+              <p>不够，还要检查 CDN、WAF、人机验证、状态码和页面 meta，确认爬虫真的能读到正文。</p>
             </article>
             <article class="faq-item reveal">
-              <h3>一路凯歌会怎么处理这类页面？</h3>
-              <p>会把资讯拆成结论、依据、影响和可执行建议四层，同时补齐结构化数据和内链。</p>
+              <h3>这和 GEO 有什么关系？</h3>
+              <p>GEO 的前提是内容可被发现、读取和引用；如果入口被误拦，后续内容优化很难生效。</p>
             </article>
         </div>
       </section>
