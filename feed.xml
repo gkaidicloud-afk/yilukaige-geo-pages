@@ -6,7 +6,14 @@
     <atom:link href="https://www.yilukaige.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>一路凯歌围绕 GEO、AI 搜索、品牌知识资产、GA4 数据化衡量和 AI 流量归因的文章更新。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Wed, 03 Jun 2026 12:16:00 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 03 Jun 2026 12:18:00 +0800</lastBuildDate>
+    <item>
+      <title>DeepSeek 缓存与 JSON Output 提醒企业知识库先做稳定字段层</title>
+      <link>https://www.yilukaige.com/news/deepseek-cache-json-output-knowledge-fields.html</link>
+      <guid>https://www.yilukaige.com/news/deepseek-cache-json-output-knowledge-fields.html</guid>
+      <pubDate>Wed, 03 Jun 2026 12:18:00 +0800</pubDate>
+      <description>DeepSeek API 文档同时展示了 Context Caching 和 JSON Output 两个方向：前者强调稳定前缀可复用，后者强调输出需要有效 JSON。对企业知识资产来说，这不是单纯接口能力，而是在提醒内容团队先把品牌定义、服务字段、FAQ 和交付边界整理成稳定结构。</description>
+    </item>
     <item>
       <title>火山方舟 Web Search 走向工具链后，品牌内容要能被搜索、抽取再回答</title>
       <link>https://www.yilukaige.com/news/volcengine-web-search-toolchain-extractable-pages.html</link>
@@ -139,13 +146,6 @@
       <guid>https://www.yilukaige.com/news/google-ai-search-unique-value-b2b-pages.html</guid>
       <pubDate>Tue, 02 Jun 2026 09:00:00 +0800</pubDate>
       <description>Google 在 AI 搜索实践文档里强调独特、非商品化价值后，B2B 官网就更不该把同类定义、趋势复述和空泛方法页反复改写成多篇文章。真正更容易被 AI 采用的，是带有一手判断、边界条件和实际证据的页面。</description>
-    </item>
-    <item>
-      <title>Google 要求想清楚内容的 Who、How、Why 后，AI 辅助稿件别再没有署名和方法说明</title>
-      <link>https://www.yilukaige.com/news/google-who-how-why-ai-assisted-content.html</link>
-      <guid>https://www.yilukaige.com/news/google-who-how-why-ai-assisted-content.html</guid>
-      <pubDate>Mon, 01 Jun 2026 09:18:00 +0800</pubDate>
-      <description>Google 在 people-first 文档里单独提出用 Who、How、Why 审视内容：谁写的、怎么写的、为什么写。对于越来越多采用 AI 辅助写作的企业资讯页和知识页来说，署名、方法说明与使用边界会变得越来越关键。</description>
     </item>
   </channel>
 </rss>
