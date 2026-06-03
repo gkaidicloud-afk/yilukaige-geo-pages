@@ -3,45 +3,45 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>OpenAI 提醒放行 AdsBot 和 SearchBot 后，企业落地页别被安全策略误拦 | 一路凯歌</title>
-    <meta name="description" content="OpenAI 面向广告主和发布者的爬虫说明提示，企业落地页要分别检查 robots、CDN、人机验证和安全策略，避免关键页面被 AI 入口误拦。" />
-    <meta name="keywords" content="一路凯歌,OpenAI,OAI-AdsBot,OAI-SearchBot,落地页,GEO优化,AI搜索收录" />
+    <title>ChatGPT Search 会改写查询并追加 UTM，GEO 页面要同时服务发现和归因 | 一路凯歌</title>
+    <meta name="description" content="OpenAI 文档提到 ChatGPT Search 会改写查询，发布者 FAQ 说明来源 URL 会带 utm_source=chatgpt.com，企业页面要同时考虑被发现和可归因。" />
+    <meta name="keywords" content="一路凯歌,ChatGPT Search,查询改写,UTM,AI搜索流量,GEO优化,GA4归因" />
     <meta name="author" content="北京一路凯歌网络科技有限公司" />
     <meta name="applicable-device" content="pc,mobile" />
     <meta name="renderer" content="webkit" />
     <meta name="format-detection" content="telephone=no" />
     <meta name="robots" content="index, follow, max-image-preview:large" />
-    <link rel="canonical" href="https://www.yilukaige.com/news/openai-crawlers-adsbot-searchbot-landing-pages.html" />
+    <link rel="canonical" href="https://www.yilukaige.com/news/chatgpt-search-query-rewrite-utm-attribution.html" />
     <link rel="icon" href="../assets/logo.png" type="image/png" />
     <link rel="apple-touch-icon" href="../assets/logo.png" />
     <link rel="alternate" type="application/rss+xml" title="一路凯歌行业资讯" href="https://www.yilukaige.com/feed.xml" />
     <meta name="theme-color" content="#0B1F3B" />
-    <meta property="og:title" content="OpenAI 提醒放行 AdsBot 和 SearchBot 后，企业落地页别被安全策略误拦 | 一路凯歌" />
-    <meta property="og:description" content="OpenAI 最新帮助文档把广告审核相关的 OAI-AdsBot、搜索引用相关的 OAI-SearchBot 以及用户触发访问场景分开说明。对企业 AI 服务官网来说，落地页如果被 robots、WAF、验证码或 CDN 规则误拦，就算内容写得再好，也可能进不了 AI 搜索与广告验证链路。" />
+    <meta property="og:title" content="ChatGPT Search 会改写查询并追加 UTM，GEO 页面要同时服务发现和归因 | 一路凯歌" />
+    <meta property="og:description" content="OpenAI 的 ChatGPT Search 说明提到，系统可能把用户问题改写成一个或多个更适合检索的查询；发布者 FAQ 又说明，来自 ChatGPT 的推荐 URL 会包含 utm_source=chatgpt.com。对企业官网来说，GEO 已经不只是“能被 AI 提到”，还要能在 GA4 里复盘这次曝光是否带来访问和线索。" />
     <meta property="og:type" content="article" />
-    <meta property="og:url" content="https://www.yilukaige.com/news/openai-crawlers-adsbot-searchbot-landing-pages.html" />
+    <meta property="og:url" content="https://www.yilukaige.com/news/chatgpt-search-query-rewrite-utm-attribution.html" />
     <meta property="og:site_name" content="一路凯歌" />
-    <meta property="article:published_time" content="2026-06-03T12:02:00+08:00" />
-    <meta property="article:modified_time" content="2026-06-03T12:02:00+08:00" />
+    <meta property="article:published_time" content="2026-06-03T12:04:00+08:00" />
+    <meta property="article:modified_time" content="2026-06-03T12:04:00+08:00" />
     <meta property="article:author" content="北京一路凯歌网络科技有限公司" />
-    <meta property="article:section" content="OpenAI Crawlers" />
+    <meta property="article:section" content="ChatGPT Search" />
     <meta property="og:image" content="https://www.yilukaige.com/assets/logo-full.webp" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="OpenAI 提醒放行 AdsBot 和 SearchBot 后，企业落地页别被安全策略误拦 | 一路凯歌" />
-    <meta name="twitter:description" content="OpenAI 最新帮助文档把广告审核相关的 OAI-AdsBot、搜索引用相关的 OAI-SearchBot 以及用户触发访问场景分开说明。对企业 AI 服务官网来说，落地页如果被 robots、WAF、验证码或 CDN 规则误拦，就算内容写得再好，也可能进不了 AI 搜索与广告验证链路。" />
+    <meta name="twitter:title" content="ChatGPT Search 会改写查询并追加 UTM，GEO 页面要同时服务发现和归因 | 一路凯歌" />
+    <meta name="twitter:description" content="OpenAI 的 ChatGPT Search 说明提到，系统可能把用户问题改写成一个或多个更适合检索的查询；发布者 FAQ 又说明，来自 ChatGPT 的推荐 URL 会包含 utm_source=chatgpt.com。对企业官网来说，GEO 已经不只是“能被 AI 提到”，还要能在 GA4 里复盘这次曝光是否带来访问和线索。" />
     <meta name="twitter:image" content="https://www.yilukaige.com/assets/logo-full.webp" />
     <link rel="stylesheet" href="../styles.css" />
     <script type="application/ld+json" data-seo="article">
       {
             "@context": "https://schema.org",
             "@type": "Article",
-            "headline": "OpenAI 提醒放行 AdsBot 和 SearchBot 后，企业落地页别被安全策略误拦",
-            "description": "OpenAI 面向广告主和发布者的爬虫说明提示，企业落地页要分别检查 robots、CDN、人机验证和安全策略，避免关键页面被 AI 入口误拦。",
+            "headline": "ChatGPT Search 会改写查询并追加 UTM，GEO 页面要同时服务发现和归因",
+            "description": "OpenAI 文档提到 ChatGPT Search 会改写查询，发布者 FAQ 说明来源 URL 会带 utm_source=chatgpt.com，企业页面要同时考虑被发现和可归因。",
             "image": [
                   "https://www.yilukaige.com/assets/logo-full.webp"
             ],
-            "datePublished": "2026-06-03T12:02:00+08:00",
-            "dateModified": "2026-06-03T12:02:00+08:00",
+            "datePublished": "2026-06-03T12:04:00+08:00",
+            "dateModified": "2026-06-03T12:04:00+08:00",
             "author": {
                   "@type": "Organization",
                   "name": "北京一路凯歌网络科技有限公司",
@@ -63,21 +63,22 @@
             },
             "mainEntityOfPage": {
                   "@type": "WebPage",
-                  "@id": "https://www.yilukaige.com/news/openai-crawlers-adsbot-searchbot-landing-pages.html"
+                  "@id": "https://www.yilukaige.com/news/chatgpt-search-query-rewrite-utm-attribution.html"
             },
-            "articleSection": "OpenAI Crawlers",
+            "articleSection": "ChatGPT Search",
             "keywords": [
                   "一路凯歌",
-                  "OpenAI",
-                  "OAI-AdsBot",
-                  "OAI-SearchBot",
-                  "落地页",
+                  "ChatGPT Search",
+                  "查询改写",
+                  "UTM",
+                  "AI搜索流量",
                   "GEO优化",
-                  "AI搜索收录"
+                  "GA4归因"
             ],
             "citation": [
-                  "https://help.openai.com/en/articles/20001243-advertiser-guidance-for-allowing-openai-web-crawlers",
-                  "https://help.openai.com/en/articles/12627856-publishers-and-developers-faq"
+                  "https://help.openai.com/en/articles/9237897-chatgpt-search",
+                  "https://help.openai.com/en/articles/12627856-publishers-and-developers-faq",
+                  "https://support.google.com/analytics/answer/11242841"
             ],
             "inLanguage": "zh-CN"
       }
@@ -102,8 +103,8 @@
                   {
                         "@type": "ListItem",
                         "position": 3,
-                        "name": "OpenAI 提醒放行 AdsBot 和 SearchBot 后，企业落地页别被安全策略误拦",
-                        "item": "https://www.yilukaige.com/news/openai-crawlers-adsbot-searchbot-landing-pages.html"
+                        "name": "ChatGPT Search 会改写查询并追加 UTM，GEO 页面要同时服务发现和归因",
+                        "item": "https://www.yilukaige.com/news/chatgpt-search-query-rewrite-utm-attribution.html"
                   }
             ]
       }
@@ -115,26 +116,26 @@
             "mainEntity": [
                   {
                         "@type": "Question",
-                        "name": "企业应该允许哪些 OpenAI 爬虫？",
+                        "name": "查询改写会改变 SEO 选题吗？",
                         "acceptedAnswer": {
                               "@type": "Answer",
-                              "text": "公开落地页通常需要至少评估 OAI-AdsBot 和 OAI-SearchBot 是否可访问，具体范围要结合页面用途配置。"
+                              "text": "会。选题应从单关键词转向问题簇，覆盖用户真实决策链路里的多个子问题。"
                         }
                   },
                   {
                         "@type": "Question",
-                        "name": "只改 robots.txt 就够了吗？",
+                        "name": "ChatGPT 流量怎么在 GA4 看？",
                         "acceptedAnswer": {
                               "@type": "Answer",
-                              "text": "不够，还要检查 CDN、WAF、人机验证、状态码和页面 meta，确认爬虫真的能读到正文。"
+                              "text": "可以关注 referral、utm_source=chatgpt.com、自定义渠道分组和关键事件转化。"
                         }
                   },
                   {
                         "@type": "Question",
-                        "name": "这和 GEO 有什么关系？",
+                        "name": "一路凯歌会怎么做归因？",
                         "acceptedAnswer": {
                               "@type": "Answer",
-                              "text": "GEO 的前提是内容可被发现、读取和引用；如果入口被误拦，后续内容优化很难生效。"
+                              "text": "会把 AI referral、页面主题和线索动作放在同一套报表里，而不是只看曝光截图。"
                         }
                   }
             ]
@@ -149,44 +150,45 @@
     </header>
     <main class="article-page">
       <section class="article-hero reveal">
-        <div class="article-meta"><time datetime="2026-06-03">2026-06-03</time><span>OpenAI Crawlers</span></div>
-        <h1>OpenAI 提醒放行 AdsBot 和 SearchBot 后，企业落地页别被安全策略误拦</h1>
-        <p>OpenAI 最新帮助文档把广告审核相关的 OAI-AdsBot、搜索引用相关的 OAI-SearchBot 以及用户触发访问场景分开说明。对企业 AI 服务官网来说，落地页如果被 robots、WAF、验证码或 CDN 规则误拦，就算内容写得再好，也可能进不了 AI 搜索与广告验证链路。</p>
+        <div class="article-meta"><time datetime="2026-06-03">2026-06-03</time><span>ChatGPT Search</span></div>
+        <h1>ChatGPT Search 会改写查询并追加 UTM，GEO 页面要同时服务发现和归因</h1>
+        <p>OpenAI 的 ChatGPT Search 说明提到，系统可能把用户问题改写成一个或多个更适合检索的查询；发布者 FAQ 又说明，来自 ChatGPT 的推荐 URL 会包含 utm_source=chatgpt.com。对企业官网来说，GEO 已经不只是“能被 AI 提到”，还要能在 GA4 里复盘这次曝光是否带来访问和线索。</p>
       </section>
       <section class="article-shell">
         <article class="article-body reveal">
-          <h2>落地页的第一关是能被访问</h2>
-          <p>企业做 GEO 时常常先改标题、FAQ 和结构化数据，但 OpenAI 的爬虫说明把一个更基础的问题放到了前面：页面是否真的允许相关爬虫访问。很多官网在安全策略上只考虑真人访问，却忘了 AI 搜索和广告审核也需要读取公开页面。</p>
-          <p>如果人机验证、CDN 防护或 WAF 把爬虫挡掉，搜索入口可能只看到标题，甚至完全无法确认页面内容。</p>
+          <h2>用户问的是一句话，搜索执行的是一组查询</h2>
+          <p>ChatGPT Search 不一定把用户原话直接拿去搜索，而是可能改写成更具体的查询组合。这意味着企业页面不能只盯一个关键词排名，而要覆盖用户问题背后的场景、条件、比较维度和地域信息。</p>
+          <p>例如“哪家企业 AI 服务适合制造业”背后可能包含模型部署、数据安全、知识库、行业案例、成本和实施周期等多个子问题。</p>
 
-          <h2>不同爬虫代表不同业务目的</h2>
-          <p>OAI-AdsBot 更偏向广告落地页验证，OAI-SearchBot 更偏向搜索发现和引用。企业不需要把所有爬虫一刀切放开，但至少要知道每一种访问代表什么目的，再决定哪些公开页面应该允许、哪些后台或报价动作应该继续保护。</p>
-          <p>一路凯歌通常会把 robots.txt、服务器日志、CDN 规则和页面 meta 一起检查，避免出现“页面看似公开，实际对 AI 入口不可读”的情况。</p>
+          <h2>GEO 要接上归因，否则只能看感觉</h2>
+          <p>OpenAI 发布者 FAQ 提到 ChatGPT 推荐流量会带上 utm_source=chatgpt.com，这给企业复盘提供了入口。页面被 AI 引用之后，是否带来访问、停留、电话点击或表单提交，需要进入 GA4 事件体系。</p>
+          <p>一路凯歌建议把 AI 来源流量单独建渠道口径，并把页面主题、CTA、表单和电话点击串起来看。这样才能判断某类内容是只带曝光，还是能带来潜在线索。</p>
           <ul>
-            <li>公开服务页、资讯页和案例页优先允许抓取。</li>
-            <li>表单提交、报价试算和登录后台继续设置权限边界。</li>
-            <li>用日志确认爬虫状态码，不只看浏览器能否打开。</li>
+            <li>页面标题覆盖真实问题，不只覆盖短词。</li>
+            <li>GA4 中单独识别 chatgpt.com 等 AI referral。</li>
+            <li>把电话点击、表单提交和微信复制做成关键事件。</li>
           </ul>
 
-          <h2>安全和可见性不是对立关系</h2>
-          <p>真正成熟的做法不是关掉防护，而是分层放行。公开内容服务于品牌发现，受控操作服务于业务安全。两者分清，GEO 才不会和安全策略互相打架。</p>
+          <h2>被发现和能复盘要一起设计</h2>
+          <p>如果内容团队只负责写稿，数据团队事后才想追踪，就很容易漏掉来源参数、事件名称和页面分组。GEO 更适合在发布前就把“如何被发现”和“如何被复盘”一起设计。</p>
 
-          <div class="article-note">OpenAI 的广告主爬虫指南建议允许 OAI-AdsBot，并建议同时允许 OAI-SearchBot；发布者 FAQ 也提示网站若希望出现在 ChatGPT 搜索摘要和链接中，应确保没有阻止 OAI-SearchBot。</div>
+          <div class="article-note">OpenAI 帮助中心说明 ChatGPT Search 可能根据上下文和位置改写查询；发布者 FAQ 说明 ChatGPT 搜索推荐会在 referral URL 中自动包含 utm_source=chatgpt.com。</div>
           <h2>要点总结</h2>
           <ul>
-            <li>公开落地页通常需要至少评估 OAI-AdsBot 和 OAI-SearchBot 是否可访问，具体范围要结合页面用途配置。</li>
-            <li>不够，还要检查 CDN、WAF、人机验证、状态码和页面 meta，确认爬虫真的能读到正文。</li>
-            <li>GEO 的前提是内容可被发现、读取和引用；如果入口被误拦，后续内容优化很难生效。</li>
+            <li>会。选题应从单关键词转向问题簇，覆盖用户真实决策链路里的多个子问题。</li>
+            <li>可以关注 referral、utm_source=chatgpt.com、自定义渠道分组和关键事件转化。</li>
+            <li>会把 AI referral、页面主题和线索动作放在同一套报表里，而不是只看曝光截图。</li>
           </ul>
           <h2>参考来源说明</h2>
           <p>本文基于公开可核验资料原创整理，重点提炼对企业 GEO、AI 搜索品牌可见性和企业 AI 服务落地的启发，不替代相关平台完整产品文档。</p>
           <ul>
-            <li><a href="https://help.openai.com/en/articles/20001243-advertiser-guidance-for-allowing-openai-web-crawlers" target="_blank" rel="noopener noreferrer">OpenAI Help：Advertiser Guidance for Allowing OpenAI Web Crawlers</a></li>
+            <li><a href="https://help.openai.com/en/articles/9237897-chatgpt-search" target="_blank" rel="noopener noreferrer">OpenAI Help：ChatGPT Search</a></li>
             <li><a href="https://help.openai.com/en/articles/12627856-publishers-and-developers-faq" target="_blank" rel="noopener noreferrer">OpenAI Help：Publishers and Developers FAQ</a></li>
+            <li><a href="https://support.google.com/analytics/answer/11242841" target="_blank" rel="noopener noreferrer">Google Analytics Help：Campaigns and traffic sources</a></li>
           </ul>
           <div class="article-nav">
-            <a href="chatgpt-search-query-rewrite-utm-attribution.html">上一篇：ChatGPT Search 会改写查询并追加 UTM，GEO 页面要同时服务发现和归因</a>
-            <a href="qwen-freshness-enterprise-news-pages.html">下一篇：通义千问联网搜索支持 freshness 后，企业资讯页要保留时效标签</a>
+            <a href="../news.html">返回资讯列表</a>
+            <a href="openai-crawlers-adsbot-searchbot-landing-pages.html">下一篇：OpenAI 提醒放行 AdsBot 和 SearchBot 后，企业落地页别被安全策略误拦</a>
           </div>
         </article>
         <aside class="article-aside reveal">
@@ -202,16 +204,16 @@
         </div>
         <div class="faq-grid">
             <article class="faq-item reveal">
-              <h3>企业应该允许哪些 OpenAI 爬虫？</h3>
-              <p>公开落地页通常需要至少评估 OAI-AdsBot 和 OAI-SearchBot 是否可访问，具体范围要结合页面用途配置。</p>
+              <h3>查询改写会改变 SEO 选题吗？</h3>
+              <p>会。选题应从单关键词转向问题簇，覆盖用户真实决策链路里的多个子问题。</p>
             </article>
             <article class="faq-item reveal">
-              <h3>只改 robots.txt 就够了吗？</h3>
-              <p>不够，还要检查 CDN、WAF、人机验证、状态码和页面 meta，确认爬虫真的能读到正文。</p>
+              <h3>ChatGPT 流量怎么在 GA4 看？</h3>
+              <p>可以关注 referral、utm_source=chatgpt.com、自定义渠道分组和关键事件转化。</p>
             </article>
             <article class="faq-item reveal">
-              <h3>这和 GEO 有什么关系？</h3>
-              <p>GEO 的前提是内容可被发现、读取和引用；如果入口被误拦，后续内容优化很难生效。</p>
+              <h3>一路凯歌会怎么做归因？</h3>
+              <p>会把 AI referral、页面主题和线索动作放在同一套报表里，而不是只看曝光截图。</p>
             </article>
         </div>
       </section>

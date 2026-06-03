@@ -6,7 +6,14 @@
     <atom:link href="https://www.yilukaige.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>一路凯歌围绕 GEO、AI 搜索、品牌知识资产、GA4 数据化衡量和 AI 流量归因的文章更新。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Wed, 03 Jun 2026 12:02:00 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 03 Jun 2026 12:04:00 +0800</lastBuildDate>
+    <item>
+      <title>ChatGPT Search 会改写查询并追加 UTM，GEO 页面要同时服务发现和归因</title>
+      <link>https://www.yilukaige.com/news/chatgpt-search-query-rewrite-utm-attribution.html</link>
+      <guid>https://www.yilukaige.com/news/chatgpt-search-query-rewrite-utm-attribution.html</guid>
+      <pubDate>Wed, 03 Jun 2026 12:04:00 +0800</pubDate>
+      <description>OpenAI 的 ChatGPT Search 说明提到，系统可能把用户问题改写成一个或多个更适合检索的查询；发布者 FAQ 又说明，来自 ChatGPT 的推荐 URL 会包含 utm_source=chatgpt.com。对企业官网来说，GEO 已经不只是“能被 AI 提到”，还要能在 GA4 里复盘这次曝光是否带来访问和线索。</description>
+    </item>
     <item>
       <title>OpenAI 提醒放行 AdsBot 和 SearchBot 后，企业落地页别被安全策略误拦</title>
       <link>https://www.yilukaige.com/news/openai-crawlers-adsbot-searchbot-landing-pages.html</link>
@@ -139,13 +146,6 @@
       <guid>https://www.yilukaige.com/news/google-dns-errors-ai-index-loss.html</guid>
       <pubDate>Mon, 01 Jun 2026 09:06:00 +0800</pubDate>
       <description>Google 对网络和 DNS 错误的说明非常明确：这类错误会被按服务器错误处理，爬取会立刻放缓，已收录 URL 甚至可能在几天内从索引中移除。对依赖 AI 搜索曝光的企业来说，稳定托管本身就是内容策略的一部分。</description>
-    </item>
-    <item>
-      <title>还在用 # 路由做单页站，AI 搜索很难顺着你的服务链接继续爬</title>
-      <link>https://www.yilukaige.com/news/google-spa-history-api-crawlable-links.html</link>
-      <guid>https://www.yilukaige.com/news/google-spa-history-api-crawlable-links.html</guid>
-      <pubDate>Mon, 01 Jun 2026 09:04:00 +0800</pubDate>
-      <description>Google 的 JavaScript SEO 文档再次强调，搜索系统只能稳定发现带 `href` 的 `` 链接，并建议单页应用使用 History API 而不是 `#/` 片段路由。企业官网若把关键服务入口藏在前端状态里，会直接影响 AI 搜索继续发现页面。</description>
     </item>
   </channel>
 </rss>
