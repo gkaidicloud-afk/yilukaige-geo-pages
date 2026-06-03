@@ -6,7 +6,14 @@
     <atom:link href="https://www.yilukaige.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>一路凯歌围绕 GEO、AI 搜索、品牌知识资产、GA4 数据化衡量和 AI 流量归因的文章更新。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Wed, 03 Jun 2026 12:06:00 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 03 Jun 2026 12:08:00 +0800</lastBuildDate>
+    <item>
+      <title>Google 说 AI features 没有额外标记后，GEO 基础还是索引、文本和内链</title>
+      <link>https://www.yilukaige.com/news/google-ai-features-index-text-internal-links.html</link>
+      <guid>https://www.yilukaige.com/news/google-ai-features-index-text-internal-links.html</guid>
+      <pubDate>Wed, 03 Jun 2026 12:08:00 +0800</pubDate>
+      <description>Google Search Central 的 AI features 文档写得很直接：想出现在 AI Overviews 或 AI Mode，不需要特殊的 AI 标记，也没有额外 schema。真正要做的仍是让页面可抓取、可索引、可摘要、可内链，并让结构化数据和页面可见内容一致。</description>
+    </item>
     <item>
       <title>Google AI Mode 查询变长后，B2B 内容要从关键词页升级为问题链</title>
       <link>https://www.yilukaige.com/news/google-ai-mode-long-queries-b2b-question-chain.html</link>
@@ -139,13 +146,6 @@
       <guid>https://www.yilukaige.com/news/chatgpt-enterprise-sources-bing-governance.html</guid>
       <pubDate>Mon, 01 Jun 2026 09:10:00 +0800</pubDate>
       <description>OpenAI 对 Enterprise 与 Edu 搜索的说明显示，系统会展示引用来源，用户还能在 Sources 面板里继续查看相关链接；同时搜索可能向 Bing 和其他数据提供方共享去标识化查询。企业页面如果想被稳定理解，就更应该把作者、日期、图片来源和页面边界写清楚。</description>
-    </item>
-    <item>
-      <title>OpenAI 要求搜索引用清晰可点击后，企业文章页要把出处块做成前台资产</title>
-      <link>https://www.yilukaige.com/news/openai-web-search-clickable-citations-pages.html</link>
-      <guid>https://www.yilukaige.com/news/openai-web-search-clickable-citations-pages.html</guid>
-      <pubDate>Mon, 01 Jun 2026 09:08:00 +0800</pubDate>
-      <description>OpenAI 的 web search 指南明确要求，向终端用户展示搜索结果时，引用需要清晰可见且可点击。对企业官网来说，这提示我们不要把来源说明藏在页脚或图片里，而要把出处、标题和原始链接当成内容可信度组件来设计。</description>
     </item>
   </channel>
 </rss>
