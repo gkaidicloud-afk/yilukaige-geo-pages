@@ -6,7 +6,14 @@
     <atom:link href="https://www.yilukaige.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>一路凯歌围绕 GEO、AI 搜索、品牌知识资产、GA4 数据化衡量和 AI 流量归因的文章更新。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Wed, 03 Jun 2026 12:10:00 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 03 Jun 2026 12:12:00 +0800</lastBuildDate>
+    <item>
+      <title>OpenAI 企业 AI 进入工作流阶段，服务商官网要写清权限、数据源和交付边界</title>
+      <link>https://www.yilukaige.com/news/openai-workspace-agents-enterprise-permission-boundary.html</link>
+      <guid>https://www.yilukaige.com/news/openai-workspace-agents-enterprise-permission-boundary.html</guid>
+      <pubDate>Wed, 03 Jun 2026 12:12:00 +0800</pubDate>
+      <description>OpenAI Business 发布说明持续把 workspace agents、应用模板、连接器、表格工具和管理控制放在企业场景中讨论。企业 AI 服务不再只是“接入大模型”，而是要进入真实工作流。服务商官网如果想被 AI 搜索正确推荐，就必须写清数据源、权限、审批、日志和交付边界。</description>
+    </item>
     <item>
       <title>Google 强化 AI 回答中的来源链接后，企业观点页要把证据写在正文里</title>
       <link>https://www.yilukaige.com/news/google-ai-source-links-evidence-body-content.html</link>
@@ -139,13 +146,6 @@
       <guid>https://www.yilukaige.com/news/tencent-yuanbao-time-range-update-pages.html</guid>
       <pubDate>Mon, 01 Jun 2026 09:14:00 +0800</pubDate>
       <description>腾讯联网搜索 API 已把指定时间范围检索和分钟级更新写进产品能力页。对品牌官网来说，这意味着公告、资讯、版本更新和活动页更需要保留发布日期、更新时间和原始出处，否则就算内容被抓到，也不容易在时效性问题里获得优先采用。</description>
-    </item>
-    <item>
-      <title>通义千问建议搜索、抽取、计算一起开后，长页面要兼顾“能搜、能抽、能算”</title>
-      <link>https://www.yilukaige.com/news/qwen-web-search-extractor-code-pages.html</link>
-      <guid>https://www.yilukaige.com/news/qwen-web-search-extractor-code-pages.html</guid>
-      <pubDate>Mon, 01 Jun 2026 09:12:00 +0800</pubDate>
-      <description>阿里云百炼在联网搜索文档里明确建议，Responses API 下最好同时开启 `web_search`、`web_extractor` 和 `code_interpreter`。这说明未来被模型调用的页面，不仅要能被搜到，还要能被稳定抽取文本、再被拿去做比较或计算。</description>
     </item>
   </channel>
 </rss>
