@@ -6,7 +6,14 @@
     <atom:link href="https://www.yilukaige.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>一路凯歌围绕 GEO、AI 搜索、品牌知识资产、GA4 数据化衡量和 AI 流量归因的文章更新。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Tue, 02 Jun 2026 09:18:00 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 03 Jun 2026 12:00:00 +0800</lastBuildDate>
+    <item>
+      <title>通义千问联网搜索支持 freshness 后，企业资讯页要保留时效标签</title>
+      <link>https://www.yilukaige.com/news/qwen-freshness-enterprise-news-pages.html</link>
+      <guid>https://www.yilukaige.com/news/qwen-freshness-enterprise-news-pages.html</guid>
+      <pubDate>Wed, 03 Jun 2026 12:00:00 +0800</pubDate>
+      <description>阿里云百炼在联网搜索文档里把 freshness 时间范围写进参数说明，并建议在特定场景同时启用 web_search、web_extractor 和 code_interpreter。对企业 GEO 来说，这意味着资讯页不只是“发出来”，还要让模型能判断新旧、抽取正文并继续比较。</description>
+    </item>
     <item>
       <title>腾讯元宝强调权威时效信源后，企业公告和政策解读页要保留原始出处链</title>
       <link>https://www.yilukaige.com/news/yuanbao-authoritative-timely-sources-pages.html</link>
@@ -131,7 +138,7 @@
       <link>https://www.yilukaige.com/news/google-spa-history-api-crawlable-links.html</link>
       <guid>https://www.yilukaige.com/news/google-spa-history-api-crawlable-links.html</guid>
       <pubDate>Mon, 01 Jun 2026 09:04:00 +0800</pubDate>
-      <description>Google 的 JavaScript SEO 文档再次强调，搜索系统只能稳定发现带 `href` 的 `&lt;a&gt;` 链接，并建议单页应用使用 History API 而不是 `#/` 片段路由。企业官网若把关键服务入口藏在前端状态里，会直接影响 AI 搜索继续发现页面。</description>
+      <description>Google 的 JavaScript SEO 文档再次强调，搜索系统只能稳定发现带 `href` 的 `` 链接，并建议单页应用使用 History API 而不是 `#/` 片段路由。企业官网若把关键服务入口藏在前端状态里，会直接影响 AI 搜索继续发现页面。</description>
     </item>
     <item>
       <title>Google 支持给 PDF 和 Word 返回 canonical 后，白皮书下载页要有唯一主版本</title>
@@ -139,13 +146,6 @@
       <guid>https://www.yilukaige.com/news/google-pdf-canonical-whitepaper-files.html</guid>
       <pubDate>Mon, 01 Jun 2026 09:02:00 +0800</pubDate>
       <description>Google 公开说明，非 HTML 文件也可以通过 `rel=&quot;canonical&quot;` HTTP 头声明主版本。企业白皮书如果同时存在 PDF、Word、网页摘要和销售附件，就应该先定义哪一个 URL 才是最适合搜索与 AI 引用的标准页。</description>
-    </item>
-    <item>
-      <title>Google 说重复页会降低主页面抓取效率后，城市服务页别再整站复制</title>
-      <link>https://www.yilukaige.com/news/google-canonical-city-pages-ai-source.html</link>
-      <guid>https://www.yilukaige.com/news/google-canonical-city-pages-ai-source.html</guid>
-      <pubDate>Mon, 01 Jun 2026 09:00:00 +0800</pubDate>
-      <description>Google 关于 canonical 的说明再次提醒企业：当多组页面主内容几乎相同，系统会自己挑一个代表页，其他重复页抓取得更少。对 GEO 而言，城市页、行业页和服务页不能只靠替换地名批量生成。</description>
     </item>
   </channel>
 </rss>
