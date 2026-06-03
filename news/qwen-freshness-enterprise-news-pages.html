@@ -17,7 +17,7 @@
     <link rel="alternate" type="application/rss+xml" title="一路凯歌行业资讯" href="https://www.yilukaige.com/feed.xml" />
     <meta name="theme-color" content="#0B1F3B" />
     <meta property="og:title" content="通义千问联网搜索支持 freshness 后，企业资讯页要保留时效标签 | 一路凯歌" />
-    <meta property="og:description" content="阿里云百炼在联网搜索文档里把 freshness 时间范围写进参数说明，并建议在特定场景同时启用 web_search、web_extractor 和 code_interpreter。对企业 GEO 来说，这意味着资讯页不只是“发出来”，还要让模型能判断新旧、抽取正文并继续比较。" />
+    <meta property="og:description" content="阿里云百炼在联网搜索文档里把 freshness 时间范围写进参数说明，并建议在特定场景同时启用 web_search、web_extractor 和 code_interpreter。放到企业 GEO 里看，资讯页不能只是“发出来”，还要让模型看得出新旧、能抽取正文、能继续做比较。" />
     <meta property="og:type" content="article" />
     <meta property="og:url" content="https://www.yilukaige.com/news/qwen-freshness-enterprise-news-pages.html" />
     <meta property="og:site_name" content="一路凯歌" />
@@ -28,7 +28,7 @@
     <meta property="og:image" content="https://www.yilukaige.com/assets/logo-full.webp" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="通义千问联网搜索支持 freshness 后，企业资讯页要保留时效标签 | 一路凯歌" />
-    <meta name="twitter:description" content="阿里云百炼在联网搜索文档里把 freshness 时间范围写进参数说明，并建议在特定场景同时启用 web_search、web_extractor 和 code_interpreter。对企业 GEO 来说，这意味着资讯页不只是“发出来”，还要让模型能判断新旧、抽取正文并继续比较。" />
+    <meta name="twitter:description" content="阿里云百炼在联网搜索文档里把 freshness 时间范围写进参数说明，并建议在特定场景同时启用 web_search、web_extractor 和 code_interpreter。放到企业 GEO 里看，资讯页不能只是“发出来”，还要让模型看得出新旧、能抽取正文、能继续做比较。" />
     <meta name="twitter:image" content="https://www.yilukaige.com/assets/logo-full.webp" />
     <link rel="stylesheet" href="../styles.css" />
     <script type="application/ld+json" data-seo="article">
@@ -151,13 +151,13 @@
       <section class="article-hero reveal">
         <div class="article-meta"><time datetime="2026-06-03">2026-06-03</time><span>通义千问</span></div>
         <h1>通义千问联网搜索支持 freshness 后，企业资讯页要保留时效标签</h1>
-        <p>阿里云百炼在联网搜索文档里把 freshness 时间范围写进参数说明，并建议在特定场景同时启用 web_search、web_extractor 和 code_interpreter。对企业 GEO 来说，这意味着资讯页不只是“发出来”，还要让模型能判断新旧、抽取正文并继续比较。</p>
+        <p>阿里云百炼在联网搜索文档里把 freshness 时间范围写进参数说明，并建议在特定场景同时启用 web_search、web_extractor 和 code_interpreter。放到企业 GEO 里看，资讯页不能只是“发出来”，还要让模型看得出新旧、能抽取正文、能继续做比较。</p>
       </section>
       <section class="article-shell">
         <article class="article-body reveal">
           <h2>时效不是写在编辑心里的字段</h2>
           <p>很多企业资讯页只有标题和正文，发布日期藏在模板角落，更新时间甚至完全缺失。到了 AI 搜索场景，问题不只是用户看不看得到，而是模型能不能把这篇内容识别为“近期可用资料”。</p>
-          <p>百炼文档里的 freshness 参数，本质上提醒内容团队：时效性正在成为检索链路里的显式条件。企业如果希望公告、政策解读、产品更新被 AI 用来回答近期问题，就不能把时间信息写得含糊。</p>
+          <p>百炼文档里的 freshness 参数给内容团队提了个醒：时效性已经变成检索时会被明确判断的条件。企业如果希望公告、政策解读、产品更新被 AI 用来回答近期问题，就不能把时间信息写得含糊。</p>
 
           <h2>页面要同时能搜、能抽取、能比较</h2>
           <p>联网搜索只是第一步。企业页面被搜到之后，还要能被抽取关键字段，必要时还能被拿去做横向比较。标题、摘要、发布时间、版本号、适用对象、引用来源，都应该是稳定可识别的信息块。</p>
