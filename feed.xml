@@ -6,7 +6,14 @@
     <atom:link href="https://www.yilukaige.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>一路凯歌围绕 GEO、AI 搜索、品牌知识资产、GA4 数据化衡量和 AI 流量归因的文章更新。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Wed, 03 Jun 2026 12:12:00 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 03 Jun 2026 12:14:00 +0800</lastBuildDate>
+    <item>
+      <title>腾讯联网搜索 API 强调权威信源后，企业政策解读页要保留原始链接</title>
+      <link>https://www.yilukaige.com/news/tencent-web-search-api-authoritative-source-pages.html</link>
+      <guid>https://www.yilukaige.com/news/tencent-web-search-api-authoritative-source-pages.html</guid>
+      <pubDate>Wed, 03 Jun 2026 12:14:00 +0800</pubDate>
+      <description>腾讯云联网搜索 API 产品页把公开网页信源、优质权威垂直信源、指定网址检索、指定时间范围检索等能力写得很清楚。对企业官网来说，AI 搜索越来越在意信息来源质量。政策解读、行业观察、公告和活动页，都应该保留原始链接、发布日期和更新记录。</description>
+    </item>
     <item>
       <title>OpenAI 企业 AI 进入工作流阶段，服务商官网要写清权限、数据源和交付边界</title>
       <link>https://www.yilukaige.com/news/openai-workspace-agents-enterprise-permission-boundary.html</link>
@@ -139,13 +146,6 @@
       <guid>https://www.yilukaige.com/news/google-people-first-newsroom-ai-content.html</guid>
       <pubDate>Mon, 01 Jun 2026 09:16:00 +0800</pubDate>
       <description>Google 的 people-first 内容文档再次强调，不要为了搜索访问去追逐趋势、硬凑字数或只改日期装作变新。对企业资讯日更来说，这不是反对更新，而是要求每篇都真正给目标客户新增判断、方法或边界信息。</description>
-    </item>
-    <item>
-      <title>腾讯元宝支持指定时间范围和分钟级更新后，企业公告页别再去掉发布日期</title>
-      <link>https://www.yilukaige.com/news/tencent-yuanbao-time-range-update-pages.html</link>
-      <guid>https://www.yilukaige.com/news/tencent-yuanbao-time-range-update-pages.html</guid>
-      <pubDate>Mon, 01 Jun 2026 09:14:00 +0800</pubDate>
-      <description>腾讯联网搜索 API 已把指定时间范围检索和分钟级更新写进产品能力页。对品牌官网来说，这意味着公告、资讯、版本更新和活动页更需要保留发布日期、更新时间和原始出处，否则就算内容被抓到，也不容易在时效性问题里获得优先采用。</description>
     </item>
   </channel>
 </rss>
