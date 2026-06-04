@@ -6,7 +6,14 @@
     <atom:link href="https://www.yilukaige.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>一路凯歌围绕 GEO、AI 搜索、品牌知识资产、GA4 数据化衡量和 AI 流量归因的文章更新。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Thu, 04 Jun 2026 09:02:00 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 04 Jun 2026 09:04:00 +0800</lastBuildDate>
+    <item>
+      <title>ChatGPT Atlas 依赖 ARIA 理解页面后，企业留资表单别只做视觉占位</title>
+      <link>https://www.yilukaige.com/news/chatgpt-atlas-aria-lead-form-pages.html</link>
+      <guid>https://www.yilukaige.com/news/chatgpt-atlas-aria-lead-form-pages.html</guid>
+      <pubDate>Thu, 04 Jun 2026 09:04:00 +0800</pubDate>
+      <description>OpenAI 介绍 Atlas 时提到，代理会通过浏览器快照和网页的可访问性树理解页面元素。对企业获客页来说，这意味着按钮、表单、步骤和状态提示不能只靠视觉摆放，仍要依赖规范的 ARIA 与语义结构，AI 代理和真人用户才能都顺畅完成动作。</description>
+    </item>
     <item>
       <title>OpenAI 说禁爬页仍可能只显示标题链接后，企业资料页要分清 disallow 和 noindex</title>
       <link>https://www.yilukaige.com/news/chatgpt-noindex-title-link-control.html</link>
@@ -139,13 +146,6 @@
       <guid>https://www.yilukaige.com/news/deepseek-json-output-service-faq-fields.html</guid>
       <pubDate>Tue, 02 Jun 2026 09:06:00 +0800</pubDate>
       <description>DeepSeek 的 JSON Output 文档明确要求输出必须是有效 JSON，并建议在示例和提示里清楚给出目标结构。对企业官网来说，这再一次说明 FAQ、服务能力、交付范围和联系方式，不该只写成长段自然语言，而应先有稳定字段层。</description>
-    </item>
-    <item>
-      <title>DeepSeek 把 cache hit token 写进响应后，企业知识前缀终于能被量化复盘</title>
-      <link>https://www.yilukaige.com/news/deepseek-cache-hit-tokens-knowledge-prefix.html</link>
-      <guid>https://www.yilukaige.com/news/deepseek-cache-hit-tokens-knowledge-prefix.html</guid>
-      <pubDate>Tue, 02 Jun 2026 09:04:00 +0800</pubDate>
-      <description>DeepSeek 官方文档说明开启上下文缓存后，命中和未命中的 token 会分别出现在响应体里。对企业做知识资产建设来说，这意味着那些稳定重复出现的品牌前缀、FAQ 字段和服务定义，终于可以被量化复盘，而不只是凭感觉判断是否值得保留。</description>
     </item>
   </channel>
 </rss>
