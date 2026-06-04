@@ -6,7 +6,14 @@
     <atom:link href="https://www.yilukaige.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>一路凯歌围绕 GEO、AI 搜索、品牌知识资产、GA4 数据化衡量和 AI 流量归因的文章更新。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Wed, 03 Jun 2026 12:18:00 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 04 Jun 2026 09:00:00 +0800</lastBuildDate>
+    <item>
+      <title>Search Console 能用自然语言配过滤后，AI 搜索流量分析要先准备页面分组</title>
+      <link>https://www.yilukaige.com/news/google-search-console-ai-config-geo-analysis.html</link>
+      <guid>https://www.yilukaige.com/news/google-search-console-ai-config-geo-analysis.html</guid>
+      <pubDate>Thu, 04 Jun 2026 09:00:00 +0800</pubDate>
+      <description>Google 在 Search Console 中加入 AI-powered configuration，允许用自然语言配置过滤器和对比视图。对 GEO 团队来说，这意味着 AI 搜索流量分析不该停留在“有没有访问”，而要先把资讯页、服务页、FAQ 页和活动页分组，方便后续持续比较。</description>
+    </item>
     <item>
       <title>DeepSeek 缓存与 JSON Output 提醒企业知识库先做稳定字段层</title>
       <link>https://www.yilukaige.com/news/deepseek-cache-json-output-knowledge-fields.html</link>
@@ -139,13 +146,6 @@
       <guid>https://www.yilukaige.com/news/google-shared-images-stable-urls-brand-assets.html</guid>
       <pubDate>Tue, 02 Jun 2026 09:02:00 +0800</pubDate>
       <description>Google 在图片 SEO 更新里强调，如果同一图片会在站内多处复用，应尽量使用一致的 URL。对品牌官网来说，这意味着案例图、对比图、数据图和证书图不该每发一篇文章就换一个新文件地址。</description>
-    </item>
-    <item>
-      <title>Google 说 AI 搜索仍看重独特价值后，B2B 页面别再用“定义大全”互相改写</title>
-      <link>https://www.yilukaige.com/news/google-ai-search-unique-value-b2b-pages.html</link>
-      <guid>https://www.yilukaige.com/news/google-ai-search-unique-value-b2b-pages.html</guid>
-      <pubDate>Tue, 02 Jun 2026 09:00:00 +0800</pubDate>
-      <description>Google 在 AI 搜索实践文档里强调独特、非商品化价值后，B2B 官网就更不该把同类定义、趋势复述和空泛方法页反复改写成多篇文章。真正更容易被 AI 采用的，是带有一手判断、边界条件和实际证据的页面。</description>
     </item>
   </channel>
 </rss>
