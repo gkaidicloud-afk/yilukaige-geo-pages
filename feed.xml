@@ -6,7 +6,14 @@
     <atom:link href="https://www.yilukaige.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>一路凯歌围绕 GEO、AI 搜索、品牌知识资产、GA4 数据化衡量和 AI 流量归因的文章更新。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Thu, 04 Jun 2026 09:10:00 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 04 Jun 2026 09:12:00 +0800</lastBuildDate>
+    <item>
+      <title>腾讯联网搜索按 version 维度监控后，AI 流量实验别再混看不同套餐</title>
+      <link>https://www.yilukaige.com/news/tencent-web-search-monitoring-version-baseline.html</link>
+      <guid>https://www.yilukaige.com/news/tencent-web-search-monitoring-version-baseline.html</guid>
+      <pubDate>Thu, 04 Jun 2026 09:12:00 +0800</pubDate>
+      <description>腾讯云联网搜索 API 监控文档会展示以 `version` 作为维度查看调用情况的方式。对企业做 AI 流量和内容实验来说，这个启发很直接：任何内容上线、模板改版或渠道切换，都不该混在一个总表里看，而应先拆清版本、批次和页面集合，才能复盘哪一次调整真正起作用。</description>
+    </item>
     <item>
       <title>腾讯联网搜索支持站内域名和时间过滤后，企业官网要先做自有信源包</title>
       <link>https://www.yilukaige.com/news/tencent-site-time-filter-owned-media-source.html</link>
@@ -139,13 +146,6 @@
       <guid>https://www.yilukaige.com/news/volcengine-update-meta-knowledge-labels.html</guid>
       <pubDate>Tue, 02 Jun 2026 09:14:00 +0800</pubDate>
       <description>火山方舟知识库 API 文档说明，调用 `update_meta` 更新文档元信息后会自动触发索引更新。这个能力对企业知识治理的启发很明确：行业、产品线、地区、版本和服务阶段等标签，最好先做成独立元数据，而不是只藏在文件名或正文里。</description>
-    </item>
-    <item>
-      <title>ChatGPT-User 属于用户触发访问后，报价页和试算器要分清公开链接与受控操作</title>
-      <link>https://www.yilukaige.com/news/chatgpt-user-public-links-controlled-actions.html</link>
-      <guid>https://www.yilukaige.com/news/chatgpt-user-public-links-controlled-actions.html</guid>
-      <pubDate>Tue, 02 Jun 2026 09:12:00 +0800</pubDate>
-      <description>OpenAI 的爬虫文档说明，ChatGPT-User 用于用户在产品内触发访问外部网站，它并不用于自动抓取网页做搜索索引。对企业官网来说，这意味着有些页面应该公开给用户跳转查看，但涉及登录、试算和报价动作时，仍要保留明确的受控交互边界。</description>
     </item>
   </channel>
 </rss>
