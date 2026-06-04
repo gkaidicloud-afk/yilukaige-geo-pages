@@ -6,7 +6,14 @@
     <atom:link href="https://www.yilukaige.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>一路凯歌围绕 GEO、AI 搜索、品牌知识资产、GA4 数据化衡量和 AI 流量归因的文章更新。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Thu, 04 Jun 2026 09:08:00 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 04 Jun 2026 09:10:00 +0800</lastBuildDate>
+    <item>
+      <title>腾讯联网搜索支持站内域名和时间过滤后，企业官网要先做自有信源包</title>
+      <link>https://www.yilukaige.com/news/tencent-site-time-filter-owned-media-source.html</link>
+      <guid>https://www.yilukaige.com/news/tencent-site-time-filter-owned-media-source.html</guid>
+      <pubDate>Thu, 04 Jun 2026 09:10:00 +0800</pubDate>
+      <description>腾讯云联网搜索 API 支持指定网址检索和指定时间范围检索。对企业官网来说，这意味着真正有机会进入中文 AI 问答入口的，不只是首页，而是一组日期清晰、结构稳定、彼此可内链的自有信源页面。官网如果没有成体系的资讯、FAQ 和案例页，就很难被持续定向利用。</description>
+    </item>
     <item>
       <title>百炼把联网搜索接到多模型后，官网事实层要先于模型层统一</title>
       <link>https://www.yilukaige.com/news/qwen-web-search-multi-model-consistent-brand-facts.html</link>
@@ -139,13 +146,6 @@
       <guid>https://www.yilukaige.com/news/chatgpt-user-public-links-controlled-actions.html</guid>
       <pubDate>Tue, 02 Jun 2026 09:12:00 +0800</pubDate>
       <description>OpenAI 的爬虫文档说明，ChatGPT-User 用于用户在产品内触发访问外部网站，它并不用于自动抓取网页做搜索索引。对企业官网来说，这意味着有些页面应该公开给用户跳转查看，但涉及登录、试算和报价动作时，仍要保留明确的受控交互边界。</description>
-    </item>
-    <item>
-      <title>Kimi K2.5 思考模式暂不兼容联网搜索后，品牌问答页要把“推理素材”和“实时事实”分层</title>
-      <link>https://www.yilukaige.com/news/kimi-thinking-web-search-layered-content.html</link>
-      <guid>https://www.yilukaige.com/news/kimi-thinking-web-search-layered-content.html</guid>
-      <pubDate>Tue, 02 Jun 2026 09:10:00 +0800</pubDate>
-      <description>Moonshot 官方文档说明，Kimi K2.5 的 `web_search` 目前不兼容 thinking 模式。这个边界对品牌官网的启发很直接：那些需要稳定推理的定义、比较逻辑和边界条件，最好先放在站内公开内容里；实时数据和外部事实则作为补充层管理。</description>
     </item>
   </channel>
 </rss>
