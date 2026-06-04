@@ -6,7 +6,14 @@
     <atom:link href="https://www.yilukaige.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>一路凯歌围绕 GEO、AI 搜索、品牌知识资产、GA4 数据化衡量和 AI 流量归因的文章更新。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Thu, 04 Jun 2026 09:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 04 Jun 2026 09:02:00 +0800</lastBuildDate>
+    <item>
+      <title>OpenAI 说禁爬页仍可能只显示标题链接后，企业资料页要分清 disallow 和 noindex</title>
+      <link>https://www.yilukaige.com/news/chatgpt-noindex-title-link-control.html</link>
+      <guid>https://www.yilukaige.com/news/chatgpt-noindex-title-link-control.html</guid>
+      <pubDate>Thu, 04 Jun 2026 09:02:00 +0800</pubDate>
+      <description>OpenAI 发布者 FAQ 提到，如果页面只是阻止 OAI-SearchBot 抓取，ChatGPT Search 仍可能显示标题、链接和简短描述；若希望完全不在搜索结果中展示，需要使用 noindex。对企业资料页、招聘页和受控下载页来说，这个边界非常关键。</description>
+    </item>
     <item>
       <title>Search Console 能用自然语言配过滤后，AI 搜索流量分析要先准备页面分组</title>
       <link>https://www.yilukaige.com/news/google-search-console-ai-config-geo-analysis.html</link>
@@ -139,13 +146,6 @@
       <guid>https://www.yilukaige.com/news/deepseek-cache-hit-tokens-knowledge-prefix.html</guid>
       <pubDate>Tue, 02 Jun 2026 09:04:00 +0800</pubDate>
       <description>DeepSeek 官方文档说明开启上下文缓存后，命中和未命中的 token 会分别出现在响应体里。对企业做知识资产建设来说，这意味着那些稳定重复出现的品牌前缀、FAQ 字段和服务定义，终于可以被量化复盘，而不只是凭感觉判断是否值得保留。</description>
-    </item>
-    <item>
-      <title>Google 明确共享图片 URL 要稳定后，品牌图表和案例图别再每篇换地址</title>
-      <link>https://www.yilukaige.com/news/google-shared-images-stable-urls-brand-assets.html</link>
-      <guid>https://www.yilukaige.com/news/google-shared-images-stable-urls-brand-assets.html</guid>
-      <pubDate>Tue, 02 Jun 2026 09:02:00 +0800</pubDate>
-      <description>Google 在图片 SEO 更新里强调，如果同一图片会在站内多处复用，应尽量使用一致的 URL。对品牌官网来说，这意味着案例图、对比图、数据图和证书图不该每发一篇文章就换一个新文件地址。</description>
     </item>
   </channel>
 </rss>
