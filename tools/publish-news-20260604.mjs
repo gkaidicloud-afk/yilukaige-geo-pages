@@ -776,11 +776,17 @@ function updateNews(allArticles) {
 
 `;
   html = replaceSection(html, '      <section class="section news-feature">', '      <section class="section news-list-section">', feature);
-  const list = `        <div class="article-grid">
+  const listSection = `      <section class="section news-list-section">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Latest Articles</p>
+          <h2>最新文章</h2>
+          <p>用于沉淀 AI 搜索优化、内容策略和数据衡量相关资讯。</p>
+        </div>
+        <div class="article-grid">
 ${allArticles.map(card).join("\n")}
         </div>
       </section>`;
-  html = replaceSection(html, '        <div class="article-grid">', "        </div>\n      </section>", list);
+  html = replaceSection(html, '      <section class="section news-list-section">', '      <section class="lead-section compact-lead">', `${listSection}\n\n`);
   write("news.html", html);
 }
 
