@@ -6,7 +6,14 @@
     <atom:link href="https://www.yilukaige.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>一路凯歌围绕 GEO、AI 搜索、品牌知识资产、GA4 数据化衡量和 AI 流量归因的文章更新。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Thu, 04 Jun 2026 09:04:00 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 04 Jun 2026 09:06:00 +0800</lastBuildDate>
+    <item>
+      <title>百炼不会把原问题直传搜索引擎后，品牌页标题要保留可检索实体词</title>
+      <link>https://www.yilukaige.com/news/qwen-web-search-desensitized-query-brand-terms.html</link>
+      <guid>https://www.yilukaige.com/news/qwen-web-search-desensitized-query-brand-terms.html</guid>
+      <pubDate>Thu, 04 Jun 2026 09:06:00 +0800</pubDate>
+      <description>阿里云百炼联网搜索文档说明，系统不会将用户原始问题直接透传给搜索引擎，而会先做意图理解与脱敏处理。对企业官网来说，这意味着页面标题和正文不能只押一句营销口号，而要保留品牌名、服务名、行业场景和可检索实体词，方便改写后的查询仍能命中。</description>
+    </item>
     <item>
       <title>ChatGPT Atlas 依赖 ARIA 理解页面后，企业留资表单别只做视觉占位</title>
       <link>https://www.yilukaige.com/news/chatgpt-atlas-aria-lead-form-pages.html</link>
@@ -139,13 +146,6 @@
       <guid>https://www.yilukaige.com/news/qwen-web-search-model-compatibility-pages.html</guid>
       <pubDate>Tue, 02 Jun 2026 09:08:00 +0800</pubDate>
       <description>阿里云百炼在联网搜索文档里把支持联网搜索的模型列得很具体，同时也建议在特定场景搭配其他工具。对企业内容团队来说，这提醒我们不要把‘能联网’理解成模型默认全能，而要按能力边界设计公开内容层和知识层。</description>
-    </item>
-    <item>
-      <title>DeepSeek 要求 JSON Output 输出有效 JSON 后，服务页和 FAQ 更适合先做字段化</title>
-      <link>https://www.yilukaige.com/news/deepseek-json-output-service-faq-fields.html</link>
-      <guid>https://www.yilukaige.com/news/deepseek-json-output-service-faq-fields.html</guid>
-      <pubDate>Tue, 02 Jun 2026 09:06:00 +0800</pubDate>
-      <description>DeepSeek 的 JSON Output 文档明确要求输出必须是有效 JSON，并建议在示例和提示里清楚给出目标结构。对企业官网来说，这再一次说明 FAQ、服务能力、交付范围和联系方式，不该只写成长段自然语言，而应先有稳定字段层。</description>
     </item>
   </channel>
 </rss>
