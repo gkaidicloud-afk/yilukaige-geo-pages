@@ -6,7 +6,14 @@
     <atom:link href="https://www.yilukaige.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>一路凯歌围绕 GEO、AI 搜索、品牌知识资产、GA4 数据化衡量和 AI 流量归因的文章更新。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Thu, 04 Jun 2026 09:16:00 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 04 Jun 2026 09:18:00 +0800</lastBuildDate>
+    <item>
+      <title>Kimi 工具调用要求保留 reasoning_content 后，长问题页更要有清晰分段</title>
+      <link>https://www.yilukaige.com/news/kimi-thinking-tool-context-preservation-pages.html</link>
+      <guid>https://www.yilukaige.com/news/kimi-thinking-tool-context-preservation-pages.html</guid>
+      <pubDate>Thu, 04 Jun 2026 09:18:00 +0800</pubDate>
+      <description>Moonshot 的 Kimi 文档提示，在上一轮包含工具调用时，下一轮请求需要把 reasoning_content 一并保留。对企业官网内容来说，这个边界带来的启发是：复杂问题页最好天然分成结论、条件、步骤、风险和 FAQ 几层，让模型与用户都更容易沿着上下文继续追问，而不是面对一整块难以接续的长文。</description>
+    </item>
     <item>
       <title>DeepSeek 只命中完整缓存前缀后，品牌知识前缀要和临时答案分层</title>
       <link>https://www.yilukaige.com/news/deepseek-cache-prefix-boundary-brand-snippets.html</link>
@@ -139,13 +146,6 @@
       <guid>https://www.yilukaige.com/news/qwen-freshness-enterprise-news-pages.html</guid>
       <pubDate>Wed, 03 Jun 2026 12:00:00 +0800</pubDate>
       <description>阿里云百炼在联网搜索文档里把 freshness 时间范围写进参数说明，并建议在特定场景同时启用 web_search、web_extractor 和 code_interpreter。放到企业 GEO 里看，资讯页不能只是“发出来”，还要让模型看得出新旧、能抽取正文、能继续做比较。</description>
-    </item>
-    <item>
-      <title>腾讯元宝强调权威时效信源后，企业公告和政策解读页要保留原始出处链</title>
-      <link>https://www.yilukaige.com/news/yuanbao-authoritative-timely-sources-pages.html</link>
-      <guid>https://www.yilukaige.com/news/yuanbao-authoritative-timely-sources-pages.html</guid>
-      <pubDate>Tue, 02 Jun 2026 09:18:00 +0800</pubDate>
-      <description>腾讯联网搜索 API 产品页把权威信源、时效更新和内容质量放在同一套能力表述里。对企业官网来说，这意味着公告、政策解读、版本说明和活动通知页不仅要写日期，还要保留原始出处、引用链和更新说明，方便中文 AI 问答入口判断可信度。</description>
     </item>
   </channel>
 </rss>
