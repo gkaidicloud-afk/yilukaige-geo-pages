@@ -6,7 +6,14 @@
     <atom:link href="https://www.yilukaige.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>一路凯歌围绕 GEO、AI 搜索、品牌知识资产、GA4 数据化衡量和 AI 流量归因的文章更新。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Thu, 04 Jun 2026 09:12:00 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 04 Jun 2026 09:14:00 +0800</lastBuildDate>
+    <item>
+      <title>火山方舟暴露 tool_usage_details 后，内容团队终于能反推哪些问题要补页</title>
+      <link>https://www.yilukaige.com/news/volcengine-web-search-tool-usage-content-gap.html</link>
+      <guid>https://www.yilukaige.com/news/volcengine-web-search-tool-usage-content-gap.html</guid>
+      <pubDate>Thu, 04 Jun 2026 09:14:00 +0800</pubDate>
+      <description>火山方舟 Web Search 文档会返回与工具使用相关的明细字段。对企业做 GEO 来说，这类工具级信号的价值不是看技术热闹，而是帮助团队反推：模型为了回答客户问题，到底额外搜索了什么、引用了哪些外部网页、官网又缺了哪些可直接采用的内容。</description>
+    </item>
     <item>
       <title>腾讯联网搜索按 version 维度监控后，AI 流量实验别再混看不同套餐</title>
       <link>https://www.yilukaige.com/news/tencent-web-search-monitoring-version-baseline.html</link>
@@ -139,13 +146,6 @@
       <guid>https://www.yilukaige.com/news/volcengine-batch-pipeline-faq-rollout.html</guid>
       <pubDate>Tue, 02 Jun 2026 09:16:00 +0800</pubDate>
       <description>火山方舟实验版本文档提供了 `batch_to_pipeline`、`reprocess` 等能力，允许企业批量创建处理链路并重跑数据。对 FAQ 和知识库治理来说，这意味着大改版不必一次性全量替换，而可以先小批测试字段、标签和召回效果，再逐步放大范围。</description>
-    </item>
-    <item>
-      <title>火山方舟更新文档 meta 会自动触发索引更新后，知识标签别再只写在文件名里</title>
-      <link>https://www.yilukaige.com/news/volcengine-update-meta-knowledge-labels.html</link>
-      <guid>https://www.yilukaige.com/news/volcengine-update-meta-knowledge-labels.html</guid>
-      <pubDate>Tue, 02 Jun 2026 09:14:00 +0800</pubDate>
-      <description>火山方舟知识库 API 文档说明，调用 `update_meta` 更新文档元信息后会自动触发索引更新。这个能力对企业知识治理的启发很明确：行业、产品线、地区、版本和服务阶段等标签，最好先做成独立元数据，而不是只藏在文件名或正文里。</description>
     </item>
   </channel>
 </rss>
