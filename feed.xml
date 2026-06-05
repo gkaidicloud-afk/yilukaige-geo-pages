@@ -6,7 +6,14 @@
     <atom:link href="https://www.yilukaige.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>一路凯歌围绕 GEO、AI 搜索、品牌知识资产、GA4 数据化衡量和 AI 流量归因的文章更新。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Fri, 05 Jun 2026 09:16:00 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 05 Jun 2026 09:18:00 +0800</lastBuildDate>
+    <item>
+      <title>Kimi 把联网搜索、文件抽取和表格分析放进官方工具后，企业资料中心要能同时服务网页、PDF 和表格</title>
+      <link>https://www.yilukaige.com/news/kimi-web-search-doc-extraction-asset-hub.html</link>
+      <guid>https://www.yilukaige.com/news/kimi-web-search-doc-extraction-asset-hub.html</guid>
+      <pubDate>Fri, 05 Jun 2026 09:18:00 +0800</pubDate>
+      <description>Kimi 开放平台首页已把 Web Search、Fetch、Excel 等能力列为官方工具，定价页也说明文件内容抽取接口限时免费。对企业内容中心而言，这意味着资料建设不能只偏向单一页面形态，而要让网页摘要、PDF 正文和表格清单能围绕同一主题协同存在。</description>
+    </item>
     <item>
       <title>DeepSeek 把 Function Calling 和 JSON Output 一起补齐后，服务官网更该把能力拆成字段而不是大段概述</title>
       <link>https://www.yilukaige.com/news/deepseek-function-calling-schema-service-pages.html</link>
@@ -139,13 +146,6 @@
       <guid>https://www.yilukaige.com/news/google-search-console-ai-config-geo-analysis.html</guid>
       <pubDate>Thu, 04 Jun 2026 09:00:00 +0800</pubDate>
       <description>Google 在 Search Console 中加入 AI-powered configuration，允许用自然语言配置过滤器和对比视图。对 GEO 团队来说，这意味着 AI 搜索流量分析不该停留在“有没有访问”，而要先把资讯页、服务页、FAQ 页和活动页分组，方便后续持续比较。</description>
-    </item>
-    <item>
-      <title>DeepSeek 缓存与 JSON Output 提醒企业知识库先做稳定字段层</title>
-      <link>https://www.yilukaige.com/news/deepseek-cache-json-output-knowledge-fields.html</link>
-      <guid>https://www.yilukaige.com/news/deepseek-cache-json-output-knowledge-fields.html</guid>
-      <pubDate>Wed, 03 Jun 2026 12:18:00 +0800</pubDate>
-      <description>DeepSeek API 文档同时展示了 Context Caching 和 JSON Output 两个方向：前者强调稳定前缀可复用，后者强调输出需要有效 JSON。对企业知识资产来说，这不是单纯接口能力，而是在提醒内容团队先把品牌定义、服务字段、FAQ 和交付边界整理成稳定结构。</description>
     </item>
   </channel>
 </rss>
