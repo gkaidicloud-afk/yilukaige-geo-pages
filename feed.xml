@@ -6,7 +6,21 @@
     <atom:link href="https://www.yilukaige.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>一路凯歌围绕 GEO、AI 搜索、品牌知识资产、GA4 数据化衡量和 AI 流量归因的文章更新。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Thu, 04 Jun 2026 09:18:00 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 05 Jun 2026 09:02:00 +0800</lastBuildDate>
+    <item>
+      <title>OpenAI 公布 SearchBot 与 ChatGPT-User IP 清单后，企业别再只放 robots 不放安全白名单</title>
+      <link>https://www.yilukaige.com/news/openai-searchbot-ip-allowlist-security.html</link>
+      <guid>https://www.yilukaige.com/news/openai-searchbot-ip-allowlist-security.html</guid>
+      <pubDate>Fri, 05 Jun 2026 09:02:00 +0800</pubDate>
+      <description>OpenAI 爬虫文档除了区分 OAI-SearchBot、GPTBot 和 ChatGPT-User，也同步给出了公开 IP 清单，并说明搜索系统会在 robots.txt 更新后大约 24 小时调整。对企业官网来说，这意味着 AI 搜索可见性不是只改 robots.txt 就结束，安全策略、WAF 和访问白名单也要一起检查。</description>
+    </item>
+    <item>
+      <title>Google 说 AI 展示仍计入整体搜索流量后，GEO 周报要把 Search Console 和 GA4 对齐</title>
+      <link>https://www.yilukaige.com/news/google-ai-overviews-search-console-ga4-alignment.html</link>
+      <guid>https://www.yilukaige.com/news/google-ai-overviews-search-console-ga4-alignment.html</guid>
+      <pubDate>Fri, 05 Jun 2026 09:00:00 +0800</pubDate>
+      <description>Google Search Central 说明，AI Overviews 和 AI Mode 仍适用常规 SEO 基础，并计入整体搜索流量；同时建议结合 Search Console 与 Google Analytics 观察转化和停留质量。对 B2B 企业来说，这意味着 GEO 周报不能只看某一份截图，而要把搜索可见性、站内行为和线索动作连成一条链路。</description>
+    </item>
     <item>
       <title>Kimi 工具调用要求保留 reasoning_content 后，长问题页更要有清晰分段</title>
       <link>https://www.yilukaige.com/news/kimi-thinking-tool-context-preservation-pages.html</link>
@@ -132,20 +146,6 @@
       <guid>https://www.yilukaige.com/news/chatgpt-search-query-rewrite-utm-attribution.html</guid>
       <pubDate>Wed, 03 Jun 2026 12:04:00 +0800</pubDate>
       <description>OpenAI 的 ChatGPT Search 说明提到，系统可能把用户问题改写成一个或多个更适合检索的查询；发布者 FAQ 又说明，来自 ChatGPT 的推荐 URL 会包含 utm_source=chatgpt.com。对企业官网来说，GEO 已经不只是“能被 AI 提到”，还要能在 GA4 里复盘这次曝光是否带来访问和线索。</description>
-    </item>
-    <item>
-      <title>OpenAI 提醒放行 AdsBot 和 SearchBot 后，企业落地页别被安全策略误拦</title>
-      <link>https://www.yilukaige.com/news/openai-crawlers-adsbot-searchbot-landing-pages.html</link>
-      <guid>https://www.yilukaige.com/news/openai-crawlers-adsbot-searchbot-landing-pages.html</guid>
-      <pubDate>Wed, 03 Jun 2026 12:02:00 +0800</pubDate>
-      <description>OpenAI 最新帮助文档把广告审核相关的 OAI-AdsBot、搜索引用相关的 OAI-SearchBot 以及用户触发访问场景分开说明。企业 AI 服务官网如果被 robots、WAF、验证码或 CDN 规则误拦，内容写得再完整，也可能进不了 AI 搜索和广告验证流程。</description>
-    </item>
-    <item>
-      <title>通义千问联网搜索支持 freshness 后，企业资讯页要保留时效标签</title>
-      <link>https://www.yilukaige.com/news/qwen-freshness-enterprise-news-pages.html</link>
-      <guid>https://www.yilukaige.com/news/qwen-freshness-enterprise-news-pages.html</guid>
-      <pubDate>Wed, 03 Jun 2026 12:00:00 +0800</pubDate>
-      <description>阿里云百炼在联网搜索文档里把 freshness 时间范围写进参数说明，并建议在特定场景同时启用 web_search、web_extractor 和 code_interpreter。放到企业 GEO 里看，资讯页不能只是“发出来”，还要让模型看得出新旧、能抽取正文、能继续做比较。</description>
     </item>
   </channel>
 </rss>
