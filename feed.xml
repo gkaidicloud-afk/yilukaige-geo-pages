@@ -6,7 +6,14 @@
     <atom:link href="https://www.yilukaige.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>一路凯歌围绕 GEO、AI 搜索、品牌知识资产、GA4 数据化衡量和 AI 流量归因的文章更新。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Fri, 05 Jun 2026 09:06:00 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 05 Jun 2026 09:08:00 +0800</lastBuildDate>
+    <item>
+      <title>腾讯联网搜索同时支持 API Key 和云鉴权后，企业要把试验流量和生产流量分开治理</title>
+      <link>https://www.yilukaige.com/news/tencent-web-search-api-key-governance-split.html</link>
+      <guid>https://www.yilukaige.com/news/tencent-web-search-api-key-governance-split.html</guid>
+      <pubDate>Fri, 05 Jun 2026 09:08:00 +0800</pubDate>
+      <description>腾讯云联网搜索快速入门已把接入方式拆成服务 API Key 与腾讯云标准鉴权两套路径，并明确两者面向的安全和开发场景不同。对企业做元宝入口、Agent 试验和正式业务承接来说，这意味着测试环境、内容实验和生产调用不该继续混用同一套凭证与口径。</description>
+    </item>
     <item>
       <title>百炼显式缓存建议“稳定内容在前”后，企业知识页别把核心事实埋在更新日志后面</title>
       <link>https://www.yilukaige.com/news/qwen-explicit-cache-stable-content-order.html</link>
@@ -139,13 +146,6 @@
       <guid>https://www.yilukaige.com/news/google-ai-source-links-evidence-body-content.html</guid>
       <pubDate>Wed, 03 Jun 2026 12:10:00 +0800</pubDate>
       <description>Google 在介绍 AI 搜索如何帮助用户探索网页时强调，会在 AI 回答中展示更多与要点相关的来源链接，帮助用户继续访问原始内容。企业观点页想被引用，靠的不是空泛观点，而是带有证据、边界和可核验出处的正文段落。</description>
-    </item>
-    <item>
-      <title>Google 说 AI features 没有额外标记后，GEO 基础还是索引、文本和内链</title>
-      <link>https://www.yilukaige.com/news/google-ai-features-index-text-internal-links.html</link>
-      <guid>https://www.yilukaige.com/news/google-ai-features-index-text-internal-links.html</guid>
-      <pubDate>Wed, 03 Jun 2026 12:08:00 +0800</pubDate>
-      <description>Google Search Central 的 AI features 文档写得很直接：想出现在 AI Overviews 或 AI Mode，不需要特殊的 AI 标记，也没有额外 schema。真正要做的仍是让页面可抓取、可索引、可摘要、可内链，并让结构化数据和页面可见内容一致。</description>
     </item>
   </channel>
 </rss>
