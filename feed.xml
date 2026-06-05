@@ -6,7 +6,14 @@
     <atom:link href="https://www.yilukaige.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>一路凯歌围绕 GEO、AI 搜索、品牌知识资产、GA4 数据化衡量和 AI 流量归因的文章更新。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Fri, 05 Jun 2026 09:10:00 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 05 Jun 2026 09:12:00 +0800</lastBuildDate>
+    <item>
+      <title>火山方舟 Web Search 可与 MCP 和自定义函数协同后，企业内容页要先分清“事实来源”和“动作入口”</title>
+      <link>https://www.yilukaige.com/news/volcengine-web-search-tool-priority-source-action.html</link>
+      <guid>https://www.yilukaige.com/news/volcengine-web-search-tool-priority-source-action.html</guid>
+      <pubDate>Fri, 05 Jun 2026 09:12:00 +0800</pubDate>
+      <description>火山方舟最新 Web Search 文档强调，联网搜索工具可与自定义函数、MCP 等工具协同调用，模型会自动判断调用优先级与必要性。对企业官网内容来说，这代表内容页最好同时具备可引用的事实层与可执行的动作层，让模型既能找到依据，也能顺手触发表单、下载或下一步动作。</description>
+    </item>
     <item>
       <title>腾讯 SearchPro 能按站点与时间筛选后，行业资讯页要像“可检索档案库”而不是公告墙</title>
       <link>https://www.yilukaige.com/news/tencent-searchpro-site-time-source-archive.html</link>
@@ -139,13 +146,6 @@
       <guid>https://www.yilukaige.com/news/tencent-web-search-api-authoritative-source-pages.html</guid>
       <pubDate>Wed, 03 Jun 2026 12:14:00 +0800</pubDate>
       <description>腾讯云联网搜索 API 产品页把公开网页信源、优质权威垂直信源、指定网址检索、指定时间范围检索等能力写得很清楚。对企业官网来说，AI 搜索越来越在意信息来源质量。政策解读、行业观察、公告和活动页，都应该保留原始链接、发布日期和更新记录。</description>
-    </item>
-    <item>
-      <title>OpenAI 企业 AI 进入工作流阶段，服务商官网要写清权限、数据源和交付边界</title>
-      <link>https://www.yilukaige.com/news/openai-workspace-agents-enterprise-permission-boundary.html</link>
-      <guid>https://www.yilukaige.com/news/openai-workspace-agents-enterprise-permission-boundary.html</guid>
-      <pubDate>Wed, 03 Jun 2026 12:12:00 +0800</pubDate>
-      <description>OpenAI Business 发布说明持续把 workspace agents、应用模板、连接器、表格工具和管理控制放在企业场景中讨论。企业 AI 服务不再只是“接入大模型”，而是要进入真实工作流。服务商官网如果想被 AI 搜索正确推荐，就必须写清数据源、权限、审批、日志和交付边界。</description>
     </item>
   </channel>
 </rss>
