@@ -6,7 +6,14 @@
     <atom:link href="https://www.yilukaige.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>一路凯歌围绕 GEO、AI 搜索、品牌知识资产、GA4 数据化衡量和 AI 流量归因的文章更新。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Fri, 05 Jun 2026 09:04:00 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 05 Jun 2026 09:06:00 +0800</lastBuildDate>
+    <item>
+      <title>百炼显式缓存建议“稳定内容在前”后，企业知识页别把核心事实埋在更新日志后面</title>
+      <link>https://www.yilukaige.com/news/qwen-explicit-cache-stable-content-order.html</link>
+      <guid>https://www.yilukaige.com/news/qwen-explicit-cache-stable-content-order.html</guid>
+      <pubDate>Fri, 05 Jun 2026 09:06:00 +0800</pubDate>
+      <description>阿里云百炼显式缓存最佳实践明确建议，把变化最少的内容放在最前，把变化最频繁的内容放在最后，以最大化缓存命中。放到企业官网和知识页建设里，这个原则同样成立：品牌定义、服务边界和 FAQ 不该藏在长文后半段，而应作为稳定前缀先被看见。</description>
+    </item>
     <item>
       <title>千问联网检索 Agent 支持检索范围、深度阅读和引用后，官网专题页要兼顾结论与出处</title>
       <link>https://www.yilukaige.com/news/qwen-web-search-agent-range-citation-pages.html</link>
@@ -139,13 +146,6 @@
       <guid>https://www.yilukaige.com/news/google-ai-features-index-text-internal-links.html</guid>
       <pubDate>Wed, 03 Jun 2026 12:08:00 +0800</pubDate>
       <description>Google Search Central 的 AI features 文档写得很直接：想出现在 AI Overviews 或 AI Mode，不需要特殊的 AI 标记，也没有额外 schema。真正要做的仍是让页面可抓取、可索引、可摘要、可内链，并让结构化数据和页面可见内容一致。</description>
-    </item>
-    <item>
-      <title>Google AI Mode 查询变长后，B2B 内容要从关键词页升级为问题链</title>
-      <link>https://www.yilukaige.com/news/google-ai-mode-long-queries-b2b-question-chain.html</link>
-      <guid>https://www.yilukaige.com/news/google-ai-mode-long-queries-b2b-question-chain.html</guid>
-      <pubDate>Wed, 03 Jun 2026 12:06:00 +0800</pubDate>
-      <description>Google 近期分享 AI Mode 使用洞察，提到用户在 AI Mode 中提出的问题更长、更接近真实想法，规划、决策和创意类需求增长明显。B2B 企业做内容时，不能只做“某某服务是什么”，还要回答从判断、选择、执行到复盘的一整条问题链。</description>
     </item>
   </channel>
 </rss>
