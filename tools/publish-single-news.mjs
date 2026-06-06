@@ -1,6 +1,7 @@
 import fs from "fs";
 import path from "path";
 import { june5Articles } from "./news-articles-20260605.mjs";
+import { june6Articles } from "./news-articles-20260606.mjs";
 
 const root = process.cwd();
 const siteUrl = "https://www.yilukaige.com";
@@ -505,7 +506,7 @@ function main() {
     throw new Error("Usage: node tools/publish-single-news.mjs <slug>");
   }
 
-  const article = june5Articles.find((item) => item.slug === slug);
+  const article = [...june6Articles, ...june5Articles].find((item) => item.slug === slug);
   if (!article) {
     throw new Error(`Article data not found for slug: ${slug}`);
   }
