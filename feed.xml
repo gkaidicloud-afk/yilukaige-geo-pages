@@ -6,7 +6,14 @@
     <atom:link href="https://www.yilukaige.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>一路凯歌围绕 GEO、AI 搜索、品牌知识资产、GA4 数据化衡量和 AI 流量归因的文章更新。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Sat, 06 Jun 2026 09:04:00 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 06 Jun 2026 09:06:00 +0800</lastBuildDate>
+    <item>
+      <title>DeepSeek 上做 GEO 关键词布局，FAQ 和服务字段比大段宣传更重要</title>
+      <link>https://www.yilukaige.com/news/deepseek-geo-faq-json-schema-brand-knowledge.html</link>
+      <guid>https://www.yilukaige.com/news/deepseek-geo-faq-json-schema-brand-knowledge.html</guid>
+      <pubDate>Sat, 06 Jun 2026 09:06:00 +0800</pubDate>
+      <description>DeepSeek 官方文档提供 JSON Output、Function Calling 和 Context Caching 等能力说明。企业做 GEO 时，可以从这些技术方向得到一个内容启发：品牌知识要字段化，FAQ 要稳定，服务说明要能被抽取。</description>
+    </item>
     <item>
       <title>想让 ChatGPT 更容易推荐企业官网，页面里要有品牌实体、服务场景和原始来源</title>
       <link>https://www.yilukaige.com/news/chatgpt-brand-recommendation-official-page-structure.html</link>
@@ -139,13 +146,6 @@
       <guid>https://www.yilukaige.com/news/qwen-web-search-multi-model-consistent-brand-facts.html</guid>
       <pubDate>Thu, 04 Jun 2026 09:08:00 +0800</pubDate>
       <description>阿里云百炼文档会分别列出支持联网搜索的模型与组合工具建议。对企业来说，这带来的启发不是追逐某一款模型，而是先把品牌名称、服务边界、行业案例、FAQ 与联系方式统一成稳定事实层，让不同模型入口读到的是同一套核心信息。</description>
-    </item>
-    <item>
-      <title>百炼不会把原问题直传搜索引擎后，品牌页标题要保留可检索实体词</title>
-      <link>https://www.yilukaige.com/news/qwen-web-search-desensitized-query-brand-terms.html</link>
-      <guid>https://www.yilukaige.com/news/qwen-web-search-desensitized-query-brand-terms.html</guid>
-      <pubDate>Thu, 04 Jun 2026 09:06:00 +0800</pubDate>
-      <description>阿里云百炼联网搜索文档说明，系统不会将用户原始问题直接透传给搜索引擎，而会先做意图理解与脱敏处理。对企业官网来说，这意味着页面标题和正文不能只押一句营销口号，而要保留品牌名、服务名、行业场景和可检索实体词，方便改写后的查询仍能命中。</description>
     </item>
   </channel>
 </rss>
