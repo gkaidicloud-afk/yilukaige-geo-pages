@@ -6,7 +6,14 @@
     <atom:link href="https://www.yilukaige.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>一路凯歌围绕 GEO、AI 搜索、品牌知识资产、GA4 数据化衡量和 AI 流量归因的文章更新。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Sat, 06 Jun 2026 09:12:00 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 06 Jun 2026 09:14:00 +0800</lastBuildDate>
+    <item>
+      <title>GEO 和 SEO 有什么区别？企业要从关键词排名转向 AI 答案里的品牌位置</title>
+      <link>https://www.yilukaige.com/news/geo-vs-seo-ai-answer-engine-business-choice.html</link>
+      <guid>https://www.yilukaige.com/news/geo-vs-seo-ai-answer-engine-business-choice.html</guid>
+      <pubDate>Sat, 06 Jun 2026 09:14:00 +0800</pubDate>
+      <description>Google 官方文档说明 AI features 仍依赖搜索基础，但用户体验已经从点击列表扩展到 AI 回答。企业理解 GEO 和 SEO 的区别，不是抛弃 SEO，而是在可抓取、可索引基础上，进一步优化品牌能否进入答案和来源链接。</description>
+    </item>
     <item>
       <title>Kimi 能读网页、文件和表格后，企业 GEO 资料库不能只靠一篇官网介绍</title>
       <link>https://www.yilukaige.com/news/kimi-geo-document-hub-pdf-webpage-table.html</link>
@@ -139,13 +146,6 @@
       <guid>https://www.yilukaige.com/news/deepseek-cache-prefix-boundary-brand-snippets.html</guid>
       <pubDate>Thu, 04 Jun 2026 09:16:00 +0800</pubDate>
       <description>DeepSeek 的 Context Caching 文档说明，缓存命中依赖前缀内容一致。对企业知识资产来说，这意味着品牌介绍、服务字段、FAQ 短答和交付边界这类稳定内容，最好与临时生成的个性化回答分层管理。把两者混在一段长文本里，不利于复用，也不利于官网形成稳定可引用片段。</description>
-    </item>
-    <item>
-      <title>火山方舟暴露 tool_usage_details 后，内容团队终于能反推哪些问题要补页</title>
-      <link>https://www.yilukaige.com/news/volcengine-web-search-tool-usage-content-gap.html</link>
-      <guid>https://www.yilukaige.com/news/volcengine-web-search-tool-usage-content-gap.html</guid>
-      <pubDate>Thu, 04 Jun 2026 09:14:00 +0800</pubDate>
-      <description>火山方舟 Web Search 文档会返回与工具使用相关的明细字段。对企业做 GEO 来说，这类工具级信号的价值不是看技术热闹，而是帮助团队反推：模型为了回答客户问题，到底额外搜索了什么、引用了哪些外部网页、官网又缺了哪些可直接采用的内容。</description>
     </item>
   </channel>
 </rss>
