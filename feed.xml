@@ -6,7 +6,14 @@
     <atom:link href="https://www.yilukaige.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>一路凯歌围绕 GEO、AI 搜索、品牌知识资产、GA4 数据化衡量和 AI 流量归因的文章更新。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Sat, 06 Jun 2026 09:02:00 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 06 Jun 2026 09:04:00 +0800</lastBuildDate>
+    <item>
+      <title>想让 ChatGPT 更容易推荐企业官网，页面里要有品牌实体、服务场景和原始来源</title>
+      <link>https://www.yilukaige.com/news/chatgpt-brand-recommendation-official-page-structure.html</link>
+      <guid>https://www.yilukaige.com/news/chatgpt-brand-recommendation-official-page-structure.html</guid>
+      <pubDate>Sat, 06 Jun 2026 09:04:00 +0800</pubDate>
+      <description>OpenAI 的发布者 FAQ 和爬虫文档都把搜索引用、抓取权限和来源链接讲得很具体。企业想让 ChatGPT 更容易理解和推荐官网，不能只做视觉页面，还要让品牌实体、服务场景、FAQ 和来源链接都清楚可见。</description>
+    </item>
     <item>
       <title>企业 AI 服务怎么做 GEO？先把服务能力、交付边界和 FAQ 写成可引用页面</title>
       <link>https://www.yilukaige.com/news/how-to-do-geo-for-enterprise-ai-service-pages.html</link>
@@ -139,13 +146,6 @@
       <guid>https://www.yilukaige.com/news/qwen-web-search-desensitized-query-brand-terms.html</guid>
       <pubDate>Thu, 04 Jun 2026 09:06:00 +0800</pubDate>
       <description>阿里云百炼联网搜索文档说明，系统不会将用户原始问题直接透传给搜索引擎，而会先做意图理解与脱敏处理。对企业官网来说，这意味着页面标题和正文不能只押一句营销口号，而要保留品牌名、服务名、行业场景和可检索实体词，方便改写后的查询仍能命中。</description>
-    </item>
-    <item>
-      <title>ChatGPT Atlas 依赖 ARIA 理解页面后，企业留资表单别只做视觉占位</title>
-      <link>https://www.yilukaige.com/news/chatgpt-atlas-aria-lead-form-pages.html</link>
-      <guid>https://www.yilukaige.com/news/chatgpt-atlas-aria-lead-form-pages.html</guid>
-      <pubDate>Thu, 04 Jun 2026 09:04:00 +0800</pubDate>
-      <description>OpenAI 介绍 Atlas 时提到，代理会通过浏览器快照和网页的可访问性树理解页面元素。对企业获客页来说，这意味着按钮、表单、步骤和状态提示不能只靠视觉摆放，仍要依赖规范的 ARIA 与语义结构，AI 代理和真人用户才能都顺畅完成动作。</description>
     </item>
   </channel>
 </rss>
