@@ -6,7 +6,14 @@
     <atom:link href="https://www.yilukaige.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>一路凯歌围绕 GEO、AI 搜索、品牌知识资产、GA4 数据化衡量和 AI 流量归因的文章更新。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Sat, 06 Jun 2026 09:10:00 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 06 Jun 2026 09:12:00 +0800</lastBuildDate>
+    <item>
+      <title>Kimi 能读网页、文件和表格后，企业 GEO 资料库不能只靠一篇官网介绍</title>
+      <link>https://www.yilukaige.com/news/kimi-geo-document-hub-pdf-webpage-table.html</link>
+      <guid>https://www.yilukaige.com/news/kimi-geo-document-hub-pdf-webpage-table.html</guid>
+      <pubDate>Sat, 06 Jun 2026 09:12:00 +0800</pubDate>
+      <description>Kimi 开放平台公开展示 Web Search、Fetch、Excel 等工具能力。企业做 Kimi 相关 GEO 时，需要把品牌资料整理成网页摘要、PDF 说明和字段清单三层资产，而不是只靠一篇官网介绍页。</description>
+    </item>
     <item>
       <title>通义千问 GEO 优化怎么做？资讯页要写清时间、来源和更新边界</title>
       <link>https://www.yilukaige.com/news/qwen-geo-freshness-source-citation-newsroom.html</link>
@@ -139,13 +146,6 @@
       <guid>https://www.yilukaige.com/news/volcengine-web-search-tool-usage-content-gap.html</guid>
       <pubDate>Thu, 04 Jun 2026 09:14:00 +0800</pubDate>
       <description>火山方舟 Web Search 文档会返回与工具使用相关的明细字段。对企业做 GEO 来说，这类工具级信号的价值不是看技术热闹，而是帮助团队反推：模型为了回答客户问题，到底额外搜索了什么、引用了哪些外部网页、官网又缺了哪些可直接采用的内容。</description>
-    </item>
-    <item>
-      <title>腾讯联网搜索按 version 维度监控后，AI 流量实验别再混看不同套餐</title>
-      <link>https://www.yilukaige.com/news/tencent-web-search-monitoring-version-baseline.html</link>
-      <guid>https://www.yilukaige.com/news/tencent-web-search-monitoring-version-baseline.html</guid>
-      <pubDate>Thu, 04 Jun 2026 09:12:00 +0800</pubDate>
-      <description>腾讯云联网搜索 API 监控文档会展示以 `version` 作为维度查看调用情况的方式。对企业做 AI 流量和内容实验来说，这个启发很直接：任何内容上线、模板改版或渠道切换，都不该混在一个总表里看，而应先拆清版本、批次和页面集合，才能复盘哪一次调整真正起作用。</description>
     </item>
   </channel>
 </rss>
