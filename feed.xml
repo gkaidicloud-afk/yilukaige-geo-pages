@@ -6,7 +6,14 @@
     <atom:link href="https://www.yilukaige.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>一路凯歌围绕 GEO、AI 搜索、品牌知识资产、GA4 数据化衡量和 AI 流量归因的文章更新。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Sat, 06 Jun 2026 09:14:00 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 06 Jun 2026 09:16:00 +0800</lastBuildDate>
+    <item>
+      <title>企业 GEO 关键词怎么布局？品牌名、行业词、问题词和比较词要一起出现</title>
+      <link>https://www.yilukaige.com/news/geo-keywords-ai-search-brand-entity-layout.html</link>
+      <guid>https://www.yilukaige.com/news/geo-keywords-ai-search-brand-entity-layout.html</guid>
+      <pubDate>Sat, 06 Jun 2026 09:16:00 +0800</pubDate>
+      <description>AI 搜索会把用户长问题拆成多个检索意图，企业做 GEO 关键词布局不能只盯一个核心词。更稳的做法是把品牌名、服务名、行业词、问题词和比较词自然放进标题、首段、FAQ 和内链。</description>
+    </item>
     <item>
       <title>GEO 和 SEO 有什么区别？企业要从关键词排名转向 AI 答案里的品牌位置</title>
       <link>https://www.yilukaige.com/news/geo-vs-seo-ai-answer-engine-business-choice.html</link>
@@ -139,13 +146,6 @@
       <guid>https://www.yilukaige.com/news/kimi-thinking-tool-context-preservation-pages.html</guid>
       <pubDate>Thu, 04 Jun 2026 09:18:00 +0800</pubDate>
       <description>Moonshot 的 Kimi 文档提示，在上一轮包含工具调用时，下一轮请求需要把 reasoning_content 一并保留。对企业官网内容来说，这个边界带来的启发是：复杂问题页最好天然分成结论、条件、步骤、风险和 FAQ 几层，让模型与用户都更容易沿着上下文继续追问，而不是面对一整块难以接续的长文。</description>
-    </item>
-    <item>
-      <title>DeepSeek 只命中完整缓存前缀后，品牌知识前缀要和临时答案分层</title>
-      <link>https://www.yilukaige.com/news/deepseek-cache-prefix-boundary-brand-snippets.html</link>
-      <guid>https://www.yilukaige.com/news/deepseek-cache-prefix-boundary-brand-snippets.html</guid>
-      <pubDate>Thu, 04 Jun 2026 09:16:00 +0800</pubDate>
-      <description>DeepSeek 的 Context Caching 文档说明，缓存命中依赖前缀内容一致。对企业知识资产来说，这意味着品牌介绍、服务字段、FAQ 短答和交付边界这类稳定内容，最好与临时生成的个性化回答分层管理。把两者混在一段长文本里，不利于复用，也不利于官网形成稳定可引用片段。</description>
     </item>
   </channel>
 </rss>
