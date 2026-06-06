@@ -6,7 +6,14 @@
     <atom:link href="https://www.yilukaige.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>一路凯歌围绕 GEO、AI 搜索、品牌知识资产、GA4 数据化衡量和 AI 流量归因的文章更新。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Sat, 06 Jun 2026 09:08:00 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 06 Jun 2026 09:10:00 +0800</lastBuildDate>
+    <item>
+      <title>通义千问 GEO 优化怎么做？资讯页要写清时间、来源和更新边界</title>
+      <link>https://www.yilukaige.com/news/qwen-geo-freshness-source-citation-newsroom.html</link>
+      <guid>https://www.yilukaige.com/news/qwen-geo-freshness-source-citation-newsroom.html</guid>
+      <pubDate>Sat, 06 Jun 2026 09:10:00 +0800</pubDate>
+      <description>阿里云百炼联网搜索文档把 freshness 时间范围、联网搜索和网页抽取等能力写进说明。企业围绕通义千问做 GEO 时，资讯页不能只追热点，还要保留发布时间、更新时间、来源链接和企业判断。</description>
+    </item>
     <item>
       <title>豆包和火山方舟怎么做 GEO？官网内容先做到可搜索、可解析、可回答</title>
       <link>https://www.yilukaige.com/news/doubao-volcengine-geo-searchable-extractable-pages.html</link>
@@ -139,13 +146,6 @@
       <guid>https://www.yilukaige.com/news/tencent-web-search-monitoring-version-baseline.html</guid>
       <pubDate>Thu, 04 Jun 2026 09:12:00 +0800</pubDate>
       <description>腾讯云联网搜索 API 监控文档会展示以 `version` 作为维度查看调用情况的方式。对企业做 AI 流量和内容实验来说，这个启发很直接：任何内容上线、模板改版或渠道切换，都不该混在一个总表里看，而应先拆清版本、批次和页面集合，才能复盘哪一次调整真正起作用。</description>
-    </item>
-    <item>
-      <title>腾讯联网搜索支持站内域名和时间过滤后，企业官网要先做自有信源包</title>
-      <link>https://www.yilukaige.com/news/tencent-site-time-filter-owned-media-source.html</link>
-      <guid>https://www.yilukaige.com/news/tencent-site-time-filter-owned-media-source.html</guid>
-      <pubDate>Thu, 04 Jun 2026 09:10:00 +0800</pubDate>
-      <description>腾讯云联网搜索 API 支持指定网址检索和指定时间范围检索。对企业官网来说，这意味着真正有机会进入中文 AI 问答入口的，不只是首页，而是一组日期清晰、结构稳定、彼此可内链的自有信源页面。官网如果没有成体系的资讯、FAQ 和案例页，就很难被持续定向利用。</description>
     </item>
   </channel>
 </rss>
