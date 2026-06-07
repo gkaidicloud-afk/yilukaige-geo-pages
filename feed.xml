@@ -6,7 +6,14 @@
     <atom:link href="https://www.yilukaige.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>一路凯歌围绕 GEO、AI 搜索、品牌知识资产、GA4 数据化衡量和 AI 流量归因的文章更新。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 07 Jun 2026 09:16:00 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 07 Jun 2026 09:18:00 +0800</lastBuildDate>
+    <item>
+      <title>百度收录和AI引用是不是一回事？GEO优化要分两步看</title>
+      <link>https://www.yilukaige.com/news/baidu-indexing-vs-ai-citation-two-steps.html</link>
+      <guid>https://www.yilukaige.com/news/baidu-indexing-vs-ai-citation-two-steps.html</guid>
+      <pubDate>Sun, 07 Jun 2026 09:18:00 +0800</pubDate>
+      <description>百度普通收录工具和索引量工具都明确说明，提交只能加快抓取或发现，不保证收录；Google 和 OpenAI 的公开资料则进一步提示，被搜索发现也不等于会进入 AI 答案。企业做 GEO，必须把“先被发现”与“再被引用”拆成两层来监测。</description>
+    </item>
     <item>
       <title>企业AI知识库怎么建？为什么它会影响GEO内容输出</title>
       <link>https://www.yilukaige.com/news/enterprise-ai-knowledge-base-geo-output.html</link>
@@ -139,13 +146,6 @@
       <guid>https://www.yilukaige.com/news/why-businesses-need-geo-now-ai-search-basic-rules.html</guid>
       <pubDate>Sat, 06 Jun 2026 09:00:00 +0800</pubDate>
       <description>Google Search Central 的 AI features 文档没有给站长一套神秘标签，而是把问题拉回可抓取、可索引、可摘要和内容质量。对企业来说，GEO 不是追新词，而是让官网事实、服务边界、案例和 FAQ 先变成 AI 能读懂的公开资料。</description>
-    </item>
-    <item>
-      <title>Kimi 把联网搜索、文件抽取和表格分析放进官方工具后，企业资料中心要能同时服务网页、PDF 和表格</title>
-      <link>https://www.yilukaige.com/news/kimi-web-search-doc-extraction-asset-hub.html</link>
-      <guid>https://www.yilukaige.com/news/kimi-web-search-doc-extraction-asset-hub.html</guid>
-      <pubDate>Fri, 05 Jun 2026 09:18:00 +0800</pubDate>
-      <description>Kimi 开放平台首页已把 Web Search、Fetch、Excel 等能力列为官方工具，定价页也说明文件内容抽取接口限时免费。对企业内容中心而言，这意味着资料建设不能只偏向单一页面形态，而要让网页摘要、PDF 正文和表格清单能围绕同一主题协同存在。</description>
     </item>
   </channel>
 </rss>
