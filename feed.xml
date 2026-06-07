@@ -6,7 +6,14 @@
     <atom:link href="https://www.yilukaige.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>一路凯歌围绕 GEO、AI 搜索、品牌知识资产、GA4 数据化衡量和 AI 流量归因的文章更新。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 07 Jun 2026 09:04:00 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 07 Jun 2026 09:06:00 +0800</lastBuildDate>
+    <item>
+      <title>豆包GEO优化怎么做？企业内容怎样更容易被理解</title>
+      <link>https://www.yilukaige.com/news/doubao-geo-content-understandability.html</link>
+      <guid>https://www.yilukaige.com/news/doubao-geo-content-understandability.html</guid>
+      <pubDate>Sun, 07 Jun 2026 09:06:00 +0800</pubDate>
+      <description>火山方舟把 Web Search 和联网问答 Agent 的能力拆得越来越清楚：实时搜索、多轮自动检索、深度阅读、工具协同都已经进入官方文档。企业做豆包 GEO，不该再只做一篇介绍页，而要把可搜索、可抽取、可追问的内容层准备完整。</description>
+    </item>
     <item>
       <title>北京GEO优化公司怎么选？为什么要看本地企业服务经验</title>
       <link>https://www.yilukaige.com/news/beijing-geo-company-local-service-experience.html</link>
@@ -139,13 +146,6 @@
       <guid>https://www.yilukaige.com/news/tencent-web-search-api-key-governance-split.html</guid>
       <pubDate>Fri, 05 Jun 2026 09:08:00 +0800</pubDate>
       <description>腾讯云联网搜索快速入门已把接入方式拆成服务 API Key 与腾讯云标准鉴权两套路径，并明确两者面向的安全和开发场景不同。对企业做元宝入口、Agent 试验和正式业务承接来说，这意味着测试环境、内容实验和生产调用不该继续混用同一套凭证与口径。</description>
-    </item>
-    <item>
-      <title>百炼显式缓存建议“稳定内容在前”后，企业知识页别把核心事实埋在更新日志后面</title>
-      <link>https://www.yilukaige.com/news/qwen-explicit-cache-stable-content-order.html</link>
-      <guid>https://www.yilukaige.com/news/qwen-explicit-cache-stable-content-order.html</guid>
-      <pubDate>Fri, 05 Jun 2026 09:06:00 +0800</pubDate>
-      <description>阿里云百炼显式缓存最佳实践明确建议，把变化最少的内容放在最前，把变化最频繁的内容放在最后，以最大化缓存命中。放到企业官网和知识页建设里，这个原则同样成立：品牌定义、服务边界和 FAQ 不该藏在长文后半段，而应作为稳定前缀先被看见。</description>
     </item>
   </channel>
 </rss>
