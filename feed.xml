@@ -6,7 +6,14 @@
     <atom:link href="https://www.yilukaige.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>一路凯歌围绕 GEO、AI 搜索、品牌知识资产、GA4 数据化衡量和 AI 流量归因的文章更新。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 07 Jun 2026 09:10:00 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 07 Jun 2026 09:12:00 +0800</lastBuildDate>
+    <item>
+      <title>结构化数据对GEO优化有什么帮助</title>
+      <link>https://www.yilukaige.com/news/structured-data-geo-organization-faq.html</link>
+      <guid>https://www.yilukaige.com/news/structured-data-geo-organization-faq.html</guid>
+      <pubDate>Sun, 07 Jun 2026 09:12:00 +0800</pubDate>
+      <description>Google 仍把结构化数据定义为帮助搜索理解页面含义的显式线索，Organization 和 FAQPage 文档也继续强调信息必须和页面可见内容一致。放到 GEO 上看，结构化数据不是魔法按钮，而是把公司、品牌、服务和问答组织成机器更容易辨认的公开字段。</description>
+    </item>
     <item>
       <title>AI可引用内容资产是什么？为什么企业官网要重写</title>
       <link>https://www.yilukaige.com/news/ai-citable-content-assets-website-rewrite.html</link>
@@ -139,13 +146,6 @@
       <guid>https://www.yilukaige.com/news/volcengine-parser-three-url-source-pack.html</guid>
       <pubDate>Fri, 05 Jun 2026 09:14:00 +0800</pubDate>
       <description>火山方舟网页解析插件文档写明，一次调用最多解析 3 个 URL，支持网页、PDF、PPT、表格等多种格式，但暂不支持和其他插件同时开启。对企业专题资料建设来说，这意味着不要指望模型自己在一堆零散链接里拼答案，而应主动准备好一组核心来源包。</description>
-    </item>
-    <item>
-      <title>火山方舟 Web Search 可与 MCP 和自定义函数协同后，企业内容页要先分清“事实来源”和“动作入口”</title>
-      <link>https://www.yilukaige.com/news/volcengine-web-search-tool-priority-source-action.html</link>
-      <guid>https://www.yilukaige.com/news/volcengine-web-search-tool-priority-source-action.html</guid>
-      <pubDate>Fri, 05 Jun 2026 09:12:00 +0800</pubDate>
-      <description>火山方舟最新 Web Search 文档强调，联网搜索工具可与自定义函数、MCP 等工具协同调用，模型会自动判断调用优先级与必要性。对企业官网内容来说，这代表内容页最好同时具备可引用的事实层与可执行的动作层，让模型既能找到依据，也能顺手触发表单、下载或下一步动作。</description>
     </item>
   </channel>
 </rss>
