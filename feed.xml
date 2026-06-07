@@ -6,7 +6,14 @@
     <atom:link href="https://www.yilukaige.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>一路凯歌围绕 GEO、AI 搜索、品牌知识资产、GA4 数据化衡量和 AI 流量归因的文章更新。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 07 Jun 2026 09:12:00 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 07 Jun 2026 09:14:00 +0800</lastBuildDate>
+    <item>
+      <title>企业AI服务到底服务什么？老板不要只买工具</title>
+      <link>https://www.yilukaige.com/news/enterprise-ai-services-not-just-tools.html</link>
+      <guid>https://www.yilukaige.com/news/enterprise-ai-services-not-just-tools.html</guid>
+      <pubDate>Sun, 07 Jun 2026 09:14:00 +0800</pubDate>
+      <description>Kimi、OpenAI 和阿里云都在把搜索、文件、工具调用和权限控制做得更强，但官方能力越丰富，越说明企业真正需要的不是再多一个模型入口，而是把业务场景、知识边界、角色权限和内容复盘组织起来。企业 AI 服务的价值，在于把工具变成流程。</description>
+    </item>
     <item>
       <title>结构化数据对GEO优化有什么帮助</title>
       <link>https://www.yilukaige.com/news/structured-data-geo-organization-faq.html</link>
@@ -139,13 +146,6 @@
       <guid>https://www.yilukaige.com/news/deepseek-function-calling-schema-service-pages.html</guid>
       <pubDate>Fri, 05 Jun 2026 09:16:00 +0800</pubDate>
       <description>DeepSeek 在 API 更新中把 Function Calling 与 JSON Output 一并补齐，并要求通过 `response_format` 和提示约束模型输出有效 JSON。对企业官网来说，这再次证明，服务能力、适用行业、执行步骤和 FAQ 越字段化，越容易被模型稳定理解、抽取和比较。</description>
-    </item>
-    <item>
-      <title>火山方舟网页解析一次最多读 3 个链接后，企业专题资料最好先做“三件套来源包”</title>
-      <link>https://www.yilukaige.com/news/volcengine-parser-three-url-source-pack.html</link>
-      <guid>https://www.yilukaige.com/news/volcengine-parser-three-url-source-pack.html</guid>
-      <pubDate>Fri, 05 Jun 2026 09:14:00 +0800</pubDate>
-      <description>火山方舟网页解析插件文档写明，一次调用最多解析 3 个 URL，支持网页、PDF、PPT、表格等多种格式，但暂不支持和其他插件同时开启。对企业专题资料建设来说，这意味着不要指望模型自己在一堆零散链接里拼答案，而应主动准备好一组核心来源包。</description>
     </item>
   </channel>
 </rss>
