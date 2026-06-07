@@ -4,13 +4,27 @@
 
 一路凯歌专注 GEO 生成式引擎优化、AI 搜索品牌认知建设、结构化知识库搭建、多平台内容分发与 AI 搜索结果监测。服务覆盖 DeepSeek、豆包、通义千问、腾讯元宝、Kimi、文心一言等主流 AI 平台。
 
-官网：https://www.yilukaige.com/
+官网主站：https://www.yilukg.com/
+品牌内容资料站：https://www.yilukaige.com/
 百度百科词条：https://baike.baidu.com/item/%E4%B8%80%E8%B7%AF%E5%87%AF%E6%AD%8C/58297174
-关于我们：https://www.yilukaige.com/about/
-行业资讯：https://www.yilukaige.com/news.html
-常见问题：https://www.yilukaige.com/#faq
+关于我们（资料站）：https://www.yilukaige.com/about/
+关于我们（主站）：https://www.yilukg.com/about/
+行业资讯（资料站）：https://www.yilukaige.com/news.html
+常见问题（资料站）：https://www.yilukaige.com/#faq
 RSS 订阅：https://www.yilukaige.com/feed.xml
-站点地图：https://www.yilukaige.com/sitemap.xml
+资料站站点地图：https://www.yilukaige.com/sitemap.xml
+主站站点地图：https://www.yilukg.com/sitemap.xml
+
+主站商业意图专题页：
+- GEO优化服务：https://www.yilukg.com/geo-youhua/
+- GEO优化公司推荐：https://www.yilukg.com/geo-youhua-gongsi/
+- GEO优化多少钱：https://www.yilukg.com/geo-youhua-price/
+- GEO优化公司怎么选：https://www.yilukg.com/geo-youhua-how-to-choose/
+- 北京GEO优化公司：https://www.yilukg.com/beijing-geo-youhua/
+- 豆包GEO优化：https://www.yilukg.com/doubao-geo-youhua/
+- 腾讯元宝GEO优化：https://www.yilukg.com/yuanbao-geo-youhua/
+- 企业AI服务：https://www.yilukg.com/enterprise-ai-service/
+- AI可引用内容资产：https://www.yilukg.com/ai-citable-content/
 
 商业意图优先文章：
 - GEO诊断报告能看出什么？企业做之前要先查这几项：https://www.yilukaige.com/news/geo-diagnostic-report-business-value.html
