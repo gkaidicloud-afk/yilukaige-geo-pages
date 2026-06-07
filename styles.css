@@ -2062,6 +2062,20 @@ h1 span {
   line-height: 1.9;
 }
 
+.article-cover {
+  margin: 34px 0 0;
+  overflow: hidden;
+  border: 1px solid rgba(11, 31, 59, 0.1);
+  border-radius: 26px;
+  background: rgba(255, 255, 255, 0.88);
+  box-shadow: 0 22px 58px rgba(11, 31, 59, 0.08);
+}
+
+.article-cover img {
+  width: 100%;
+  height: auto;
+}
+
 .article-shell {
   display: grid;
   grid-template-columns: minmax(0, 790px) minmax(250px, 320px);

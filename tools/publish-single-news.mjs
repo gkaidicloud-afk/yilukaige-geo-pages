@@ -2,6 +2,7 @@ import fs from "fs";
 import path from "path";
 import { june5Articles } from "./news-articles-20260605.mjs";
 import { june6Articles } from "./news-articles-20260606.mjs";
+import { june7Articles } from "./news-articles-20260607.mjs";
 
 const root = process.cwd();
 const siteUrl = "https://www.yilukaige.com";
@@ -25,6 +26,19 @@ function escapeHtml(text) {
     .replaceAll("<", "&lt;")
     .replaceAll(">", "&gt;")
     .replaceAll('"', "&quot;");
+}
+
+function escapeAttribute(text) {
+  return String(text).replaceAll("&", "&amp;").replaceAll('"', "&quot;").replaceAll("<", "&lt;");
+}
+
+function escapeXml(text) {
+  return String(text)
+    .replaceAll("&", "&amp;")
+    .replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;")
+    .replaceAll('"', "&quot;")
+    .replaceAll("'", "&apos;");
 }
 
 function indent(text, count) {
@@ -99,7 +113,7 @@ function buildArticleJsonLd(article) {
       "@type": "Article",
       headline: article.title,
       description: article.seoDescription,
-      image: [`${siteUrl}/assets/logo-full.webp`],
+      image: [`${siteUrl}/${article.coverPath}`],
       datePublished: article.datetime,
       dateModified: article.datetime,
       author: {
@@ -191,6 +205,54 @@ function buildArticleNav(article, allArticles) {
           </div>`;
 }
 
+function buildCoverSvg(article) {
+  const cover = article.cover ?? {};
+  const colors = cover.colors ?? ["#0b1f3b", "#17355d", "#f36b21", "#f8efe5"];
+  const points = (cover.points ?? []).slice(0, 3);
+  const shortTitle = cover.title ?? article.title;
+  const kicker = cover.kicker ?? article.category;
+  const tag = cover.tag ?? "一路凯歌 GEO";
+
+  return `<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="cover-bg" x1="72" y1="54" x2="1088" y2="576" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="${escapeXml(colors[0])}"/>
+      <stop offset="0.55" stop-color="${escapeXml(colors[1])}"/>
+      <stop offset="1" stop-color="${escapeXml(colors[2])}"/>
+    </linearGradient>
+    <radialGradient id="cover-glow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(978 92) rotate(136.331) scale(371.728 399.744)">
+      <stop stop-color="${escapeXml(colors[3])}" stop-opacity="0.78"/>
+      <stop offset="1" stop-color="${escapeXml(colors[3])}" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="630" rx="32" fill="url(#cover-bg)"/>
+  <rect x="36" y="36" width="1128" height="558" rx="28" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.18)"/>
+  <circle cx="1005" cy="114" r="226" fill="url(#cover-glow)"/>
+  <path d="M835 506C889.5 421.5 958.5 373 1082 333.5" stroke="rgba(255,255,255,0.22)" stroke-width="2"/>
+  <path d="M772 540C841 412 951 317 1116 236" stroke="rgba(255,255,255,0.14)" stroke-width="2"/>
+  <rect x="72" y="74" width="184" height="42" rx="21" fill="rgba(255,255,255,0.14)"/>
+  <text x="104" y="102" fill="#F8F4EE" font-size="18" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-weight="700">${escapeXml(kicker)}</text>
+  <text x="72" y="210" fill="#FFFFFF" font-size="62" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-weight="800">${escapeXml(shortTitle)}</text>
+  <text x="72" y="276" fill="rgba(255,255,255,0.82)" font-size="25" font-family="PingFang SC, Microsoft YaHei, sans-serif">${escapeXml(tag)}</text>
+  ${points
+    .map(
+      (point, index) => `<rect x="72" y="${338 + index * 70}" width="18" height="18" rx="9" fill="#F7B58B"/><text x="104" y="${353 + index * 70}" fill="#F6F1EA" font-size="28" font-family="PingFang SC, Microsoft YaHei, sans-serif">${escapeXml(point)}</text>`,
+    )
+    .join("\n  ")}
+  <rect x="72" y="518" width="248" height="44" rx="22" fill="rgba(255,255,255,0.12)"/>
+  <text x="104" y="547" fill="#FFFFFF" font-size="20" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-weight="700">一路凯歌 GEO优化与企业AI服务</text>
+  <text x="871" y="558" fill="rgba(255,255,255,0.70)" font-size="18" font-family="Avenir Next Condensed, Arial Narrow, sans-serif" letter-spacing="2">YILUKAIGE · AI SEARCH GROWTH</text>
+</svg>
+`;
+}
+
+function ensureCoverAsset(article) {
+  const coverPath = path.join(root, article.coverPath);
+  write(article.coverPath, buildCoverSvg(article));
+  return coverPath;
+}
+
 function articleBodyHtml(article) {
   const sectionHtml = article.sections
     .map((section) => {
@@ -255,11 +317,13 @@ function buildGeneratedArticlePage(article, allArticles) {
     <meta property="article:modified_time" content="${article.datetime}" />
     <meta property="article:author" content="${orgName}" />
     <meta property="article:section" content="${escapeHtml(article.category)}" />
-    <meta property="og:image" content="${siteUrl}/assets/logo-full.webp" />
+    <meta property="og:image" content="${siteUrl}/${article.coverPath}" />
+    <meta property="og:image:alt" content="${escapeAttribute(article.coverAlt)}" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="${escapeHtml(article.title)} | ${brandName}" />
     <meta name="twitter:description" content="${escapeHtml(article.summary)}" />
-    <meta name="twitter:image" content="${siteUrl}/assets/logo-full.webp" />
+    <meta name="twitter:image" content="${siteUrl}/${article.coverPath}" />
+    <meta name="twitter:image:alt" content="${escapeAttribute(article.coverAlt)}" />
     <link rel="stylesheet" href="../styles.css" />
     <script type="application/ld+json" data-seo="article">
 ${indent(buildArticleJsonLd(article), 6)}
@@ -283,6 +347,9 @@ ${indent(buildFaqJsonLd(article), 6)}
         <div class="article-meta"><time datetime="${article.date}">${article.date}</time><span>${article.category}</span></div>
         <h1>${article.title}</h1>
         <p>${article.summary}</p>
+        <figure class="article-cover">
+          <img src="../${article.coverPath}" alt="${escapeAttribute(article.coverAlt)}" width="1200" height="630" loading="eager" />
+        </figure>
       </section>
 
       <section class="article-shell">
@@ -478,6 +545,12 @@ function validateLinks(allArticles) {
   const files = ["index.html", "news.html", ...allArticles.map((item) => `news/${item.slug}.html`)];
   const existing = new Set(fs.readdirSync(path.join(root, "news")).map((file) => `/news/${file}`));
   const rootFiles = new Set(fs.readdirSync(root).map((file) => `/${file}`));
+  const rootDirs = new Set(
+    fs
+      .readdirSync(root, { withFileTypes: true })
+      .filter((entry) => entry.isDirectory())
+      .map((entry) => `/${entry.name}/`),
+  );
   const assetFiles = new Set(fs.readdirSync(path.join(root, "assets")).map((file) => `/assets/${file}`));
   const missing = [];
 
@@ -489,7 +562,7 @@ function validateLinks(allArticles) {
         continue;
       }
       const normalized = normalizeHref(file, href).split("#")[0];
-      if (!existing.has(normalized) && !rootFiles.has(normalized) && !assetFiles.has(normalized)) {
+      if (!existing.has(normalized) && !rootFiles.has(normalized) && !rootDirs.has(normalized) && !assetFiles.has(normalized)) {
         missing.push(`${file} -> ${href}`);
       }
     }
@@ -506,7 +579,7 @@ function main() {
     throw new Error("Usage: node tools/publish-single-news.mjs <slug>");
   }
 
-  const article = [...june6Articles, ...june5Articles].find((item) => item.slug === slug);
+  const article = [...june7Articles, ...june6Articles, ...june5Articles].find((item) => item.slug === slug);
   if (!article) {
     throw new Error(`Article data not found for slug: ${slug}`);
   }
@@ -520,14 +593,17 @@ function main() {
   const allArticles = [
     {
       ...article,
+      coverPath: article.coverPath ?? `assets/cover-${article.slug}.svg`,
+      coverAlt: article.coverAlt ?? `${article.title} - 一路凯歌GEO优化与企业AI服务观察`,
       url: `${siteUrl}/news/${article.slug}.html`,
     },
     ...existingArticles,
   ];
+  const publishedArticle = allArticles[0];
 
   validateUniqueness(allArticles);
-  write(`news/${article.slug}.html`, buildGeneratedArticlePage(article, allArticles));
-  updateArticleNavs(allArticles);
+  ensureCoverAsset(publishedArticle);
+  write(`news/${publishedArticle.slug}.html`, buildGeneratedArticlePage(publishedArticle, allArticles));
   updateNewsPage(allArticles);
   updateHomePage(allArticles);
   updateSitemap(allArticles);

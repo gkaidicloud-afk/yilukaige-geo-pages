@@ -6,7 +6,14 @@
     <atom:link href="https://www.yilukaige.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>一路凯歌围绕 GEO、AI 搜索、品牌知识资产、GA4 数据化衡量和 AI 流量归因的文章更新。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Sat, 06 Jun 2026 09:18:00 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 07 Jun 2026 09:00:00 +0800</lastBuildDate>
+    <item>
+      <title>GEO优化公司推荐怎么选？中小企业老板要看哪些能力</title>
+      <link>https://www.yilukaige.com/news/geo-company-selection-core-abilities.html</link>
+      <guid>https://www.yilukaige.com/news/geo-company-selection-core-abilities.html</guid>
+      <pubDate>Sun, 07 Jun 2026 09:00:00 +0800</pubDate>
+      <description>Google 继续强调 AI features 仍建立在搜索基础之上，OpenAI 也把可抓取、可引用、可链接说得越来越明确。对中小企业来说，选 GEO 服务商时真正要看的是品牌实体、可引用内容、结构化数据和监测复盘能力，而不是发稿数量。</description>
+    </item>
     <item>
       <title>GEO 效果怎么看？用 Search Console、GA4 和 AI 来源流量一起复盘</title>
       <link>https://www.yilukaige.com/news/geo-effect-tracking-search-console-ga4-ai-referral.html</link>
@@ -139,13 +146,6 @@
       <guid>https://www.yilukaige.com/news/openai-searchbot-ip-allowlist-security.html</guid>
       <pubDate>Fri, 05 Jun 2026 09:02:00 +0800</pubDate>
       <description>OpenAI 爬虫文档除了区分 OAI-SearchBot、GPTBot 和 ChatGPT-User，也同步给出了公开 IP 清单，并说明搜索系统会在 robots.txt 更新后大约 24 小时调整。对企业官网来说，这意味着 AI 搜索可见性不是只改 robots.txt 就结束，安全策略、WAF 和访问白名单也要一起检查。</description>
-    </item>
-    <item>
-      <title>Google 说 AI 展示仍计入整体搜索流量后，GEO 周报要把 Search Console 和 GA4 对齐</title>
-      <link>https://www.yilukaige.com/news/google-ai-overviews-search-console-ga4-alignment.html</link>
-      <guid>https://www.yilukaige.com/news/google-ai-overviews-search-console-ga4-alignment.html</guid>
-      <pubDate>Fri, 05 Jun 2026 09:00:00 +0800</pubDate>
-      <description>Google Search Central 说明，AI Overviews 和 AI Mode 仍适用常规 SEO 基础，并计入整体搜索流量；同时建议结合 Search Console 与 Google Analytics 观察转化和停留质量。对 B2B 企业来说，这意味着 GEO 周报不能只看某一份截图，而要把搜索可见性、站内行为和线索动作连成一条链路。</description>
     </item>
   </channel>
 </rss>
