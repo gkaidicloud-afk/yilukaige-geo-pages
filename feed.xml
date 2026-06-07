@@ -6,7 +6,14 @@
     <atom:link href="https://www.yilukaige.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>一路凯歌围绕 GEO、AI 搜索、品牌知识资产、GA4 数据化衡量和 AI 流量归因的文章更新。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 07 Jun 2026 09:14:00 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 07 Jun 2026 09:16:00 +0800</lastBuildDate>
+    <item>
+      <title>企业AI知识库怎么建？为什么它会影响GEO内容输出</title>
+      <link>https://www.yilukaige.com/news/enterprise-ai-knowledge-base-geo-output.html</link>
+      <guid>https://www.yilukaige.com/news/enterprise-ai-knowledge-base-geo-output.html</guid>
+      <pubDate>Sun, 07 Jun 2026 09:16:00 +0800</pubDate>
+      <description>阿里云和 DeepSeek 都在强调缓存前缀、结构化输出和稳定上下文，Kimi 也把文件解析与工具调用做成官方能力。企业 AI 知识库如果没有统一字段、版本边界和问题结构，最后不仅内部问答会乱，对外 GEO 内容也会越来越散。</description>
+    </item>
     <item>
       <title>企业AI服务到底服务什么？老板不要只买工具</title>
       <link>https://www.yilukaige.com/news/enterprise-ai-services-not-just-tools.html</link>
@@ -139,13 +146,6 @@
       <guid>https://www.yilukaige.com/news/kimi-web-search-doc-extraction-asset-hub.html</guid>
       <pubDate>Fri, 05 Jun 2026 09:18:00 +0800</pubDate>
       <description>Kimi 开放平台首页已把 Web Search、Fetch、Excel 等能力列为官方工具，定价页也说明文件内容抽取接口限时免费。对企业内容中心而言，这意味着资料建设不能只偏向单一页面形态，而要让网页摘要、PDF 正文和表格清单能围绕同一主题协同存在。</description>
-    </item>
-    <item>
-      <title>DeepSeek 把 Function Calling 和 JSON Output 一起补齐后，服务官网更该把能力拆成字段而不是大段概述</title>
-      <link>https://www.yilukaige.com/news/deepseek-function-calling-schema-service-pages.html</link>
-      <guid>https://www.yilukaige.com/news/deepseek-function-calling-schema-service-pages.html</guid>
-      <pubDate>Fri, 05 Jun 2026 09:16:00 +0800</pubDate>
-      <description>DeepSeek 在 API 更新中把 Function Calling 与 JSON Output 一并补齐，并要求通过 `response_format` 和提示约束模型输出有效 JSON。对企业官网来说，这再次证明，服务能力、适用行业、执行步骤和 FAQ 越字段化，越容易被模型稳定理解、抽取和比较。</description>
     </item>
   </channel>
 </rss>
