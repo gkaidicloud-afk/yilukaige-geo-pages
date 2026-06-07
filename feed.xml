@@ -6,7 +6,14 @@
     <atom:link href="https://www.yilukaige.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>一路凯歌围绕 GEO、AI 搜索、品牌知识资产、GA4 数据化衡量和 AI 流量归因的文章更新。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 07 Jun 2026 09:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 07 Jun 2026 09:02:00 +0800</lastBuildDate>
+    <item>
+      <title>AI搜索优化公司推荐：企业如何判断服务商是否专业</title>
+      <link>https://www.yilukaige.com/news/ai-search-optimization-company-professional-checklist.html</link>
+      <guid>https://www.yilukaige.com/news/ai-search-optimization-company-professional-checklist.html</guid>
+      <pubDate>Sun, 07 Jun 2026 09:02:00 +0800</pubDate>
+      <description>OpenAI 已把 SearchBot、ChatGPT-User 和 IP 白名单要求说得更细，Google 也持续强化结构化信号与页面理解。企业判断 AI 搜索优化公司是否专业，核心不是听概念，而是看对方是否能同时处理抓取授权、组织信息和答案可引用性。</description>
+    </item>
     <item>
       <title>GEO优化公司推荐怎么选？中小企业老板要看哪些能力</title>
       <link>https://www.yilukaige.com/news/geo-company-selection-core-abilities.html</link>
@@ -139,13 +146,6 @@
       <guid>https://www.yilukaige.com/news/qwen-web-search-agent-range-citation-pages.html</guid>
       <pubDate>Fri, 05 Jun 2026 09:04:00 +0800</pubDate>
       <description>阿里云百炼的千问联网检索 Agent 已支持自然语言定义检索范围、开启网页深度阅读、自动添加引用角标和追问能力。对企业内容建设来说，这意味着高意图专题页不能只给结论，还要让出处、范围和延伸问题都能被顺手接住。</description>
-    </item>
-    <item>
-      <title>OpenAI 公布 SearchBot 与 ChatGPT-User IP 清单后，企业别再只放 robots 不放安全白名单</title>
-      <link>https://www.yilukaige.com/news/openai-searchbot-ip-allowlist-security.html</link>
-      <guid>https://www.yilukaige.com/news/openai-searchbot-ip-allowlist-security.html</guid>
-      <pubDate>Fri, 05 Jun 2026 09:02:00 +0800</pubDate>
-      <description>OpenAI 爬虫文档除了区分 OAI-SearchBot、GPTBot 和 ChatGPT-User，也同步给出了公开 IP 清单，并说明搜索系统会在 robots.txt 更新后大约 24 小时调整。对企业官网来说，这意味着 AI 搜索可见性不是只改 robots.txt 就结束，安全策略、WAF 和访问白名单也要一起检查。</description>
     </item>
   </channel>
 </rss>
