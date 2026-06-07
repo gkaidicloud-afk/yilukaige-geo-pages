@@ -6,7 +6,42 @@
     <atom:link href="https://www.yilukaige.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>一路凯歌围绕 GEO、AI 搜索、品牌知识资产、GA4 数据化衡量和 AI 流量归因的文章更新。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 07 Jun 2026 09:18:00 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 08 Jun 2026 09:08:00 +0800</lastBuildDate>
+    <item>
+      <title>GEO诊断报告能看出什么？企业做之前要先查这几项</title>
+      <link>https://www.yilukaige.com/news/geo-diagnostic-report-business-value.html</link>
+      <guid>https://www.yilukaige.com/news/geo-diagnostic-report-business-value.html</guid>
+      <pubDate>Mon, 08 Jun 2026 09:08:00 +0800</pubDate>
+      <description>GEO 诊断报告不是简单截图，也不是告诉你 AI 有没有提到品牌。真正有用的诊断报告，要看品牌实体、官网可抓取性、服务页可引用性、高意图问题覆盖、竞品同场出现和转化承接。</description>
+    </item>
+    <item>
+      <title>AI搜索优化服务商怎么选？中小企业先看交付边界</title>
+      <link>https://www.yilukaige.com/news/ai-search-service-provider-selection-boundary.html</link>
+      <guid>https://www.yilukaige.com/news/ai-search-service-provider-selection-boundary.html</guid>
+      <pubDate>Mon, 08 Jun 2026 09:06:00 +0800</pubDate>
+      <description>中小企业选 AI 搜索优化服务商，不能只问能不能上豆包、DeepSeek、Kimi。更关键的是交付边界：服务商到底改哪些页面、补哪些 FAQ、监测哪些问题、每月怎么复盘。</description>
+    </item>
+    <item>
+      <title>北京GEO优化公司哪家靠谱？先看这几个公开证据</title>
+      <link>https://www.yilukaige.com/news/beijing-geo-company-reliable-evidence.html</link>
+      <guid>https://www.yilukaige.com/news/beijing-geo-company-reliable-evidence.html</guid>
+      <pubDate>Mon, 08 Jun 2026 09:04:00 +0800</pubDate>
+      <description>判断北京 GEO 优化公司哪家靠谱，不要只看宣传页和口号。更可执行的办法，是看公司主体、官网内容、服务边界、FAQ、案例证据、联系方式和持续更新的资讯是否能互相印证。</description>
+    </item>
+    <item>
+      <title>企业AI服务费用怎么判断？别只看工具数量</title>
+      <link>https://www.yilukaige.com/news/enterprise-ai-service-fee-decision.html</link>
+      <guid>https://www.yilukaige.com/news/enterprise-ai-service-fee-decision.html</guid>
+      <pubDate>Mon, 08 Jun 2026 09:02:00 +0800</pubDate>
+      <description>企业 AI 服务不是买几个工具入口，也不是把所有软件都接一遍。费用是否合理，要看服务商能不能把业务场景、知识库、流程边界、团队使用方式和外部 GEO 内容一起梳理清楚。</description>
+    </item>
+    <item>
+      <title>GEO优化多少钱？企业应该按什么标准判断费用</title>
+      <link>https://www.yilukaige.com/news/geo-optimization-cost-fee-standards.html</link>
+      <guid>https://www.yilukaige.com/news/geo-optimization-cost-fee-standards.html</guid>
+      <pubDate>Mon, 08 Jun 2026 09:00:00 +0800</pubDate>
+      <description>很多企业问 GEO 优化多少钱，其实应该先问项目要解决什么问题。只做一两篇文章、只做官网基础改造、还是要覆盖豆包、DeepSeek、通义千问、腾讯元宝、Kimi 等 AI 问答入口，费用结构完全不同。</description>
+    </item>
     <item>
       <title>百度收录和AI引用是不是一回事？GEO优化要分两步看</title>
       <link>https://www.yilukaige.com/news/baidu-indexing-vs-ai-citation-two-steps.html</link>
@@ -111,41 +146,6 @@
       <guid>https://www.yilukaige.com/news/qwen-geo-freshness-source-citation-newsroom.html</guid>
       <pubDate>Sat, 06 Jun 2026 09:10:00 +0800</pubDate>
       <description>阿里云百炼联网搜索文档把 freshness 时间范围、联网搜索和网页抽取等能力写进说明。企业围绕通义千问做 GEO 时，资讯页不能只追热点，还要保留发布时间、更新时间、来源链接和企业判断。</description>
-    </item>
-    <item>
-      <title>豆包和火山方舟怎么做 GEO？官网内容先做到可搜索、可解析、可回答</title>
-      <link>https://www.yilukaige.com/news/doubao-volcengine-geo-searchable-extractable-pages.html</link>
-      <guid>https://www.yilukaige.com/news/doubao-volcengine-geo-searchable-extractable-pages.html</guid>
-      <pubDate>Sat, 06 Jun 2026 09:08:00 +0800</pubDate>
-      <description>火山方舟 Web Search 和网页解析相关文档展示了搜索、网页读取和答案生成的工具能力。企业想在豆包相关入口里做好 GEO，官网内容不能只做海报和长图，而要保留可搜索、可解析的正文。</description>
-    </item>
-    <item>
-      <title>DeepSeek 上做 GEO 关键词布局，FAQ 和服务字段比大段宣传更重要</title>
-      <link>https://www.yilukaige.com/news/deepseek-geo-faq-json-schema-brand-knowledge.html</link>
-      <guid>https://www.yilukaige.com/news/deepseek-geo-faq-json-schema-brand-knowledge.html</guid>
-      <pubDate>Sat, 06 Jun 2026 09:06:00 +0800</pubDate>
-      <description>DeepSeek 官方文档提供 JSON Output、Function Calling 和 Context Caching 等能力说明。企业做 GEO 时，可以从这些技术方向得到一个内容启发：品牌知识要字段化，FAQ 要稳定，服务说明要能被抽取。</description>
-    </item>
-    <item>
-      <title>想让 ChatGPT 更容易推荐企业官网，页面里要有品牌实体、服务场景和原始来源</title>
-      <link>https://www.yilukaige.com/news/chatgpt-brand-recommendation-official-page-structure.html</link>
-      <guid>https://www.yilukaige.com/news/chatgpt-brand-recommendation-official-page-structure.html</guid>
-      <pubDate>Sat, 06 Jun 2026 09:04:00 +0800</pubDate>
-      <description>OpenAI 的发布者 FAQ 和爬虫文档都把搜索引用、抓取权限和来源链接讲得很具体。企业想让 ChatGPT 更容易理解和推荐官网，不能只做视觉页面，还要让品牌实体、服务场景、FAQ 和来源链接都清楚可见。</description>
-    </item>
-    <item>
-      <title>企业 AI 服务怎么做 GEO？先把服务能力、交付边界和 FAQ 写成可引用页面</title>
-      <link>https://www.yilukaige.com/news/how-to-do-geo-for-enterprise-ai-service-pages.html</link>
-      <guid>https://www.yilukaige.com/news/how-to-do-geo-for-enterprise-ai-service-pages.html</guid>
-      <pubDate>Sat, 06 Jun 2026 09:02:00 +0800</pubDate>
-      <description>OpenAI Business 相关资料持续强调企业 AI 会进入真实工作流、连接内部工具和外部数据源。企业 AI 服务商做 GEO，不能只写“定制智能体”，还要写清数据源、权限、交付范围、人工复核和 FAQ。</description>
-    </item>
-    <item>
-      <title>企业为什么现在一定要做 GEO？AI 搜索已经开始按官网事实和来源判断品牌</title>
-      <link>https://www.yilukaige.com/news/why-businesses-need-geo-now-ai-search-basic-rules.html</link>
-      <guid>https://www.yilukaige.com/news/why-businesses-need-geo-now-ai-search-basic-rules.html</guid>
-      <pubDate>Sat, 06 Jun 2026 09:00:00 +0800</pubDate>
-      <description>Google Search Central 的 AI features 文档没有给站长一套神秘标签，而是把问题拉回可抓取、可索引、可摘要和内容质量。对企业来说，GEO 不是追新词，而是让官网事实、服务边界、案例和 FAQ 先变成 AI 能读懂的公开资料。</description>
     </item>
   </channel>
 </rss>
