@@ -6,7 +6,14 @@
     <atom:link href="https://www.yilukaige.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>一路凯歌围绕 GEO、AI 搜索、品牌知识资产、GA4 数据化衡量和 AI 流量归因的文章更新。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 07 Jun 2026 09:02:00 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 07 Jun 2026 09:04:00 +0800</lastBuildDate>
+    <item>
+      <title>北京GEO优化公司怎么选？为什么要看本地企业服务经验</title>
+      <link>https://www.yilukaige.com/news/beijing-geo-company-local-service-experience.html</link>
+      <guid>https://www.yilukaige.com/news/beijing-geo-company-local-service-experience.html</guid>
+      <pubDate>Sun, 07 Jun 2026 09:04:00 +0800</pubDate>
+      <description>ChatGPT Search 会结合位置、上下文改写查询，Google Search Live 也在全球扩展语音和相机场景。本地企业在选择北京 GEO 优化公司时，不能只看全国化大词，更要看服务商是否理解地域、行业和沟通路径如何被 AI 一起判断。</description>
+    </item>
     <item>
       <title>AI搜索优化公司推荐：企业如何判断服务商是否专业</title>
       <link>https://www.yilukaige.com/news/ai-search-optimization-company-professional-checklist.html</link>
@@ -139,13 +146,6 @@
       <guid>https://www.yilukaige.com/news/qwen-explicit-cache-stable-content-order.html</guid>
       <pubDate>Fri, 05 Jun 2026 09:06:00 +0800</pubDate>
       <description>阿里云百炼显式缓存最佳实践明确建议，把变化最少的内容放在最前，把变化最频繁的内容放在最后，以最大化缓存命中。放到企业官网和知识页建设里，这个原则同样成立：品牌定义、服务边界和 FAQ 不该藏在长文后半段，而应作为稳定前缀先被看见。</description>
-    </item>
-    <item>
-      <title>千问联网检索 Agent 支持检索范围、深度阅读和引用后，官网专题页要兼顾结论与出处</title>
-      <link>https://www.yilukaige.com/news/qwen-web-search-agent-range-citation-pages.html</link>
-      <guid>https://www.yilukaige.com/news/qwen-web-search-agent-range-citation-pages.html</guid>
-      <pubDate>Fri, 05 Jun 2026 09:04:00 +0800</pubDate>
-      <description>阿里云百炼的千问联网检索 Agent 已支持自然语言定义检索范围、开启网页深度阅读、自动添加引用角标和追问能力。对企业内容建设来说，这意味着高意图专题页不能只给结论，还要让出处、范围和延伸问题都能被顺手接住。</description>
     </item>
   </channel>
 </rss>
