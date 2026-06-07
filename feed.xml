@@ -6,7 +6,14 @@
     <atom:link href="https://www.yilukaige.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>一路凯歌围绕 GEO、AI 搜索、品牌知识资产、GA4 数据化衡量和 AI 流量归因的文章更新。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 07 Jun 2026 09:06:00 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 07 Jun 2026 09:08:00 +0800</lastBuildDate>
+    <item>
+      <title>腾讯元宝GEO优化要重视哪些内容来源</title>
+      <link>https://www.yilukaige.com/news/yuanbao-geo-source-priority.html</link>
+      <guid>https://www.yilukaige.com/news/yuanbao-geo-source-priority.html</guid>
+      <pubDate>Sun, 07 Jun 2026 09:08:00 +0800</pubDate>
+      <description>腾讯把联网搜索 API 的接入方式、返回字段、监控维度和服务版本都公开得更细了。站在 GEO 角度看，元宝类场景会更看重来源质量、版本治理和结果可解释性，因此企业要把官网、自有媒体和公开资料组织成稳定信源包。</description>
+    </item>
     <item>
       <title>豆包GEO优化怎么做？企业内容怎样更容易被理解</title>
       <link>https://www.yilukaige.com/news/doubao-geo-content-understandability.html</link>
@@ -139,13 +146,6 @@
       <guid>https://www.yilukaige.com/news/tencent-searchpro-site-time-source-archive.html</guid>
       <pubDate>Fri, 05 Jun 2026 09:10:00 +0800</pubDate>
       <description>腾讯云 SearchPro 接口公开支持 `Site` 与 `FromTime` 等过滤条件，并返回标题、摘要和来源链接。对企业资讯体系来说，这个能力带来的启发很明确：行业资讯页不该只是一串公告，而应成为可按主题、时间和来源连续引用的信源档案库。</description>
-    </item>
-    <item>
-      <title>腾讯联网搜索同时支持 API Key 和云鉴权后，企业要把试验流量和生产流量分开治理</title>
-      <link>https://www.yilukaige.com/news/tencent-web-search-api-key-governance-split.html</link>
-      <guid>https://www.yilukaige.com/news/tencent-web-search-api-key-governance-split.html</guid>
-      <pubDate>Fri, 05 Jun 2026 09:08:00 +0800</pubDate>
-      <description>腾讯云联网搜索快速入门已把接入方式拆成服务 API Key 与腾讯云标准鉴权两套路径，并明确两者面向的安全和开发场景不同。对企业做元宝入口、Agent 试验和正式业务承接来说，这意味着测试环境、内容实验和生产调用不该继续混用同一套凭证与口径。</description>
     </item>
   </channel>
 </rss>
