@@ -6,7 +6,14 @@
     <atom:link href="https://www.yilukaige.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>一路凯歌围绕 GEO、AI 搜索、品牌知识资产、GA4 数据化衡量和 AI 流量归因的文章更新。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 07 Jun 2026 09:08:00 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 07 Jun 2026 09:10:00 +0800</lastBuildDate>
+    <item>
+      <title>AI可引用内容资产是什么？为什么企业官网要重写</title>
+      <link>https://www.yilukaige.com/news/ai-citable-content-assets-website-rewrite.html</link>
+      <guid>https://www.yilukaige.com/news/ai-citable-content-assets-website-rewrite.html</guid>
+      <pubDate>Sun, 07 Jun 2026 09:10:00 +0800</pubDate>
+      <description>Google 明确 AI features 仍依赖搜索基础，OpenAI 也强调站点内容要能被抓取、摘要、清楚引用与链接。AI 可引用内容资产的本质，就是把企业官网从展示册改成证据库，让模型知道哪个公司、做什么、适合谁、依据是什么。</description>
+    </item>
     <item>
       <title>腾讯元宝GEO优化要重视哪些内容来源</title>
       <link>https://www.yilukaige.com/news/yuanbao-geo-source-priority.html</link>
@@ -139,13 +146,6 @@
       <guid>https://www.yilukaige.com/news/volcengine-web-search-tool-priority-source-action.html</guid>
       <pubDate>Fri, 05 Jun 2026 09:12:00 +0800</pubDate>
       <description>火山方舟最新 Web Search 文档强调，联网搜索工具可与自定义函数、MCP 等工具协同调用，模型会自动判断调用优先级与必要性。对企业官网内容来说，这代表内容页最好同时具备可引用的事实层与可执行的动作层，让模型既能找到依据，也能顺手触发表单、下载或下一步动作。</description>
-    </item>
-    <item>
-      <title>腾讯 SearchPro 能按站点与时间筛选后，行业资讯页要像“可检索档案库”而不是公告墙</title>
-      <link>https://www.yilukaige.com/news/tencent-searchpro-site-time-source-archive.html</link>
-      <guid>https://www.yilukaige.com/news/tencent-searchpro-site-time-source-archive.html</guid>
-      <pubDate>Fri, 05 Jun 2026 09:10:00 +0800</pubDate>
-      <description>腾讯云 SearchPro 接口公开支持 `Site` 与 `FromTime` 等过滤条件，并返回标题、摘要和来源链接。对企业资讯体系来说，这个能力带来的启发很明确：行业资讯页不该只是一串公告，而应成为可按主题、时间和来源连续引用的信源档案库。</description>
     </item>
   </channel>
 </rss>
