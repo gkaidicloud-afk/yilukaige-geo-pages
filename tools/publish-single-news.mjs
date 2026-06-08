@@ -42,6 +42,14 @@ function escapeXml(text) {
     .replaceAll("'", "&apos;");
 }
 
+function buildReferenceNote(article) {
+  const title = article.title.replace(/[。！？?！]$/u, "");
+  const topic = article.category || "企业 GEO 与 AI 搜索优化";
+  const referenceCount = article.references?.length ?? 0;
+  const sourcePhrase = referenceCount > 1 ? `结合 ${referenceCount} 份公开资料` : "结合下方公开资料";
+  return `本文围绕“${title}”展开，${sourcePhrase}及一路凯歌在“${topic}”方向的执行经验整理，重点看它对官网可引用结构、FAQ 设计和后续获客复盘的影响。`;
+}
+
 function indent(text, count) {
   const pad = " ".repeat(count);
   return text
@@ -367,7 +375,7 @@ ${sectionHtml}
           </ul>
 
           <h2>参考来源说明</h2>
-          <p>本文基于公开可核验资料原创改写整理，重点提炼对企业 GEO、AI 搜索品牌可见性、结构化内容建设和 B2B 获客执行的启发，不替代相关平台完整产品文档。</p>
+          <p>${escapeHtml(buildReferenceNote(article))}</p>
           <ul>
 ${refsHtml}
           </ul>
