@@ -4,6 +4,7 @@ import { june5Articles } from "./news-articles-20260605.mjs";
 import { june6Articles } from "./news-articles-20260606.mjs";
 import { june7Articles } from "./news-articles-20260607.mjs";
 import { june8Articles } from "./news-articles-20260608.mjs";
+import { june9Articles } from "./news-articles-20260609.mjs";
 
 const root = process.cwd();
 const siteUrl = "https://www.yilukaige.com";
@@ -588,7 +589,7 @@ function main() {
     throw new Error("Usage: node tools/publish-single-news.mjs <slug>");
   }
 
-  const article = [...june8Articles, ...june7Articles, ...june6Articles, ...june5Articles].find((item) => item.slug === slug);
+  const article = [...june9Articles, ...june8Articles, ...june7Articles, ...june6Articles, ...june5Articles].find((item) => item.slug === slug);
   if (!article) {
     throw new Error(`Article data not found for slug: ${slug}`);
   }
