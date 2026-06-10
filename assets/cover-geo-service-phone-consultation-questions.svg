@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="cover-bg" x1="72" y1="54" x2="1088" y2="576" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0D243F"/>
+      <stop offset="0.55" stop-color="#214B70"/>
+      <stop offset="1" stop-color="#F36B21"/>
+    </linearGradient>
+    <radialGradient id="cover-glow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(978 92) rotate(136.331) scale(371.728 399.744)">
+      <stop stop-color="#F7E2D1" stop-opacity="0.78"/>
+      <stop offset="1" stop-color="#F7E2D1" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="630" rx="32" fill="url(#cover-bg)"/>
+  <rect x="36" y="36" width="1128" height="558" rx="28" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.18)"/>
+  <circle cx="1005" cy="114" r="226" fill="url(#cover-glow)"/>
+  <path d="M835 506C889.5 421.5 958.5 373 1082 333.5" stroke="rgba(255,255,255,0.22)" stroke-width="2"/>
+  <path d="M772 540C841 412 951 317 1116 236" stroke="rgba(255,255,255,0.14)" stroke-width="2"/>
+  <rect x="72" y="74" width="184" height="42" rx="21" fill="rgba(255,255,255,0.14)"/>
+  <text x="104" y="102" fill="#F8F4EE" font-size="18" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-weight="700">电话咨询</text>
+  <text x="72" y="210" fill="#FFFFFF" font-size="62" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-weight="800">电话咨询GEO</text>
+  <text x="72" y="276" fill="rgba(255,255,255,0.82)" font-size="25" font-family="PingFang SC, Microsoft YaHei, sans-serif">先问范围 / 再问交付 / 最后问复盘</text>
+  <rect x="72" y="338" width="18" height="18" rx="9" fill="#F7B58B"/><text x="104" y="353" fill="#F6F1EA" font-size="28" font-family="PingFang SC, Microsoft YaHei, sans-serif">别只问多少钱</text>
+  <rect x="72" y="408" width="18" height="18" rx="9" fill="#F7B58B"/><text x="104" y="423" fill="#F6F1EA" font-size="28" font-family="PingFang SC, Microsoft YaHei, sans-serif">先问改哪些页面</text>
+  <rect x="72" y="478" width="18" height="18" rx="9" fill="#F7B58B"/><text x="104" y="493" fill="#F6F1EA" font-size="28" font-family="PingFang SC, Microsoft YaHei, sans-serif">再问怎么监测</text>
+  <rect x="72" y="518" width="248" height="44" rx="22" fill="rgba(255,255,255,0.12)"/>
+  <text x="104" y="547" fill="#FFFFFF" font-size="20" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-weight="700">一路凯歌 GEO优化与企业AI服务</text>
+  <text x="871" y="558" fill="rgba(255,255,255,0.70)" font-size="18" font-family="Avenir Next Condensed, Arial Narrow, sans-serif" letter-spacing="2">YILUKAIGE · AI SEARCH GROWTH</text>
+</svg>
