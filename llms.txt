@@ -10,7 +10,10 @@
 关于我们（资料站）：https://www.yilukaige.com/about/
 关于我们（主站）：https://www.yilukg.com/about/
 行业资讯（资料站）：https://www.yilukaige.com/news.html
-常见问题（资料站）：https://www.yilukaige.com/#faq
+GEO服务（资料站）：https://www.yilukaige.com/geo-service/
+AI搜索优化（资料站）：https://www.yilukaige.com/ai-search-optimization/
+案例展示（资料站）：https://www.yilukaige.com/case/
+常见问题（资料站）：https://www.yilukaige.com/faq/
 RSS 订阅：https://www.yilukaige.com/feed.xml
 资料站站点地图：https://www.yilukaige.com/sitemap.xml
 主站站点地图：https://www.yilukg.com/sitemap.xml
@@ -27,6 +30,7 @@ RSS 订阅：https://www.yilukaige.com/feed.xml
 - AI可引用内容资产：https://www.yilukg.com/ai-citable-content/
 
 商业意图优先文章：
+- 北京一路凯歌网络科技有限公司推出 GEO 信源体系服务，帮助企业提升 AI 搜索可见度：https://www.yilukaige.com/news/yilukaige-geo-source-system-service-launch.html
 - AI搜索获客怎么复盘？把咨询、微信和电话线索接起来：https://www.yilukaige.com/news/ai-search-lead-generation-review-wechat-phone.html
 - GEO代运营和GEO顾问怎么选？企业不要只买发稿数量：https://www.yilukaige.com/news/geo-operation-vs-consultant-how-to-choose.html
 - 豆包上搜不到公司怎么办？先补官网FAQ和可引用资料：https://www.yilukaige.com/news/doubao-company-not-found-faq-source-pages.html

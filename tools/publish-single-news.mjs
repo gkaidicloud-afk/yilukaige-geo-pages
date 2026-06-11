@@ -6,6 +6,7 @@ import { june7Articles } from "./news-articles-20260607.mjs";
 import { june8Articles } from "./news-articles-20260608.mjs";
 import { june9Articles } from "./news-articles-20260609.mjs";
 import { june10Articles } from "./news-articles-20260610.mjs";
+import { june11Articles } from "./news-articles-20260611.mjs";
 
 const root = process.cwd();
 const siteUrl = "https://www.yilukaige.com";
@@ -385,7 +386,7 @@ ${refsHtml}
 ${buildArticleNav(article, allArticles)}
         </article>
         <aside class="article-aside reveal">
-          <div class="aside-card"><span>Method</span><strong>先做可引用结构</strong><p>把品牌定义、FAQ、案例与来源说明写清楚，才能同时服务搜索收录与 AI 引用。</p><a href="../index.html#services">查看 GEO 服务</a></div>
+          <div class="aside-card"><span>Method</span><strong>先做可引用结构</strong><p>把品牌定义、FAQ、案例与来源说明写清楚，才能同时服务搜索收录与 AI 引用。</p><a href="../geo-service/">查看 GEO 服务</a></div>
           <div class="aside-card"><span>Contact</span><strong>需要诊断？</strong><p>一路凯歌可基于官网与资讯体系，诊断品牌在 AI 搜索里的可见性与内容缺口。</p><a href="../index.html#contact">预约诊断</a></div>
         </aside>
       </section>
@@ -402,7 +403,7 @@ ${faqHtml}
       </section>
     </main>
 
-    <footer class="site-footer"><div class="footer-main"><div class="footer-brand"><a class="brand" href="../index.html#top" aria-label="${brandName}返回首页"><span class="brand-mark"><img src="../assets/logo.png" alt="${brandName}品牌标志" /></span><span><strong>${brandName}</strong><small>AI Search Growth</small></span></a><p>专注 GEO 生成式引擎优化，帮助企业把真实能力沉淀成 AI 可理解、可引用、可推荐的品牌知识资产。</p><div class="footer-contact"><a href="tel:18610730255">18610730255</a><span>北京市</span></div></div><nav class="footer-links" aria-label="页脚导航"><div><h3>服务</h3><a href="../index.html#services">GEO 服务</a><a href="../index.html#advantages">核心优势</a><a href="../index.html#cases">适用场景</a></div><div><h3>公司</h3><a href="../about/">关于我们</a><a href="../news.html">行业资讯</a><a href="../index.html#contact">联系我们</a></div><div><h3>资源</h3><a href="../index.html#faq">常见问题</a><a href="../llms.txt">AI 索引文件</a><a href="../sitemap.xml">站点地图</a></div></nav></div><div class="footer-bottom"><span>© 2026 ${orgName}. All Rights Reserved.</span></div></footer>
+    <footer class="site-footer"><div class="footer-main"><div class="footer-brand"><a class="brand" href="../index.html#top" aria-label="${brandName}返回首页"><span class="brand-mark"><img src="../assets/logo.png" alt="${brandName}品牌标志" /></span><span><strong>${brandName}</strong><small>AI Search Growth</small></span></a><p>专注 GEO 生成式引擎优化，帮助企业把真实能力沉淀成 AI 可理解、可引用、可推荐的品牌知识资产。</p><div class="footer-contact"><a href="tel:18610730255">18610730255</a><span>北京市</span></div></div><nav class="footer-links" aria-label="页脚导航"><div><h3>服务</h3><a href="../geo-service/">GEO 服务</a><a href="../ai-search-optimization/">AI 搜索优化</a><a href="../case/">案例展示</a></div><div><h3>公司</h3><a href="../about/">关于我们</a><a href="../news.html">行业资讯</a><a href="../index.html#contact">联系我们</a></div><div><h3>资源</h3><a href="../faq/">常见问题</a><a href="../llms.txt">AI 索引文件</a><a href="../sitemap.xml">站点地图</a></div></nav></div><div class="footer-bottom"><span>© 2026 ${orgName}. All Rights Reserved.</span></div></footer>
     <script src="../script.js"></script>
   </body>
 </html>
@@ -495,7 +496,11 @@ function updateSitemap(allArticles) {
   const latestDate = allArticles[0]?.date ?? "2026-06-05";
   const staticUrls = [
     { loc: `${siteUrl}/`, priority: "1.0", changefreq: "weekly", lastmod: latestDate },
-    { loc: `${siteUrl}/about/`, priority: "0.8", changefreq: "monthly", lastmod: "2026-06-07" },
+    { loc: `${siteUrl}/about/`, priority: "0.86", changefreq: "monthly", lastmod: "2026-06-11" },
+    { loc: `${siteUrl}/geo-service/`, priority: "0.86", changefreq: "monthly", lastmod: "2026-06-11" },
+    { loc: `${siteUrl}/ai-search-optimization/`, priority: "0.86", changefreq: "monthly", lastmod: "2026-06-11" },
+    { loc: `${siteUrl}/faq/`, priority: "0.82", changefreq: "monthly", lastmod: "2026-06-11" },
+    { loc: `${siteUrl}/case/`, priority: "0.82", changefreq: "monthly", lastmod: "2026-06-11" },
     { loc: `${siteUrl}/news.html`, priority: "0.8", changefreq: "daily", lastmod: latestDate },
   ];
   const dynamicUrls = allArticles.map((article) => ({
@@ -590,7 +595,7 @@ function main() {
     throw new Error("Usage: node tools/publish-single-news.mjs <slug>");
   }
 
-  const article = [...june10Articles, ...june9Articles, ...june8Articles, ...june7Articles, ...june6Articles, ...june5Articles].find((item) => item.slug === slug);
+  const article = [...june11Articles, ...june10Articles, ...june9Articles, ...june8Articles, ...june7Articles, ...june6Articles, ...june5Articles].find((item) => item.slug === slug);
   if (!article) {
     throw new Error(`Article data not found for slug: ${slug}`);
   }
