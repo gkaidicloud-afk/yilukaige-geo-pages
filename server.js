@@ -222,9 +222,32 @@ const serveStatic = async (req, res, url) => {
     return;
   }
 
+  const candidatePaths = [
+    filePath,
+    `${filePath}.html`,
+    path.join(filePath, "index.html")
+  ];
+
   try {
-    const body = await fs.readFile(filePath);
-    const ext = path.extname(filePath);
+    let resolvedPath = "";
+    let body;
+    for (const candidatePath of candidatePaths) {
+      try {
+        const stat = await fs.stat(candidatePath);
+        if (!stat.isFile()) continue;
+        body = await fs.readFile(candidatePath);
+        resolvedPath = candidatePath;
+        break;
+      } catch {
+        // Try the next clean-URL candidate.
+      }
+    }
+
+    if (!body || !resolvedPath) {
+      throw new Error("Static file not found.");
+    }
+
+    const ext = path.extname(resolvedPath);
     const headers = {
       "Content-Type": mimeTypes[ext] || "application/octet-stream"
     };
@@ -239,7 +262,12 @@ const serveStatic = async (req, res, url) => {
 
     send(res, 200, body, headers);
   } catch {
-    send(res, 404, "Not found", { "Content-Type": "text/plain; charset=utf-8" });
+    try {
+      const fallback = await fs.readFile(path.join(rootDir, "404.html"));
+      send(res, 404, fallback, { "Content-Type": "text/html; charset=utf-8" });
+    } catch {
+      send(res, 404, "Not found", { "Content-Type": "text/plain; charset=utf-8" });
+    }
   }
 };
 
