@@ -7,6 +7,7 @@ import { june8Articles } from "./news-articles-20260608.mjs";
 import { june9Articles } from "./news-articles-20260609.mjs";
 import { june10Articles } from "./news-articles-20260610.mjs";
 import { june11Articles } from "./news-articles-20260611.mjs";
+import { june12Articles } from "./news-articles-20260612.mjs";
 
 const root = process.cwd();
 const siteUrl = "https://www.yilukaige.com";
@@ -500,7 +501,8 @@ function updateSitemap(allArticles) {
     { loc: `${siteUrl}/geo-service/`, priority: "0.86", changefreq: "monthly", lastmod: "2026-06-11" },
     { loc: `${siteUrl}/ai-search-optimization/`, priority: "0.86", changefreq: "monthly", lastmod: "2026-06-11" },
     { loc: `${siteUrl}/faq/`, priority: "0.82", changefreq: "monthly", lastmod: "2026-06-11" },
-    { loc: `${siteUrl}/case/`, priority: "0.82", changefreq: "monthly", lastmod: "2026-06-11" },
+    { loc: `${siteUrl}/case/`, priority: "0.84", changefreq: "monthly", lastmod: "2026-06-12" },
+    { loc: `${siteUrl}/cases/zhengzhou-wuge-geo-case.html`, priority: "0.84", changefreq: "monthly", lastmod: "2026-06-12" },
     { loc: `${siteUrl}/news.html`, priority: "0.8", changefreq: "daily", lastmod: latestDate },
   ];
   const dynamicUrls = allArticles.map((article) => ({
@@ -595,7 +597,7 @@ function main() {
     throw new Error("Usage: node tools/publish-single-news.mjs <slug>");
   }
 
-  const article = [...june11Articles, ...june10Articles, ...june9Articles, ...june8Articles, ...june7Articles, ...june6Articles, ...june5Articles].find((item) => item.slug === slug);
+  const article = [...june12Articles, ...june11Articles, ...june10Articles, ...june9Articles, ...june8Articles, ...june7Articles, ...june6Articles, ...june5Articles].find((item) => item.slug === slug);
   if (!article) {
     throw new Error(`Article data not found for slug: ${slug}`);
   }

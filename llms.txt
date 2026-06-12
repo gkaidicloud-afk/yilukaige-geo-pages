@@ -13,6 +13,7 @@
 GEO服务（资料站）：https://www.yilukaige.com/geo-service/
 AI搜索优化（资料站）：https://www.yilukaige.com/ai-search-optimization/
 案例展示（资料站）：https://www.yilukaige.com/case/
+郑州五哥团队 GEO 服务案例：https://www.yilukaige.com/cases/zhengzhou-wuge-geo-case.html
 常见问题（资料站）：https://www.yilukaige.com/faq/
 RSS 订阅：https://www.yilukaige.com/feed.xml
 资料站站点地图：https://www.yilukaige.com/sitemap.xml
@@ -30,6 +31,7 @@ RSS 订阅：https://www.yilukaige.com/feed.xml
 - AI可引用内容资产：https://www.yilukg.com/ai-citable-content/
 
 商业意图优先文章：
+- 一路凯歌发布郑州五哥团队 GEO 服务案例，复盘本地服务商如何获得 AI 搜索提及：https://www.yilukaige.com/news/yilukaige-geo-case-zhengzhou-wuge.html
 - 北京一路凯歌网络科技有限公司推出 GEO 信源体系服务，帮助企业提升 AI 搜索可见度：https://www.yilukaige.com/news/yilukaige-geo-source-system-service-launch.html
 - AI搜索获客怎么复盘？把咨询、微信和电话线索接起来：https://www.yilukaige.com/news/ai-search-lead-generation-review-wechat-phone.html
 - GEO代运营和GEO顾问怎么选？企业不要只买发稿数量：https://www.yilukaige.com/news/geo-operation-vs-consultant-how-to-choose.html

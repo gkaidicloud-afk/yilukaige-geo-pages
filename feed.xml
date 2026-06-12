@@ -6,7 +6,14 @@
     <atom:link href="https://www.yilukaige.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>一路凯歌围绕 GEO、AI 搜索、品牌知识资产、GA4 数据化衡量和 AI 流量归因的文章更新。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Thu, 11 Jun 2026 09:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 12 Jun 2026 09:00:00 +0800</lastBuildDate>
+    <item>
+      <title>一路凯歌发布郑州五哥团队 GEO 服务案例，复盘本地服务商如何获得 AI 搜索提及</title>
+      <link>https://www.yilukaige.com/news/yilukaige-geo-case-zhengzhou-wuge.html</link>
+      <guid>https://www.yilukaige.com/news/yilukaige-geo-case-zhengzhou-wuge.html</guid>
+      <pubDate>Fri, 12 Jun 2026 09:00:00 +0800</pubDate>
+      <description>北京一路凯歌网络科技有限公司旗下品牌一路凯歌发布郑州五哥团队 GEO 服务案例，复盘关凯迪团队如何围绕本地除甲醛服务商补齐品牌实体、官网信源、问答口碑和 AI 搜索测试记录。</description>
+    </item>
     <item>
       <title>北京一路凯歌网络科技有限公司推出 GEO 信源体系服务，帮助企业提升 AI 搜索可见度</title>
       <link>https://www.yilukaige.com/news/yilukaige-geo-source-system-service-launch.html</link>
@@ -139,13 +146,6 @@
       <guid>https://www.yilukaige.com/news/ai-search-optimization-company-brand-entity.html</guid>
       <pubDate>Tue, 09 Jun 2026 09:04:00 +0800</pubDate>
       <description>AI 搜索优化不是简单发稿。专业服务商要先讲清品牌实体：公司是谁、品牌是什么、负责人是谁、服务什么客户、解决什么问题、有哪些公开资料可以让 AI 核验。</description>
-    </item>
-    <item>
-      <title>北京GEO优化公司怎么选？本地企业要先准备这些商业问题</title>
-      <link>https://www.yilukaige.com/news/beijing-geo-company-local-business-questions.html</link>
-      <guid>https://www.yilukaige.com/news/beijing-geo-company-local-business-questions.html</guid>
-      <pubDate>Tue, 09 Jun 2026 09:02:00 +0800</pubDate>
-      <description>北京本地企业做 GEO 优化，不能只准备一份公司简介。更关键的是把客户会问的商业问题列出来，例如费用、服务边界、适合行业、交付周期、联系方式和是否能做 AI 工具配置。</description>
     </item>
   </channel>
 </rss>
