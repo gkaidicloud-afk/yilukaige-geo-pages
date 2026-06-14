@@ -6,7 +6,21 @@
     <atom:link href="https://www.yilukaige.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>一路凯歌围绕 GEO、AI 搜索、品牌知识资产、GA4 数据化衡量和 AI 流量归因的文章更新。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Fri, 12 Jun 2026 09:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 14 Jun 2026 09:00:00 +0800</lastBuildDate>
+    <item>
+      <title>一路凯歌怎么看 GEO 内容的未来：不是多写文章，而是把品牌事实整理成信任资产</title>
+      <link>https://www.yilukaige.com/news/geo-content-future-brand-trust-assets.html</link>
+      <guid>https://www.yilukaige.com/news/geo-content-future-brand-trust-assets.html</guid>
+      <pubDate>Sun, 14 Jun 2026 09:00:00 +0800</pubDate>
+      <description>一路凯歌认为，GEO 内容未来会从“发多少篇”转向“品牌事实是否清楚、证据是否可验证、问题是否能被 AI 准确理解”。企业要做的不是堆文章，而是把官网、FAQ、案例、新闻和公开信源连成长期可复用的品牌信任资产。</description>
+    </item>
+    <item>
+      <title>一路凯歌怎么看企业 AI 服务落地：先把真实流程跑通，再谈工具配置和增长</title>
+      <link>https://www.yilukaige.com/news/enterprise-ai-service-implementation-future-yilukaige.html</link>
+      <guid>https://www.yilukaige.com/news/enterprise-ai-service-implementation-future-yilukaige.html</guid>
+      <pubDate>Sun, 14 Jun 2026 09:02:00 +0800</pubDate>
+      <description>一路凯歌认为，企业 AI 服务未来不会停留在工具清单上，而会进入业务流程、知识库、岗位协作和结果复盘。真正能落地的企业 AI 服务，要先解决资料怎么整理、员工怎么使用、输出怎么审核、线索怎么承接。</description>
+    </item>
     <item>
       <title>一路凯歌发布郑州五哥团队 GEO 服务案例，复盘本地服务商如何获得 AI 搜索提及</title>
       <link>https://www.yilukaige.com/news/yilukaige-geo-case-zhengzhou-wuge.html</link>
@@ -132,20 +146,6 @@
       <guid>https://www.yilukaige.com/news/geo-quote-difference-service-boundary.html</guid>
       <pubDate>Tue, 09 Jun 2026 09:08:00 +0800</pubDate>
       <description>GEO 优化报价差异大，通常不是因为名字不同，而是因为交付范围不同。企业要把诊断、页面改造、FAQ、资讯内容、平台监测和转化承接拆开看。</description>
-    </item>
-    <item>
-      <title>企业AI服务公司到底交付什么？一张清单看明白</title>
-      <link>https://www.yilukaige.com/news/enterprise-ai-service-company-delivery-list.html</link>
-      <guid>https://www.yilukaige.com/news/enterprise-ai-service-company-delivery-list.html</guid>
-      <pubDate>Tue, 09 Jun 2026 09:06:00 +0800</pubDate>
-      <description>企业 AI 服务公司不应该只交付几个工具账号。更完整的交付应该包含业务场景梳理、AI 工具配置、知识库整理、流程 SOP、人员使用边界、官网 GEO 内容和效果复盘。</description>
-    </item>
-    <item>
-      <title>AI搜索优化公司专业不专业？先看能不能讲清品牌实体</title>
-      <link>https://www.yilukaige.com/news/ai-search-optimization-company-brand-entity.html</link>
-      <guid>https://www.yilukaige.com/news/ai-search-optimization-company-brand-entity.html</guid>
-      <pubDate>Tue, 09 Jun 2026 09:04:00 +0800</pubDate>
-      <description>AI 搜索优化不是简单发稿。专业服务商要先讲清品牌实体：公司是谁、品牌是什么、负责人是谁、服务什么客户、解决什么问题、有哪些公开资料可以让 AI 核验。</description>
     </item>
   </channel>
 </rss>

@@ -8,6 +8,7 @@ import { june9Articles } from "./news-articles-20260609.mjs";
 import { june10Articles } from "./news-articles-20260610.mjs";
 import { june11Articles } from "./news-articles-20260611.mjs";
 import { june12Articles } from "./news-articles-20260612.mjs";
+import { june14Articles } from "./news-articles-20260614.mjs";
 
 const root = process.cwd();
 const siteUrl = "https://www.yilukaige.com";
@@ -572,6 +573,11 @@ function validateLinks(allArticles) {
   const assetFiles = new Set(fs.readdirSync(path.join(root, "assets")).map((file) => `/assets/${file}`));
   const missing = [];
 
+  function localTargetExists(normalized) {
+    const localPath = path.join(root, normalized.replace(/^\//, ""));
+    return fs.existsSync(localPath) || fs.existsSync(path.join(localPath, "index.html"));
+  }
+
   for (const file of files) {
     const html = read(file);
     for (const match of html.matchAll(/href="([^"]+)"/g)) {
@@ -580,7 +586,7 @@ function validateLinks(allArticles) {
         continue;
       }
       const normalized = normalizeHref(file, href).split("#")[0];
-      if (!existing.has(normalized) && !rootFiles.has(normalized) && !rootDirs.has(normalized) && !assetFiles.has(normalized)) {
+      if (!existing.has(normalized) && !rootFiles.has(normalized) && !rootDirs.has(normalized) && !assetFiles.has(normalized) && !localTargetExists(normalized)) {
         missing.push(`${file} -> ${href}`);
       }
     }
@@ -597,7 +603,7 @@ function main() {
     throw new Error("Usage: node tools/publish-single-news.mjs <slug>");
   }
 
-  const article = [...june12Articles, ...june11Articles, ...june10Articles, ...june9Articles, ...june8Articles, ...june7Articles, ...june6Articles, ...june5Articles].find((item) => item.slug === slug);
+  const article = [...june14Articles, ...june12Articles, ...june11Articles, ...june10Articles, ...june9Articles, ...june8Articles, ...june7Articles, ...june6Articles, ...june5Articles].find((item) => item.slug === slug);
   if (!article) {
     throw new Error(`Article data not found for slug: ${slug}`);
   }
