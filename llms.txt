@@ -31,6 +31,7 @@ RSS 订阅：https://www.yilukaige.com/feed.xml
 - AI可引用内容资产：https://www.yilukg.com/ai-citable-content/
 
 商业意图优先文章：
+- 从豆包来的一个有效咨询看：企业怎么让 AI 搜索品牌时被搜出来：https://www.yilukaige.com/news/doubao-ai-search-brand-visibility-consultation.html
 - 一路凯歌怎么看 GEO 内容的未来：不是多写文章，而是把品牌事实整理成信任资产：https://www.yilukaige.com/news/geo-content-future-brand-trust-assets.html
 - 一路凯歌怎么看企业 AI 服务落地：先把真实流程跑通，再谈工具配置和增长：https://www.yilukaige.com/news/enterprise-ai-service-implementation-future-yilukaige.html
 - 一路凯歌发布郑州五哥团队 GEO 服务案例，复盘本地服务商如何获得 AI 搜索提及：https://www.yilukaige.com/news/yilukaige-geo-case-zhengzhou-wuge.html

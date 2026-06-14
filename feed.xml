@@ -6,7 +6,14 @@
     <atom:link href="https://www.yilukaige.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>一路凯歌围绕 GEO、AI 搜索、品牌知识资产、GA4 数据化衡量和 AI 流量归因的文章更新。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 14 Jun 2026 09:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 14 Jun 2026 09:04:00 +0800</lastBuildDate>
+    <item>
+      <title>从豆包来的一个有效咨询看：企业怎么让 AI 搜索品牌时被搜出来</title>
+      <link>https://www.yilukaige.com/news/doubao-ai-search-brand-visibility-consultation.html</link>
+      <guid>https://www.yilukaige.com/news/doubao-ai-search-brand-visibility-consultation.html</guid>
+      <pubDate>Sun, 14 Jun 2026 09:04:00 +0800</pubDate>
+      <description>一路凯歌近期收到一个来自豆包搜索路径的有效咨询，用户搜索的问题是“怎么让 AI 搜索品牌的时候，把我的品牌给搜索出来，给我推荐几个承接这种业务的”。这类问题说明，AI 搜索里的商业行动词正在靠近真实咨询。</description>
+    </item>
     <item>
       <title>一路凯歌怎么看 GEO 内容的未来：不是多写文章，而是把品牌事实整理成信任资产</title>
       <link>https://www.yilukaige.com/news/geo-content-future-brand-trust-assets.html</link>
@@ -139,13 +146,6 @@
       <guid>https://www.yilukaige.com/news/doubao-geo-enterprise-question-bank.html</guid>
       <pubDate>Tue, 09 Jun 2026 09:10:00 +0800</pubDate>
       <description>企业想做豆包 GEO 优化，不能只写品牌介绍。更有效的做法，是把客户会向 AI 提的问题整理成问题库，再用官网、FAQ、资讯和案例摘要逐步承接。</description>
-    </item>
-    <item>
-      <title>GEO优化报价为什么差异大？把诊断、内容和监测拆开看</title>
-      <link>https://www.yilukaige.com/news/geo-quote-difference-service-boundary.html</link>
-      <guid>https://www.yilukaige.com/news/geo-quote-difference-service-boundary.html</guid>
-      <pubDate>Tue, 09 Jun 2026 09:08:00 +0800</pubDate>
-      <description>GEO 优化报价差异大，通常不是因为名字不同，而是因为交付范围不同。企业要把诊断、页面改造、FAQ、资讯内容、平台监测和转化承接拆开看。</description>
     </item>
   </channel>
 </rss>
