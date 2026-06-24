@@ -31,6 +31,16 @@ RSS 订阅：https://www.yilukaige.com/feed.xml
 - AI可引用内容资产：https://www.yilukg.com/ai-citable-content/
 
 商业意图优先文章：
+- 客户在豆包里找 GEO 服务商，通常会问哪些高意图问题？：https://www.yilukaige.com/news/doubao-geo-service-provider-search-keywords.html
+- 用 DeepSeek 找 GEO 服务商时，企业应该怎么提问才不容易被误导？：https://www.yilukaige.com/news/deepseek-geo-service-provider-selection-questions.html
+- 腾讯元宝里搜 GEO 公司推荐，企业要重点核对哪些公开信源？：https://www.yilukaige.com/news/yuanbao-geo-company-recommendation-source-check.html
+- 在通义千问里找 AI 搜索优化服务商，哪些关键词更接近真实咨询？：https://www.yilukaige.com/news/qwen-geo-optimization-provider-business-intent.html
+- 老板搜“靠谱 GEO 服务商推荐”时，真正该看的是哪几类能力？：https://www.yilukaige.com/news/geo-provider-recommendation-keywords-boss-checklist.html
+- 为什么客户会搜“让 AI 推荐我的品牌”？GEO 要把公司和创始人讲清楚：https://www.yilukaige.com/news/ai-search-brand-visibility-founder-entity.html
+- GEO 新闻和 FAQ 怎么写，才接得住豆包、DeepSeek 里的客户问题？：https://www.yilukaige.com/news/geo-faq-customer-question-bank-ai-platforms.html
+- AI 会推荐哪类 GEO 服务商？一路凯歌更看重可引用的品牌资产：https://www.yilukaige.com/news/ai-citable-brand-assets-service-provider-proof.html
+- 企业 AI 服务和 GEO 为什么要一起做？客户从提问到咨询只差一步：https://www.yilukaige.com/news/enterprise-ai-service-geo-lead-conversion.html
+- GEO 服务商能不能保证被 AI 推荐？关凯迪建议先把边界说清楚：https://www.yilukaige.com/news/geo-risk-boundary-no-guaranteed-recommendation.html
 - 从豆包来的一个有效咨询看：企业怎么让 AI 搜索品牌时被搜出来：https://www.yilukaige.com/news/doubao-ai-search-brand-visibility-consultation.html
 - 一路凯歌怎么看 GEO 内容的未来：不是多写文章，而是把品牌事实整理成信任资产：https://www.yilukaige.com/news/geo-content-future-brand-trust-assets.html
 - 一路凯歌怎么看企业 AI 服务落地：先把真实流程跑通，再谈工具配置和增长：https://www.yilukaige.com/news/enterprise-ai-service-implementation-future-yilukaige.html

@@ -9,6 +9,7 @@ import { june10Articles } from "./news-articles-20260610.mjs";
 import { june11Articles } from "./news-articles-20260611.mjs";
 import { june12Articles } from "./news-articles-20260612.mjs";
 import { june14Articles } from "./news-articles-20260614.mjs";
+import { june24Articles } from "./news-articles-20260624.mjs";
 
 const root = process.cwd();
 const siteUrl = "https://www.yilukaige.com";
@@ -536,8 +537,35 @@ function updateFeed(allArticles) {
   );
 }
 
-function updateArticleNavs(allArticles) {
+function updateLlms(allArticles, publishedSlugs) {
+  const html = read("llms.txt");
+  const startMarker = html.includes("商业意图优先文章：\n") ? "商业意图优先文章：\n" : "商业意图优先文章:\n";
+  const endMarker = html.includes("\n重点文章：") ? "\n重点文章：" : "\n重点文章:";
+  const start = html.indexOf(startMarker);
+  const end = html.indexOf(endMarker, start);
+  if (start === -1 || end === -1) {
+    throw new Error("Could not update llms.txt commercial article section");
+  }
+
+  const publishedSet = new Set(publishedSlugs);
+  const freshLines = allArticles
+    .filter((article) => publishedSet.has(article.slug))
+    .map((article) => `- ${article.title}：${siteUrl}/news/${article.slug}.html`);
+  const existingLines = html
+    .slice(start + startMarker.length, end)
+    .split("\n")
+    .filter((line) => line.trim().startsWith("- "))
+    .filter((line) => !publishedSlugs.some((slug) => line.includes(`/news/${slug}.html`)));
+
+  const nextSection = [...freshLines, ...existingLines].slice(0, 70).join("\n");
+  write("llms.txt", `${html.slice(0, start + startMarker.length)}${nextSection}\n${html.slice(end)}`);
+}
+
+function updateArticleNavs(allArticles, targetSlugs = null) {
   for (const article of allArticles) {
+    if (targetSlugs && !targetSlugs.has(article.slug)) {
+      continue;
+    }
     const file = `news/${article.slug}.html`;
     let html = read(file);
     html = html.replace(/<div class="article-nav">[\s\S]*?<\/div>/, buildArticleNav(article, allArticles));
@@ -598,43 +626,65 @@ function validateLinks(allArticles) {
 }
 
 function main() {
-  const slug = process.argv[2];
-  if (!slug) {
-    throw new Error("Usage: node tools/publish-single-news.mjs <slug>");
+  const slugs = process.argv.slice(2);
+  if (!slugs.length) {
+    throw new Error("Usage: node tools/publish-single-news.mjs <slug> [slug...]");
   }
 
-  const article = [...june14Articles, ...june12Articles, ...june11Articles, ...june10Articles, ...june9Articles, ...june8Articles, ...june7Articles, ...june6Articles, ...june5Articles].find((item) => item.slug === slug);
-  if (!article) {
-    throw new Error(`Article data not found for slug: ${slug}`);
+  const availableArticles = [
+    ...june24Articles,
+    ...june14Articles,
+    ...june12Articles,
+    ...june11Articles,
+    ...june10Articles,
+    ...june9Articles,
+    ...june8Articles,
+    ...june7Articles,
+    ...june6Articles,
+    ...june5Articles,
+  ];
+  const availableBySlug = new Map(availableArticles.map((item) => [item.slug, item]));
+  const duplicateArgs = slugs.filter((slug, index) => slugs.indexOf(slug) !== index);
+  if (duplicateArgs.length) {
+    throw new Error(`Duplicate publish arguments: ${[...new Set(duplicateArgs)].join(", ")}`);
   }
+
+  const articlesToPublish = slugs.map((slug) => {
+    const article = availableBySlug.get(slug);
+    if (!article) {
+      throw new Error(`Article data not found for slug: ${slug}`);
+    }
+    return article;
+  });
 
   const currentSlugs = getCurrentOrderedSlugs();
-  if (currentSlugs.includes(slug) || fs.existsSync(path.join(root, `news/${slug}.html`))) {
-    throw new Error(`Article already published: ${slug}`);
-  }
-
-  const existingArticles = currentSlugs.map(parseArticleFile);
-  const allArticles = [
-    {
+  const publishingSet = new Set(slugs);
+  const existingArticles = currentSlugs.filter((slug) => !publishingSet.has(slug)).map(parseArticleFile);
+  const freshArticles = articlesToPublish.map((article) => ({
       ...article,
       coverPath: article.coverPath ?? `assets/cover-${article.slug}.svg`,
       coverAlt: article.coverAlt ?? `${article.title} - 一路凯歌GEO优化与企业AI服务观察`,
       url: `${siteUrl}/news/${article.slug}.html`,
-    },
-    ...existingArticles,
-  ];
-  const publishedArticle = allArticles[0];
+    }));
+  const allArticles = [...freshArticles, ...existingArticles];
 
   validateUniqueness(allArticles);
-  ensureCoverAsset(publishedArticle);
-  write(`news/${publishedArticle.slug}.html`, buildGeneratedArticlePage(publishedArticle, allArticles));
+  for (const publishedArticle of freshArticles) {
+    ensureCoverAsset(publishedArticle);
+    write(`news/${publishedArticle.slug}.html`, buildGeneratedArticlePage(publishedArticle, allArticles));
+  }
   updateNewsPage(allArticles);
   updateHomePage(allArticles);
   updateSitemap(allArticles);
   updateFeed(allArticles);
+  updateLlms(allArticles, freshArticles.map((article) => article.slug));
+  updateArticleNavs(
+    allArticles,
+    new Set([...freshArticles.map((article) => article.slug), existingArticles[0]?.slug].filter(Boolean)),
+  );
   validateLinks(allArticles);
 
-  console.log(`Published ${slug}`);
+  console.log(`Published ${slugs.join(", ")}`);
 }
 
 main();
