@@ -1495,6 +1495,10 @@ h1 span {
   background: #07162b;
 }
 
+.compact-footer {
+  padding-top: 24px;
+}
+
 .footer-main {
   display: grid;
   grid-template-columns: minmax(260px, 0.88fr) minmax(172px, 0.38fr) minmax(380px, 1fr);
@@ -1614,6 +1618,14 @@ h1 span {
   padding-top: 24px;
   color: rgba(255, 255, 255, 0.52);
   font-size: 14px;
+}
+
+.footer-bottom .icp-link {
+  color: rgba(255, 255, 255, 0.62);
+}
+
+.footer-bottom .icp-link:hover {
+  color: #ffffff;
 }
 
 .subpage {
