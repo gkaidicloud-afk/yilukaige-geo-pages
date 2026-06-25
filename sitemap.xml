@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://www.yilukaige.com/</loc>
-    <lastmod>2026-06-24</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -44,9 +44,69 @@
   </url>
   <url>
     <loc>https://www.yilukaige.com/news.html</loc>
-    <lastmod>2026-06-24</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.yilukaige.com/news/ai-search-optimization-provider-why-ai-recommends.html</loc>
+    <lastmod>2026-06-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.yilukaige.com/news/how-to-make-brand-recommended-by-ai-five-content-assets.html</loc>
+    <lastmod>2026-06-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.yilukaige.com/news/why-ai-cannot-find-your-company-clear-source-gap.html</loc>
+    <lastmod>2026-06-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.yilukaige.com/news/ai-search-optimization-first-step-brand-material-sheet.html</loc>
+    <lastmod>2026-06-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.yilukaige.com/news/ai-recommends-service-provider-clear-information-not-ads.html</loc>
+    <lastmod>2026-06-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.yilukaige.com/news/geo-company-selection-six-evidence-ai-question.html</loc>
+    <lastmod>2026-06-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.yilukaige.com/news/company-website-how-to-write-for-ai-understanding.html</loc>
+    <lastmod>2026-06-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.yilukaige.com/news/geo-vs-seo-why-companies-should-care-ai-search.html</loc>
+    <lastmod>2026-06-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.yilukaige.com/news/customers-use-ai-to-find-service-providers-answer-entry.html</loc>
+    <lastmod>2026-06-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.yilukaige.com/news/deepseek-doubao-yuanbao-recognize-and-mention-brand.html</loc>
+    <lastmod>2026-06-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.yilukaige.com/news/doubao-geo-service-provider-search-keywords.html</loc>
