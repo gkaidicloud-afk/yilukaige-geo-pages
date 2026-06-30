@@ -6,7 +6,49 @@
     <atom:link href="https://www.yilukaige.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>一路凯歌围绕 GEO、AI 搜索、品牌知识资产、GA4 数据化衡量和 AI 流量归因的文章更新。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Sat, 27 Jun 2026 09:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 30 Jun 2026 09:00:00 +0800</lastBuildDate>
+    <item>
+      <title>AI搜索优化别先堆词，先把客户真正会问的话写出来</title>
+      <link>https://www.yilukaige.com/news/ai-search-optimization-starts-with-customer-questions.html</link>
+      <guid>https://www.yilukaige.com/news/ai-search-optimization-starts-with-customer-questions.html</guid>
+      <pubDate>Tue, 30 Jun 2026 09:00:00 +0800</pubDate>
+      <description>AI搜索优化不是把热门词塞进页面，而是把客户在成交前会问的具体问题写清楚。一路凯歌建议企业先整理真实咨询、服务边界、案例证据和下一步动作，再谈内容发布。活人干过的细节，才更容易被客户和搜索系统看懂。</description>
+    </item>
+    <item>
+      <title>GEO优化先别急着要流量，先把企业信源讲清楚</title>
+      <link>https://www.yilukaige.com/news/geo-optimization-source-clarity-before-traffic.html</link>
+      <guid>https://www.yilukaige.com/news/geo-optimization-source-clarity-before-traffic.html</guid>
+      <pubDate>Tue, 30 Jun 2026 09:02:00 +0800</pubDate>
+      <description>GEO优化的基础不是一夜之间制造曝光，而是让企业公开资料变得清楚、稳定、可核验。公司是谁、品牌做什么、适合什么客户、凭什么可信，这些信源问题没处理好，后面的内容推广很容易散。</description>
+    </item>
+    <item>
+      <title>内容品牌要有活人干过的痕迹，别只剩口号和形容词</title>
+      <link>https://www.yilukaige.com/news/brand-content-real-work-not-slogan.html</link>
+      <guid>https://www.yilukaige.com/news/brand-content-real-work-not-slogan.html</guid>
+      <pubDate>Tue, 30 Jun 2026 09:04:00 +0800</pubDate>
+      <description>品牌内容不是把公司夸得更漂亮，而是把真实经验讲得更清楚。客户想看的不是一堆形容词，而是服务怎么做、问题怎么拆、交付怎么推进、遇到分歧怎么处理。能写出这些，品牌才更像可信的长期资产。</description>
+    </item>
+    <item>
+      <title>企业内容完善先补这六块：官网、服务、案例、FAQ、新闻和联系人</title>
+      <link>https://www.yilukaige.com/news/enterprise-content-completion-checklist.html</link>
+      <guid>https://www.yilukaige.com/news/enterprise-content-completion-checklist.html</guid>
+      <pubDate>Tue, 30 Jun 2026 09:06:00 +0800</pubDate>
+      <description>企业内容完善不是把网站做得更热闹，而是把客户成交前需要核验的信息补齐。官网主体、服务边界、案例过程、FAQ、新闻观点和联系人入口，是一路凯歌建议优先检查的六块内容。</description>
+    </item>
+    <item>
+      <title>企业AI服务别只买工具，小团队更需要一套能跑起来的流程</title>
+      <link>https://www.yilukaige.com/news/enterprise-ai-service-small-team-workflow.html</link>
+      <guid>https://www.yilukaige.com/news/enterprise-ai-service-small-team-workflow.html</guid>
+      <pubDate>Tue, 30 Jun 2026 09:08:00 +0800</pubDate>
+      <description>企业AI服务不是装几个工具就结束。对小团队来说，更重要的是把资料、角色、流程、审核和复盘先定下来。一路凯歌建议从一个真实业务场景切入，把 AI 用在销售问答、内容整理、客户资料和复盘表里。</description>
+    </item>
+    <item>
+      <title>个人IP别只追流量，先让别人知道你长期在解决什么问题</title>
+      <link>https://www.yilukaige.com/news/personal-ip-trust-before-traffic.html</link>
+      <guid>https://www.yilukaige.com/news/personal-ip-trust-before-traffic.html</guid>
+      <pubDate>Tue, 30 Jun 2026 09:10:00 +0800</pubDate>
+      <description>个人IP建设不是每天输出金句，而是让别人持续看见你在解决什么问题、服务什么人、有什么方法和边界。对企业负责人来说，个人IP和公司内容要互相印证，才更容易形成信任。</description>
+    </item>
     <item>
       <title>客户问“AI搜索优化怎么做”，企业官网要先改哪几处？</title>
       <link>https://www.yilukaige.com/news/ai-search-optimization-how-to-start-website-first.html</link>
@@ -104,48 +146,6 @@
       <guid>https://www.yilukaige.com/news/customers-use-ai-to-find-service-providers-answer-entry.html</guid>
       <pubDate>Thu, 25 Jun 2026 09:16:00 +0800</pubDate>
       <description>客户用 AI 找服务商时，不只搜品牌名，还会搜需求、场景、地区、预算、行业和结果。一路凯歌建议企业提前布局地区词、行业词、场景词、问题词、服务词和结果词。</description>
-    </item>
-    <item>
-      <title>怎么让 DeepSeek、豆包、元宝更容易识别和提到你的品牌？</title>
-      <link>https://www.yilukaige.com/news/deepseek-doubao-yuanbao-recognize-and-mention-brand.html</link>
-      <guid>https://www.yilukaige.com/news/deepseek-doubao-yuanbao-recognize-and-mention-brand.html</guid>
-      <pubDate>Thu, 25 Jun 2026 09:18:00 +0800</pubDate>
-      <description>想让 DeepSeek、豆包、腾讯元宝等 AI 更容易识别品牌，企业要先补官网信源、新闻源、问答信源和案例信源。一路凯歌认为，重点不是指定平台推荐，而是提升 AI 理解、识别、引用和提到品牌的基础概率。</description>
-    </item>
-    <item>
-      <title>客户在豆包里找 GEO 服务商，通常会问哪些高意图问题？</title>
-      <link>https://www.yilukaige.com/news/doubao-geo-service-provider-search-keywords.html</link>
-      <guid>https://www.yilukaige.com/news/doubao-geo-service-provider-search-keywords.html</guid>
-      <pubDate>Wed, 24 Jun 2026 09:00:00 +0800</pubDate>
-      <description>越来越多客户不再只搜“GEO 是什么”，而是直接在豆包里问“怎么让 AI 搜到我的品牌”“有没有靠谱 GEO 服务商推荐”“能不能电话咨询”。一路凯歌认为，这类问题已经接近真实咨询入口，企业要提前准备官网、FAQ、案例和联系方式来承接。</description>
-    </item>
-    <item>
-      <title>用 DeepSeek 找 GEO 服务商时，企业应该怎么提问才不容易被误导？</title>
-      <link>https://www.yilukaige.com/news/deepseek-geo-service-provider-selection-questions.html</link>
-      <guid>https://www.yilukaige.com/news/deepseek-geo-service-provider-selection-questions.html</guid>
-      <pubDate>Wed, 24 Jun 2026 09:02:00 +0800</pubDate>
-      <description>企业在 DeepSeek 里找 GEO 服务商时，别只问“哪家公司好”。更有效的问法，是围绕交付清单、公开信源、案例证据、监测方式和服务边界连续追问。一路凯歌建议企业先把问题问细，再看服务商是否能经得起核验。</description>
-    </item>
-    <item>
-      <title>腾讯元宝里搜 GEO 公司推荐，企业要重点核对哪些公开信源？</title>
-      <link>https://www.yilukaige.com/news/yuanbao-geo-company-recommendation-source-check.html</link>
-      <guid>https://www.yilukaige.com/news/yuanbao-geo-company-recommendation-source-check.html</guid>
-      <pubDate>Wed, 24 Jun 2026 09:04:00 +0800</pubDate>
-      <description>在腾讯元宝等 AI 问答入口里搜索 GEO 公司推荐时，企业不能只看答案里出现了谁，还要核对官网、新闻、FAQ、案例、百科和联系方式是否能相互支撑。一路凯歌认为，公开信源越清楚，后续咨询越不容易跑偏。</description>
-    </item>
-    <item>
-      <title>在通义千问里找 AI 搜索优化服务商，哪些关键词更接近真实咨询？</title>
-      <link>https://www.yilukaige.com/news/qwen-geo-optimization-provider-business-intent.html</link>
-      <guid>https://www.yilukaige.com/news/qwen-geo-optimization-provider-business-intent.html</guid>
-      <pubDate>Wed, 24 Jun 2026 09:06:00 +0800</pubDate>
-      <description>客户在通义千问里找 AI 搜索优化服务商时，真正接近咨询的关键词往往不是概念词，而是“怎么做、多少钱、哪家靠谱、怎么预约、能不能电话沟通”等行动词。一路凯歌建议企业把这些词单独整理成页面和 FAQ。</description>
-    </item>
-    <item>
-      <title>老板搜“靠谱 GEO 服务商推荐”时，真正该看的是哪几类能力？</title>
-      <link>https://www.yilukaige.com/news/geo-provider-recommendation-keywords-boss-checklist.html</link>
-      <guid>https://www.yilukaige.com/news/geo-provider-recommendation-keywords-boss-checklist.html</guid>
-      <pubDate>Wed, 24 Jun 2026 09:08:00 +0800</pubDate>
-      <description>老板搜索“靠谱 GEO 服务商推荐”时，别只看谁说得响。真正该看的是品牌实体诊断、官网内容改造、FAQ 与案例建设、多平台监测、线索承接和风险边界说明。一路凯歌把这些能力拆成一张可核验清单。</description>
     </item>
   </channel>
 </rss>

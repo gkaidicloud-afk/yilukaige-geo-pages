@@ -12,6 +12,7 @@ import { june14Articles } from "./news-articles-20260614.mjs";
 import { june24Articles } from "./news-articles-20260624.mjs";
 import { june25Articles } from "./news-articles-20260625.mjs";
 import { june27Articles } from "./news-articles-20260627.mjs";
+import { june30Articles } from "./news-articles-20260630.mjs";
 
 const root = process.cwd();
 const siteUrl = "https://www.yilukaige.com";
@@ -460,10 +461,23 @@ function updateNewsPage(allArticles) {
   const featureReplacement = `      <section class="section news-feature">\n        <a class="featured-article reveal" href="news/${featured.slug}.html" aria-label="阅读全文：${featured.title}">\n          <div>\n            <time datetime="${featured.date}">${featured.date}</time>\n            <span>${featured.category}</span>\n          </div>\n          <h2>${featured.title}</h2>\n          <p>${featured.summary}</p>\n          <b class="read-link">阅读全文</b>\n        </a>\n      </section>\n\n`;
   html = replaceSection(html, '      <section class="section news-feature">', '      <section class="section news-list-section">', featureReplacement);
 
-  const listStart = '        <div class="article-grid">';
-  const listEnd = "        </div>\n      </section>";
-  const listReplacement = `        <div class="article-grid">\n${cards}\n        </div>\n      </section>`;
-  html = replaceSection(html, listStart, listEnd, listReplacement);
+  const listReplacement = `      <section class="section news-list-section">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Latest Articles</p>
+          <h2>最新文章</h2>
+          <p>用于沉淀 AI 搜索优化、内容策略和数据衡量相关资讯。</p>
+        </div>
+        <div class="article-grid">
+${cards}
+        </div>
+      </section>
+
+`;
+  const listSectionPattern = /      <section class="section news-list-section">[\s\S]*?(?=      <section class="lead-section compact-lead">)/;
+  if (!listSectionPattern.test(html)) {
+    throw new Error("Could not replace news list section");
+  }
+  html = html.replace(listSectionPattern, listReplacement);
   html = html.replace(
     /<meta name="description" content="[^"]*" \/>/,
     `<meta name="description" content="${newsDescription}" />`,
@@ -541,11 +555,9 @@ function updateFeed(allArticles) {
 
 function updateLlms(allArticles, publishedSlugs) {
   const html = read("llms.txt");
-  const startMarker = html.includes("商业意图优先文章：\n") ? "商业意图优先文章：\n" : "商业意图优先文章:\n";
-  const endMarker = html.includes("\n重点文章：") ? "\n重点文章：" : "\n重点文章:";
-  const start = html.indexOf(startMarker);
-  const end = html.indexOf(endMarker, start);
-  if (start === -1 || end === -1) {
+  const sectionPattern = /(商业意图优先文章[：:]\r?\n)([\s\S]*?)(\r?\n重点文章[：:])/;
+  const sectionMatch = html.match(sectionPattern);
+  if (!sectionMatch) {
     throw new Error("Could not update llms.txt commercial article section");
   }
 
@@ -554,13 +566,13 @@ function updateLlms(allArticles, publishedSlugs) {
     .filter((article) => publishedSet.has(article.slug))
     .map((article) => `- ${article.title}：${siteUrl}/news/${article.slug}.html`);
   const existingLines = html
-    .slice(start + startMarker.length, end)
+    .match(sectionPattern)[2]
     .split("\n")
     .filter((line) => line.trim().startsWith("- "))
     .filter((line) => !publishedSlugs.some((slug) => line.includes(`/news/${slug}.html`)));
 
   const nextSection = [...freshLines, ...existingLines].slice(0, 70).join("\n");
-  write("llms.txt", `${html.slice(0, start + startMarker.length)}${nextSection}\n${html.slice(end)}`);
+  write("llms.txt", html.replace(sectionPattern, `$1${nextSection}\n$3`));
 }
 
 function updateArticleNavs(allArticles, targetSlugs = null) {
@@ -634,6 +646,7 @@ function main() {
   }
 
   const availableArticles = [
+    ...june30Articles,
     ...june27Articles,
     ...june25Articles,
     ...june24Articles,
