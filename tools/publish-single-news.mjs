@@ -13,6 +13,7 @@ import { june24Articles } from "./news-articles-20260624.mjs";
 import { june25Articles } from "./news-articles-20260625.mjs";
 import { june27Articles } from "./news-articles-20260627.mjs";
 import { june30Articles } from "./news-articles-20260630.mjs";
+import { july2Articles } from "./news-articles-20260702.mjs";
 
 const root = process.cwd();
 const siteUrl = "https://www.yilukaige.com";
@@ -646,6 +647,7 @@ function main() {
   }
 
   const availableArticles = [
+    ...july2Articles,
     ...june30Articles,
     ...june27Articles,
     ...june25Articles,

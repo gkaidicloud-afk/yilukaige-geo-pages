@@ -521,6 +521,11 @@ const server = http.createServer(async (request, response) => {
     }
 
     if (method === "GET" && url.pathname.startsWith("/news/")) {
+      if (/\.html$/i.test(url.pathname)) {
+        await serveStatic(url.pathname, response, isHead);
+        return;
+      }
+
       const slug = normalizeLegacyArticleSlug(url.pathname.replace(/^\/news\//, ""));
       const content = await readContent();
       const item = findArticleBySlug(publishedArticles(content), slug);

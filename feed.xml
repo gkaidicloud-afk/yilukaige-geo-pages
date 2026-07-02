@@ -6,7 +6,42 @@
     <atom:link href="https://www.yilukaige.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>一路凯歌围绕 GEO、AI 搜索、品牌知识资产、GA4 数据化衡量和 AI 流量归因的文章更新。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Tue, 30 Jun 2026 09:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 02 Jul 2026 10:00:00 +0800</lastBuildDate>
+    <item>
+      <title>想让品牌被 AI 推荐，先别问技巧，先把证据摆清楚</title>
+      <link>https://www.yilukaige.com/news/brand-ai-recommendation-start-with-clear-proof.html</link>
+      <guid>https://www.yilukaige.com/news/brand-ai-recommendation-start-with-clear-proof.html</guid>
+      <pubDate>Thu, 02 Jul 2026 10:00:00 +0800</pubDate>
+      <description>品牌想在 AI 搜索里被推荐，不能只靠几句漂亮介绍。公司是谁、能解决什么问题、服务边界在哪里、客户为什么相信你，这些证据越清楚，AI 和客户越容易理解品牌。</description>
+    </item>
+    <item>
+      <title>老板想做 GEO 优化，先建一张客户问题表</title>
+      <link>https://www.yilukaige.com/news/geo-optimization-question-bank-for-bosses.html</link>
+      <guid>https://www.yilukaige.com/news/geo-optimization-question-bank-for-bosses.html</guid>
+      <pubDate>Thu, 02 Jul 2026 10:08:00 +0800</pubDate>
+      <description>GEO 优化不是先写大词，而是先整理客户真实问题。客户怎么问、担心什么、什么时候会咨询、需要什么证据，这些问题表能直接决定官网和新闻内容怎么写。</description>
+    </item>
+    <item>
+      <title>AI 搜索优化别写空话，品牌介绍要能回答三个问题</title>
+      <link>https://www.yilukaige.com/news/ai-search-optimization-avoid-empty-brand-copy.html</link>
+      <guid>https://www.yilukaige.com/news/ai-search-optimization-avoid-empty-brand-copy.html</guid>
+      <pubDate>Thu, 02 Jul 2026 10:16:00 +0800</pubDate>
+      <description>很多品牌介绍看起来很完整，但客户和 AI 都抓不到重点。AI 搜索优化要让品牌介绍回答：你是谁、解决什么问题、为什么可信。回答清楚，才谈得上被理解和推荐。</description>
+    </item>
+    <item>
+      <title>想被 AI 记住，官网内容更新要有节奏，别一阵风</title>
+      <link>https://www.yilukaige.com/news/geo-content-update-rhythm-for-ai-recommendation.html</link>
+      <guid>https://www.yilukaige.com/news/geo-content-update-rhythm-for-ai-recommendation.html</guid>
+      <pubDate>Thu, 02 Jul 2026 10:24:00 +0800</pubDate>
+      <description>GEO 优化不是今天发五篇、明天停半个月。企业要围绕客户问题、服务边界、案例证据和复盘指标持续更新，让官网、新闻页、feed、sitemap 和 llms.txt 形成稳定信号。</description>
+    </item>
+    <item>
+      <title>AI 搜索和 GEO 优化怎么复盘？别只看有没有排名</title>
+      <link>https://www.yilukaige.com/news/ai-search-geo-review-what-to-track.html</link>
+      <guid>https://www.yilukaige.com/news/ai-search-geo-review-what-to-track.html</guid>
+      <pubDate>Thu, 02 Jul 2026 10:32:00 +0800</pubDate>
+      <description>AI 搜索和 GEO 优化复盘不能只问有没有排名。企业要看品牌是否被提到、描述是否准确、引用来源是否稳定、官网访问是否变化、线索质量是否更接近真实需求。</description>
+    </item>
     <item>
       <title>AI搜索优化别先堆词，先把客户真正会问的话写出来</title>
       <link>https://www.yilukaige.com/news/ai-search-optimization-starts-with-customer-questions.html</link>
@@ -111,41 +146,6 @@
       <guid>https://www.yilukaige.com/news/ai-search-optimization-first-step-brand-material-sheet.html</guid>
       <pubDate>Thu, 25 Jun 2026 09:06:00 +0800</pubDate>
       <description>很多企业一提 AI 搜索优化就想到发稿，但一路凯歌建议先整理公司资料表、客户问题表和内容承接表。资料清楚以后，官网、新闻、FAQ 和案例才知道该往哪里写。</description>
-    </item>
-    <item>
-      <title>AI 推荐服务商不是看谁广告多，而是看谁的信息更清楚</title>
-      <link>https://www.yilukaige.com/news/ai-recommends-service-provider-clear-information-not-ads.html</link>
-      <guid>https://www.yilukaige.com/news/ai-recommends-service-provider-clear-information-not-ads.html</guid>
-      <pubDate>Thu, 25 Jun 2026 09:08:00 +0800</pubDate>
-      <description>在 AI 搜索里，企业不能只靠广告声量争取推荐。一路凯歌认为，服务对象、交付流程、案例证据、服务边界和联系方式越清楚，越容易被客户和 AI 同时理解。</description>
-    </item>
-    <item>
-      <title>客户问 AI：GEO 优化公司怎么选？服务商要准备哪些证据？</title>
-      <link>https://www.yilukaige.com/news/geo-company-selection-six-evidence-ai-question.html</link>
-      <guid>https://www.yilukaige.com/news/geo-company-selection-six-evidence-ai-question.html</guid>
-      <pubDate>Thu, 25 Jun 2026 09:10:00 +0800</pubDate>
-      <description>当客户开始问 AI“GEO 优化公司怎么选”，已经接近决策阶段。一路凯歌建议服务商准备官网服务页、案例、新闻源、FAQ、行业观点和测试记录这 6 类证据。</description>
-    </item>
-    <item>
-      <title>企业官网怎么写，AI 才知道你到底是做什么的？</title>
-      <link>https://www.yilukaige.com/news/company-website-how-to-write-for-ai-understanding.html</link>
-      <guid>https://www.yilukaige.com/news/company-website-how-to-write-for-ai-understanding.html</guid>
-      <pubDate>Thu, 25 Jun 2026 09:12:00 +0800</pubDate>
-      <description>企业官网不能只写给老板看，也要写给客户和 AI 看。一路凯歌建议把官网从形象展示页改成答案承接页，写清适合谁、解决什么、怎么交付、需要什么资料和不能承诺什么。</description>
-    </item>
-    <item>
-      <title>GEO 和 SEO 有什么区别？为什么企业现在要关注 AI 搜索优化？</title>
-      <link>https://www.yilukaige.com/news/geo-vs-seo-why-companies-should-care-ai-search.html</link>
-      <guid>https://www.yilukaige.com/news/geo-vs-seo-why-companies-should-care-ai-search.html</guid>
-      <pubDate>Thu, 25 Jun 2026 09:14:00 +0800</pubDate>
-      <description>SEO 主要解决网页排名和点击，GEO 更关注 AI 是否理解品牌、是否愿意引用内容、是否把企业放进答案里。一路凯歌认为，企业不是放弃 SEO，而是要在 SEO 基础上补 AI 搜索优化。</description>
-    </item>
-    <item>
-      <title>客户正在用 AI 找服务商，企业要提前准备哪些答案入口？</title>
-      <link>https://www.yilukaige.com/news/customers-use-ai-to-find-service-providers-answer-entry.html</link>
-      <guid>https://www.yilukaige.com/news/customers-use-ai-to-find-service-providers-answer-entry.html</guid>
-      <pubDate>Thu, 25 Jun 2026 09:16:00 +0800</pubDate>
-      <description>客户用 AI 找服务商时，不只搜品牌名，还会搜需求、场景、地区、预算、行业和结果。一路凯歌建议企业提前布局地区词、行业词、场景词、问题词、服务词和结果词。</description>
     </item>
   </channel>
 </rss>
