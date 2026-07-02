@@ -390,12 +390,12 @@ const server = http.createServer(async (request, response) => {
     }
 
     if (method === "GET" && url.pathname === "/llms.txt") {
-      sendText(response, renderLlmsTxt(await readContent()), isHead);
+      await serveStatic(url.pathname, response, isHead);
       return;
     }
 
     if (method === "GET" && url.pathname === "/sitemap.xml") {
-      sendText(response, renderSitemapXml(await readContent()), isHead, "application/xml; charset=utf-8");
+      await serveStatic(url.pathname, response, isHead);
       return;
     }
 
@@ -480,7 +480,7 @@ const server = http.createServer(async (request, response) => {
     }
 
     if (method === "GET" && url.pathname === "/news.html") {
-      sendHtml(response, renderNewsPage(await readContent(), url.searchParams.get("page")), isHead);
+      await serveStatic(url.pathname, response, isHead);
       return;
     }
 
