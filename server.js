@@ -410,7 +410,7 @@ const server = http.createServer(async (request, response) => {
     }
 
     if (method === "GET" && url.pathname === "/about/") {
-      sendHtml(response, renderAboutPage(await readContent()), isHead);
+      await serveStatic(url.pathname, response, isHead);
       return;
     }
 
