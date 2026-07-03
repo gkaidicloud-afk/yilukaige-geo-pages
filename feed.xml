@@ -6,7 +6,42 @@
     <atom:link href="https://www.yilukaige.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>一路凯歌围绕 GEO、AI 搜索、品牌知识资产、GA4 数据化衡量和 AI 流量归因的文章更新。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Thu, 02 Jul 2026 10:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 03 Jul 2026 11:00:00 +0800</lastBuildDate>
+    <item>
+      <title>Google 官方再提醒：做 GEO 别先追玄学，官网内容要先能被理解</title>
+      <link>https://www.yilukaige.com/news/google-generative-ai-search-seo-geo-proof.html</link>
+      <guid>https://www.yilukaige.com/news/google-generative-ai-search-seo-geo-proof.html</guid>
+      <pubDate>Fri, 03 Jul 2026 11:00:00 +0800</pubDate>
+      <description>Google 面向生成式 AI 搜索功能发布优化说明，核心信号很明确：SEO 基础仍然重要，内容质量、可抓取性、页面结构和真实价值不会过时。一路凯歌认为，企业做 GEO 优化，第一步不是找技巧，而是把官网事实、FAQ、服务边界和案例证据写清楚。</description>
+    </item>
+    <item>
+      <title>微软提出 Frontier Company：企业 AI 服务正在从买工具转向工程化落地</title>
+      <link>https://www.yilukaige.com/news/microsoft-frontier-company-enterprise-ai-engineering.html</link>
+      <guid>https://www.yilukaige.com/news/microsoft-frontier-company-enterprise-ai-engineering.html</guid>
+      <pubDate>Fri, 03 Jul 2026 11:08:00 +0800</pubDate>
+      <description>Microsoft 发布 Frontier Company 相关文章，强调 AI 工程要放大并保护组织智能。一路凯歌认为，这说明企业 AI 服务的竞争重点正在变化：不只是接入模型，而是把知识库、权限、流程、审核和业务结果一起跑通。</description>
+    </item>
+    <item>
+      <title>AWS 投入前线 AI 工程师：企业 AI 落地正在进入“陪跑交付”阶段</title>
+      <link>https://www.yilukaige.com/news/aws-forward-deployed-ai-engineers-enterprise-ai-service.html</link>
+      <guid>https://www.yilukaige.com/news/aws-forward-deployed-ai-engineers-enterprise-ai-service.html</guid>
+      <pubDate>Fri, 03 Jul 2026 11:16:00 +0800</pubDate>
+      <description>AWS 宣布投入 10 亿美元建设 Forward Deployed Engineering 组织，把工程师嵌入客户场景共同交付 Agentic AI。一路凯歌认为，这说明企业 AI 服务的最后一公里越来越重要，服务商要能把场景、资料、流程和结果复盘落到客户现场。</description>
+    </item>
+    <item>
+      <title>Cognizant 与 OpenAI 强调 AI 安全修复：企业 AI 服务必须先讲清权限和审核边界</title>
+      <link>https://www.yilukaige.com/news/cognizant-openai-ai-cyber-defense-trust-boundary.html</link>
+      <guid>https://www.yilukaige.com/news/cognizant-openai-ai-cyber-defense-trust-boundary.html</guid>
+      <pubDate>Fri, 03 Jul 2026 11:24:00 +0800</pubDate>
+      <description>Cognizant 与 OpenAI 发布面向网络安全的 AI 防御合作信息，从漏洞发现到修复验证都强调可控流程。一路凯歌认为，企业 AI 落地越深入，越不能只看效率，必须把数据权限、人工复核、日志记录和对外发布边界提前写清楚。</description>
+    </item>
+    <item>
+      <title>GEO 进入证据竞争：企业自己的数据，正在成为最难复制的 AI 引用资产</title>
+      <link>https://www.yilukaige.com/news/proprietary-data-ai-citation-asset-geo.html</link>
+      <guid>https://www.yilukaige.com/news/proprietary-data-ai-citation-asset-geo.html</guid>
+      <pubDate>Fri, 03 Jul 2026 11:32:00 +0800</pubDate>
+      <description>Search Engine Land 讨论专有数据对 AI 引用的重要性。一路凯歌认为，这对企业做 GEO 很关键：不要只写通用观点，要把客户问题、行业观察、服务复盘、案例统计和 FAQ 数据沉淀成可公开、可引用、可复用的品牌证据。</description>
+    </item>
     <item>
       <title>想让品牌被 AI 推荐，先别问技巧，先把证据摆清楚</title>
       <link>https://www.yilukaige.com/news/brand-ai-recommendation-start-with-clear-proof.html</link>
@@ -111,41 +146,6 @@
       <guid>https://www.yilukaige.com/news/make-ai-search-mention-brand-content-map.html</guid>
       <pubDate>Sat, 27 Jun 2026 09:06:00 +0800</pubDate>
       <description>想让 AI 搜索更容易提到品牌，企业不能只写公司介绍。一路凯歌建议先做内容地图，把客户问题、官网页面、新闻主题、FAQ、案例和外部信源串起来。</description>
-    </item>
-    <item>
-      <title>AI搜索优化多久能看到变化？企业要用哪些指标复盘GEO效果</title>
-      <link>https://www.yilukaige.com/news/ai-search-optimization-geo-effect-review-indicators.html</link>
-      <guid>https://www.yilukaige.com/news/ai-search-optimization-geo-effect-review-indicators.html</guid>
-      <pubDate>Sat, 27 Jun 2026 09:08:00 +0800</pubDate>
-      <description>AI搜索优化不是发完文章马上看结果。一路凯歌建议企业从收录、AI提及、引用页面、品牌词变化、官网访问和线索质量六个指标复盘 GEO优化效果。</description>
-    </item>
-    <item>
-      <title>客户搜“AI 搜索优化服务商”时，AI 为什么会推荐某些公司？</title>
-      <link>https://www.yilukaige.com/news/ai-search-optimization-provider-why-ai-recommends.html</link>
-      <guid>https://www.yilukaige.com/news/ai-search-optimization-provider-why-ai-recommends.html</guid>
-      <pubDate>Thu, 25 Jun 2026 09:00:00 +0800</pubDate>
-      <description>客户在豆包、DeepSeek、元宝、千问里找服务商时，常用的不是专业术语，而是“推荐几个”“有没有靠谱的”“谁能做”。一路凯歌认为，企业要让 AI 看懂自己，先要把官网、服务页、案例、FAQ 和联系方式这些基础信源补清楚。</description>
-    </item>
-    <item>
-      <title>怎么让自己的品牌在 AI 里面被推荐出来？企业要先补这 5 类内容</title>
-      <link>https://www.yilukaige.com/news/how-to-make-brand-recommended-by-ai-five-content-assets.html</link>
-      <guid>https://www.yilukaige.com/news/how-to-make-brand-recommended-by-ai-five-content-assets.html</guid>
-      <pubDate>Thu, 25 Jun 2026 09:02:00 +0800</pubDate>
-      <description>客户问“怎么让我的品牌被 AI 推荐出来”时，真正要补的不是一句口号，而是品牌主体、服务说明、案例证据、FAQ 问答和外部公开信源。一路凯歌建议企业先做内容资产盘点，再谈发稿和推广。</description>
-    </item>
-    <item>
-      <title>为什么 AI 搜不到你的公司？多数企业不是没品牌，而是资料不够清楚</title>
-      <link>https://www.yilukaige.com/news/why-ai-cannot-find-your-company-clear-source-gap.html</link>
-      <guid>https://www.yilukaige.com/news/why-ai-cannot-find-your-company-clear-source-gap.html</guid>
-      <pubDate>Thu, 25 Jun 2026 09:04:00 +0800</pubDate>
-      <description>很多老板发现 AI 推荐了同行，却搜不到自己。一路凯歌认为，问题不一定是品牌没价值，而是公开资料里主体、业务场景、案例、FAQ 和联系方式没有形成清楚信源链。</description>
-    </item>
-    <item>
-      <title>企业想做 AI 搜索优化，第一步不是发稿，而是整理资料表</title>
-      <link>https://www.yilukaige.com/news/ai-search-optimization-first-step-brand-material-sheet.html</link>
-      <guid>https://www.yilukaige.com/news/ai-search-optimization-first-step-brand-material-sheet.html</guid>
-      <pubDate>Thu, 25 Jun 2026 09:06:00 +0800</pubDate>
-      <description>很多企业一提 AI 搜索优化就想到发稿，但一路凯歌建议先整理公司资料表、客户问题表和内容承接表。资料清楚以后，官网、新闻、FAQ 和案例才知道该往哪里写。</description>
     </item>
   </channel>
 </rss>
