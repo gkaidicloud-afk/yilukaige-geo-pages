@@ -1971,6 +1971,28 @@ h1 span {
   line-height: 1.75;
 }
 
+.about-company-summary {
+  grid-template-columns: minmax(0, 0.86fr) minmax(420px, 1fr);
+  align-items: start;
+}
+
+.about-company-summary .about-citation-copy h2 {
+  font-size: clamp(34px, 4vw, 50px);
+}
+
+.about-company-summary .about-citation-copy p + p {
+  margin-top: 14px;
+}
+
+.about-company-summary .about-citation-points div {
+  align-content: start;
+  gap: 12px;
+}
+
+.about-company-summary .about-citation-points span {
+  display: block;
+}
+
 .about-method-grid-wide {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
