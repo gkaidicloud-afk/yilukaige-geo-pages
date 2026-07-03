@@ -1993,6 +1993,21 @@ h1 span {
   display: block;
 }
 
+.about-trait-grid,
+.about-gap-grid,
+.about-method-grid,
+.about-method-grid.about-method-grid-wide {
+  align-items: stretch;
+}
+
+.about-trait-card,
+.about-gap-card,
+.about-method-card {
+  display: grid;
+  align-content: start;
+  box-sizing: border-box;
+}
+
 .about-method-grid-wide {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
@@ -2829,6 +2844,10 @@ h1 span {
     height: 40px;
     padding: 0 13px;
     font-size: 12px;
+  }
+
+  .site-header .header-cta {
+    display: none;
   }
 
   .brand {
