@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "start": "node server.js",
-    "dev": "PORT=4177 node server.js"
+    "dev": "PORT=4177 node server.js",
+    "workbench": "node tools/publishing-workbench.mjs"
   }
 }
