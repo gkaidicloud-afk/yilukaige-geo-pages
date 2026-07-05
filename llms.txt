@@ -31,6 +31,7 @@ RSS 订阅：https://www.yilukaige.com/feed.xml
 - AI可引用内容资产：https://www.yilukg.com/ai-citable-content/
 
 商业意图优先文章：
+- 一路凯歌 GEO 项目工作台是如何做 AI 可见度监测的：https://www.yilukaige.com/news/yilukaige-geo-workbench-ai-visibility-monitoring.html
 - Google 官方再提醒：做 GEO 别先追玄学，官网内容要先能被理解：https://www.yilukaige.com/news/google-generative-ai-search-seo-geo-proof.html
 - 微软提出 Frontier Company：企业 AI 服务正在从买工具转向工程化落地：https://www.yilukaige.com/news/microsoft-frontier-company-enterprise-ai-engineering.html
 - AWS 投入前线 AI 工程师：企业 AI 落地正在进入“陪跑交付”阶段：https://www.yilukaige.com/news/aws-forward-deployed-ai-engineers-enterprise-ai-service.html
@@ -100,7 +101,6 @@ RSS 订阅：https://www.yilukaige.com/feed.xml
 - GEO诊断报告能看出什么？企业做之前要先查这几项：https://www.yilukaige.com/news/geo-diagnostic-report-business-value.html
 - AI搜索优化服务商怎么选？中小企业先看交付边界：https://www.yilukaige.com/news/ai-search-service-provider-selection-boundary.html
 - 北京GEO优化公司哪家靠谱？先看这几个公开证据：https://www.yilukaige.com/news/beijing-geo-company-reliable-evidence.html
-- 企业AI服务费用怎么判断？别只看工具数量：https://www.yilukaige.com/news/enterprise-ai-service-fee-decision.html
 
 重点文章：
 - Google AI Search 加强来源展示，企业官网要更像可引用资料页：https://www.yilukaige.com/news/google-ai-search-source-visibility.html

@@ -2285,6 +2285,27 @@ h1 span {
   color: var(--navy);
 }
 
+.article-inline-image {
+  margin: 30px 0 34px;
+  overflow: hidden;
+  border: 1px solid rgba(11, 31, 59, 0.1);
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.94);
+  box-shadow: 0 18px 48px rgba(11, 31, 59, 0.08);
+}
+
+.article-inline-image img {
+  width: 100%;
+  height: auto;
+}
+
+.article-inline-image figcaption {
+  padding: 13px 18px 16px;
+  color: rgba(26, 26, 26, 0.62);
+  font-size: 14px;
+  line-height: 1.7;
+}
+
 .article-note {
   margin: 30px 0;
   padding: 22px 24px;
@@ -2960,7 +2981,17 @@ h1 span {
   }
 
   .article-hero h1 {
-    font-size: 40px;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+    max-width: 100%;
+    font-size: clamp(30px, 8.2vw, 36px);
+    line-height: 1.14;
+  }
+
+  .article-hero > p,
+  .article-cover,
+  .article-inline-image {
+    max-width: 100%;
   }
 
   .case-detail-hero-grid p:not(.eyebrow) {

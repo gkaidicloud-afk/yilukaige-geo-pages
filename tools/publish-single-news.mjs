@@ -15,6 +15,7 @@ import { june27Articles } from "./news-articles-20260627.mjs";
 import { june30Articles } from "./news-articles-20260630.mjs";
 import { july2Articles } from "./news-articles-20260702.mjs";
 import { july3Articles } from "./news-articles-20260703.mjs";
+import { july5Articles } from "./news-articles-20260705.mjs";
 
 const root = process.cwd();
 const siteUrl = "https://www.yilukaige.com";
@@ -286,6 +287,11 @@ function articleBodyHtml(article) {
           parts.push(`            <li>${bullet}</li>`);
         }
         parts.push("          </ul>");
+      }
+      for (const image of section.images ?? []) {
+        parts.push(
+          `          <figure class="article-inline-image">\n            <img src="../${image.src}" alt="${escapeAttribute(image.alt)}" width="${image.width ?? 1268}" height="${image.height ?? 951}" loading="lazy" />${image.caption ? `\n            <figcaption>${escapeHtml(image.caption)}</figcaption>` : ""}\n          </figure>`,
+        );
       }
       return parts.join("\n");
     })
@@ -648,6 +654,7 @@ function main() {
   }
 
   const availableArticles = [
+    ...july5Articles,
     ...july3Articles,
     ...july2Articles,
     ...june30Articles,
