@@ -928,7 +928,7 @@ ${refsHtml}
         </aside>
       </section>
 
-      <section class="section faq-section">
+      <section class="section faq-section${article.faqs.length >= 4 ? " faq-section-four" : ""}">
         <div class="section-heading reveal">
           <p class="eyebrow">FAQ</p>
           <h2>延伸问答</h2>

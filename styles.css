@@ -1041,6 +1041,23 @@ h1 span {
   position: relative;
 }
 
+.faq-section-four .faq-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.faq-section-four .faq-item {
+  min-height: 190px;
+  padding: 24px;
+}
+
+.faq-section-four .faq-item h3 {
+  font-size: 20px;
+}
+
+.faq-section-four .faq-item p {
+  font-size: 15px;
+}
+
 .insight-card,
 .article-card,
 .featured-article {
@@ -2843,6 +2860,10 @@ h1 span {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .faq-section-four .faq-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .section-kicker {
     position: static;
   }
@@ -3370,6 +3391,25 @@ h1 span {
   }
 
   .faq-item p {
+    font-size: 13px;
+    line-height: 1.7;
+  }
+
+  .faq-section-four .faq-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .faq-section-four .faq-item {
+    min-height: 210px;
+    padding: 18px 14px;
+  }
+
+  .faq-section-four .faq-item h3 {
+    font-size: 16px;
+    line-height: 1.35;
+  }
+
+  .faq-section-four .faq-item p {
     font-size: 13px;
     line-height: 1.7;
   }
