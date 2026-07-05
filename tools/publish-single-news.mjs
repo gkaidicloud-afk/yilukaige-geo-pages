@@ -19,6 +19,9 @@ import { july5Articles } from "./news-articles-20260705.mjs";
 
 const root = process.cwd();
 const siteUrl = "https://www.yilukaige.com";
+const newsPageSize = 16;
+const newsStylesheet = "styles.css?v=20260705-pagination";
+const nestedNewsStylesheet = "/styles.css?v=20260705-pagination";
 const orgName = "北京一路凯歌网络科技有限公司";
 const brandName = "一路凯歌";
 const brandSameAs = [
@@ -30,7 +33,9 @@ function read(file) {
 }
 
 function write(file, content) {
-  fs.writeFileSync(path.join(root, file), content);
+  const filePath = path.join(root, file);
+  fs.mkdirSync(path.dirname(filePath), { recursive: true });
+  fs.writeFileSync(filePath, content);
 }
 
 function escapeHtml(text) {
@@ -71,6 +76,9 @@ function indent(text, count) {
 }
 
 function normalizeHref(fromFile, href) {
+  if (href.startsWith("/")) {
+    return path.posix.normalize(href);
+  }
   const fromDir = path.posix.dirname(`/${fromFile}`);
   return path.posix.normalize(path.posix.join(fromDir, href));
 }
@@ -113,6 +121,20 @@ function withShanghaiFeedDate(datetime) {
 }
 
 function getCurrentOrderedSlugs() {
+  if (fs.existsSync(path.join(root, "sitemap.xml"))) {
+    const sitemap = read("sitemap.xml");
+    const sitemapSlugs = [];
+    for (const match of sitemap.matchAll(/https:\/\/www\.yilukaige\.com\/news\/([a-z0-9-]+)\.html/g)) {
+      const slug = match[1];
+      if (!sitemapSlugs.includes(slug) && fs.existsSync(path.join(root, "news", `${slug}.html`))) {
+        sitemapSlugs.push(slug);
+      }
+    }
+    if (sitemapSlugs.length) {
+      return sitemapSlugs;
+    }
+  }
+
   const html = read("news.html");
   const slugs = [];
   for (const match of html.matchAll(/https:\/\/www\.yilukaige\.com\/news\/([a-z0-9-]+)\.html/g)) {
@@ -434,14 +456,18 @@ function replaceSection(source, startMarker, endMarker, replacement) {
 }
 
 function buildNewsItemListJson(allArticles) {
+  return buildNewsPageItemListJson(allArticles, 0, `${brandName}行业资讯文章列表`);
+}
+
+function buildNewsPageItemListJson(articles, offset = 0, name = `${brandName}行业资讯文章列表`) {
   return JSON.stringify(
     {
       "@context": "https://schema.org",
       "@type": "ItemList",
-      name: `${brandName}行业资讯文章列表`,
-      itemListElement: allArticles.map((article, index) => ({
+      name,
+      itemListElement: articles.map((article, index) => ({
         "@type": "ListItem",
-        position: index + 1,
+        position: offset + index + 1,
         url: article.url,
         name: article.title,
       })),
@@ -451,59 +477,159 @@ function buildNewsItemListJson(allArticles) {
   );
 }
 
-function updateNewsPage(allArticles) {
-  let html = read("news.html");
-  const featured = allArticles[0];
-  const newsDescription = "一路凯歌行业资讯，持续更新 GEO 生成式引擎优化、AI 搜索、品牌结构化内容、GA4 AI 流量归因与中文大模型入口相关观察。";
-  const cards = allArticles
-    .map(
-      (article) => `          <a class="article-card reveal" href="news/${article.slug}.html">\n            <time datetime="${article.date}">${article.date}</time>\n            <span>${article.category}</span>\n            <h3>${article.title}</h3>\n            <p>${article.summary}</p>\n            <b class="read-link">阅读全文</b>\n          </a>`,
-    )
-    .join("\n");
+function newsPageUrl(page) {
+  return page === 1 ? `${siteUrl}/news.html` : `${siteUrl}/news/page/${page}/`;
+}
 
-  html = html.replace(
+function newsPageTitle(page) {
+  return page === 1 ? `行业资讯 | ${brandName}` : `行业资讯第 ${page} 页 | ${brandName}`;
+}
+
+function newsPageDescription(page) {
+  const base = "一路凯歌行业资讯，持续更新 GEO 生成式引擎优化、AI 搜索、品牌结构化内容、GA4 AI 流量归因与中文大模型入口相关观察。";
+  return page === 1 ? base : `${base}第 ${page} 页收录更早发布的 GEO 与 AI 搜索优化文章。`;
+}
+
+function newsPagePath(page) {
+  return page === 1 ? "news.html" : `news/page/${page}/index.html`;
+}
+
+function newsPageLink(page) {
+  return page === 1 ? "/news.html" : `/news/page/${page}/`;
+}
+
+function renderNewsCard(article, nested = false) {
+  const href = nested ? `/news/${article.slug}.html` : `news/${article.slug}.html`;
+  return `          <a class="article-card reveal" href="${href}">\n            <time datetime="${article.date}">${article.date}</time>\n            <span>${article.category}</span>\n            <h3>${article.title}</h3>\n            <p>${article.summary}</p>\n            <b class="read-link">阅读全文</b>\n          </a>`;
+}
+
+function renderNewsPagination(currentPage, totalPages) {
+  if (totalPages <= 1) {
+    return "";
+  }
+  const prevPage = currentPage > 1 ? currentPage - 1 : null;
+  const nextPage = currentPage < totalPages ? currentPage + 1 : null;
+  const pages = Array.from({ length: totalPages }, (_, index) => index + 1)
+    .map((page) =>
+      page === currentPage
+        ? `<span aria-current="page">${page}</span>`
+        : `<a href="${newsPageLink(page)}">${page}</a>`,
+    )
+    .join("");
+
+  return `\n        <nav class="news-pagination" aria-label="资讯分页">\n          ${prevPage ? `<a class="news-page-control" href="${newsPageLink(prevPage)}">&#19978;&#19968;&#39029;</a>` : `<span class="news-page-control is-disabled">&#19978;&#19968;&#39029;</span>`}\n          <div class="news-page-numbers">${pages}</div>\n          ${nextPage ? `<a class="news-page-control" href="${newsPageLink(nextPage)}">&#19979;&#19968;&#39029;</a>` : `<span class="news-page-control is-disabled">&#19979;&#19968;&#39029;</span>`}\n        </nav>`;
+}
+
+function replaceNewsHeadMeta(html, page, totalPages) {
+  const title = newsPageTitle(page);
+  const description = newsPageDescription(page);
+  const canonical = newsPageUrl(page);
+  const paginationLinks = [
+    page > 1 ? `    <link rel="prev" href="${newsPageUrl(page - 1)}" />` : "",
+    page < totalPages ? `    <link rel="next" href="${newsPageUrl(page + 1)}" />` : "",
+  ].filter(Boolean).join("\n");
+
+  html = html.replace(/\n    <link rel="(?:prev|next)" href="[^"]+" \/>/g, "");
+  html = html.replace(/<title>[^<]*<\/title>/, `<title>${title}</title>`);
+  html = html.replace(/<meta name="description" content="[^"]*" \/>/, `<meta name="description" content="${description}" />`);
+  html = html.replace(/<link rel="canonical" href="[^"]*" \/>/, `<link rel="canonical" href="${canonical}" />${paginationLinks ? `\n${paginationLinks}` : ""}`);
+  html = html.replace(/<meta property="og:title" content="[^"]*" \/>/, `<meta property="og:title" content="${title}" />`);
+  html = html.replace(/<meta property="og:description" content="[^"]*" \/>/, `<meta property="og:description" content="${description}" />`);
+  html = html.replace(/<meta property="og:url" content="[^"]*" \/>/, `<meta property="og:url" content="${canonical}" />`);
+  html = html.replace(/<meta name="twitter:title" content="[^"]*" \/>/, `<meta name="twitter:title" content="${title}" />`);
+  html = html.replace(/<meta name="twitter:description" content="[^"]*" \/>/, `<meta name="twitter:description" content="${description}" />`);
+  html = html.replace(/"name": "行业资讯[^"]*"/, `"name": "${page === 1 ? "行业资讯" : `行业资讯第 ${page} 页`}"`);
+  html = html.replace(/"description": "[^"]+"/, `"description": "${description}"`);
+  html = html.replace(/"url": "https:\/\/www\.yilukaige\.com\/news(?:\.html|\/page\/\d+\/)"/, `"url": "${canonical}"`);
+  return html;
+}
+
+function toNestedNewsIndexPaths(html) {
+  return html
+    .replaceAll(`href="${newsStylesheet}"`, `href="${nestedNewsStylesheet}"`)
+    .replaceAll('href="assets/logo.png"', 'href="/assets/logo.png"')
+    .replaceAll('href="index.html#top"', 'href="/#top"')
+    .replaceAll('href="index.html#advantages"', 'href="/#advantages"')
+    .replaceAll('href="index.html#services"', 'href="/#services"')
+    .replaceAll('href="index.html#cases"', 'href="/#cases"')
+    .replaceAll('href="index.html#contact"', 'href="/#contact"')
+    .replaceAll('href="about/"', 'href="/about/"')
+    .replaceAll('href="geo-service/"', 'href="/geo-service/"')
+    .replaceAll('href="ai-search-optimization/"', 'href="/ai-search-optimization/"')
+    .replaceAll('href="case/"', 'href="/case/"')
+    .replaceAll('href="faq/"', 'href="/faq/"')
+    .replaceAll('href="llms.txt"', 'href="/llms.txt"')
+    .replaceAll('href="sitemap.xml"', 'href="/sitemap.xml"')
+    .replaceAll('href="news.html"', 'href="/news.html"')
+    .replaceAll('src="assets/logo-header.png"', 'src="/assets/logo-header.png"')
+    .replaceAll('src="assets/logo.png"', 'src="/assets/logo.png"')
+    .replaceAll('src="script.js"', 'src="/script.js"');
+}
+
+function cleanNewsPaginationPages(totalPages) {
+  const pageRoot = path.join(root, "news", "page");
+  if (!fs.existsSync(pageRoot)) {
+    return;
+  }
+  for (const entry of fs.readdirSync(pageRoot, { withFileTypes: true })) {
+    if (!entry.isDirectory()) {
+      continue;
+    }
+    const page = Number(entry.name);
+    if (!Number.isInteger(page) || page < 2 || page > totalPages) {
+      fs.rmSync(path.join(pageRoot, entry.name), { recursive: true, force: true });
+    }
+  }
+  if (totalPages <= 1) {
+    fs.rmSync(pageRoot, { recursive: true, force: true });
+  }
+}
+
+function updateNewsPage(allArticles) {
+  let baseHtml = read("news.html");
+  const featured = allArticles[0];
+  const totalPages = Math.max(1, Math.ceil(allArticles.length / newsPageSize));
+
+  baseHtml = baseHtml.replace(
+    /<link rel="stylesheet" href="[^"]*styles\.css[^"]*" \/>/,
+    `<link rel="stylesheet" href="${newsStylesheet}" />`,
+  );
+  baseHtml = baseHtml.replace(
     /<script type="application\/ld\+json" data-seo="item-list">[\s\S]*?<\/script>/,
-    `<script type="application/ld+json" data-seo="item-list">${indent(buildNewsItemListJson(allArticles), 10)}</script>`,
+    `<script type="application/ld+json" data-seo="item-list">__NEWS_ITEM_LIST__</script>`,
   );
 
   const featureReplacement = `      <section class="section news-feature">\n        <a class="featured-article reveal" href="news/${featured.slug}.html" aria-label="阅读全文：${featured.title}">\n          <div>\n            <time datetime="${featured.date}">${featured.date}</time>\n            <span>${featured.category}</span>\n          </div>\n          <h2>${featured.title}</h2>\n          <p>${featured.summary}</p>\n          <b class="read-link">阅读全文</b>\n        </a>\n      </section>\n\n`;
-  html = replaceSection(html, '      <section class="section news-feature">', '      <section class="section news-list-section">', featureReplacement);
+  baseHtml = replaceSection(baseHtml, '      <section class="section news-feature">', '      <section class="section news-list-section">', featureReplacement);
 
-  const listReplacement = `      <section class="section news-list-section">
-        <div class="section-heading reveal">
-          <p class="eyebrow">Latest Articles</p>
-          <h2>最新文章</h2>
-          <p>用于沉淀 AI 搜索优化、内容策略和数据衡量相关资讯。</p>
-        </div>
-        <div class="article-grid">
-${cards}
-        </div>
-      </section>
-
-`;
   const listSectionPattern = /      <section class="section news-list-section">[\s\S]*?(?=      <section class="lead-section compact-lead">)/;
-  if (!listSectionPattern.test(html)) {
+  if (!listSectionPattern.test(baseHtml)) {
     throw new Error("Could not replace news list section");
   }
-  html = html.replace(listSectionPattern, listReplacement);
-  html = html.replace(
-    /<meta name="description" content="[^"]*" \/>/,
-    `<meta name="description" content="${newsDescription}" />`,
-  );
-  html = html.replace(
-    /<meta name="keywords" content="[^"]*" \/>/,
-    `<meta name="keywords" content="一路凯歌,GEO优化,生成式引擎优化,AI搜索优化,AI品牌可见性,企业内容结构化,AI搜索流量分析,DeepSeek优化,豆包优化,Kimi优化,通义千问优化,腾讯元宝优化" />`,
-  );
-  html = html.replace(
-    /<meta property="og:description" content="[^"]*" \/>/,
-    `<meta property="og:description" content="${newsDescription}" />`,
-  );
-  html = html.replace(
-    /<meta name="twitter:description" content="[^"]*" \/>/,
-    `<meta name="twitter:description" content="${newsDescription}" />`,
-  );
-  html = html.replace(/"description": "[^"]+"/, `"description": "${newsDescription}"`);
-  write("news.html", html);
+
+  cleanNewsPaginationPages(totalPages);
+
+  for (let page = 1; page <= totalPages; page += 1) {
+    const offset = (page - 1) * newsPageSize;
+    const pageArticles = allArticles.slice(offset, offset + newsPageSize);
+    const cards = pageArticles.map((article) => renderNewsCard(article, page > 1)).join("\n");
+    const listReplacement = `      <section class="section news-list-section">\n        <div class="section-heading reveal">\n          <p class="eyebrow">Latest Articles</p>\n          <h2>${page === 1 ? "最新文章" : `更多文章 · 第 ${page} 页`}</h2>\n          <p>${page === 1 ? "用于沉淀 AI 搜索优化、内容策略和数据衡量相关资讯。" : "继续查看一路凯歌更早发布的 GEO、AI 搜索优化和企业内容资产文章。"}</p>\n        </div>\n        <div class="article-grid">\n${cards}\n        </div>${renderNewsPagination(page, totalPages)}\n      </section>\n\n`;
+
+    let html = page === 1 ? baseHtml : toNestedNewsIndexPaths(baseHtml);
+    html = replaceNewsHeadMeta(html, page, totalPages);
+    html = html.replace(
+      /<meta name="keywords" content="[^"]*" \/>/,
+      `<meta name="keywords" content="一路凯歌,GEO优化,生成式引擎优化,AI搜索优化,AI品牌可见性,企业内容结构化,AI搜索流量分析,DeepSeek优化,豆包优化,Kimi优化,通义千问优化,腾讯元宝优化" />`,
+    );
+    html = html.replace(
+      "__NEWS_ITEM_LIST__",
+      indent(buildNewsPageItemListJson(pageArticles, offset, page === 1 ? `${brandName}行业资讯文章列表` : `${brandName}行业资讯文章列表第 ${page} 页`), 10),
+    );
+    html = page === 1
+      ? html.replace(listSectionPattern, listReplacement)
+      : html.replace(/      <section class="section news-feature">[\s\S]*?(?=      <section class="section news-list-section">)/, "").replace(listSectionPattern, listReplacement);
+    write(newsPagePath(page), html);
+  }
 }
 
 function updateHomePage(allArticles) {
@@ -521,6 +647,13 @@ function updateHomePage(allArticles) {
 
 function updateSitemap(allArticles) {
   const latestDate = allArticles[0]?.date ?? "2026-06-05";
+  const totalPages = Math.max(1, Math.ceil(allArticles.length / newsPageSize));
+  const paginatedUrls = Array.from({ length: Math.max(0, totalPages - 1) }, (_, index) => ({
+    loc: newsPageUrl(index + 2),
+    priority: "0.58",
+    changefreq: "weekly",
+    lastmod: latestDate,
+  }));
   const staticUrls = [
     { loc: `${siteUrl}/`, priority: "1.0", changefreq: "weekly", lastmod: latestDate },
     { loc: `${siteUrl}/about/`, priority: "0.86", changefreq: "monthly", lastmod: "2026-06-11" },
@@ -537,7 +670,7 @@ function updateSitemap(allArticles) {
     changefreq: "monthly",
     lastmod: article.date,
   }));
-  const entries = [...staticUrls, ...dynamicUrls]
+  const entries = [...staticUrls, ...paginatedUrls, ...dynamicUrls]
     .map(
       (item) => `  <url>\n    <loc>${item.loc}</loc>\n    <lastmod>${item.lastmod}</lastmod>\n    <changefreq>${item.changefreq}</changefreq>\n    <priority>${item.priority}</priority>\n  </url>`,
     )
@@ -611,7 +744,9 @@ function validateUniqueness(allArticles) {
 }
 
 function validateLinks(allArticles) {
-  const files = ["index.html", "news.html", ...allArticles.map((item) => `news/${item.slug}.html`)];
+  const totalPages = Math.max(1, Math.ceil(allArticles.length / newsPageSize));
+  const paginatedFiles = Array.from({ length: Math.max(0, totalPages - 1) }, (_, index) => newsPagePath(index + 2));
+  const files = ["index.html", "news.html", ...paginatedFiles, ...allArticles.map((item) => `news/${item.slug}.html`)];
   const existing = new Set(fs.readdirSync(path.join(root, "news")).map((file) => `/news/${file}`));
   const rootFiles = new Set(fs.readdirSync(root).map((file) => `/${file}`));
   const rootDirs = new Set(
@@ -635,7 +770,7 @@ function validateLinks(allArticles) {
       if (href.startsWith("http") || href.startsWith("tel:") || href.startsWith("#") || href.startsWith("mailto:")) {
         continue;
       }
-      const normalized = normalizeHref(file, href).split("#")[0];
+      const normalized = normalizeHref(file, href).split(/[?#]/)[0];
       if (!existing.has(normalized) && !rootFiles.has(normalized) && !rootDirs.has(normalized) && !assetFiles.has(normalized) && !localTargetExists(normalized)) {
         missing.push(`${file} -> ${href}`);
       }
@@ -649,9 +784,6 @@ function validateLinks(allArticles) {
 
 function main() {
   const slugs = process.argv.slice(2);
-  if (!slugs.length) {
-    throw new Error("Usage: node tools/publish-single-news.mjs <slug> [slug...]");
-  }
 
   const availableArticles = [
     ...july5Articles,
@@ -672,6 +804,18 @@ function main() {
     ...june5Articles,
   ];
   const availableBySlug = new Map(availableArticles.map((item) => [item.slug, item]));
+  if (!slugs.length) {
+    const allArticles = getCurrentOrderedSlugs().map(parseArticleFile);
+    validateUniqueness(allArticles);
+    updateNewsPage(allArticles);
+    updateHomePage(allArticles);
+    updateSitemap(allArticles);
+    updateFeed(allArticles);
+    validateLinks(allArticles);
+    console.log(`Updated aggregations for ${allArticles.length} articles.`);
+    return;
+  }
+
   const duplicateArgs = slugs.filter((slug, index) => slugs.indexOf(slug) !== index);
   if (duplicateArgs.length) {
     throw new Error(`Duplicate publish arguments: ${[...new Set(duplicateArgs)].join(", ")}`);

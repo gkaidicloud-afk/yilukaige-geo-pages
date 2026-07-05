@@ -486,6 +486,11 @@ const server = http.createServer(async (request, response) => {
       return;
     }
 
+    if (method === "GET" && /^\/news\/page\/\d+\/?$/.test(url.pathname)) {
+      await serveStatic(url.pathname.endsWith("/") ? url.pathname : `${url.pathname}/`, response, isHead);
+      return;
+    }
+
     if (method === "GET" && url.pathname === "/insights.html") {
       redirect(response, "/news.html", isHead);
       return;
