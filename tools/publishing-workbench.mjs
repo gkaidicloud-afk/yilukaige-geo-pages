@@ -24,6 +24,10 @@ const indexNow = {
   keyLocation: "https://www.yilukaige.com/da808c9266834793aed8af4057d0b6b0.txt",
 };
 
+const geoWorkbench = {
+  origin: (process.env.GEO_WORKBENCH_ORIGIN || "http://127.0.0.1:3000").replace(/\/+$/, ""),
+};
+
 const mimeTypes = {
   ".html": "text/html; charset=utf-8",
   ".css": "text/css; charset=utf-8",
@@ -65,7 +69,7 @@ function readJsonBody(req) {
     let body = "";
     req.on("data", (chunk) => {
       body += chunk;
-      if (body.length > 5 * 1024 * 1024) {
+      if (body.length > 30 * 1024 * 1024) {
         reject(new Error("提交内容太大，请先精简图片路径或正文。"));
         req.destroy();
       }
@@ -221,6 +225,230 @@ function safeAssetName(name) {
   return normalized;
 }
 
+function shortHash(value) {
+  let hash = 0;
+  for (const char of cleanText(value)) {
+    hash = (hash * 31 + char.charCodeAt(0)) >>> 0;
+  }
+  return hash.toString(36).padStart(6, "0").slice(0, 6);
+}
+
+function uniqueValues(values) {
+  return [...new Set(values.map(cleanText).filter(Boolean))];
+}
+
+function slugFromGeoArticle(article) {
+  const title = cleanText(article.title).toLowerCase();
+  const parts = [];
+  if (title.includes("geo")) parts.push("geo");
+  if (title.includes("ai")) parts.push("ai");
+  if (title.includes("搜索")) parts.push("search");
+  if (title.includes("品牌")) parts.push("brand");
+  if (title.includes("推荐")) parts.push("recommend");
+  if (title.includes("可见")) parts.push("visibility");
+  if (title.includes("监测")) parts.push("monitoring");
+  if (title.includes("工作台")) parts.push("workbench");
+  if (title.includes("seo")) parts.push("seo");
+  const base = uniqueValues(parts).slice(0, 5).join("-") || "geo-ai-content";
+  return `${base}-${shortHash(`${article.id}-${article.title}`)}`;
+}
+
+function inferGeoCategory(article) {
+  const text = `${article.title || ""}\n${article.content || ""}`;
+  if (/工作台|监测|可见度|复盘/.test(text)) return "GEO 工作台";
+  if (/AI\s*搜索|搜索优化|AI搜索/.test(text)) return "AI 搜索优化";
+  if (/品牌|推荐|内容资产|知识资产/.test(text)) return "内容品牌推广";
+  if (/获客|线索|转化/.test(text)) return "AI 精准获客";
+  return "GEO 优化";
+}
+
+function stripMarkdownImages(text) {
+  return cleanText(text).replace(/!\[[^\]]*\]\([^)]*\)/g, "");
+}
+
+function plainTextFromMarkdown(text) {
+  return stripMarkdownImages(text)
+    .replace(/```[\s\S]*?```/g, " ")
+    .replace(/\[([^\]]+)\]\([^)]+\)/g, "$1")
+    .replace(/^#{1,6}\s+/gm, "")
+    .replace(/^[>\-*+]\s+/gm, "")
+    .replace(/[`*_#]/g, "")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+function excerpt(text, max = 170) {
+  const clean = plainTextFromMarkdown(text);
+  if (clean.length <= max) return clean;
+  return `${clean.slice(0, max).replace(/[，。；、：,.!?！？\s]+$/g, "")}。`;
+}
+
+function sectionFromMarkdownBlock(heading, body) {
+  const bullets = [];
+  const paragraphs = [];
+  for (const chunk of stripMarkdownImages(body).split(/\n\s*\n/g)) {
+    const lines = chunk.split(/\r?\n/g).map((line) => line.trim()).filter(Boolean);
+    if (!lines.length) continue;
+    const bulletLines = lines
+      .filter((line) => /^[-*+]\s+/.test(line) || /^\d+[.)、]\s*/.test(line))
+      .map((line) => line.replace(/^[-*+]\s+/, "").replace(/^\d+[.)、]\s*/, "").trim())
+      .filter(Boolean);
+    if (bulletLines.length === lines.length) {
+      bullets.push(...bulletLines);
+      continue;
+    }
+    const paragraph = lines
+      .map((line) => line.replace(/^[-*+]\s+/, "").replace(/^\d+[.)、]\s*/, "").trim())
+      .join(" ")
+      .replace(/\[([^\]]+)\]\([^)]+\)/g, "$1")
+      .replace(/[`*_#]/g, "")
+      .trim();
+    if (paragraph) paragraphs.push(paragraph);
+  }
+  return { heading: cleanText(heading), paragraphs, bullets };
+}
+
+function markdownToSections(content, title) {
+  const normalized = cleanText(content).replace(/\r\n/g, "\n");
+  const matches = [...normalized.matchAll(/^#{1,3}\s+(.+)$/gm)];
+  const sections = [];
+  if (matches.length > 1) {
+    for (let index = 0; index < matches.length; index += 1) {
+      const heading = cleanText(matches[index][1]).replace(/^#\s*/, "");
+      if (index === 0 && heading === cleanText(title)) continue;
+      const start = matches[index].index + matches[index][0].length;
+      const end = matches[index + 1]?.index ?? normalized.length;
+      const section = sectionFromMarkdownBlock(heading, normalized.slice(start, end));
+      if (section.heading && (section.paragraphs.length || section.bullets.length)) {
+        sections.push(section);
+      }
+    }
+  }
+  if (sections.length >= 3) return sections.slice(0, 8);
+
+  const paragraphs = stripMarkdownImages(normalized)
+    .replace(/^#{1,6}\s+.*$/gm, "")
+    .split(/\n\s*\n/g)
+    .map((item) => item.replace(/\s*\n\s*/g, " ").trim())
+    .filter((item) => item.length > 20);
+  const fallbackHeadings = ["问题背景", "优化思路", "落地方法", "复盘建议"];
+  const chunkSize = Math.max(1, Math.ceil(paragraphs.length / 4));
+  return fallbackHeadings.map((heading, index) => ({
+    heading,
+    paragraphs: paragraphs.slice(index * chunkSize, (index + 1) * chunkSize),
+    bullets: [],
+  })).filter((section) => section.paragraphs.length);
+}
+
+function geoKeywords(article) {
+  const text = `${article.title || ""}\n${article.content || ""}`;
+  const keywords = ["GEO优化", "AI搜索优化", "品牌AI推荐", "AI可见度", "企业AI服务", "一路凯歌"];
+  if (/工作台|监测/.test(text)) keywords.push("GEO工作台", "AI可见度监测");
+  if (/SEO/.test(text)) keywords.push("GEO与SEO区别");
+  if (/DeepSeek/.test(text)) keywords.push("DeepSeek品牌推荐");
+  if (/豆包/.test(text)) keywords.push("豆包AI搜索");
+  if (/元宝|腾讯/.test(text)) keywords.push("腾讯元宝AI搜索");
+  return uniqueValues(keywords).join(",");
+}
+
+function defaultGeoFaqs(article) {
+  const title = cleanText(article.title) || "这篇 GEO 内容";
+  return [
+    {
+      question: "这篇内容为什么适合进入官网新闻？",
+      answer: `因为「${title}」围绕客户真实会问的问题展开，能补充官网在 GEO 优化、AI 搜索优化和品牌可见度方面的公开信源。`,
+    },
+    {
+      question: "从 GEO 工作台导入后还需要人工审核吗？",
+      answer: "需要。工作台负责把标题、正文、摘要和问答先整理成官网新闻草稿，发布前仍建议人工检查事实、表达、图片和联系方式。",
+    },
+    {
+      question: "这类内容对 AI 搜索推荐有什么帮助？",
+      answer: "它能把企业服务边界、方法、案例和常见问题公开化，方便搜索引擎和 AI 平台理解、引用并形成更稳定的品牌答案来源。",
+    },
+    {
+      question: "发布后会同步更新哪些入口？",
+      answer: "生成官网新闻页后，工具会更新新闻列表、首页入口、sitemap、feed 和 llms.txt，后续可继续提交 IndexNow 与百度普通收录。",
+    },
+  ];
+}
+
+function geoArticleToDraft(article) {
+  const title = cleanText(article.title);
+  const slug = slugFromGeoArticle(article);
+  const category = inferGeoCategory(article);
+  const summary = excerpt(article.content || title, 170);
+  const sections = markdownToSections(article.content || "", title);
+  if (article.coverImage && cleanText(article.coverImage).startsWith("data:image/") && sections.length) {
+    sections[0].images = [
+      {
+        dataUrl: cleanText(article.coverImage),
+        assetName: `${slug}-cover`,
+        alt: title,
+        caption: `${title}：GEO 工作台导入配图。`,
+      },
+    ];
+  }
+  return {
+    slug,
+    title,
+    summary,
+    category,
+    keywords: geoKeywords(article),
+    seoDescription: summary,
+    date: shanghaiDate(),
+    datetime: shanghaiDatetime(shanghaiDate()),
+    coverKicker: "GEO WORKBENCH",
+    coverTitle: title,
+    coverTag: `从 GEO 工作台导入：${cleanText(article.platform) || "官网新闻"}`,
+    coverPoints: "提取文章结构\n补齐 FAQ 问答\n生成官网新闻草稿",
+    sourceNote: "本文由 GEO 工作台内容导入官网发布工具，发布前已保留人工审核与本地预览步骤。",
+    sections,
+    faqs: defaultGeoFaqs(article),
+    references: [],
+  };
+}
+
+async function fetchGeoArticles() {
+  const response = await fetch(`${geoWorkbench.origin}/api/data/articles`, { cache: "no-store" });
+  if (!response.ok) {
+    throw new Error(`无法读取 GEO 工作台文章接口：${geoWorkbench.origin}/api/data/articles`);
+  }
+  const data = await response.json();
+  if (!Array.isArray(data)) {
+    throw new Error("GEO 工作台文章接口返回格式不正确。");
+  }
+  return data;
+}
+
+function compactGeoArticle(article) {
+  return {
+    id: cleanText(article.id),
+    title: cleanText(article.title),
+    platform: cleanText(article.platform),
+    status: cleanText(article.status),
+    submittedAt: cleanText(article.submittedAt),
+    reviewedAt: cleanText(article.reviewedAt),
+    wordCount: Number(article.wordCount) || plainTextFromMarkdown(article.content).length,
+    geoScore: Number(article.geoScore) || 0,
+    aiCitations: Number(article.aiCitations) || 0,
+    hasCoverImage: cleanText(article.coverImage).startsWith("data:image/"),
+    imageCount: Array.isArray(article.images) ? article.images.length : 0,
+    preview: excerpt(article.content || "", 110),
+  };
+}
+
+function imageFromDataUrl(value) {
+  const match = cleanText(value).match(/^data:(image\/(?:png|jpeg|jpg|webp));base64,([A-Za-z0-9+/=\r\n]+)$/);
+  if (!match) return null;
+  const mime = match[1].replace("image/jpg", "image/jpeg");
+  const ext = mime === "image/png" ? ".png" : mime === "image/webp" ? ".webp" : ".jpg";
+  return {
+    ext,
+    buffer: Buffer.from(match[2].replace(/\s+/g, ""), "base64"),
+  };
+}
+
 function copyArticleImages(draft) {
   const copied = [];
   let imageIndex = 1;
@@ -229,6 +457,7 @@ function copyArticleImages(draft) {
     for (const image of section.images ?? []) {
       const existingAsset = cleanText(image.assetPath);
       const sourcePath = cleanText(image.sourcePath).replace(/^"|"$/g, "");
+      const dataImage = imageFromDataUrl(image.dataUrl);
       if (existingAsset) {
         const assetRelative = existingAsset.replace(/^\/+/, "");
         if (!assetRelative.startsWith("assets/")) {
@@ -244,6 +473,34 @@ function copyArticleImages(draft) {
           width: Number(image.width) || undefined,
           height: Number(image.height) || undefined,
         });
+        continue;
+      }
+      if (dataImage) {
+        const requested = cleanText(image.assetName);
+        const fileName = safeAssetName(requested || `${draft.slug}-${String(imageIndex).padStart(2, "0")}${dataImage.ext}`);
+        const fileExt = path.extname(fileName);
+        const finalName = fileExt ? fileName : `${fileName}${dataImage.ext}`;
+        const relative = path.join("assets", finalName).replaceAll("\\", "/");
+        const target = path.join(root, relative);
+
+        if (fs.existsSync(target)) {
+          const targetBytes = fs.readFileSync(target);
+          if (!dataImage.buffer.equals(targetBytes)) {
+            throw new Error(`assets/${finalName} 已存在且内容不同。请换一个图片文件名，避免覆盖旧内容。`);
+          }
+        } else {
+          fs.writeFileSync(target, dataImage.buffer);
+          copied.push(relative);
+        }
+
+        images.push({
+          src: relative,
+          alt: cleanText(image.alt) || draft.title,
+          caption: cleanText(image.caption),
+          width: Number(image.width) || undefined,
+          height: Number(image.height) || undefined,
+        });
+        imageIndex += 1;
         continue;
       }
       if (!sourcePath) {
@@ -307,6 +564,7 @@ function normalizeDraft(rawDraft) {
         sourcePath: cleanText(image.sourcePath),
         assetPath: cleanText(image.assetPath),
         assetName: cleanText(image.assetName),
+        dataUrl: cleanText(image.dataUrl),
         alt: cleanText(image.alt),
         caption: cleanText(image.caption),
         width: cleanText(image.width),
@@ -622,6 +880,39 @@ async function handleStatus() {
   };
 }
 
+async function handleGeoArticles() {
+  const articles = await fetchGeoArticles();
+  const statusWeight = { 已通过: 0, 待审核: 1, 审核中: 2, 已退回: 3 };
+  return {
+    ok: true,
+    origin: geoWorkbench.origin,
+    articles: articles
+      .map(compactGeoArticle)
+      .filter((article) => article.id && article.title)
+      .sort((a, b) => {
+        const aw = statusWeight[a.status] ?? 9;
+        const bw = statusWeight[b.status] ?? 9;
+        if (aw !== bw) return aw - bw;
+        return cleanText(b.submittedAt).localeCompare(cleanText(a.submittedAt));
+      }),
+  };
+}
+
+async function handleGeoImport(payload) {
+  const id = cleanText(payload.id);
+  if (!id) throw new Error("请选择要导入的 GEO 工作台文章。");
+  const articles = await fetchGeoArticles();
+  const article = articles.find((item) => cleanText(item.id) === id);
+  if (!article) throw new Error("没有在 GEO 工作台里找到这篇文章。");
+  const draft = geoArticleToDraft(article);
+  return {
+    ok: true,
+    origin: geoWorkbench.origin,
+    draft,
+    sourceArticle: compactGeoArticle(article),
+  };
+}
+
 function serveSiteFile(req, res) {
   const url = new URL(req.url, `http://${host}:${port}`);
   let relative = decodeURIComponent(url.pathname.replace(/^\/site\/?/, ""));
@@ -710,6 +1001,59 @@ function renderWorkbench() {
       }
       .stat strong { display: block; font-size: 13px; color: var(--muted); margin-bottom: 6px; }
       .stat span { font-weight: 800; overflow-wrap: anywhere; }
+      .quick-import {
+        margin-bottom: 24px;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        padding: 18px;
+        background: linear-gradient(135deg, #f5f9ff 0%, #fff 58%, #fff6ef 100%);
+      }
+      .quick-head {
+        display: flex;
+        justify-content: space-between;
+        gap: 14px;
+        align-items: flex-start;
+        margin-bottom: 12px;
+      }
+      .quick-head h2 { margin-bottom: 4px; }
+      .geo-list {
+        display: grid;
+        gap: 10px;
+        margin-top: 16px;
+      }
+      .geo-item {
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        padding: 14px;
+        background: rgba(255,255,255,.9);
+        display: grid;
+        grid-template-columns: 1fr auto;
+        gap: 12px;
+        align-items: center;
+      }
+      .geo-item strong {
+        display: block;
+        font-size: 16px;
+        line-height: 1.45;
+        margin-bottom: 6px;
+      }
+      .geo-meta {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 7px;
+        color: var(--muted);
+        font-size: 13px;
+      }
+      .badge {
+        display: inline-flex;
+        align-items: center;
+        border-radius: 999px;
+        padding: 4px 9px;
+        background: #edf2f8;
+        color: var(--navy);
+        font-weight: 800;
+      }
+      .badge.pass { background: #e7f8ef; color: #067647; }
       label { display: block; font-weight: 800; margin: 16px 0 7px; }
       input, textarea, select {
         width: 100%;
@@ -790,6 +1134,7 @@ function renderWorkbench() {
       @media (max-width: 900px) {
         header { position: static; }
         .grid, .row, .status { grid-template-columns: 1fr; }
+        .quick-head, .geo-item { grid-template-columns: 1fr; display: grid; }
         main { width: min(100% - 20px, 760px); }
       }
     </style>
@@ -802,6 +1147,22 @@ function renderWorkbench() {
     <main>
       <div class="grid">
         <section class="panel">
+          <div class="quick-import">
+            <div class="quick-head">
+              <div>
+                <h2>从 GEO 工作台导入</h2>
+                <p class="hint">先在 GEO 工作台完成内容审核，再从这里一键导入为官网新闻草稿。原来的手填字段保留，用来做发布前微调。</p>
+              </div>
+              <div class="actions" style="margin-top:0">
+                <button class="secondary" type="button" onclick="loadGeoArticles()">读取 GEO 文案</button>
+                <a class="button" href="http://127.0.0.1:3000/content/review" target="_blank">打开审核页</a>
+              </div>
+            </div>
+            <div id="geoArticles" class="geo-list">
+              <p class="hint">等待读取 GEO 工作台文章...</p>
+            </div>
+          </div>
+
           <h2>文章信息</h2>
           <div class="row">
             <div>
@@ -920,6 +1281,80 @@ function renderWorkbench() {
       function text(id) { return el(id).value.trim(); }
       function setText(id, value) { el(id).value = value || ""; }
 
+      function statusClass(status) {
+        return status === "已通过" ? "badge pass" : "badge";
+      }
+
+      function renderGeoArticles(articles) {
+        const box = el("geoArticles");
+        box.innerHTML = "";
+        if (!articles.length) {
+          box.innerHTML = '<p class="hint">GEO 工作台暂时没有可导入的文章。</p>';
+          return;
+        }
+        articles.slice(0, 12).forEach(function (article) {
+          const item = document.createElement("div");
+          item.className = "geo-item";
+          const body = document.createElement("div");
+          const title = document.createElement("strong");
+          title.textContent = article.title;
+          const meta = document.createElement("div");
+          meta.className = "geo-meta";
+          const status = document.createElement("span");
+          status.className = statusClass(article.status);
+          status.textContent = article.status || "未标记";
+          const platform = document.createElement("span");
+          platform.className = "badge";
+          platform.textContent = article.platform || "未设置平台";
+          const words = document.createElement("span");
+          words.textContent = (article.wordCount || 0) + " 字";
+          const score = document.createElement("span");
+          score.textContent = "GEO " + (article.geoScore || 0);
+          meta.append(status, platform, words, score);
+          const preview = document.createElement("p");
+          preview.className = "hint";
+          preview.textContent = article.preview || "";
+          body.append(title, meta, preview);
+
+          const actions = document.createElement("div");
+          const button = document.createElement("button");
+          button.className = "primary mini";
+          button.type = "button";
+          button.textContent = "导入为官网草稿";
+          button.onclick = function () { importGeoArticle(article.id); };
+          actions.appendChild(button);
+          item.append(body, actions);
+          box.appendChild(item);
+        });
+      }
+
+      async function loadGeoArticles() {
+        try {
+          el("geoArticles").innerHTML = '<p class="hint">正在读取 GEO 工作台文章...</p>';
+          const data = await fetch("/api/geo/articles").then(function (response) { return response.json(); });
+          if (!data.ok) throw new Error(data.error || "读取失败");
+          renderGeoArticles(data.articles || []);
+          setLog({ ok: true, message: "已读取 GEO 工作台文章", origin: data.origin, count: (data.articles || []).length });
+        } catch (error) {
+          el("geoArticles").innerHTML = '<p class="bad">读取失败：请确认 GEO 工作台正在 127.0.0.1:3000 运行。</p>';
+          setLog(error.message);
+        }
+      }
+
+      async function importGeoArticle(id) {
+        try {
+          setLog("正在从 GEO 工作台导入官网草稿...");
+          const data = await postJson("/api/geo/import", { id: id });
+          loadDraftObject(data.draft);
+          localStorage.setItem("yilukaigePublishingDraft", JSON.stringify(collectDraft()));
+          el("previewLink").href = "/site/news.html";
+          setLog({ ok: true, message: "已导入官网草稿。请检查下方字段，然后生成本地页面。", sourceArticle: data.sourceArticle });
+          window.scrollTo({ top: 0, behavior: "smooth" });
+        } catch (error) {
+          setLog(error.message);
+        }
+      }
+
       function addSection(data) {
         data = data || {};
         const wrap = document.createElement("div");
@@ -951,6 +1386,7 @@ function renderWorkbench() {
           '<label>保存到 assets 的文件名</label><input class="image-asset-name" placeholder="可空，自动用 slug 命名" />' +
           '<label>图片说明 alt</label><input class="image-alt" placeholder="图片内容说明" />' +
           '<label>图片下方说明</label><textarea class="image-caption"></textarea>' +
+          '<input type="hidden" class="image-data-url" />' +
           '<div class="row"><div><label>宽度</label><input class="image-width" placeholder="可空" /></div><div><label>高度</label><input class="image-height" placeholder="可空" /></div></div>';
         wrap.querySelector(".danger").onclick = function () { wrap.remove(); };
         wrap.querySelector(".image-source").value = data.sourcePath || "";
@@ -958,6 +1394,7 @@ function renderWorkbench() {
         wrap.querySelector(".image-asset-name").value = data.assetName || "";
         wrap.querySelector(".image-alt").value = data.alt || "";
         wrap.querySelector(".image-caption").value = data.caption || "";
+        wrap.querySelector(".image-data-url").value = data.dataUrl || "";
         wrap.querySelector(".image-width").value = data.width || "";
         wrap.querySelector(".image-height").value = data.height || "";
         sectionEl.querySelector(".images").appendChild(wrap);
@@ -1002,6 +1439,7 @@ function renderWorkbench() {
                 sourcePath: image.querySelector(".image-source").value,
                 assetPath: image.querySelector(".image-asset-path").value,
                 assetName: image.querySelector(".image-asset-name").value,
+                dataUrl: image.querySelector(".image-data-url").value,
                 alt: image.querySelector(".image-alt").value,
                 caption: image.querySelector(".image-caption").value,
                 width: image.querySelector(".image-width").value,
@@ -1152,6 +1590,11 @@ function renderWorkbench() {
 
       restoreDraft();
       loadStatus();
+      loadGeoArticles();
+      const autoGeoArticleId = new URLSearchParams(window.location.search).get("geoArticleId");
+      if (autoGeoArticleId) {
+        importGeoArticle(autoGeoArticleId);
+      }
     </script>
   </body>
 </html>`;
@@ -1170,6 +1613,15 @@ async function route(req, res) {
     }
     if (req.method === "GET" && url.pathname === "/api/status") {
       writeJson(res, 200, await handleStatus());
+      return;
+    }
+    if (req.method === "GET" && url.pathname === "/api/geo/articles") {
+      writeJson(res, 200, await handleGeoArticles());
+      return;
+    }
+    if (req.method === "POST" && url.pathname === "/api/geo/import") {
+      const payload = await readJsonBody(req);
+      writeJson(res, 200, await handleGeoImport(payload));
       return;
     }
     if (req.method === "POST" && url.pathname === "/api/validate-draft") {
