@@ -2834,10 +2834,13 @@ h1 span {
   .case-grid,
   .case-showcase,
   .insight-grid,
-  .faq-grid,
   .model-grid,
   .process {
     grid-template-columns: 1fr;
+  }
+
+  .faq-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .section-kicker {
@@ -3085,6 +3088,33 @@ h1 span {
 
   .site-footer {
     padding: 56px 24px calc(104px + env(safe-area-inset-bottom));
+  }
+
+  .faq-grid {
+    gap: 12px;
+  }
+
+  .faq-item {
+    min-height: 210px;
+    padding: 18px 14px;
+    border-radius: 18px;
+  }
+
+  .faq-item::before {
+    right: 12px;
+    top: 12px;
+    font-size: 48px;
+  }
+
+  .faq-item h3 {
+    margin-bottom: 9px;
+    font-size: 16px;
+    line-height: 1.35;
+  }
+
+  .faq-item p {
+    font-size: 13px;
+    line-height: 1.7;
   }
 
   .footer-main {
