@@ -487,7 +487,18 @@ const server = http.createServer(async (request, response) => {
     }
 
     if (method === "GET" && /^\/news\/page\/\d+\/?$/.test(url.pathname)) {
-      await serveStatic(url.pathname.endsWith("/") ? url.pathname : `${url.pathname}/`, response, isHead);
+      const pageNumber = Number(url.pathname.match(/^\/news\/page\/(\d+)\/?$/)?.[1]);
+      const pagePath = url.pathname.endsWith("/") ? url.pathname : `${url.pathname}/`;
+      if (await staticFileExists(pagePath)) {
+        await serveStatic(pagePath, response, isHead);
+        return;
+      }
+      const lastNewsPage = await latestNewsPageNumber();
+      if (lastNewsPage && pageNumber > lastNewsPage) {
+        redirect(response, `/news/page/${lastNewsPage}/`, isHead);
+        return;
+      }
+      await serveStatic(pagePath, response, isHead);
       return;
     }
 
@@ -677,6 +688,35 @@ async function serveStatic(urlPath, response, isHead = false) {
   } catch (error) {
     response.writeHead(404);
     response.end(isHead ? undefined : "Not Found");
+  }
+}
+
+async function staticFileExists(urlPath) {
+  const decodedPath = decodeURIComponent(urlPath);
+  const cleanPath = decodedPath === "/" ? "/index.html" : decodedPath.endsWith("/") ? `${decodedPath}index.html` : decodedPath;
+  const filePath = path.normalize(path.join(root, cleanPath));
+  if (!filePath.startsWith(root)) {
+    return false;
+  }
+  try {
+    await fs.access(filePath);
+    return true;
+  } catch {
+    return false;
+  }
+}
+
+async function latestNewsPageNumber() {
+  try {
+    const pageRoot = path.join(root, "news", "page");
+    const entries = await fs.readdir(pageRoot, { withFileTypes: true });
+    const pages = entries
+      .filter((entry) => entry.isDirectory())
+      .map((entry) => Number(entry.name))
+      .filter((page) => Number.isInteger(page) && page >= 2);
+    return pages.length ? Math.max(...pages) : null;
+  } catch {
+    return null;
   }
 }
 

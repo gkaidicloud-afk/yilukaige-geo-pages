@@ -19,9 +19,9 @@ import { july5Articles } from "./news-articles-20260705.mjs";
 
 const root = process.cwd();
 const siteUrl = "https://www.yilukaige.com";
-const newsPageSize = 16;
-const newsStylesheet = "styles.css?v=20260705-pagination";
-const nestedNewsStylesheet = "/styles.css?v=20260705-pagination";
+const newsPageSize = 30;
+const newsStylesheet = "styles.css?v=20260705-page30";
+const nestedNewsStylesheet = "/styles.css?v=20260705-page30";
 const orgName = "北京一路凯歌网络科技有限公司";
 const brandName = "一路凯歌";
 const brandSameAs = [
