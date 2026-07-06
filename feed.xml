@@ -6,7 +6,14 @@
     <atom:link href="https://www.yilukaige.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>一路凯歌围绕 GEO、AI 搜索、品牌知识资产、GA4 数据化衡量和 AI 流量归因的文章更新。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 05 Jul 2026 10:30:00 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 06 Jul 2026 11:58:00 +0800</lastBuildDate>
+    <item>
+      <title>GEO 不是发新闻稿，而是建立 AI 可引用信源体系</title>
+      <link>https://www.yilukaige.com/news/geo-not-press-release-ai-citable-source-system.html</link>
+      <guid>https://www.yilukaige.com/news/geo-not-press-release-ai-citable-source-system.html</guid>
+      <pubDate>Mon, 06 Jul 2026 11:58:00 +0800</pubDate>
+      <description>现在很多企业听到 GEO，第一反应是“是不是多发新闻稿就行”。这个理解只对了一小半。新闻稿、问答、公众号、官网文章确实是信源，但 GEO 的重点不是堆内容数量，而是让 AI 能从这些内容里抽取稳定、准确、可复用的品牌事实。</description>
+    </item>
     <item>
       <title>品牌为何“失踪”在 AI 回答里？GEO 优化让 DeepSeek、豆包更容易推荐你</title>
       <link>https://www.yilukaige.com/news/brand-disappears-in-ai-answers-geo-optimization.html</link>
@@ -139,13 +146,6 @@
       <guid>https://www.yilukaige.com/news/ai-search-optimization-how-to-start-website-first.html</guid>
       <pubDate>Sat, 27 Jun 2026 09:00:00 +0800</pubDate>
       <description>很多企业想做 AI 搜索优化，第一反应是发文章。一路凯歌认为，真正的第一步是让官网先能被 AI 看懂：主体信息、服务对象、交付流程、FAQ 和案例证据都要清楚。</description>
-    </item>
-    <item>
-      <title>品牌内容推广怎么升级为GEO优化？别只把文章当广告发</title>
-      <link>https://www.yilukaige.com/news/brand-content-promotion-upgrade-to-geo-assets.html</link>
-      <guid>https://www.yilukaige.com/news/brand-content-promotion-upgrade-to-geo-assets.html</guid>
-      <pubDate>Sat, 27 Jun 2026 09:02:00 +0800</pubDate>
-      <description>品牌内容推广不能只追曝光，还要沉淀成 AI 可引用内容资产。一路凯歌建议企业把新闻、案例、FAQ、创始人观点和服务页连成信源体系，让内容既给客户看，也给 AI 看懂。</description>
     </item>
   </channel>
 </rss>
