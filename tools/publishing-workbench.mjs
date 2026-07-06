@@ -1086,6 +1086,50 @@ function renderWorkbench() {
       .image-card {
         background: #f8fbff;
       }
+      .image-picker {
+        display: grid;
+        grid-template-columns: 180px 1fr;
+        gap: 14px;
+        align-items: start;
+        margin: 12px 0;
+      }
+      .image-preview {
+        min-height: 118px;
+        border: 1px dashed #bfd0e3;
+        border-radius: 8px;
+        background: #fff;
+        display: grid;
+        place-items: center;
+        overflow: hidden;
+        color: var(--muted);
+        font-size: 13px;
+        text-align: center;
+        padding: 10px;
+      }
+      .image-preview img {
+        width: 100%;
+        max-height: 180px;
+        object-fit: contain;
+        display: block;
+      }
+      .file-control {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        align-items: center;
+      }
+      .file-control input[type="file"] {
+        padding: 10px;
+        background: #fff;
+      }
+      details.advanced {
+        margin-top: 12px;
+      }
+      details.advanced summary {
+        cursor: pointer;
+        color: var(--muted);
+        font-weight: 800;
+      }
       .actions {
         display: flex;
         flex-wrap: wrap;
@@ -1135,6 +1179,7 @@ function renderWorkbench() {
         header { position: static; }
         .grid, .row, .status { grid-template-columns: 1fr; }
         .quick-head, .geo-item { grid-template-columns: 1fr; display: grid; }
+        .image-picker { grid-template-columns: 1fr; }
         main { width: min(100% - 20px, 760px); }
       }
     </style>
@@ -1218,7 +1263,7 @@ function renderWorkbench() {
 持续监测复盘</textarea>
 
           <h2>正文小节</h2>
-          <p class="hint">每个小节可以放多段文字和多张图片。图片填写本机完整路径，工作台会复制到 assets，避免手动搬图。</p>
+          <p class="hint">每个小节可以放多段文字和多张图片。推荐直接选择本地图片并预览，发布时会自动保存到官网 assets。</p>
           <div id="sections"></div>
           <button class="ghost mini" type="button" onclick="addSection()">添加小节</button>
 
@@ -1355,6 +1400,65 @@ function renderWorkbench() {
         }
       }
 
+      function safeClientAssetName(name) {
+        return String(name || "")
+          .replace(/\\\\/g, "/")
+          .split("/")
+          .pop()
+          .toLowerCase()
+          .replace(/[^a-z0-9._-]+/g, "-")
+          .replace(/-+/g, "-")
+          .replace(/^-|-$/g, "") || "article-image.png";
+      }
+
+      function updateImagePreview(wrap) {
+        const preview = wrap.querySelector(".image-preview");
+        const dataUrl = wrap.querySelector(".image-data-url").value;
+        const assetPath = wrap.querySelector(".image-asset-path").value.trim();
+        if (dataUrl) {
+          preview.innerHTML = '<img alt="" src="' + dataUrl + '" />';
+          return;
+        }
+        if (assetPath && assetPath.startsWith("assets/")) {
+          preview.innerHTML = '<img alt="" src="/site/' + assetPath.replace(/^\\/+/, "") + '" />';
+          return;
+        }
+        preview.textContent = "还没有选择图片";
+      }
+
+      function setImageFromFile(wrap, file) {
+        if (!file) return;
+        if (!file.type || !file.type.startsWith("image/")) {
+          setLog("请选择图片文件。");
+          return;
+        }
+        const reader = new FileReader();
+        reader.onload = function () {
+          const dataUrl = String(reader.result || "");
+          wrap.querySelector(".image-data-url").value = dataUrl;
+          wrap.querySelector(".image-source").value = "";
+          wrap.querySelector(".image-asset-path").value = "";
+          const assetNameInput = wrap.querySelector(".image-asset-name");
+          const slug = text("slug") || "article";
+          const stamp = Date.now().toString(36);
+          assetNameInput.value = safeClientAssetName(slug + "-" + stamp + "-" + file.name);
+          if (!wrap.querySelector(".image-alt").value.trim()) {
+            wrap.querySelector(".image-alt").value = text("title") || file.name;
+          }
+          const image = new Image();
+          image.onload = function () {
+            wrap.querySelector(".image-width").value = image.naturalWidth || "";
+            wrap.querySelector(".image-height").value = image.naturalHeight || "";
+            saveDraft();
+          };
+          image.src = dataUrl;
+          updateImagePreview(wrap);
+          saveDraft();
+          setLog("图片已放入草稿。生成本地页面时会自动保存到官网 assets。");
+        };
+        reader.readAsDataURL(file);
+      }
+
       function addSection(data) {
         data = data || {};
         const wrap = document.createElement("div");
@@ -1381,14 +1485,35 @@ function renderWorkbench() {
         wrap.className = "image-card";
         wrap.innerHTML =
           '<div class="section-head"><strong>图片</strong><button class="danger mini" type="button">删除</button></div>' +
-          '<label>本机图片完整路径</label><input class="image-source" placeholder="C:\\\\Users\\\\gkaid\\\\Desktop\\\\image.png" />' +
-          '<label>或已有 assets 路径</label><input class="image-asset-path" placeholder="assets/existing-image.png" />' +
+          '<div class="image-picker">' +
+            '<div class="image-preview">还没有选择图片</div>' +
+            '<div>' +
+              '<label>选择本地图片（推荐）</label>' +
+              '<div class="file-control"><input class="image-file" type="file" accept="image/*" /><button class="ghost mini clear-image" type="button">清除图片</button></div>' +
+              '<p class="hint">可直接换图，不用填本机路径。发布时自动写入 assets。</p>' +
+            '</div>' +
+          '</div>' +
           '<label>保存到 assets 的文件名</label><input class="image-asset-name" placeholder="可空，自动用 slug 命名" />' +
           '<label>图片说明 alt</label><input class="image-alt" placeholder="图片内容说明" />' +
           '<label>图片下方说明</label><textarea class="image-caption"></textarea>' +
           '<input type="hidden" class="image-data-url" />' +
-          '<div class="row"><div><label>宽度</label><input class="image-width" placeholder="可空" /></div><div><label>高度</label><input class="image-height" placeholder="可空" /></div></div>';
+          '<div class="row"><div><label>宽度</label><input class="image-width" placeholder="可空" /></div><div><label>高度</label><input class="image-height" placeholder="可空" /></div></div>' +
+          '<details class="advanced"><summary>高级：路径或已有 assets 图片</summary>' +
+            '<label>本机图片完整路径</label><input class="image-source" placeholder="C:\\\\Users\\\\gkaid\\\\Desktop\\\\image.png" />' +
+            '<label>或已有 assets 路径</label><input class="image-asset-path" placeholder="assets/existing-image.png" />' +
+          '</details>';
         wrap.querySelector(".danger").onclick = function () { wrap.remove(); };
+        wrap.querySelector(".image-file").onchange = function (event) {
+          setImageFromFile(wrap, event.target.files && event.target.files[0]);
+          event.target.value = "";
+        };
+        wrap.querySelector(".clear-image").onclick = function () {
+          wrap.querySelector(".image-data-url").value = "";
+          wrap.querySelector(".image-source").value = "";
+          wrap.querySelector(".image-asset-path").value = "";
+          updateImagePreview(wrap);
+          saveDraft();
+        };
         wrap.querySelector(".image-source").value = data.sourcePath || "";
         wrap.querySelector(".image-asset-path").value = data.assetPath || "";
         wrap.querySelector(".image-asset-name").value = data.assetName || "";
@@ -1398,6 +1523,7 @@ function renderWorkbench() {
         wrap.querySelector(".image-width").value = data.width || "";
         wrap.querySelector(".image-height").value = data.height || "";
         sectionEl.querySelector(".images").appendChild(wrap);
+        updateImagePreview(wrap);
       }
 
       function addFaq(data) {
