@@ -6,7 +6,14 @@
     <atom:link href="https://www.yilukaige.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>一路凯歌围绕 GEO、AI 搜索、品牌知识资产、GA4 数据化衡量和 AI 流量归因的文章更新。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Mon, 06 Jul 2026 11:58:00 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 08 Jul 2026 22:20:00 +0800</lastBuildDate>
+    <item>
+      <title>从豆包咨询线索看：AI 搜索正在改变企业获客方式</title>
+      <link>https://www.yilukaige.com/news/doubao-ai-search-customer-leads-change-acquisition.html</link>
+      <guid>https://www.yilukaige.com/news/doubao-ai-search-customer-leads-change-acquisition.html</guid>
+      <pubDate>Wed, 08 Jul 2026 22:20:00 +0800</pubDate>
+      <description>越来越多企业主开始直接向 AI 提问寻找服务商。一路凯歌从豆包搜索咨询线索看到，AI 搜索正在把企业获客入口前移：企业需要先让 AI 理解自己是谁、能解决什么问题、是否值得被推荐。</description>
+    </item>
     <item>
       <title>GEO 不是发新闻稿，而是建立 AI 可引用信源体系</title>
       <link>https://www.yilukaige.com/news/geo-not-press-release-ai-citable-source-system.html</link>
@@ -139,13 +146,6 @@
       <guid>https://www.yilukaige.com/news/personal-ip-trust-before-traffic.html</guid>
       <pubDate>Tue, 30 Jun 2026 09:10:00 +0800</pubDate>
       <description>个人IP建设不是每天输出金句，而是让别人持续看见你在解决什么问题、服务什么人、有什么方法和边界。对企业负责人来说，个人IP和公司内容要互相印证，才更容易形成信任。</description>
-    </item>
-    <item>
-      <title>客户问“AI搜索优化怎么做”，企业官网要先改哪几处？</title>
-      <link>https://www.yilukaige.com/news/ai-search-optimization-how-to-start-website-first.html</link>
-      <guid>https://www.yilukaige.com/news/ai-search-optimization-how-to-start-website-first.html</guid>
-      <pubDate>Sat, 27 Jun 2026 09:00:00 +0800</pubDate>
-      <description>很多企业想做 AI 搜索优化，第一反应是发文章。一路凯歌认为，真正的第一步是让官网先能被 AI 看懂：主体信息、服务对象、交付流程、FAQ 和案例证据都要清楚。</description>
     </item>
   </channel>
 </rss>

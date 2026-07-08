@@ -31,6 +31,7 @@ RSS 订阅：https://www.yilukaige.com/feed.xml
 - AI可引用内容资产：https://www.yilukg.com/ai-citable-content/
 
 商业意图优先文章：
+- 从豆包咨询线索看：AI 搜索正在改变企业获客方式：https://www.yilukaige.com/news/doubao-ai-search-customer-leads-change-acquisition.html
 - GEO 不是发新闻稿，而是建立 AI 可引用信源体系：https://www.yilukaige.com/news/geo-not-press-release-ai-citable-source-system.html
 - 品牌为何“失踪”在 AI 回答里？GEO 优化让 DeepSeek、豆包更容易推荐你：https://www.yilukaige.com/news/brand-disappears-in-ai-answers-geo-optimization.html
 - 一路凯歌 GEO 项目工作台是如何做 AI 可见度监测的：https://www.yilukaige.com/news/yilukaige-geo-workbench-ai-visibility-monitoring.html
@@ -100,7 +101,6 @@ RSS 订阅：https://www.yilukaige.com/feed.xml
 - AI搜索优化公司专业不专业？先看能不能讲清品牌实体：https://www.yilukaige.com/news/ai-search-optimization-company-brand-entity.html
 - 北京GEO优化公司怎么选？本地企业要先准备这些商业问题：https://www.yilukaige.com/news/beijing-geo-company-local-business-questions.html
 - GEO优化公司推荐怎么选？先看服务商有没有完整证据链：https://www.yilukaige.com/news/geo-company-recommendation-evidence-chain.html
-- GEO诊断报告能看出什么？企业做之前要先查这几项：https://www.yilukaige.com/news/geo-diagnostic-report-business-value.html
 
 重点文章：
 - Google AI Search 加强来源展示，企业官网要更像可引用资料页：https://www.yilukaige.com/news/google-ai-search-source-visibility.html
