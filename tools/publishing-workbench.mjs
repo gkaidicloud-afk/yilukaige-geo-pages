@@ -1054,6 +1054,51 @@ function renderWorkbench() {
         font-weight: 800;
       }
       .badge.pass { background: #e7f8ef; color: #067647; }
+      .simple-composer {
+        margin-bottom: 22px;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        padding: clamp(18px, 3vw, 26px);
+        background: #fff;
+      }
+      .simple-composer h2 { margin-top: 0; }
+      .simple-main-text {
+        min-height: 360px;
+        line-height: 1.85;
+      }
+      .simple-strip {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+      }
+      .simple-image {
+        display: grid;
+        grid-template-columns: 220px 1fr;
+        gap: 16px;
+        align-items: start;
+        margin-top: 12px;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        padding: 14px;
+        background: #f8fbff;
+      }
+      .advanced-editor {
+        margin-top: 18px;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: #f8fbff;
+      }
+      .advanced-editor > summary {
+        padding: 16px 18px;
+        cursor: pointer;
+        font-weight: 900;
+        color: var(--navy);
+      }
+      .advanced-editor-body {
+        border-top: 1px solid var(--line);
+        background: #fff;
+        padding: 18px;
+      }
       label { display: block; font-weight: 800; margin: 16px 0 7px; }
       input, textarea, select {
         width: 100%;
@@ -1177,9 +1222,9 @@ function renderWorkbench() {
       }
       @media (max-width: 900px) {
         header { position: static; }
-        .grid, .row, .status { grid-template-columns: 1fr; }
+        .grid, .row, .status, .simple-strip { grid-template-columns: 1fr; }
         .quick-head, .geo-item { grid-template-columns: 1fr; display: grid; }
-        .image-picker { grid-template-columns: 1fr; }
+        .image-picker, .simple-image { grid-template-columns: 1fr; }
         main { width: min(100% - 20px, 760px); }
       }
     </style>
@@ -1208,6 +1253,60 @@ function renderWorkbench() {
             </div>
           </div>
 
+          <div class="simple-composer">
+            <h2>发文章</h2>
+            <p class="hint">日常发布只填这几项。SEO、封面、发布日期、分节和 FAQ 会自动补齐，需要精修时再展开高级设置。</p>
+
+            <label>标题</label>
+            <input id="simpleTitle" placeholder="请输入文章标题" />
+
+            <div class="simple-strip">
+              <div>
+                <label>分类</label>
+                <select id="simpleCategory">
+                  <option value="GEO 优化">GEO 优化</option>
+                  <option value="AI 搜索优化">AI 搜索优化</option>
+                  <option value="内容品牌推广">内容品牌推广</option>
+                  <option value="企业 AI 服务">企业 AI 服务</option>
+                  <option value="GEO 工作台">GEO 工作台</option>
+                </select>
+              </div>
+              <div>
+                <label>URL（可不填）</label>
+                <input id="simpleSlug" placeholder="不填会自动生成" />
+              </div>
+            </div>
+
+            <label>正文</label>
+            <textarea id="simpleContent" class="simple-main-text" placeholder="直接粘贴整篇文章。可以用空行分段；如果有小标题，也可以一行一个小标题。"></textarea>
+
+            <label>配图</label>
+            <div class="simple-image">
+              <div id="simpleImagePreview" class="image-preview">还没有选择图片</div>
+              <div>
+                <div class="file-control">
+                  <input id="simpleImageFile" type="file" accept="image/*" />
+                  <button class="ghost mini" type="button" onclick="clearSimpleImage()">清除图片</button>
+                </div>
+                <label>图片说明（可不填）</label>
+                <input id="simpleImageCaption" placeholder="默认使用文章标题" />
+                <p class="hint">图片会自动保存到官网 assets，不需要手动填路径。</p>
+              </div>
+            </div>
+
+            <div class="actions">
+              <button class="secondary" type="button" onclick="prepareSimpleDraft()">整理成官网草稿</button>
+              <button class="ghost" type="button" onclick="saveSimpleDraft()">保存草稿</button>
+              <button class="secondary" type="button" onclick="validateSimpleDraft()">检查</button>
+              <button class="primary" type="button" onclick="createSimpleArticle()">生成本地页面</button>
+              <button class="secondary" type="button" onclick="checkLocal()">本地预览检查</button>
+              <button class="primary" type="button" onclick="deploySimpleArticle()">提交并部署</button>
+            </div>
+          </div>
+
+          <details class="advanced-editor" id="advancedEditor">
+            <summary>高级设置（SEO、封面、分节、FAQ）</summary>
+            <div class="advanced-editor-body">
           <h2>文章信息</h2>
           <div class="row">
             <div>
@@ -1286,6 +1385,8 @@ function renderWorkbench() {
             <button class="secondary" type="button" onclick="checkLocal()">检查本地结果</button>
             <button class="primary" type="button" onclick="deployArticle()">提交并部署</button>
           </div>
+            </div>
+          </details>
         </section>
 
         <aside class="panel">
@@ -1325,6 +1426,217 @@ function renderWorkbench() {
       }
       function text(id) { return el(id).value.trim(); }
       function setText(id, value) { el(id).value = value || ""; }
+
+      let simpleImageData = null;
+
+      function plainText(value) {
+        return String(value || "")
+          .replace(/!\[[^\]]*\]\([^)]*\)/g, " ")
+          .replace(/\[([^\]]+)\]\([^)]+\)/g, "$1")
+          .replace(/^#{1,6}\s+/gm, "")
+          .replace(/[\`*_#]/g, "")
+          .replace(/\s+/g, " ")
+          .trim();
+      }
+
+      function clientHash(value) {
+        let hash = 0;
+        for (const char of String(value || "")) {
+          hash = (hash * 31 + char.charCodeAt(0)) >>> 0;
+        }
+        return hash.toString(36).padStart(6, "0").slice(0, 6);
+      }
+
+      function makeSimpleSlug(title) {
+        const lower = String(title || "").toLowerCase();
+        const parts = [];
+        if (lower.includes("geo")) parts.push("geo");
+        if (lower.includes("ai")) parts.push("ai");
+        if (lower.includes("搜索")) parts.push("search");
+        if (lower.includes("品牌")) parts.push("brand");
+        if (lower.includes("推荐")) parts.push("recommend");
+        if (lower.includes("可见")) parts.push("visibility");
+        if (lower.includes("新闻稿")) parts.push("source");
+        if (lower.includes("seo")) parts.push("seo");
+        const base = Array.from(new Set(parts)).slice(0, 5).join("-") || "geo-ai-article";
+        return base + "-" + clientHash(title);
+      }
+
+      function excerptFromContent(content, max) {
+        const clean = plainText(content);
+        if (clean.length <= max) return clean;
+        return clean.slice(0, max).replace(/[，。；、：,.!?！？\s]+$/g, "") + "。";
+      }
+
+      function simpleKeywords(title, content, category) {
+        const textValue = title + "\\n" + content + "\\n" + category;
+        const keywords = [category, "GEO优化", "AI搜索优化", "品牌AI推荐", "AI可见度", "企业AI服务", "一路凯歌"];
+        if (/DeepSeek/i.test(textValue)) keywords.push("DeepSeek品牌推荐");
+        if (/豆包/.test(textValue)) keywords.push("豆包AI搜索");
+        if (/SEO/i.test(textValue)) keywords.push("GEO与SEO区别");
+        if (/信源|引用/.test(textValue)) keywords.push("AI可引用信源");
+        return Array.from(new Set(keywords.filter(Boolean))).join(",");
+      }
+
+      function simpleSectionsFromContent(content, title) {
+        const blocks = String(content || "")
+          .replace(/\r\n/g, "\\n")
+          .split(/\n\s*\n/g)
+          .map(function (item) { return item.trim(); })
+          .filter(Boolean);
+        if (!blocks.length) return [];
+
+        const sections = [];
+        let current = { heading: "核心观点", paragraphs: [], bullets: [], images: [] };
+        blocks.forEach(function (block) {
+          const lines = block.split(/\n/g).map(function (line) { return line.trim(); }).filter(Boolean);
+          if (lines.length === 1 && lines[0].length <= 32 && sections.length < 8 && !/[。！？.!?]$/.test(lines[0])) {
+            if (current.paragraphs.length || current.bullets.length || sections.length) sections.push(current);
+            current = { heading: lines[0].replace(/^#{1,6}\s+/, ""), paragraphs: [], bullets: [], images: [] };
+            return;
+          }
+          const bulletLines = lines
+            .filter(function (line) { return /^[-*+]\s+/.test(line) || /^\d+[.)、]\s*/.test(line); })
+            .map(function (line) { return line.replace(/^[-*+]\s+/, "").replace(/^\d+[.)、]\s*/, "").trim(); });
+          if (bulletLines.length === lines.length && bulletLines.length) {
+            current.bullets.push.apply(current.bullets, bulletLines);
+          } else {
+            current.paragraphs.push(lines.join(" ").replace(/^#{1,6}\s+/, ""));
+          }
+        });
+        if (current.paragraphs.length || current.bullets.length || !sections.length) sections.push(current);
+
+        if (sections.length < 3) {
+          const paras = blocks.map(function (item) { return item.replace(/\s*\n\s*/g, " "); });
+          const chunkSize = Math.max(1, Math.ceil(paras.length / 3));
+          return ["背景问题", "解决思路", "落地建议"].map(function (heading, index) {
+            return { heading: heading, paragraphs: paras.slice(index * chunkSize, (index + 1) * chunkSize), bullets: [], images: [] };
+          }).filter(function (section) { return section.paragraphs.length; });
+        }
+        return sections.slice(0, 8);
+      }
+
+      function simpleFaqs(title, category) {
+        return [
+          {
+            question: "这篇内容适合发布到官网吗？",
+            answer: "适合。它围绕“" + title + "”展开，可以补充官网在" + category + "方向的公开信源和问题解释。"
+          },
+          {
+            question: "发布这类文章对 AI 搜索有什么帮助？",
+            answer: "它能把企业服务、方法、场景和常见问题整理成公开资料，方便搜索引擎和 AI 平台理解、引用和推荐。"
+          },
+          {
+            question: "发布前还需要检查什么？",
+            answer: "建议检查标题、正文事实、图片是否合适、联系方式是否一致，以及本地预览里的文章页、新闻页、sitemap、feed 和 llms 是否更新。"
+          },
+          {
+            question: "后续是否还需要持续更新？",
+            answer: "需要。GEO 和 AI 搜索优化不是一次性发布，而是持续补齐官网、FAQ、案例、新闻和问答中的可信信息。"
+          }
+        ];
+      }
+
+      function buildSimpleDraft() {
+        const title = text("simpleTitle");
+        const content = text("simpleContent");
+        const category = text("simpleCategory") || "GEO 优化";
+        if (!title) throw new Error("请先填写标题。");
+        if (!content) throw new Error("请先粘贴正文。");
+        const slug = text("simpleSlug") || makeSimpleSlug(title);
+        const summary = excerptFromContent(content, 170);
+        const sections = simpleSectionsFromContent(content, title);
+        if (simpleImageData && sections.length) {
+          sections[0].images = [{
+            dataUrl: simpleImageData.dataUrl,
+            assetName: simpleImageData.assetName || safeClientAssetName(slug + "-" + simpleImageData.fileName),
+            alt: title,
+            caption: text("simpleImageCaption") || title,
+            width: simpleImageData.width || "",
+            height: simpleImageData.height || ""
+          }];
+        }
+        return {
+          slug: slug,
+          title: title,
+          summary: summary,
+          category: category,
+          keywords: simpleKeywords(title, content, category),
+          seoDescription: summary,
+          date: "${today}",
+          datetime: "${today}T10:30:00+08:00",
+          coverKicker: category,
+          coverTitle: title,
+          coverTag: "让品牌成为可引用答案来源",
+          coverPoints: "整理品牌信源\\n补齐问答入口\\n持续监测复盘",
+          sourceNote: "本文由一路凯歌官网本地发布后台整理发布，用于补充企业 GEO 与 AI 搜索优化相关公开资料。",
+          sections: sections,
+          faqs: simpleFaqs(title, category),
+          references: []
+        };
+      }
+
+      function syncSimpleFromDraft(draft) {
+        if (!draft) return;
+        setText("simpleTitle", draft.title || "");
+        setText("simpleSlug", draft.slug || "");
+        if (draft.category) setText("simpleCategory", draft.category);
+        const content = (draft.sections || []).map(function (section) {
+          const blocks = [];
+          if (section.heading) blocks.push(section.heading);
+          (section.paragraphs || []).forEach(function (paragraph) { blocks.push(paragraph); });
+          if ((section.bullets || []).length) {
+            blocks.push((section.bullets || []).map(function (bullet) { return "- " + bullet; }).join("\\n"));
+          }
+          return blocks.join("\\n\\n");
+        }).filter(Boolean).join("\\n\\n");
+        if (content) setText("simpleContent", content);
+        const firstImage = (draft.sections || []).flatMap(function (section) { return section.images || []; })[0];
+        if (firstImage) {
+          setText("simpleImageCaption", firstImage.caption || "");
+          if (firstImage.dataUrl) {
+            simpleImageData = {
+              dataUrl: firstImage.dataUrl,
+              fileName: firstImage.assetName || "article-image.png",
+              assetName: firstImage.assetName || "",
+              width: firstImage.width || "",
+              height: firstImage.height || ""
+            };
+            el("simpleImagePreview").innerHTML = '<img alt="" src="' + firstImage.dataUrl + '" />';
+          } else if (firstImage.assetPath || firstImage.src) {
+            simpleImageData = null;
+            el("simpleImagePreview").innerHTML = '<img alt="" src="/site/' + String(firstImage.assetPath || firstImage.src).replace(/^\\/+/, "") + '" />';
+          }
+        }
+      }
+
+      function prepareSimpleDraft() {
+        try {
+          const draft = buildSimpleDraft();
+          loadDraftObject(draft);
+          setLog("已整理成官网草稿。想精修 SEO、封面或 FAQ，可以展开高级设置。");
+          return true;
+        } catch (error) {
+          setLog(error.message);
+          return false;
+        }
+      }
+
+      function saveSimpleDraft() {
+        if (prepareSimpleDraft()) saveDraft();
+      }
+
+      async function validateSimpleDraft() {
+        if (prepareSimpleDraft()) await validateDraft();
+      }
+
+      async function createSimpleArticle() {
+        if (prepareSimpleDraft()) await createArticle();
+      }
+
+      async function deploySimpleArticle() {
+        if (prepareSimpleDraft()) await deployArticle();
+      }
 
       function statusClass(status) {
         return status === "已通过" ? "badge pass" : "badge";
@@ -1409,6 +1721,45 @@ function renderWorkbench() {
           .replace(/[^a-z0-9._-]+/g, "-")
           .replace(/-+/g, "-")
           .replace(/^-|-$/g, "") || "article-image.png";
+      }
+
+      function setSimpleImageFromFile(file) {
+        if (!file) return;
+        if (!file.type || !file.type.startsWith("image/")) {
+          setLog("请选择图片文件。");
+          return;
+        }
+        const reader = new FileReader();
+        reader.onload = function () {
+          const dataUrl = String(reader.result || "");
+          const assetName = safeClientAssetName((text("simpleSlug") || makeSimpleSlug(text("simpleTitle") || file.name)) + "-" + Date.now().toString(36) + "-" + file.name);
+          simpleImageData = {
+            dataUrl: dataUrl,
+            fileName: file.name,
+            assetName: assetName,
+            width: "",
+            height: ""
+          };
+          el("simpleImagePreview").innerHTML = '<img alt="" src="' + dataUrl + '" />';
+          if (!text("simpleImageCaption")) setText("simpleImageCaption", text("simpleTitle") || file.name);
+          const image = new Image();
+          image.onload = function () {
+            if (simpleImageData && simpleImageData.dataUrl === dataUrl) {
+              simpleImageData.width = image.naturalWidth || "";
+              simpleImageData.height = image.naturalHeight || "";
+            }
+          };
+          image.src = dataUrl;
+          setLog("配图已放入草稿，生成本地页面时会自动保存到官网 assets。");
+        };
+        reader.readAsDataURL(file);
+      }
+
+      function clearSimpleImage() {
+        simpleImageData = null;
+        el("simpleImageFile").value = "";
+        el("simpleImagePreview").textContent = "还没有选择图片";
+        setText("simpleImageCaption", "");
       }
 
       function updateImagePreview(wrap) {
@@ -1626,6 +1977,7 @@ function renderWorkbench() {
         (draft.sections || []).forEach(addSection);
         (draft.faqs || []).forEach(addFaq);
         (draft.references || []).forEach(addReference);
+        syncSimpleFromDraft(draft);
       }
 
       function saveDraft() {
@@ -1713,6 +2065,11 @@ function renderWorkbench() {
           setLog(error.message);
         }
       }
+
+      el("simpleImageFile").addEventListener("change", function (event) {
+        setSimpleImageFromFile(event.target.files && event.target.files[0]);
+        event.target.value = "";
+      });
 
       restoreDraft();
       loadStatus();
