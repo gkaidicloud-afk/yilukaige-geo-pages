@@ -1082,6 +1082,19 @@ function renderWorkbench() {
         padding: 14px;
         background: #f8fbff;
       }
+      .image-status {
+        margin-top: 10px;
+        padding: 10px 12px;
+        border-radius: 8px;
+        background: #edf7f1;
+        color: #067647;
+        font-size: 14px;
+        font-weight: 800;
+      }
+      .image-status.is-empty {
+        background: #f3f6fa;
+        color: var(--muted);
+      }
       .advanced-editor {
         margin-top: 18px;
         border: 1px solid var(--line);
@@ -1285,12 +1298,13 @@ function renderWorkbench() {
               <div id="simpleImagePreview" class="image-preview">还没有选择图片</div>
               <div>
                 <div class="file-control">
-                  <input id="simpleImageFile" type="file" accept="image/*" />
+                  <input id="simpleImageFile" type="file" accept="image/*" onchange="setSimpleImageFromFile(this.files && this.files[0]); this.value='';" />
                   <button class="ghost mini" type="button" onclick="clearSimpleImage()">清除图片</button>
                 </div>
                 <label>图片说明（可不填）</label>
                 <input id="simpleImageCaption" placeholder="默认使用文章标题" />
-                <p class="hint">图片会自动保存到官网 assets，不需要手动填路径。</p>
+                <div id="simpleImageStatus" class="image-status is-empty">未选择图片。选择后会自动插入正文第一个小节下方。</div>
+                <p class="hint">生成本地页面时，图片会自动保存到官网 assets，不需要手动填路径。</p>
               </div>
             </div>
 
@@ -1603,9 +1617,13 @@ function renderWorkbench() {
               height: firstImage.height || ""
             };
             el("simpleImagePreview").innerHTML = '<img alt="" src="' + firstImage.dataUrl + '" />';
+            el("simpleImageStatus").classList.remove("is-empty");
+            el("simpleImageStatus").textContent = "已带入配图。生成后会插入正文第一个小节下方。";
           } else if (firstImage.assetPath || firstImage.src) {
             simpleImageData = null;
             el("simpleImagePreview").innerHTML = '<img alt="" src="/site/' + String(firstImage.assetPath || firstImage.src).replace(/^\\/+/, "") + '" />';
+            el("simpleImageStatus").classList.remove("is-empty");
+            el("simpleImageStatus").textContent = "已使用现有 assets 图片。生成后会插入正文第一个小节下方。";
           }
         }
       }
@@ -1742,6 +1760,8 @@ function renderWorkbench() {
           };
           el("simpleImagePreview").innerHTML = '<img alt="" src="' + dataUrl + '" />';
           if (!text("simpleImageCaption")) setText("simpleImageCaption", text("simpleTitle") || file.name);
+          el("simpleImageStatus").classList.remove("is-empty");
+          el("simpleImageStatus").textContent = "已选择：" + file.name + "。生成后会插入正文第一个小节下方。";
           const image = new Image();
           image.onload = function () {
             if (simpleImageData && simpleImageData.dataUrl === dataUrl) {
@@ -1759,6 +1779,8 @@ function renderWorkbench() {
         simpleImageData = null;
         el("simpleImageFile").value = "";
         el("simpleImagePreview").textContent = "还没有选择图片";
+        el("simpleImageStatus").classList.add("is-empty");
+        el("simpleImageStatus").textContent = "未选择图片。选择后会自动插入正文第一个小节下方。";
         setText("simpleImageCaption", "");
       }
 
@@ -2065,11 +2087,6 @@ function renderWorkbench() {
           setLog(error.message);
         }
       }
-
-      el("simpleImageFile").addEventListener("change", function (event) {
-        setSimpleImageFromFile(event.target.files && event.target.files[0]);
-        event.target.value = "";
-      });
 
       restoreDraft();
       loadStatus();
