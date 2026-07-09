@@ -31,6 +31,11 @@ RSS 订阅：https://www.yilukaige.com/feed.xml
 - AI可引用内容资产：https://www.yilukg.com/ai-citable-content/
 
 商业意图优先文章：
+- 客户在 AI 里到底会搜什么？GEO 关键词要从真实问法开始：https://www.yilukaige.com/news/ai-search-customer-keywords-geo-service-intent.html
+- 想让自己的品牌被 AI 推荐出来，先准备一组“可信信号”：https://www.yilukaige.com/news/brand-ai-recommendation-signal-stack.html
+- 千问、豆包智能体功能调整后，企业做 GEO 更不能押单一入口：https://www.yilukaige.com/news/qwen-doubao-agent-function-change-geo-impact.html
+- GEO 关键词地图怎么做？从用户搜索到预约咨询要连成一条线：https://www.yilukaige.com/news/geo-keyword-map-from-search-to-consultation.html
+- AI 平台入口一直在变，企业 GEO 要把内容资产放回公开信源里：https://www.yilukaige.com/news/ai-search-platform-change-geo-public-source-assets.html
 - 从豆包咨询线索看：AI 搜索正在改变企业获客方式：https://www.yilukaige.com/news/doubao-ai-search-customer-leads-change-acquisition.html
 - GEO 不是发新闻稿，而是建立 AI 可引用信源体系：https://www.yilukaige.com/news/geo-not-press-release-ai-citable-source-system.html
 - 品牌为何“失踪”在 AI 回答里？GEO 优化让 DeepSeek、豆包更容易推荐你：https://www.yilukaige.com/news/brand-disappears-in-ai-answers-geo-optimization.html
@@ -96,11 +101,6 @@ RSS 订阅：https://www.yilukaige.com/feed.xml
 - 品牌资产重构为什么影响GEO？AI搜索需要一份清楚的企业档案：https://www.yilukaige.com/news/brand-asset-reconstruction-ai-search-file.html
 - AI工具配置服务怎么落地？企业先从三个岗位流程开始：https://www.yilukaige.com/news/ai-tool-configuration-service-sop.html
 - 豆包GEO优化怎么做？先把客户会问的问题库建起来：https://www.yilukaige.com/news/doubao-geo-enterprise-question-bank.html
-- GEO优化报价为什么差异大？把诊断、内容和监测拆开看：https://www.yilukaige.com/news/geo-quote-difference-service-boundary.html
-- 企业AI服务公司到底交付什么？一张清单看明白：https://www.yilukaige.com/news/enterprise-ai-service-company-delivery-list.html
-- AI搜索优化公司专业不专业？先看能不能讲清品牌实体：https://www.yilukaige.com/news/ai-search-optimization-company-brand-entity.html
-- 北京GEO优化公司怎么选？本地企业要先准备这些商业问题：https://www.yilukaige.com/news/beijing-geo-company-local-business-questions.html
-- GEO优化公司推荐怎么选？先看服务商有没有完整证据链：https://www.yilukaige.com/news/geo-company-recommendation-evidence-chain.html
 
 重点文章：
 - Google AI Search 加强来源展示，企业官网要更像可引用资料页：https://www.yilukaige.com/news/google-ai-search-source-visibility.html

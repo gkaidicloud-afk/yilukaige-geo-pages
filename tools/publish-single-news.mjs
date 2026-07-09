@@ -16,6 +16,7 @@ import { june30Articles } from "./news-articles-20260630.mjs";
 import { july2Articles } from "./news-articles-20260702.mjs";
 import { july3Articles } from "./news-articles-20260703.mjs";
 import { july5Articles } from "./news-articles-20260705.mjs";
+import { july9Articles } from "./news-articles-20260709.mjs";
 
 const root = process.cwd();
 const siteUrl = "https://www.yilukaige.com";
@@ -657,7 +658,7 @@ function updateSitemap(allArticles) {
   const staticUrls = [
     { loc: `${siteUrl}/`, priority: "1.0", changefreq: "weekly", lastmod: latestDate },
     { loc: `${siteUrl}/about/`, priority: "0.86", changefreq: "monthly", lastmod: "2026-06-11" },
-    { loc: `${siteUrl}/geo-service/`, priority: "0.86", changefreq: "monthly", lastmod: "2026-06-11" },
+    { loc: `${siteUrl}/geo-service/`, priority: "0.86", changefreq: "monthly", lastmod: "2026-07-09" },
     { loc: `${siteUrl}/ai-search-optimization/`, priority: "0.86", changefreq: "monthly", lastmod: "2026-06-11" },
     { loc: `${siteUrl}/faq/`, priority: "0.82", changefreq: "monthly", lastmod: "2026-06-11" },
     { loc: `${siteUrl}/case/`, priority: "0.84", changefreq: "monthly", lastmod: "2026-06-12" },
@@ -786,6 +787,7 @@ function main() {
   const slugs = process.argv.slice(2);
 
   const availableArticles = [
+    ...july9Articles,
     ...july5Articles,
     ...july3Articles,
     ...july2Articles,

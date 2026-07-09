@@ -6,7 +6,42 @@
     <atom:link href="https://www.yilukaige.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>一路凯歌围绕 GEO、AI 搜索、品牌知识资产、GA4 数据化衡量和 AI 流量归因的文章更新。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Wed, 08 Jul 2026 22:20:00 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 09 Jul 2026 10:52:00 +0800</lastBuildDate>
+    <item>
+      <title>客户在 AI 里到底会搜什么？GEO 关键词要从真实问法开始</title>
+      <link>https://www.yilukaige.com/news/ai-search-customer-keywords-geo-service-intent.html</link>
+      <guid>https://www.yilukaige.com/news/ai-search-customer-keywords-geo-service-intent.html</guid>
+      <pubDate>Thu, 09 Jul 2026 10:52:00 +0800</pubDate>
+      <description>很多企业做 AI 搜索优化时，第一步就想列关键词表。但客户真正会问的，往往不是单个名词，而是一句带着场景、预算、信任和下一步动作的问题。一路凯歌建议先把真实问法整理出来，再反推官网、FAQ 和新闻内容。</description>
+    </item>
+    <item>
+      <title>想让自己的品牌被 AI 推荐出来，先准备一组“可信信号”</title>
+      <link>https://www.yilukaige.com/news/brand-ai-recommendation-signal-stack.html</link>
+      <guid>https://www.yilukaige.com/news/brand-ai-recommendation-signal-stack.html</guid>
+      <pubDate>Thu, 09 Jul 2026 10:54:00 +0800</pubDate>
+      <description>企业想被 AI 推荐，不是把品牌写得更夸张，而是把公司主体、服务边界、案例证据、FAQ、联系方式和公开信源整理成稳定信号。AI 越像采购助理，越会先看企业能不能被验证。</description>
+    </item>
+    <item>
+      <title>千问、豆包智能体功能调整后，企业做 GEO 更不能押单一入口</title>
+      <link>https://www.yilukaige.com/news/qwen-doubao-agent-function-change-geo-impact.html</link>
+      <guid>https://www.yilukaige.com/news/qwen-doubao-agent-function-change-geo-impact.html</guid>
+      <pubDate>Thu, 09 Jul 2026 10:56:00 +0800</pubDate>
+      <description>千问、豆包智能体功能计划在 2026 年 7 月 15 日下线，引发用户对入口变化和内容沉淀的讨论。对企业 GEO 来说，这件事提醒很直接：不要把品牌内容押在某一个智能体入口，而要回到官网、FAQ、新闻、案例和多平台公开信源。</description>
+    </item>
+    <item>
+      <title>GEO 关键词地图怎么做？从用户搜索到预约咨询要连成一条线</title>
+      <link>https://www.yilukaige.com/news/geo-keyword-map-from-search-to-consultation.html</link>
+      <guid>https://www.yilukaige.com/news/geo-keyword-map-from-search-to-consultation.html</guid>
+      <pubDate>Thu, 09 Jul 2026 10:58:00 +0800</pubDate>
+      <description>GEO 关键词不是越多越好，而是要能从用户搜索、AI 理解、官网阅读一路走到预约咨询。一路凯歌建议把关键词地图分成认知层、比较层、验证层和行动层，让每一类词都有页面承接。</description>
+    </item>
+    <item>
+      <title>AI 平台入口一直在变，企业 GEO 要把内容资产放回公开信源里</title>
+      <link>https://www.yilukaige.com/news/ai-search-platform-change-geo-public-source-assets.html</link>
+      <guid>https://www.yilukaige.com/news/ai-search-platform-change-geo-public-source-assets.html</guid>
+      <pubDate>Thu, 09 Jul 2026 10:59:00 +0800</pubDate>
+      <description>从智能体功能调整到 AI 搜索入口变化，企业不能只追平台热点。真正稳的 GEO 做法，是把品牌信息、服务说明、案例证据、FAQ 和联系方式沉淀在可访问、可更新、可复盘的公开信源里。</description>
+    </item>
     <item>
       <title>从豆包咨询线索看：AI 搜索正在改变企业获客方式</title>
       <link>https://www.yilukaige.com/news/doubao-ai-search-customer-leads-change-acquisition.html</link>
@@ -111,41 +146,6 @@
       <guid>https://www.yilukaige.com/news/ai-search-optimization-starts-with-customer-questions.html</guid>
       <pubDate>Tue, 30 Jun 2026 09:00:00 +0800</pubDate>
       <description>AI搜索优化不是把热门词塞进页面，而是把客户在成交前会问的具体问题写清楚。一路凯歌建议企业先整理真实咨询、服务边界、案例证据和下一步动作，再谈内容发布。活人干过的细节，才更容易被客户和搜索系统看懂。</description>
-    </item>
-    <item>
-      <title>GEO优化先别急着要流量，先把企业信源讲清楚</title>
-      <link>https://www.yilukaige.com/news/geo-optimization-source-clarity-before-traffic.html</link>
-      <guid>https://www.yilukaige.com/news/geo-optimization-source-clarity-before-traffic.html</guid>
-      <pubDate>Tue, 30 Jun 2026 09:02:00 +0800</pubDate>
-      <description>GEO优化的基础不是一夜之间制造曝光，而是让企业公开资料变得清楚、稳定、可核验。公司是谁、品牌做什么、适合什么客户、凭什么可信，这些信源问题没处理好，后面的内容推广很容易散。</description>
-    </item>
-    <item>
-      <title>内容品牌要有活人干过的痕迹，别只剩口号和形容词</title>
-      <link>https://www.yilukaige.com/news/brand-content-real-work-not-slogan.html</link>
-      <guid>https://www.yilukaige.com/news/brand-content-real-work-not-slogan.html</guid>
-      <pubDate>Tue, 30 Jun 2026 09:04:00 +0800</pubDate>
-      <description>品牌内容不是把公司夸得更漂亮，而是把真实经验讲得更清楚。客户想看的不是一堆形容词，而是服务怎么做、问题怎么拆、交付怎么推进、遇到分歧怎么处理。能写出这些，品牌才更像可信的长期资产。</description>
-    </item>
-    <item>
-      <title>企业内容完善先补这六块：官网、服务、案例、FAQ、新闻和联系人</title>
-      <link>https://www.yilukaige.com/news/enterprise-content-completion-checklist.html</link>
-      <guid>https://www.yilukaige.com/news/enterprise-content-completion-checklist.html</guid>
-      <pubDate>Tue, 30 Jun 2026 09:06:00 +0800</pubDate>
-      <description>企业内容完善不是把网站做得更热闹，而是把客户成交前需要核验的信息补齐。官网主体、服务边界、案例过程、FAQ、新闻观点和联系人入口，是一路凯歌建议优先检查的六块内容。</description>
-    </item>
-    <item>
-      <title>企业AI服务别只买工具，小团队更需要一套能跑起来的流程</title>
-      <link>https://www.yilukaige.com/news/enterprise-ai-service-small-team-workflow.html</link>
-      <guid>https://www.yilukaige.com/news/enterprise-ai-service-small-team-workflow.html</guid>
-      <pubDate>Tue, 30 Jun 2026 09:08:00 +0800</pubDate>
-      <description>企业AI服务不是装几个工具就结束。对小团队来说，更重要的是把资料、角色、流程、审核和复盘先定下来。一路凯歌建议从一个真实业务场景切入，把 AI 用在销售问答、内容整理、客户资料和复盘表里。</description>
-    </item>
-    <item>
-      <title>个人IP别只追流量，先让别人知道你长期在解决什么问题</title>
-      <link>https://www.yilukaige.com/news/personal-ip-trust-before-traffic.html</link>
-      <guid>https://www.yilukaige.com/news/personal-ip-trust-before-traffic.html</guid>
-      <pubDate>Tue, 30 Jun 2026 09:10:00 +0800</pubDate>
-      <description>个人IP建设不是每天输出金句，而是让别人持续看见你在解决什么问题、服务什么人、有什么方法和边界。对企业负责人来说，个人IP和公司内容要互相印证，才更容易形成信任。</description>
     </item>
   </channel>
 </rss>
