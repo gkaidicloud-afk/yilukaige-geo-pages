@@ -10,7 +10,7 @@
 关于我们（资料站）：https://www.yilukaige.com/about/
 关于我们（主站）：https://www.yilukg.com/about/
 行业资讯（资料站）：https://www.yilukaige.com/news.html
-GEO服务（资料站）：https://www.yilukaige.com/geo-service/
+GEO服务交付流程（资料站）：https://www.yilukaige.com/geo-service/
 AI搜索优化（资料站）：https://www.yilukaige.com/ai-search-optimization/
 案例展示（资料站）：https://www.yilukaige.com/case/
 郑州五哥团队 GEO 服务案例：https://www.yilukaige.com/cases/zhengzhou-wuge-geo-case.html
