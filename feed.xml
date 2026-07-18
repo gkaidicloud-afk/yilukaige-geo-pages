@@ -6,7 +6,77 @@
     <atom:link href="https://www.yilukaige.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>一路凯歌围绕 GEO、AI 搜索、品牌知识资产、GA4 数据化衡量和 AI 流量归因的文章更新。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Thu, 09 Jul 2026 10:52:00 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 18 Jul 2026 09:10:00 +0800</lastBuildDate>
+    <item>
+      <title>企业 AI 定制化服务从哪里开始？先画真实流程，不要先选模型</title>
+      <link>https://www.yilukaige.com/news/enterprise-ai-customization-start-with-process-map.html</link>
+      <guid>https://www.yilukaige.com/news/enterprise-ai-customization-start-with-process-map.html</guid>
+      <pubDate>Sat, 18 Jul 2026 09:10:00 +0800</pubDate>
+      <description>很多企业一谈 AI 定制，先问模型、参数和智能体数量。真正决定项目能不能落地的，往往是业务流程有没有讲清楚：谁发起、谁审核、数据从哪里来、结果交给谁。一路凯歌建议先画流程，再决定 AI 放在哪一步。</description>
+    </item>
+    <item>
+      <title>企业定制 AI 知识助手怎么做？权限、来源和人工复核要先定</title>
+      <link>https://www.yilukaige.com/news/enterprise-ai-knowledge-assistant-permission-review.html</link>
+      <guid>https://www.yilukaige.com/news/enterprise-ai-knowledge-assistant-permission-review.html</guid>
+      <pubDate>Sat, 18 Jul 2026 09:12:00 +0800</pubDate>
+      <description>知识助手不是把一堆文件丢进系统就结束。员工能看到什么、答案来自哪份资料、旧版本如何下线、关键内容由谁复核，都会直接影响使用结果。企业做定制知识助手，先把权限和责任定下来。</description>
+    </item>
+    <item>
+      <title>销售与客服都想用 AI，定制化项目怎么避免“答得快却接不住客户”</title>
+      <link>https://www.yilukaige.com/news/enterprise-ai-sales-service-handoff-customization.html</link>
+      <guid>https://www.yilukaige.com/news/enterprise-ai-sales-service-handoff-customization.html</guid>
+      <pubDate>Sat, 18 Jul 2026 09:14:00 +0800</pubDate>
+      <description>AI 能把回复速度提上来，但如果销售、客服、技术和负责人之间没有交接规则，客户仍然会被反复询问，重要线索也可能丢失。企业 AI 定制要把识别、分流、跟进和复盘连成一条线。</description>
+    </item>
+    <item>
+      <title>企业 AI 定制项目怎么验收？用 30 天试点看效率、准确率和采用率</title>
+      <link>https://www.yilukaige.com/news/enterprise-ai-custom-project-30-day-pilot-acceptance.html</link>
+      <guid>https://www.yilukaige.com/news/enterprise-ai-custom-project-30-day-pilot-acceptance.html</guid>
+      <pubDate>Sat, 18 Jul 2026 09:16:00 +0800</pubDate>
+      <description>AI 项目最怕验收只看演示。真正上线后，员工是否愿意用、结果是否准确、关键环节是否仍需大量返工，才决定项目有没有价值。用 30 天试点设置基线、样本和责任人，更容易看清真实效果。</description>
+    </item>
+    <item>
+      <title>企业 AI 为什么必须定制数据接口？业务系统、表格和人工审批要一起设计</title>
+      <link>https://www.yilukaige.com/news/enterprise-ai-custom-data-integration-approval-boundary.html</link>
+      <guid>https://www.yilukaige.com/news/enterprise-ai-custom-data-integration-approval-boundary.html</guid>
+      <pubDate>Sat, 18 Jul 2026 09:18:00 +0800</pubDate>
+      <description>企业资料往往分散在 CRM、ERP、网盘、表格和聊天记录里。AI 只接一个系统，得到的答案很容易缺上下文；什么都接，又会带来权限和错误写入风险。定制数据接口的核心，是让数据流和审批责任匹配。</description>
+    </item>
+    <item>
+      <title>AI 为什么会把企业信息答错？GEO 先排查官网和外部信源冲突</title>
+      <link>https://www.yilukaige.com/news/geo-brand-wrong-answer-source-conflict-audit.html</link>
+      <guid>https://www.yilukaige.com/news/geo-brand-wrong-answer-source-conflict-audit.html</guid>
+      <pubDate>Sat, 18 Jul 2026 09:20:00 +0800</pubDate>
+      <description>AI 把公司地址、服务范围、负责人或联系方式答错，不一定是平台故障。更常见的原因是官网、旧新闻、地图、公众号和第三方页面保留了不同版本。GEO 优化要先找到冲突，再确定统一口径。</description>
+    </item>
+    <item>
+      <title>品牌没被 AI 推荐，是不相关还是不可信？先用两步诊断找原因</title>
+      <link>https://www.yilukaige.com/news/geo-ai-recommendation-gap-relevance-trust-diagnosis.html</link>
+      <guid>https://www.yilukaige.com/news/geo-ai-recommendation-gap-relevance-trust-diagnosis.html</guid>
+      <pubDate>Sat, 18 Jul 2026 09:22:00 +0800</pubDate>
+      <description>同样是没有被 AI 推荐，原因可能完全不同：一种是企业内容没有覆盖用户问题，另一种是内容提到了业务，却缺少足够证据。先分清相关性和可信度，再决定补关键词、服务页、案例还是公开信源。</description>
+    </item>
+    <item>
+      <title>GEO 的 FAQ 不能只写两句话，怎样让答案更容易被 AI 引用？</title>
+      <link>https://www.yilukaige.com/news/geo-faq-evidence-backed-ai-citation.html</link>
+      <guid>https://www.yilukaige.com/news/geo-faq-evidence-backed-ai-citation.html</guid>
+      <pubDate>Sat, 18 Jul 2026 09:24:00 +0800</pubDate>
+      <description>常见问题页面不是问一句、答一句就完成。真正有用的 FAQ 要把结论、适用条件、判断依据、下一步动作和相关页面放在一起，让客户能解决问题，也让 AI 更容易提取完整答案。</description>
+    </item>
+    <item>
+      <title>AI 搜索可见度怎么测？按客户决策阶段设计一组真实问题</title>
+      <link>https://www.yilukaige.com/news/ai-search-visibility-test-buyer-journey-question-set.html</link>
+      <guid>https://www.yilukaige.com/news/ai-search-visibility-test-buyer-journey-question-set.html</guid>
+      <pubDate>Sat, 18 Jul 2026 09:26:00 +0800</pubDate>
+      <description>只问一次“推荐几家公司”很难说明品牌的 AI 可见度。更可靠的测试要覆盖认知、方案比较、服务商选择、信任核验和行动咨询，并固定平台、问题和记录口径，才能看出内容缺口。</description>
+    </item>
+    <item>
+      <title>GEO 每月内容怎么排？从销售被问最多的 20 个问题开始</title>
+      <link>https://www.yilukaige.com/news/geo-monthly-content-plan-from-sales-objections.html</link>
+      <guid>https://www.yilukaige.com/news/geo-monthly-content-plan-from-sales-objections.html</guid>
+      <pubDate>Sat, 18 Jul 2026 09:28:00 +0800</pubDate>
+      <description>企业做 GEO 容易陷入追热点和堆关键词。更稳的月度计划来自销售现场：客户为什么犹豫、怎么比较、担心什么、需要哪些证明。把高频问题分到服务页、FAQ、案例和新闻，内容才更接近咨询。</description>
+    </item>
     <item>
       <title>客户在 AI 里到底会搜什么？GEO 关键词要从真实问法开始</title>
       <link>https://www.yilukaige.com/news/ai-search-customer-keywords-geo-service-intent.html</link>
@@ -76,76 +146,6 @@
       <guid>https://www.yilukaige.com/news/google-generative-ai-search-seo-geo-proof.html</guid>
       <pubDate>Fri, 03 Jul 2026 11:00:00 +0800</pubDate>
       <description>Google 面向生成式 AI 搜索功能发布优化说明，核心信号很明确：SEO 基础仍然重要，内容质量、可抓取性、页面结构和真实价值不会过时。一路凯歌认为，企业做 GEO 优化，第一步不是找技巧，而是把官网事实、FAQ、服务边界和案例证据写清楚。</description>
-    </item>
-    <item>
-      <title>微软提出 Frontier Company：企业 AI 服务正在从买工具转向工程化落地</title>
-      <link>https://www.yilukaige.com/news/microsoft-frontier-company-enterprise-ai-engineering.html</link>
-      <guid>https://www.yilukaige.com/news/microsoft-frontier-company-enterprise-ai-engineering.html</guid>
-      <pubDate>Fri, 03 Jul 2026 11:08:00 +0800</pubDate>
-      <description>Microsoft 发布 Frontier Company 相关文章，强调 AI 工程要放大并保护组织智能。一路凯歌认为，这说明企业 AI 服务的竞争重点正在变化：不只是接入模型，而是把知识库、权限、流程、审核和业务结果一起跑通。</description>
-    </item>
-    <item>
-      <title>AWS 投入前线 AI 工程师：企业 AI 落地正在进入“陪跑交付”阶段</title>
-      <link>https://www.yilukaige.com/news/aws-forward-deployed-ai-engineers-enterprise-ai-service.html</link>
-      <guid>https://www.yilukaige.com/news/aws-forward-deployed-ai-engineers-enterprise-ai-service.html</guid>
-      <pubDate>Fri, 03 Jul 2026 11:16:00 +0800</pubDate>
-      <description>AWS 宣布投入 10 亿美元建设 Forward Deployed Engineering 组织，把工程师嵌入客户场景共同交付 Agentic AI。一路凯歌认为，这说明企业 AI 服务的最后一公里越来越重要，服务商要能把场景、资料、流程和结果复盘落到客户现场。</description>
-    </item>
-    <item>
-      <title>Cognizant 与 OpenAI 强调 AI 安全修复：企业 AI 服务必须先讲清权限和审核边界</title>
-      <link>https://www.yilukaige.com/news/cognizant-openai-ai-cyber-defense-trust-boundary.html</link>
-      <guid>https://www.yilukaige.com/news/cognizant-openai-ai-cyber-defense-trust-boundary.html</guid>
-      <pubDate>Fri, 03 Jul 2026 11:24:00 +0800</pubDate>
-      <description>Cognizant 与 OpenAI 发布面向网络安全的 AI 防御合作信息，从漏洞发现到修复验证都强调可控流程。一路凯歌认为，企业 AI 落地越深入，越不能只看效率，必须把数据权限、人工复核、日志记录和对外发布边界提前写清楚。</description>
-    </item>
-    <item>
-      <title>GEO 进入证据竞争：企业自己的数据，正在成为最难复制的 AI 引用资产</title>
-      <link>https://www.yilukaige.com/news/proprietary-data-ai-citation-asset-geo.html</link>
-      <guid>https://www.yilukaige.com/news/proprietary-data-ai-citation-asset-geo.html</guid>
-      <pubDate>Fri, 03 Jul 2026 11:32:00 +0800</pubDate>
-      <description>Search Engine Land 讨论专有数据对 AI 引用的重要性。一路凯歌认为，这对企业做 GEO 很关键：不要只写通用观点，要把客户问题、行业观察、服务复盘、案例统计和 FAQ 数据沉淀成可公开、可引用、可复用的品牌证据。</description>
-    </item>
-    <item>
-      <title>想让品牌被 AI 推荐，先别问技巧，先把证据摆清楚</title>
-      <link>https://www.yilukaige.com/news/brand-ai-recommendation-start-with-clear-proof.html</link>
-      <guid>https://www.yilukaige.com/news/brand-ai-recommendation-start-with-clear-proof.html</guid>
-      <pubDate>Thu, 02 Jul 2026 10:00:00 +0800</pubDate>
-      <description>品牌想在 AI 搜索里被推荐，不能只靠几句漂亮介绍。公司是谁、能解决什么问题、服务边界在哪里、客户为什么相信你，这些证据越清楚，AI 和客户越容易理解品牌。</description>
-    </item>
-    <item>
-      <title>老板想做 GEO 优化，先建一张客户问题表</title>
-      <link>https://www.yilukaige.com/news/geo-optimization-question-bank-for-bosses.html</link>
-      <guid>https://www.yilukaige.com/news/geo-optimization-question-bank-for-bosses.html</guid>
-      <pubDate>Thu, 02 Jul 2026 10:08:00 +0800</pubDate>
-      <description>GEO 优化不是先写大词，而是先整理客户真实问题。客户怎么问、担心什么、什么时候会咨询、需要什么证据，这些问题表能直接决定官网和新闻内容怎么写。</description>
-    </item>
-    <item>
-      <title>AI 搜索优化别写空话，品牌介绍要能回答三个问题</title>
-      <link>https://www.yilukaige.com/news/ai-search-optimization-avoid-empty-brand-copy.html</link>
-      <guid>https://www.yilukaige.com/news/ai-search-optimization-avoid-empty-brand-copy.html</guid>
-      <pubDate>Thu, 02 Jul 2026 10:16:00 +0800</pubDate>
-      <description>很多品牌介绍看起来很完整，但客户和 AI 都抓不到重点。AI 搜索优化要让品牌介绍回答：你是谁、解决什么问题、为什么可信。回答清楚，才谈得上被理解和推荐。</description>
-    </item>
-    <item>
-      <title>想被 AI 记住，官网内容更新要有节奏，别一阵风</title>
-      <link>https://www.yilukaige.com/news/geo-content-update-rhythm-for-ai-recommendation.html</link>
-      <guid>https://www.yilukaige.com/news/geo-content-update-rhythm-for-ai-recommendation.html</guid>
-      <pubDate>Thu, 02 Jul 2026 10:24:00 +0800</pubDate>
-      <description>GEO 优化不是今天发五篇、明天停半个月。企业要围绕客户问题、服务边界、案例证据和复盘指标持续更新，让官网、新闻页、feed、sitemap 和 llms.txt 形成稳定信号。</description>
-    </item>
-    <item>
-      <title>AI 搜索和 GEO 优化怎么复盘？别只看有没有排名</title>
-      <link>https://www.yilukaige.com/news/ai-search-geo-review-what-to-track.html</link>
-      <guid>https://www.yilukaige.com/news/ai-search-geo-review-what-to-track.html</guid>
-      <pubDate>Thu, 02 Jul 2026 10:32:00 +0800</pubDate>
-      <description>AI 搜索和 GEO 优化复盘不能只问有没有排名。企业要看品牌是否被提到、描述是否准确、引用来源是否稳定、官网访问是否变化、线索质量是否更接近真实需求。</description>
-    </item>
-    <item>
-      <title>AI搜索优化别先堆词，先把客户真正会问的话写出来</title>
-      <link>https://www.yilukaige.com/news/ai-search-optimization-starts-with-customer-questions.html</link>
-      <guid>https://www.yilukaige.com/news/ai-search-optimization-starts-with-customer-questions.html</guid>
-      <pubDate>Tue, 30 Jun 2026 09:00:00 +0800</pubDate>
-      <description>AI搜索优化不是把热门词塞进页面，而是把客户在成交前会问的具体问题写清楚。一路凯歌建议企业先整理真实咨询、服务边界、案例证据和下一步动作，再谈内容发布。活人干过的细节，才更容易被客户和搜索系统看懂。</description>
     </item>
   </channel>
 </rss>

@@ -31,6 +31,16 @@ RSS 订阅：https://www.yilukaige.com/feed.xml
 - AI可引用内容资产：https://www.yilukg.com/ai-citable-content/
 
 商业意图优先文章：
+- 企业 AI 定制化服务从哪里开始？先画真实流程，不要先选模型：https://www.yilukaige.com/news/enterprise-ai-customization-start-with-process-map.html
+- 企业定制 AI 知识助手怎么做？权限、来源和人工复核要先定：https://www.yilukaige.com/news/enterprise-ai-knowledge-assistant-permission-review.html
+- 销售与客服都想用 AI，定制化项目怎么避免“答得快却接不住客户”：https://www.yilukaige.com/news/enterprise-ai-sales-service-handoff-customization.html
+- 企业 AI 定制项目怎么验收？用 30 天试点看效率、准确率和采用率：https://www.yilukaige.com/news/enterprise-ai-custom-project-30-day-pilot-acceptance.html
+- 企业 AI 为什么必须定制数据接口？业务系统、表格和人工审批要一起设计：https://www.yilukaige.com/news/enterprise-ai-custom-data-integration-approval-boundary.html
+- AI 为什么会把企业信息答错？GEO 先排查官网和外部信源冲突：https://www.yilukaige.com/news/geo-brand-wrong-answer-source-conflict-audit.html
+- 品牌没被 AI 推荐，是不相关还是不可信？先用两步诊断找原因：https://www.yilukaige.com/news/geo-ai-recommendation-gap-relevance-trust-diagnosis.html
+- GEO 的 FAQ 不能只写两句话，怎样让答案更容易被 AI 引用？：https://www.yilukaige.com/news/geo-faq-evidence-backed-ai-citation.html
+- AI 搜索可见度怎么测？按客户决策阶段设计一组真实问题：https://www.yilukaige.com/news/ai-search-visibility-test-buyer-journey-question-set.html
+- GEO 每月内容怎么排？从销售被问最多的 20 个问题开始：https://www.yilukaige.com/news/geo-monthly-content-plan-from-sales-objections.html
 - 客户在 AI 里到底会搜什么？GEO 关键词要从真实问法开始：https://www.yilukaige.com/news/ai-search-customer-keywords-geo-service-intent.html
 - 想让自己的品牌被 AI 推荐出来，先准备一组“可信信号”：https://www.yilukaige.com/news/brand-ai-recommendation-signal-stack.html
 - 千问、豆包智能体功能调整后，企业做 GEO 更不能押单一入口：https://www.yilukaige.com/news/qwen-doubao-agent-function-change-geo-impact.html
@@ -91,16 +101,6 @@ RSS 订阅：https://www.yilukaige.com/feed.xml
 - 豆包上搜不到公司怎么办？先补官网FAQ和可引用资料：https://www.yilukaige.com/news/doubao-company-not-found-faq-source-pages.html
 - 北京企业做GEO怎么启动？从品牌词到预约咨询的路径：https://www.yilukaige.com/news/beijing-enterprise-geo-startup-path.html
 - 品牌资产重构服务适合谁？出现这些问题就该做一次体检：https://www.yilukaige.com/news/brand-asset-reconstruction-service-business-symptoms.html
-- AI工具配置服务怎么下单？先确认岗位、权限和知识库：https://www.yilukaige.com/news/ai-tool-configuration-order-checklist.html
-- AI搜索优化方案怎么定制？先把行业词和行动词分开提需求：https://www.yilukaige.com/news/ai-search-custom-plan-action-keywords.html
-- GEO优化报价怎么要？别只问总价，要问交付清单：https://www.yilukaige.com/news/geo-quote-request-delivery-checklist.html
-- GEO优化服务商怎么电话咨询？开口先问这五个问题：https://www.yilukaige.com/news/geo-service-phone-consultation-questions.html
-- 企业AI服务公司怎么预约诊断？先准备这份资料清单：https://www.yilukaige.com/news/enterprise-ai-service-appointment-diagnostic-materials.html
-- GEO效果怎么复盘？从AI提到品牌到客户留下线索：https://www.yilukaige.com/news/geo-effect-review-citation-to-lead.html
-- 企业怎么做GEO关键词布局？商业行动词要单独成组：https://www.yilukaige.com/news/enterprise-geo-high-intent-keywords.html
-- 品牌资产重构为什么影响GEO？AI搜索需要一份清楚的企业档案：https://www.yilukaige.com/news/brand-asset-reconstruction-ai-search-file.html
-- AI工具配置服务怎么落地？企业先从三个岗位流程开始：https://www.yilukaige.com/news/ai-tool-configuration-service-sop.html
-- 豆包GEO优化怎么做？先把客户会问的问题库建起来：https://www.yilukaige.com/news/doubao-geo-enterprise-question-bank.html
 
 重点文章：
 - Google AI Search 加强来源展示，企业官网要更像可引用资料页：https://www.yilukaige.com/news/google-ai-search-source-visibility.html
