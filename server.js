@@ -1481,35 +1481,24 @@ function renderGeoTopicPage(content, page) {
 
 function renderGeoHeader(content, activePath) {
   const phone = escapeHtml(content.site.phone);
+  const serviceCurrent = ["/enterprise-ai-service/", "/geo-youhua/", "/geo-youhua-gongsi/", "/geo-youhua-price/", "/geo-youhua-how-to-choose/", "/beijing-geo-youhua/", "/doubao-geo-youhua/", "/yuanbao-geo-youhua/"].includes(activePath)
+    ? ' aria-current="page"'
+    : "";
   return `
-    <header class="site-header">
-      <a class="brand" href="/" aria-label="一路凯歌首页">
-        <img src="/assets/logo.jpg" alt="一路凯歌 Logo" />
-        <span>一路凯歌</span>
+    <header class="site-header" data-header>
+      <a class="brand" href="/index.html#top" aria-label="一路凯歌返回首页">
+        <span class="brand-mark"><img src="/assets/logo-header.png" alt="一路凯歌品牌标志" /></span>
+        <span><strong>一路凯歌</strong><small>AI Search Growth</small></span>
       </a>
-      <nav class="nav-links" aria-label="主导航">
-        <a href="/">首页</a>
-        <div class="nav-dropdown">
-          <a href="/#services" class="dropdown-trigger">服务体系</a>
-          <div class="dropdown-menu" aria-label="服务体系子导航">
-            <a href="/#services">企业AI服务</a>
-            <a href="/geo-youhua/">GEO优化服务</a>
-            <a href="/ai-search-optimization/">AI搜索优化</a>
-            <a href="/ai-checker.html">AI内容检测</a>
-          </div>
-        </div>
-        <a href="/geo-youhua/"${activePath === "/geo-youhua/" ? ' aria-current="page"' : ""}>GEO优化</a>
-        <a href="/news.html">新闻中心</a>
-        <a href="/about/">关于我们</a>
-        <a href="/#diagnosis">联系我们</a>
+      <nav class="nav" aria-label="主导航">
+        <a href="/about/">关于</a>
+        <a href="/index.html#advantages">优势</a>
+        <a href="/geo-service/"${serviceCurrent}>服务</a>
+        <a href="/case/">案例</a>
+        <a href="/news.html">资讯</a>
+        <a href="/index.html#contact">联系</a>
       </nav>
-      <div class="header-actions">
-        <a class="header-phone" href="tel:${phone}" aria-label="电话咨询">
-          <span>电话咨询</span>
-          <strong>${phone}</strong>
-        </a>
-        <a class="nav-cta" href="/#diagnosis">预约AI品牌诊断</a>
-      </div>
+      <a class="header-cta" href="tel:${phone}">${phone}</a>
     </header>`;
 }
 
