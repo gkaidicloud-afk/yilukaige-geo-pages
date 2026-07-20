@@ -18,6 +18,7 @@ import { july3Articles } from "./news-articles-20260703.mjs";
 import { july5Articles } from "./news-articles-20260705.mjs";
 import { july9Articles } from "./news-articles-20260709.mjs";
 import { july18Articles } from "./news-articles-20260718.mjs";
+import { july20Articles } from "./news-articles-20260720.mjs";
 
 const root = process.cwd();
 const siteUrl = "https://www.yilukaige.com";
@@ -788,6 +789,7 @@ function main() {
   const slugs = process.argv.slice(2);
 
   const availableArticles = [
+    ...july20Articles,
     ...july18Articles,
     ...july9Articles,
     ...july5Articles,

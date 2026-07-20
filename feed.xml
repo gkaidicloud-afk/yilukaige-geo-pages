@@ -6,7 +6,77 @@
     <atom:link href="https://www.yilukaige.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>一路凯歌围绕 GEO、AI 搜索、品牌知识资产、GA4 数据化衡量和 AI 流量归因的文章更新。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Sat, 18 Jul 2026 09:10:00 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 20 Jul 2026 09:10:00 +0800</lastBuildDate>
+    <item>
+      <title>AI 回答里总有竞品却没有你？GEO 差距分析要看这四处</title>
+      <link>https://www.yilukaige.com/news/geo-competitor-answer-gap-analysis.html</link>
+      <guid>https://www.yilukaige.com/news/geo-competitor-answer-gap-analysis.html</guid>
+      <pubDate>Mon, 20 Jul 2026 09:10:00 +0800</pubDate>
+      <description>看到 AI 推荐竞品，很多企业第一反应是对方发稿更多。真正值得研究的不是数量，而是竞品在哪些问题里出现、凭什么被引用、哪些事实比你表达得更清楚。把答案拆开看，才能找到自己的内容缺口。</description>
+    </item>
+    <item>
+      <title>AI 搜索不是只问一次：企业内容要接得住用户的第二问、第三问</title>
+      <link>https://www.yilukaige.com/news/ai-search-follow-up-question-content-chain.html</link>
+      <guid>https://www.yilukaige.com/news/ai-search-follow-up-question-content-chain.html</guid>
+      <pubDate>Mon, 20 Jul 2026 09:12:00 +0800</pubDate>
+      <description>用户在 AI 里找到一个方向后，往往会继续追问价格、适用对象、案例和联系方式。企业只准备一篇概念文章，很容易在第二轮对话里消失。GEO 内容需要顺着客户的连续问题形成一条答案链。</description>
+    </item>
+    <item>
+      <title>老官网内容要不要重写？GEO 优化先处理过期页面，再继续发新稿</title>
+      <link>https://www.yilukaige.com/news/geo-refresh-old-website-content.html</link>
+      <guid>https://www.yilukaige.com/news/geo-refresh-old-website-content.html</guid>
+      <pubDate>Mon, 20 Jul 2026 09:14:00 +0800</pubDate>
+      <description>网站做了几年，旧业务、旧电话、旧说法和重复文章很难避免。继续发新内容之前，先判断哪些页面该更新、合并、保留或下线，往往比单纯增加文章更有价值，也能减少 AI 读取到互相冲突的信息。</description>
+    </item>
+    <item>
+      <title>本地服务商做 GEO，别只加城市词：服务半径、到店和上门边界要写清</title>
+      <link>https://www.yilukaige.com/news/local-service-geo-service-radius-proof.html</link>
+      <guid>https://www.yilukaige.com/news/local-service-geo-service-radius-proof.html</guid>
+      <pubDate>Mon, 20 Jul 2026 09:16:00 +0800</pubDate>
+      <description>在标题里多写几个城市名，并不能让 AI 真正判断企业能服务哪里。本地商家需要说清门店地址、服务半径、到店或上门方式、预约条件和区域案例，才能接住带地点的真实问题。</description>
+    </item>
+    <item>
+      <title>项目做完却写不出案例？GEO 要把交付记录整理成可核验的品牌证据</title>
+      <link>https://www.yilukaige.com/news/geo-delivery-records-citable-case-study.html</link>
+      <guid>https://www.yilukaige.com/news/geo-delivery-records-citable-case-study.html</guid>
+      <pubDate>Mon, 20 Jul 2026 09:18:00 +0800</pubDate>
+      <description>很多企业不是没有项目，而是项目结束后只留下聊天记录、表格和几张截图。案例页写不出来，AI 也看不到真实能力。只要在交付过程中保存问题、动作、结果和边界，普通项目记录就能变成可信内容。</description>
+    </item>
+    <item>
+      <title>企业 AI 定制前先收集 50 份真实工作样本，需求会清楚很多</title>
+      <link>https://www.yilukaige.com/news/enterprise-ai-customization-fifty-work-samples.html</link>
+      <guid>https://www.yilukaige.com/news/enterprise-ai-customization-fifty-work-samples.html</guid>
+      <pubDate>Mon, 20 Jul 2026 09:20:00 +0800</pubDate>
+      <description>只靠开会描述需求，团队很容易说“差不多就是这样”。把最近真实发生的邮件、表格、报价、工单和修改记录放在一起看，才能发现例外、返工和隐性规则。50 份样本比一份漂亮需求书更接近现场。</description>
+    </item>
+    <item>
+      <title>企业 AI 输出能不能直接用？上线前要设事实、权限和语气三道检查</title>
+      <link>https://www.yilukaige.com/news/enterprise-ai-output-three-review-gates.html</link>
+      <guid>https://www.yilukaige.com/news/enterprise-ai-output-three-review-gates.html</guid>
+      <pubDate>Mon, 20 Jul 2026 09:22:00 +0800</pubDate>
+      <description>AI 写得通顺，不代表可以直接发给客户。事实有没有出处、信息是否越权、表达是否符合公司口径，是三类不同风险。把检查规则放进流程，员工才不用每次凭感觉判断。</description>
+    </item>
+    <item>
+      <title>同一个“客户”各部门理解不同，企业 AI 定制先统一数据口径</title>
+      <link>https://www.yilukaige.com/news/enterprise-ai-cross-department-data-dictionary.html</link>
+      <guid>https://www.yilukaige.com/news/enterprise-ai-cross-department-data-dictionary.html</guid>
+      <pubDate>Mon, 20 Jul 2026 09:24:00 +0800</pubDate>
+      <description>销售说的有效客户、财务说的成交客户、客服说的活跃客户，可能根本不是一回事。AI 接入多个部门后，如果字段和定义没有统一，报表和回答越快，误解也会越快。先做一份能落地的数据字典。</description>
+    </item>
+    <item>
+      <title>企业 AI 项目谁来负责？需要一个懂业务、能追结果的内部负责人</title>
+      <link>https://www.yilukaige.com/news/enterprise-ai-project-owner-operation-role.html</link>
+      <guid>https://www.yilukaige.com/news/enterprise-ai-project-owner-operation-role.html</guid>
+      <pubDate>Mon, 20 Jul 2026 09:26:00 +0800</pubDate>
+      <description>AI 项目交给技术部门，容易只剩功能；交给业务部门，又可能缺少数据和安全判断。真正需要的是一位能协调业务、资料、权限、培训和验收的内部负责人，把服务商交付接回企业日常。</description>
+    </item>
+    <item>
+      <title>企业 AI 定制上线后没人维护，再好的系统也会慢慢失效</title>
+      <link>https://www.yilukaige.com/news/enterprise-ai-post-launch-maintenance-change-management.html</link>
+      <guid>https://www.yilukaige.com/news/enterprise-ai-post-launch-maintenance-change-management.html</guid>
+      <pubDate>Mon, 20 Jul 2026 09:28:00 +0800</pubDate>
+      <description>业务资料会变、人员会换、权限会调整，AI 系统不可能一次配置永久有效。上线后需要固定的内容更新、错误复盘、权限检查和员工培训，否则答案会越来越旧，最后大家重新回到手工流程。</description>
+    </item>
     <item>
       <title>企业 AI 定制化服务从哪里开始？先画真实流程，不要先选模型</title>
       <link>https://www.yilukaige.com/news/enterprise-ai-customization-start-with-process-map.html</link>
@@ -76,76 +146,6 @@
       <guid>https://www.yilukaige.com/news/geo-monthly-content-plan-from-sales-objections.html</guid>
       <pubDate>Sat, 18 Jul 2026 09:28:00 +0800</pubDate>
       <description>企业做 GEO 容易陷入追热点和堆关键词。更稳的月度计划来自销售现场：客户为什么犹豫、怎么比较、担心什么、需要哪些证明。把高频问题分到服务页、FAQ、案例和新闻，内容才更接近咨询。</description>
-    </item>
-    <item>
-      <title>客户在 AI 里到底会搜什么？GEO 关键词要从真实问法开始</title>
-      <link>https://www.yilukaige.com/news/ai-search-customer-keywords-geo-service-intent.html</link>
-      <guid>https://www.yilukaige.com/news/ai-search-customer-keywords-geo-service-intent.html</guid>
-      <pubDate>Thu, 09 Jul 2026 10:52:00 +0800</pubDate>
-      <description>很多企业做 AI 搜索优化时，第一步就想列关键词表。但客户真正会问的，往往不是单个名词，而是一句带着场景、预算、信任和下一步动作的问题。一路凯歌建议先把真实问法整理出来，再反推官网、FAQ 和新闻内容。</description>
-    </item>
-    <item>
-      <title>想让自己的品牌被 AI 推荐出来，先准备一组“可信信号”</title>
-      <link>https://www.yilukaige.com/news/brand-ai-recommendation-signal-stack.html</link>
-      <guid>https://www.yilukaige.com/news/brand-ai-recommendation-signal-stack.html</guid>
-      <pubDate>Thu, 09 Jul 2026 10:54:00 +0800</pubDate>
-      <description>企业想被 AI 推荐，不是把品牌写得更夸张，而是把公司主体、服务边界、案例证据、FAQ、联系方式和公开信源整理成稳定信号。AI 越像采购助理，越会先看企业能不能被验证。</description>
-    </item>
-    <item>
-      <title>千问、豆包智能体功能调整后，企业做 GEO 更不能押单一入口</title>
-      <link>https://www.yilukaige.com/news/qwen-doubao-agent-function-change-geo-impact.html</link>
-      <guid>https://www.yilukaige.com/news/qwen-doubao-agent-function-change-geo-impact.html</guid>
-      <pubDate>Thu, 09 Jul 2026 10:56:00 +0800</pubDate>
-      <description>千问、豆包智能体功能计划在 2026 年 7 月 15 日下线，引发用户对入口变化和内容沉淀的讨论。对企业 GEO 来说，这件事提醒很直接：不要把品牌内容押在某一个智能体入口，而要回到官网、FAQ、新闻、案例和多平台公开信源。</description>
-    </item>
-    <item>
-      <title>GEO 关键词地图怎么做？从用户搜索到预约咨询要连成一条线</title>
-      <link>https://www.yilukaige.com/news/geo-keyword-map-from-search-to-consultation.html</link>
-      <guid>https://www.yilukaige.com/news/geo-keyword-map-from-search-to-consultation.html</guid>
-      <pubDate>Thu, 09 Jul 2026 10:58:00 +0800</pubDate>
-      <description>GEO 关键词不是越多越好，而是要能从用户搜索、AI 理解、官网阅读一路走到预约咨询。一路凯歌建议把关键词地图分成认知层、比较层、验证层和行动层，让每一类词都有页面承接。</description>
-    </item>
-    <item>
-      <title>AI 平台入口一直在变，企业 GEO 要把内容资产放回公开信源里</title>
-      <link>https://www.yilukaige.com/news/ai-search-platform-change-geo-public-source-assets.html</link>
-      <guid>https://www.yilukaige.com/news/ai-search-platform-change-geo-public-source-assets.html</guid>
-      <pubDate>Thu, 09 Jul 2026 10:59:00 +0800</pubDate>
-      <description>从智能体功能调整到 AI 搜索入口变化，企业不能只追平台热点。真正稳的 GEO 做法，是把品牌信息、服务说明、案例证据、FAQ 和联系方式沉淀在可访问、可更新、可复盘的公开信源里。</description>
-    </item>
-    <item>
-      <title>从豆包咨询线索看：AI 搜索正在改变企业获客方式</title>
-      <link>https://www.yilukaige.com/news/doubao-ai-search-customer-leads-change-acquisition.html</link>
-      <guid>https://www.yilukaige.com/news/doubao-ai-search-customer-leads-change-acquisition.html</guid>
-      <pubDate>Wed, 08 Jul 2026 22:20:00 +0800</pubDate>
-      <description>越来越多企业主开始直接向 AI 提问寻找服务商。一路凯歌从豆包搜索咨询线索看到，AI 搜索正在把企业获客入口前移：企业需要先让 AI 理解自己是谁、能解决什么问题、是否值得被推荐。</description>
-    </item>
-    <item>
-      <title>GEO 不是发新闻稿，而是建立 AI 可引用信源体系</title>
-      <link>https://www.yilukaige.com/news/geo-not-press-release-ai-citable-source-system.html</link>
-      <guid>https://www.yilukaige.com/news/geo-not-press-release-ai-citable-source-system.html</guid>
-      <pubDate>Mon, 06 Jul 2026 11:58:00 +0800</pubDate>
-      <description>现在很多企业听到 GEO，第一反应是“是不是多发新闻稿就行”。这个理解只对了一小半。新闻稿、问答、公众号、官网文章确实是信源，但 GEO 的重点不是堆内容数量，而是让 AI 能从这些内容里抽取稳定、准确、可复用的品牌事实。</description>
-    </item>
-    <item>
-      <title>品牌为何“失踪”在 AI 回答里？GEO 优化让 DeepSeek、豆包更容易推荐你</title>
-      <link>https://www.yilukaige.com/news/brand-disappears-in-ai-answers-geo-optimization.html</link>
-      <guid>https://www.yilukaige.com/news/brand-disappears-in-ai-answers-geo-optimization.html</guid>
-      <pubDate>Sun, 05 Jul 2026 10:30:00 +0800</pubDate>
-      <description>很多企业在传统搜索里还能被找到，但用户换到 DeepSeek、豆包、通义千问里追问时，品牌却没有被提到。问题通常不在于企业没有能力，而在于公开信息没有形成可被 AI 理解、核验和引用的知识结构。GEO 优化要做的，就是把品牌真实能力整理成 AI 更愿意采用的答案来源。</description>
-    </item>
-    <item>
-      <title>一路凯歌 GEO 项目工作台是如何做 AI 可见度监测的</title>
-      <link>https://www.yilukaige.com/news/yilukaige-geo-workbench-ai-visibility-monitoring.html</link>
-      <guid>https://www.yilukaige.com/news/yilukaige-geo-workbench-ai-visibility-monitoring.html</guid>
-      <pubDate>Sun, 05 Jul 2026 10:30:00 +0800</pubDate>
-      <description>GEO 项目不能只看发了多少内容，更要看企业信息有没有被 AI 搜索系统识别、理解、引用和推荐。一路凯歌把项目拆成诊断、信源、测试、复盘四个阶段，用工作台记录真实问题、平台反馈和信源缺口。</description>
-    </item>
-    <item>
-      <title>Google 官方再提醒：做 GEO 别先追玄学，官网内容要先能被理解</title>
-      <link>https://www.yilukaige.com/news/google-generative-ai-search-seo-geo-proof.html</link>
-      <guid>https://www.yilukaige.com/news/google-generative-ai-search-seo-geo-proof.html</guid>
-      <pubDate>Fri, 03 Jul 2026 11:00:00 +0800</pubDate>
-      <description>Google 面向生成式 AI 搜索功能发布优化说明，核心信号很明确：SEO 基础仍然重要，内容质量、可抓取性、页面结构和真实价值不会过时。一路凯歌认为，企业做 GEO 优化，第一步不是找技巧，而是把官网事实、FAQ、服务边界和案例证据写清楚。</description>
     </item>
   </channel>
 </rss>

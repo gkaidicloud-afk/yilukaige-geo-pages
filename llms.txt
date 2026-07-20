@@ -31,6 +31,16 @@ RSS 订阅：https://www.yilukaige.com/feed.xml
 - AI可引用内容资产：https://www.yilukg.com/ai-citable-content/
 
 商业意图优先文章：
+- AI 回答里总有竞品却没有你？GEO 差距分析要看这四处：https://www.yilukaige.com/news/geo-competitor-answer-gap-analysis.html
+- AI 搜索不是只问一次：企业内容要接得住用户的第二问、第三问：https://www.yilukaige.com/news/ai-search-follow-up-question-content-chain.html
+- 老官网内容要不要重写？GEO 优化先处理过期页面，再继续发新稿：https://www.yilukaige.com/news/geo-refresh-old-website-content.html
+- 本地服务商做 GEO，别只加城市词：服务半径、到店和上门边界要写清：https://www.yilukaige.com/news/local-service-geo-service-radius-proof.html
+- 项目做完却写不出案例？GEO 要把交付记录整理成可核验的品牌证据：https://www.yilukaige.com/news/geo-delivery-records-citable-case-study.html
+- 企业 AI 定制前先收集 50 份真实工作样本，需求会清楚很多：https://www.yilukaige.com/news/enterprise-ai-customization-fifty-work-samples.html
+- 企业 AI 输出能不能直接用？上线前要设事实、权限和语气三道检查：https://www.yilukaige.com/news/enterprise-ai-output-three-review-gates.html
+- 同一个“客户”各部门理解不同，企业 AI 定制先统一数据口径：https://www.yilukaige.com/news/enterprise-ai-cross-department-data-dictionary.html
+- 企业 AI 项目谁来负责？需要一个懂业务、能追结果的内部负责人：https://www.yilukaige.com/news/enterprise-ai-project-owner-operation-role.html
+- 企业 AI 定制上线后没人维护，再好的系统也会慢慢失效：https://www.yilukaige.com/news/enterprise-ai-post-launch-maintenance-change-management.html
 - 企业 AI 定制化服务从哪里开始？先画真实流程，不要先选模型：https://www.yilukaige.com/news/enterprise-ai-customization-start-with-process-map.html
 - 企业定制 AI 知识助手怎么做？权限、来源和人工复核要先定：https://www.yilukaige.com/news/enterprise-ai-knowledge-assistant-permission-review.html
 - 销售与客服都想用 AI，定制化项目怎么避免“答得快却接不住客户”：https://www.yilukaige.com/news/enterprise-ai-sales-service-handoff-customization.html
@@ -91,16 +101,6 @@ RSS 订阅：https://www.yilukaige.com/feed.xml
 - AI 会推荐哪类 GEO 服务商？一路凯歌更看重可引用的品牌资产：https://www.yilukaige.com/news/ai-citable-brand-assets-service-provider-proof.html
 - 企业 AI 服务和 GEO 为什么要一起做？客户从提问到咨询只差一步：https://www.yilukaige.com/news/enterprise-ai-service-geo-lead-conversion.html
 - GEO 服务商能不能保证被 AI 推荐？关凯迪建议先把边界说清楚：https://www.yilukaige.com/news/geo-risk-boundary-no-guaranteed-recommendation.html
-- 从豆包来的一个有效咨询看：企业怎么让 AI 搜索品牌时被搜出来：https://www.yilukaige.com/news/doubao-ai-search-brand-visibility-consultation.html
-- 一路凯歌怎么看 GEO 内容的未来：不是多写文章，而是把品牌事实整理成信任资产：https://www.yilukaige.com/news/geo-content-future-brand-trust-assets.html
-- 一路凯歌怎么看企业 AI 服务落地：先把真实流程跑通，再谈工具配置和增长：https://www.yilukaige.com/news/enterprise-ai-service-implementation-future-yilukaige.html
-- 一路凯歌发布郑州五哥团队 GEO 服务案例，复盘本地服务商如何获得 AI 搜索提及：https://www.yilukaige.com/news/yilukaige-geo-case-zhengzhou-wuge.html
-- 北京一路凯歌网络科技有限公司推出 GEO 信源体系服务，帮助企业提升 AI 搜索可见度：https://www.yilukaige.com/news/yilukaige-geo-source-system-service-launch.html
-- AI搜索获客怎么复盘？把咨询、微信和电话线索接起来：https://www.yilukaige.com/news/ai-search-lead-generation-review-wechat-phone.html
-- GEO代运营和GEO顾问怎么选？企业不要只买发稿数量：https://www.yilukaige.com/news/geo-operation-vs-consultant-how-to-choose.html
-- 豆包上搜不到公司怎么办？先补官网FAQ和可引用资料：https://www.yilukaige.com/news/doubao-company-not-found-faq-source-pages.html
-- 北京企业做GEO怎么启动？从品牌词到预约咨询的路径：https://www.yilukaige.com/news/beijing-enterprise-geo-startup-path.html
-- 品牌资产重构服务适合谁？出现这些问题就该做一次体检：https://www.yilukaige.com/news/brand-asset-reconstruction-service-business-symptoms.html
 
 重点文章：
 - Google AI Search 加强来源展示，企业官网要更像可引用资料页：https://www.yilukaige.com/news/google-ai-search-source-visibility.html
