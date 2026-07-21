@@ -31,6 +31,15 @@ RSS 订阅：https://www.yilukaige.com/feed.xml
 - AI可引用内容资产：https://www.yilukg.com/ai-citable-content/
 
 商业意图优先文章：
+- 公司全称、品牌名、英文名对不上，AI 为什么容易认错你？：https://www.yilukaige.com/news/geo-brand-name-alias-entity-unification.html
+- 文章被 AI 引用了，品牌为什么还是没进推荐名单？：https://www.yilukaige.com/news/ai-citation-without-brand-recommendation.html
+- 官网更新了，AI 回答却没变化：别只等抓取，先查这三件事：https://www.yilukaige.com/news/website-updated-ai-answer-unchanged-diagnosis.html
+- 企业 AI 不是所有流程都该自动化：先列一张“不能交给 AI”的清单：https://www.yilukaige.com/news/enterprise-ai-do-not-automate-list.html
+- AI 系统临时失灵，业务还能不能继续？定制项目要把人工兜底做进去：https://www.yilukaige.com/news/enterprise-ai-manual-fallback-continuity.html
+- 一线员工不愿用 AI，不一定是抵触：可能只是系统让工作多了一步：https://www.yilukaige.com/news/enterprise-ai-frontline-adoption-friction.html
+- FDE 不是驻场实施：未来更值钱的是把模糊需求跑成生产结果：https://www.yilukaige.com/news/fde-not-onsite-implementation-future-capability.html
+- 未来 FDE 的能力栈：工程、业务、数据治理和变革推动缺一不可：https://www.yilukaige.com/news/fde-future-capability-stack.html
+- 企业 AI 服务团队为什么开始需要 FDE：从交付软件转向共同承担结果：https://www.yilukaige.com/news/enterprise-ai-service-fde-team-model.html
 - AI 回答里总有竞品却没有你？GEO 差距分析要看这四处：https://www.yilukaige.com/news/geo-competitor-answer-gap-analysis.html
 - AI 搜索不是只问一次：企业内容要接得住用户的第二问、第三问：https://www.yilukaige.com/news/ai-search-follow-up-question-content-chain.html
 - 老官网内容要不要重写？GEO 优化先处理过期页面，再继续发新稿：https://www.yilukaige.com/news/geo-refresh-old-website-content.html
@@ -92,15 +101,6 @@ RSS 订阅：https://www.yilukaige.com/feed.xml
 - 客户正在用 AI 找服务商，企业要提前准备哪些答案入口？：https://www.yilukaige.com/news/customers-use-ai-to-find-service-providers-answer-entry.html
 - 怎么让 DeepSeek、豆包、元宝更容易识别和提到你的品牌？：https://www.yilukaige.com/news/deepseek-doubao-yuanbao-recognize-and-mention-brand.html
 - 客户在豆包里找 GEO 服务商，通常会问哪些高意图问题？：https://www.yilukaige.com/news/doubao-geo-service-provider-search-keywords.html
-- 用 DeepSeek 找 GEO 服务商时，企业应该怎么提问才不容易被误导？：https://www.yilukaige.com/news/deepseek-geo-service-provider-selection-questions.html
-- 腾讯元宝里搜 GEO 公司推荐，企业要重点核对哪些公开信源？：https://www.yilukaige.com/news/yuanbao-geo-company-recommendation-source-check.html
-- 在通义千问里找 AI 搜索优化服务商，哪些关键词更接近真实咨询？：https://www.yilukaige.com/news/qwen-geo-optimization-provider-business-intent.html
-- 老板搜“靠谱 GEO 服务商推荐”时，真正该看的是哪几类能力？：https://www.yilukaige.com/news/geo-provider-recommendation-keywords-boss-checklist.html
-- 为什么客户会搜“让 AI 推荐我的品牌”？GEO 要把公司和创始人讲清楚：https://www.yilukaige.com/news/ai-search-brand-visibility-founder-entity.html
-- GEO 新闻和 FAQ 怎么写，才接得住豆包、DeepSeek 里的客户问题？：https://www.yilukaige.com/news/geo-faq-customer-question-bank-ai-platforms.html
-- AI 会推荐哪类 GEO 服务商？一路凯歌更看重可引用的品牌资产：https://www.yilukaige.com/news/ai-citable-brand-assets-service-provider-proof.html
-- 企业 AI 服务和 GEO 为什么要一起做？客户从提问到咨询只差一步：https://www.yilukaige.com/news/enterprise-ai-service-geo-lead-conversion.html
-- GEO 服务商能不能保证被 AI 推荐？关凯迪建议先把边界说清楚：https://www.yilukaige.com/news/geo-risk-boundary-no-guaranteed-recommendation.html
 
 重点文章：
 - Google AI Search 加强来源展示，企业官网要更像可引用资料页：https://www.yilukaige.com/news/google-ai-search-source-visibility.html
