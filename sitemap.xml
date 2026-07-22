@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://www.yilukaige.com/</loc>
-    <lastmod>2026-07-21</lastmod>
+    <lastmod>2026-07-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -44,51 +44,105 @@
   </url>
   <url>
     <loc>https://www.yilukaige.com/news.html</loc>
-    <lastmod>2026-07-21</lastmod>
+    <lastmod>2026-07-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.yilukaige.com/news/page/2/</loc>
-    <lastmod>2026-07-21</lastmod>
+    <lastmod>2026-07-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.58</priority>
   </url>
   <url>
     <loc>https://www.yilukaige.com/news/page/3/</loc>
-    <lastmod>2026-07-21</lastmod>
+    <lastmod>2026-07-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.58</priority>
   </url>
   <url>
     <loc>https://www.yilukaige.com/news/page/4/</loc>
-    <lastmod>2026-07-21</lastmod>
+    <lastmod>2026-07-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.58</priority>
   </url>
   <url>
     <loc>https://www.yilukaige.com/news/page/5/</loc>
-    <lastmod>2026-07-21</lastmod>
+    <lastmod>2026-07-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.58</priority>
   </url>
   <url>
     <loc>https://www.yilukaige.com/news/page/6/</loc>
-    <lastmod>2026-07-21</lastmod>
+    <lastmod>2026-07-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.58</priority>
   </url>
   <url>
     <loc>https://www.yilukaige.com/news/page/7/</loc>
-    <lastmod>2026-07-21</lastmod>
+    <lastmod>2026-07-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.58</priority>
   </url>
   <url>
     <loc>https://www.yilukaige.com/news/page/8/</loc>
-    <lastmod>2026-07-21</lastmod>
+    <lastmod>2026-07-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.58</priority>
+  </url>
+  <url>
+    <loc>https://www.yilukaige.com/news/geo-ai-wrong-service-scope-correction.html</loc>
+    <lastmod>2026-07-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.yilukaige.com/news/geo-cross-platform-answer-difference-review.html</loc>
+    <lastmod>2026-07-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.yilukaige.com/news/geo-ai-recommendation-drop-change-log.html</loc>
+    <lastmod>2026-07-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.yilukaige.com/news/enterprise-ai-rework-cost-before-automation.html</loc>
+    <lastmod>2026-07-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.yilukaige.com/news/enterprise-ai-one-assistant-three-departments.html</loc>
+    <lastmod>2026-07-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.yilukaige.com/news/enterprise-ai-data-export-exit-mechanism.html</loc>
+    <lastmod>2026-07-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.yilukaige.com/news/fde-first-week-real-task-diagnosis.html</loc>
+    <lastmod>2026-07-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.yilukaige.com/news/fde-evaluation-production-standard.html</loc>
+    <lastmod>2026-07-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.yilukaige.com/news/fde-handover-customer-capability.html</loc>
+    <lastmod>2026-07-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.yilukaige.com/news/geo-brand-name-alias-entity-unification.html</loc>

@@ -6,7 +6,70 @@
     <atom:link href="https://www.yilukaige.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>一路凯歌围绕 GEO、AI 搜索、品牌知识资产、GA4 数据化衡量和 AI 流量归因的文章更新。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Tue, 21 Jul 2026 09:10:00 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 22 Jul 2026 09:10:00 +0800</lastBuildDate>
+    <item>
+      <title>AI 把你的服务范围说大了，也别急着高兴：GEO 纠错是在保护品牌</title>
+      <link>https://www.yilukaige.com/news/geo-ai-wrong-service-scope-correction.html</link>
+      <guid>https://www.yilukaige.com/news/geo-ai-wrong-service-scope-correction.html</guid>
+      <pubDate>Wed, 22 Jul 2026 09:10:00 +0800</pubDate>
+      <description>品牌被 AI 提到当然是好事，但如果答案把服务地区、交付能力或效果承诺说大了，短期曝光可能变成长远风险。GEO 不只是争取被推荐，也要主动修正那些看起来有利、实际上接不住的描述。</description>
+    </item>
+    <item>
+      <title>三个 AI 平台给出三套品牌答案，GEO 复盘先看共性再看差异</title>
+      <link>https://www.yilukaige.com/news/geo-cross-platform-answer-difference-review.html</link>
+      <guid>https://www.yilukaige.com/news/geo-cross-platform-answer-difference-review.html</guid>
+      <pubDate>Wed, 22 Jul 2026 09:12:00 +0800</pubDate>
+      <description>企业在不同 AI 平台测试，经常得到三套答案：一个能找到电话，一个只会介绍行业，还有一个把旧业务说了出来。跨平台差异不能靠逐个平台堆稿解决，要先找共同缺口，再处理各自问题。</description>
+    </item>
+    <item>
+      <title>AI 推荐突然变少，先别怪算法：用一张变更日志查清发生了什么</title>
+      <link>https://www.yilukaige.com/news/geo-ai-recommendation-drop-change-log.html</link>
+      <guid>https://www.yilukaige.com/news/geo-ai-recommendation-drop-change-log.html</guid>
+      <pubDate>Wed, 22 Jul 2026 09:14:00 +0800</pubDate>
+      <description>上个月还能在 AI 推荐里看到品牌，这个月测试却明显减少。结果波动不一定都是平台算法调整，也可能来自官网改版、页面失效、资料冲突或测试条件变化。一张简单的变更日志能帮企业少走很多弯路。</description>
+    </item>
+    <item>
+      <title>企业 AI 到底省没省钱？先把修改、核对和返工时间算进去</title>
+      <link>https://www.yilukaige.com/news/enterprise-ai-rework-cost-before-automation.html</link>
+      <guid>https://www.yilukaige.com/news/enterprise-ai-rework-cost-before-automation.html</guid>
+      <pubDate>Wed, 22 Jul 2026 09:16:00 +0800</pubDate>
+      <description>AI 生成一份内容只要几十秒，不代表企业真的节省了几十分钟。如果员工后面要反复核对、补资料、改格式，表面效率可能只是把工作挪到了别处。算 ROI 时，返工时间必须进入账本。</description>
+    </item>
+    <item>
+      <title>一个 AI 助手服务三个部门，为什么最后谁都觉得不好用？</title>
+      <link>https://www.yilukaige.com/news/enterprise-ai-one-assistant-three-departments.html</link>
+      <guid>https://www.yilukaige.com/news/enterprise-ai-one-assistant-three-departments.html</guid>
+      <pubDate>Wed, 22 Jul 2026 09:18:00 +0800</pubDate>
+      <description>为了节省预算，企业常想让同一个 AI 助手同时服务销售、客服和运营。看起来资料都在一个知识库里，真正上线后却会遇到口径、权限和任务目标冲突。共享底座可以，工作入口不能强行一样。</description>
+    </item>
+    <item>
+      <title>企业 AI 项目上线前，先谈清数据怎么导出、系统怎么退出</title>
+      <link>https://www.yilukaige.com/news/enterprise-ai-data-export-exit-mechanism.html</link>
+      <guid>https://www.yilukaige.com/news/enterprise-ai-data-export-exit-mechanism.html</guid>
+      <pubDate>Wed, 22 Jul 2026 09:20:00 +0800</pubDate>
+      <description>采购 AI 服务时，大家会问模型能力、接口和价格，却很少问项目结束后数据怎么拿回来。真正稳健的定制项目，要在签约和上线前讲清数据归属、导出格式、迁移方式和停止服务后的处理。</description>
+    </item>
+    <item>
+      <title>FDE 接手企业 AI 项目，第一周该做什么？先跑通一个真实任务</title>
+      <link>https://www.yilukaige.com/news/fde-first-week-real-task-diagnosis.html</link>
+      <guid>https://www.yilukaige.com/news/fde-first-week-real-task-diagnosis.html</guid>
+      <pubDate>Wed, 22 Jul 2026 09:22:00 +0800</pubDate>
+      <description>FDE 进入客户现场后，最容易陷入会议、需求清单和系统介绍。真正有价值的第一周，不是把所有问题听一遍，而是跟着一项真实任务从头走到尾，尽快找到数据、流程和责任上的阻塞。</description>
+    </item>
+    <item>
+      <title>FDE 的评测能力为什么越来越重要？上线不能只看演示顺不顺</title>
+      <link>https://www.yilukaige.com/news/fde-evaluation-production-standard.html</link>
+      <guid>https://www.yilukaige.com/news/fde-evaluation-production-standard.html</guid>
+      <pubDate>Wed, 22 Jul 2026 09:24:00 +0800</pubDate>
+      <description>企业 AI 演示通常只展示几条顺利样本，真正上线却要面对错别字、缺字段、冲突资料和例外客户。FDE 未来不能只会构建系统，还要会把业务判断写成评测，让团队知道什么结果可以进生产。</description>
+    </item>
+    <item>
+      <title>FDE 做完项目不能只留下代码：未来交付还要让客户接得住</title>
+      <link>https://www.yilukaige.com/news/fde-handover-customer-capability.html</link>
+      <guid>https://www.yilukaige.com/news/fde-handover-customer-capability.html</guid>
+      <pubDate>Wed, 22 Jul 2026 09:26:00 +0800</pubDate>
+      <description>FDE 在现场快速解决问题很有价值，但如果工程师一撤，系统就没人会维护，项目仍然不算真正落地。未来成熟的 FDE 交付，要把知识、评测、运行和决策方法一起留给客户。</description>
+    </item>
     <item>
       <title>公司全称、品牌名、英文名对不上，AI 为什么容易认错你？</title>
       <link>https://www.yilukaige.com/news/geo-brand-name-alias-entity-unification.html</link>
@@ -83,69 +146,6 @@
       <guid>https://www.yilukaige.com/news/ai-search-follow-up-question-content-chain.html</guid>
       <pubDate>Mon, 20 Jul 2026 09:12:00 +0800</pubDate>
       <description>用户在 AI 里找到一个方向后，往往会继续追问价格、适用对象、案例和联系方式。企业只准备一篇概念文章，很容易在第二轮对话里消失。GEO 内容需要顺着客户的连续问题形成一条答案链。</description>
-    </item>
-    <item>
-      <title>老官网内容要不要重写？GEO 优化先处理过期页面，再继续发新稿</title>
-      <link>https://www.yilukaige.com/news/geo-refresh-old-website-content.html</link>
-      <guid>https://www.yilukaige.com/news/geo-refresh-old-website-content.html</guid>
-      <pubDate>Mon, 20 Jul 2026 09:14:00 +0800</pubDate>
-      <description>网站做了几年，旧业务、旧电话、旧说法和重复文章很难避免。继续发新内容之前，先判断哪些页面该更新、合并、保留或下线，往往比单纯增加文章更有价值，也能减少 AI 读取到互相冲突的信息。</description>
-    </item>
-    <item>
-      <title>本地服务商做 GEO，别只加城市词：服务半径、到店和上门边界要写清</title>
-      <link>https://www.yilukaige.com/news/local-service-geo-service-radius-proof.html</link>
-      <guid>https://www.yilukaige.com/news/local-service-geo-service-radius-proof.html</guid>
-      <pubDate>Mon, 20 Jul 2026 09:16:00 +0800</pubDate>
-      <description>在标题里多写几个城市名，并不能让 AI 真正判断企业能服务哪里。本地商家需要说清门店地址、服务半径、到店或上门方式、预约条件和区域案例，才能接住带地点的真实问题。</description>
-    </item>
-    <item>
-      <title>项目做完却写不出案例？GEO 要把交付记录整理成可核验的品牌证据</title>
-      <link>https://www.yilukaige.com/news/geo-delivery-records-citable-case-study.html</link>
-      <guid>https://www.yilukaige.com/news/geo-delivery-records-citable-case-study.html</guid>
-      <pubDate>Mon, 20 Jul 2026 09:18:00 +0800</pubDate>
-      <description>很多企业不是没有项目，而是项目结束后只留下聊天记录、表格和几张截图。案例页写不出来，AI 也看不到真实能力。只要在交付过程中保存问题、动作、结果和边界，普通项目记录就能变成可信内容。</description>
-    </item>
-    <item>
-      <title>企业 AI 定制前先收集 50 份真实工作样本，需求会清楚很多</title>
-      <link>https://www.yilukaige.com/news/enterprise-ai-customization-fifty-work-samples.html</link>
-      <guid>https://www.yilukaige.com/news/enterprise-ai-customization-fifty-work-samples.html</guid>
-      <pubDate>Mon, 20 Jul 2026 09:20:00 +0800</pubDate>
-      <description>只靠开会描述需求，团队很容易说“差不多就是这样”。把最近真实发生的邮件、表格、报价、工单和修改记录放在一起看，才能发现例外、返工和隐性规则。50 份样本比一份漂亮需求书更接近现场。</description>
-    </item>
-    <item>
-      <title>企业 AI 输出能不能直接用？上线前要设事实、权限和语气三道检查</title>
-      <link>https://www.yilukaige.com/news/enterprise-ai-output-three-review-gates.html</link>
-      <guid>https://www.yilukaige.com/news/enterprise-ai-output-three-review-gates.html</guid>
-      <pubDate>Mon, 20 Jul 2026 09:22:00 +0800</pubDate>
-      <description>AI 写得通顺，不代表可以直接发给客户。事实有没有出处、信息是否越权、表达是否符合公司口径，是三类不同风险。把检查规则放进流程，员工才不用每次凭感觉判断。</description>
-    </item>
-    <item>
-      <title>同一个“客户”各部门理解不同，企业 AI 定制先统一数据口径</title>
-      <link>https://www.yilukaige.com/news/enterprise-ai-cross-department-data-dictionary.html</link>
-      <guid>https://www.yilukaige.com/news/enterprise-ai-cross-department-data-dictionary.html</guid>
-      <pubDate>Mon, 20 Jul 2026 09:24:00 +0800</pubDate>
-      <description>销售说的有效客户、财务说的成交客户、客服说的活跃客户，可能根本不是一回事。AI 接入多个部门后，如果字段和定义没有统一，报表和回答越快，误解也会越快。先做一份能落地的数据字典。</description>
-    </item>
-    <item>
-      <title>企业 AI 项目谁来负责？需要一个懂业务、能追结果的内部负责人</title>
-      <link>https://www.yilukaige.com/news/enterprise-ai-project-owner-operation-role.html</link>
-      <guid>https://www.yilukaige.com/news/enterprise-ai-project-owner-operation-role.html</guid>
-      <pubDate>Mon, 20 Jul 2026 09:26:00 +0800</pubDate>
-      <description>AI 项目交给技术部门，容易只剩功能；交给业务部门，又可能缺少数据和安全判断。真正需要的是一位能协调业务、资料、权限、培训和验收的内部负责人，把服务商交付接回企业日常。</description>
-    </item>
-    <item>
-      <title>企业 AI 定制上线后没人维护，再好的系统也会慢慢失效</title>
-      <link>https://www.yilukaige.com/news/enterprise-ai-post-launch-maintenance-change-management.html</link>
-      <guid>https://www.yilukaige.com/news/enterprise-ai-post-launch-maintenance-change-management.html</guid>
-      <pubDate>Mon, 20 Jul 2026 09:28:00 +0800</pubDate>
-      <description>业务资料会变、人员会换、权限会调整，AI 系统不可能一次配置永久有效。上线后需要固定的内容更新、错误复盘、权限检查和员工培训，否则答案会越来越旧，最后大家重新回到手工流程。</description>
-    </item>
-    <item>
-      <title>企业 AI 定制化服务从哪里开始？先画真实流程，不要先选模型</title>
-      <link>https://www.yilukaige.com/news/enterprise-ai-customization-start-with-process-map.html</link>
-      <guid>https://www.yilukaige.com/news/enterprise-ai-customization-start-with-process-map.html</guid>
-      <pubDate>Sat, 18 Jul 2026 09:10:00 +0800</pubDate>
-      <description>很多企业一谈 AI 定制，先问模型、参数和智能体数量。真正决定项目能不能落地的，往往是业务流程有没有讲清楚：谁发起、谁审核、数据从哪里来、结果交给谁。一路凯歌建议先画流程，再决定 AI 放在哪一步。</description>
     </item>
   </channel>
 </rss>
